@@ -4,14 +4,15 @@ title : Archive
 header : Post Archive
 group: navigation
 ---
-
-<section class="archives_list">
+<div class="content l_overflow">
+<div class="post l_overflow">
+<section class="m_archives_list">
 <h2>Archive Posts</h2>
   {% assign posts_collate = site.posts %}
   {% include JB/posts_collate %}
 </section>
 
-<section class="tags_list">
+<section class="m_tags_list">
 <h2>Tags</h2>
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}  
@@ -20,10 +21,12 @@ group: navigation
 
 
 {% for tag in site.tags %} 
-  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
+  <h4 id="{{ tag[0] }}-ref">{{ tag[0] }}</h4>
   <ul>
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
 </section>
+</div>
+</div>

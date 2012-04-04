@@ -1,0 +1,105 @@
+/* cpeak.github.com MODULES 
+  - Chris Peak
+  - 04/03/2012 
+  - SCALE: 12 16 -22- 30 39 52 69
+ */
+
+
+
+.m_archives_list {
+  float: left; 
+  margin-right: 39px;
+  width: 388px;
+}
+
+/* ############## INDIVIDUAL BLOG POSTS ################### */
+
+/* Post Date tags that float left */
+.m_post_date { 
+  background: #fefefe;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #f2f2f2; 
+  color: #999; 
+  display: inline-block;
+  padding: 5px 15px;  
+  margin: 10px 0px 0px -18px;
+}
+
+/* Dashed line between posts */
+.m_post_break {	
+  border-bottom: 1px dashed #ccc; 
+  margin: 40px auto 0px auto;
+  width: 500px;
+}
+
+/* Image subtle outline */
+.m_post_image { 
+  border-bottom: 1px solid #ccc; 
+  border-right: 1px solid #f2f2f2; 
+  margin-top: 5px;
+}
+
+/* ###################################################### */
+/* ############## PROJECTS MODULES ################### */
+
+
+.m_project {
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 22px;
+  width: 388px;
+  height: 240px;
+}
+.m_project p { padding: 0px 10px; }
+.m_project .project_description { 
+  font-size: .95em; 
+  font-style: italic;
+  line-height: 1.15em; 
+}
+.m_project_image { border-bottom: 1px solid #ccc; }
+
+
+/* ###################################################### */
+/* ############## ARCHIVE TAGS ########################## */
+
+.m_tags_list { 
+  float: left; 
+  width: 350px;
+}
+
+.m_tools_list h4 { margin-top: 20px; }
+
+.tag_box {
+  list-style:none;
+  margin:0;
+  padding:5px 0 ;
+  overflow:hidden;
+}
+.tag_box li { line-height:28px; }
+.tag_box.inline li { float:left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color:#003366;
+  border-radius: 3px;
+  text-decoration:none;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+.tag_box a:hover { color: #000; }
+
+
+.m_tools_list {
+  list-style: none; 
+}
+

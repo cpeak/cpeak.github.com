@@ -1,7 +1,7 @@
 ---
 layout: post
 category : blog
-tags : [residency, blog]
+tags : [residency, web-design]
 ---
   <h2>Breaking The Habit</h2>
   <p>Over the past two weeks I have done a lot of reading while diving back into HTML &amp; CSS coding and reviewing the work habits that got me here. Previously I felt my code was strutting like John Travolta in <em>Saturday Night Fever</em>, but the more I learn it's looking more like Disco Stu.  I am largely self-taught, which in of itself is not a bad thing, but over the years I have developed some bad habits and peculiar idiosyncrasies. Now that I am doing this for a living it's time to break those habits and lay a solid foundation to grow as a professional developer.</p>

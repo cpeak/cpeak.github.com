@@ -1,7 +1,7 @@
 ---
 layout: post
 category : blog
-tags : [residency, blog]
+tags : [residency, web-design]
 ---
 
 <article>
