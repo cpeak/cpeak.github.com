@@ -6,9 +6,18 @@
     <atom:link href="http://cpeak.github.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Chris Peak - Residency Blog</description>
     <language>en-us</language>
-    <pubDate>Mon, 09 Apr 2012 10:58:07 -0500</pubDate>
-    <lastBuildDate>Mon, 09 Apr 2012 10:58:07 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Apr 2012 11:07:12 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Apr 2012 11:07:12 -0500</lastBuildDate>
 
+    
+    <item>
+      <title>Rss Functionality</title>
+      <link>http://cpeak.github.com/blog/2012/04/09/rss-functionality</link>
+      <pubDate>Mon, 09 Apr 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/04/09/rss-functionality</guid>
+      <description>&lt;h2&gt;New: RSS/Atom Feed Support&lt;/h2&gt;&lt;p&gt;Today I added RSS and Atom feed support for my residency blog. Thanks to GitHub user &lt;a href='https://github.com/coyled/coyled.com'&gt;Dave Coyle&lt;/a&gt; for the Jekyll Atom &amp;amp; RSS templates, as well as a tip of the hat to &lt;a href='https://github.com/beporter'&gt;beporter&lt;/a&gt; for the link. &lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Stay Positive</title>
