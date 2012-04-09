@@ -1,47 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>Thoughts on Design</title>
- <link href="http://cpeak.github.com/atom.xml" rel="self"/>
- <link href="http://cpeak.github.com"/>
- <updated>2012-04-09T10:58:07-05:00</updated>
- <id>http://cpeak.github.com</id>
- <author>
-   <name></name>
-   <email></email>
- </author>
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts On Design</title>
+    <link>http://cpeak.github.com</link>
+    <atom:link href="http://cpeak.github.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Chris Peak - Residency Blog</description>
+    <language>en-us</language>
+    <pubDate>Mon, 09 Apr 2012 10:58:07 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Apr 2012 10:58:07 -0500</lastBuildDate>
 
- 
- <entry>
-   <title>Stay Positive</title>
-   <link href="http://cpeak.github.com/blog/2012/04/06/stay-positive"/>
-   <updated>2012-04-06T00:00:00-05:00</updated>
-   <id>http://cpeak.github.com/blog/2012/04/06/stay-positive</id>
-   <content type="html">&lt;h2&gt;Stay Positive&lt;/h2&gt;&lt;p&gt;This past week I spent a lot of time working on an internal development project and just working on the design principles I have learned over the past six weeks. I wanted to share a quote that has stuck with my over the past few years from Ira Glass.  Its about staying positive when you know you can do better. This applies to just about any field, but is especially important to those of us with a talent for the creative arts:&lt;/p&gt;&lt;p class='m_quote_block gen_border'&gt;You’ve got to get rid of a lot of crap before you’re going to get anything that’s special. You don’t want to be making mediocre stuff. There’s a gap for the first couple years that you’re making stuff. What you’re making isn’t so good. But your taste, the thing that got you into the game, is good enough that you can tell what you’re making is kind of a disappointment to you. A lot of people at that point, they quit. The thing I would say to you with all my heart is that most everybody I know who does interesting, creative work, went through a phase of years where they had really good taste, they could tell what they were making wasn’t as good as they wanted it to be. They knew it fell short. Everybody goes through that. If you’re going through it right now, or if you’re just starting off and you’re entering into that phase, you’ve got to know its totally normal and the most important thing you could do is a lot of work. Do a huge volume of work because it’s only by actually going through a volume of work that you’re actually going to catch up and close that gap.&lt;br /&gt;&lt;strong&gt;- Ira Glass&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;I know I have come a long way with my development and design but I know that I can do so much better. So while I continue my journey as an 8th Light Resident I need to stay positive and keep learning.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Uncle Bob</title>
-   <link href="http://cpeak.github.com/blog/2012/03/30/uncle-bob"/>
-   <updated>2012-03-30T00:00:00-05:00</updated>
-   <id>http://cpeak.github.com/blog/2012/03/30/uncle-bob</id>
-   <content type="html">&lt;h2&gt;Uncle Bob&lt;/h2&gt;&lt;img class='m_post_image' src='/images/uncle_bob.png' alt='Uncle Bob' /&gt;&lt;p&gt;Another great talk by Uncle Bob on 'The Liskov Substitution Principle' at todays &lt;a href='http://university.8thlight.com'&gt;8th Light University&lt;/a&gt;.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Speedometer</title>
-   <link href="http://cpeak.github.com/blog/2012/03/30/speedometer"/>
-   <updated>2012-03-30T00:00:00-05:00</updated>
-   <id>http://cpeak.github.com/blog/2012/03/30/speedometer</id>
-   <content type="html">&lt;h2&gt;1.21 Giggawatts!&lt;/h2&gt;&lt;h3&gt;The JQuery and Javascript speedometer project&lt;/h3&gt;&lt;img class='m_post_image' src='/images/speedo.png' alt='Javascript speedometer project' /&gt;&lt;h3&gt;The Assignment&lt;/h3&gt;&lt;p&gt;This past week my assignment was to create a digital speedometer using CSS3, JQuery and Javascript, using &lt;a href='http://stephaniebriones.com/speedometer/'&gt;Stephanie's project&lt;/a&gt; as inspiration. The original task came about because Billy and Stephanie had found &lt;a href='http://annyas.com/chevrolet-speedometer-design/'&gt;a set of old dashboard typography&lt;/a&gt;, so the challenge was created as a fun way to hone our skills.&lt;/p&gt;&lt;h3&gt;The Challenges&lt;/h3&gt;&lt;p&gt;The first hurdle was going to be figuring out CSS3's rotate property. Once that was taken care of I would have to get the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div to rotate on key press for acceleration and deceleration, limiting rotation from zero to top speed.  I wanted to take it a step further and add an odometer that displayed distance travelled as well, so a bit of math was going to be involved. On top of everything I also wanted to do something different. I wondered if there were any famous cars or dashboards in geek culture - it hit me like a bolt of lightning on November 12th, 1955!&lt;/p&gt;&lt;p&gt;Once I got a few source images of an original Delorean dashboard and watched all three movies (research is important) I had a better scope of how I wanted to design my Time Machine. I would have to create the analog speedometer, a digital speedometer, and a flux capacitor. Great Scott! Lots to do!&lt;/p&gt;&lt;h3&gt;The Speedometer itself&lt;/h3&gt;&lt;p&gt;The whole assignment hinged on the actual speedometer needle itself. I created a thin div 200px high by 6px wide. By default I needed the needle to rest at 0mph, so I set the default rotation value to &lt;code&gt;-webkit-transform: rotate(-140deg);&lt;/code&gt;. -140&amp;deg; being the zero position on an original Delorean.&lt;/p&gt;&lt;p&gt;Stephanies design hinged the needle right from one end but since I am a car geek as well I know that a lot of speedometers actually hinge slightly above the base leaving a small tail. After some interesting errors I found I could create the effect by calling &lt;code&gt;-webkit-transform-origin: 50% 90%;&lt;/code&gt;. This grabs the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div in the middle very close to the bottom. I added a small div underneath to recreate the base.&lt;/p&gt;&lt;p&gt;Now I had to use Javascript and JQuery to listen for a key press. When the space bar is pressed it targets the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div and adjusts the rotation. I added a &lt;code&gt;-webkit-transition: -webkit-transform: .35s -ease out;&lt;/code&gt; definition to give it a small delay to mimic the lurch between when you hit the gas and when you start accelerating. Now we have a functioning speedometer that rotates the needle as you press the gas but sticks after you let go. Hrm, cruise control must be stuck.  I struggled with this one, but eventually came to the same conclusion that Stephanie and Miles did - by default the vehicle would be decelerating.  I hacked together some ugly Javascript but eventually had to peek at their code and get some inspiration. Finally we had a working speedometer That eases forward when you apply gas, and eases back to 0 as you slow down.&lt;/p&gt;&lt;h3&gt;Going the extra mile&lt;/h3&gt;&lt;p&gt;I also wanted to add a digital speedometer like the one Doc Brown had installed above the time panel and flux capacitor. The data was already in the code I just had to extract and display it correctly. My main issue was with the script being too precise - as it calculates the speed it dumps out a number with around 5-10 trailing decimal places. I did some research and most people recommended a backwards approach of applying math tricks and hacks to round it off but I knew these were inelegant. I knew there had to be a Javascript call to limit the output of a variable to a set number of places, there are plenty of calls to format output like date and time, why not one for decimal points? &lt;code&gt;parseInt()&lt;/code&gt; takes care of that problem, it parses a given string and returns an integer.  Another extra touch was to make sure the digital speedometer always displayed two digits so during our loop the script checks to see if it is less than 10 mph and if it is, it prepends it with a zero. I also wanted to add some functionality to the Flux Capacitor. During the &lt;code&gt;setSpeedometer&lt;/code&gt; loop the script checks to see if the speed is at or above 88mph and if it is, Javascript changes the Capacitor to on.&lt;/p&gt;&lt;p&gt;The more irritating problem was getting the odometer working. Putting on my 8th grade Algebra 1 hat I postulated that since our script cycles at 10 loops/second we had our rate and then could calculate distance. By that logic the loop can figure out how far its travelled in 1/10th of a second at X speed. I had to write some conversion equations in order to change it to MPH for the dial. The odometer even goes up when you are decelerating as well since you are still travelling forward.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Z Index And Positioning</title>
-   <link href="http://cpeak.github.com/blog/2012/03/16/Z-Index-and-Positioning"/>
-   <updated>2012-03-16T00:00:00-05:00</updated>
-   <id>http://cpeak.github.com/blog/2012/03/16/Z-Index-and-Positioning</id>
-   <content type="html">&lt;article&gt;
+    
+    <item>
+      <title>Stay Positive</title>
+      <link>http://cpeak.github.com/blog/2012/04/06/stay-positive</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/04/06/stay-positive</guid>
+      <description>&lt;h2&gt;Stay Positive&lt;/h2&gt;&lt;p&gt;This past week I spent a lot of time working on an internal development project and just working on the design principles I have learned over the past six weeks. I wanted to share a quote that has stuck with my over the past few years from Ira Glass.  Its about staying positive when you know you can do better. This applies to just about any field, but is especially important to those of us with a talent for the creative arts:&lt;/p&gt;&lt;p class='m_quote_block gen_border'&gt;You’ve got to get rid of a lot of crap before you’re going to get anything that’s special. You don’t want to be making mediocre stuff. There’s a gap for the first couple years that you’re making stuff. What you’re making isn’t so good. But your taste, the thing that got you into the game, is good enough that you can tell what you’re making is kind of a disappointment to you. A lot of people at that point, they quit. The thing I would say to you with all my heart is that most everybody I know who does interesting, creative work, went through a phase of years where they had really good taste, they could tell what they were making wasn’t as good as they wanted it to be. They knew it fell short. Everybody goes through that. If you’re going through it right now, or if you’re just starting off and you’re entering into that phase, you’ve got to know its totally normal and the most important thing you could do is a lot of work. Do a huge volume of work because it’s only by actually going through a volume of work that you’re actually going to catch up and close that gap.&lt;br /&gt;&lt;strong&gt;- Ira Glass&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;I know I have come a long way with my development and design but I know that I can do so much better. So while I continue my journey as an 8th Light Resident I need to stay positive and keep learning.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uncle Bob</title>
+      <link>http://cpeak.github.com/blog/2012/03/30/uncle-bob</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/03/30/uncle-bob</guid>
+      <description>&lt;h2&gt;Uncle Bob&lt;/h2&gt;&lt;img class='m_post_image' src='/images/uncle_bob.png' alt='Uncle Bob' /&gt;&lt;p&gt;Another great talk by Uncle Bob on 'The Liskov Substitution Principle' at todays &lt;a href='http://university.8thlight.com'&gt;8th Light University&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Speedometer</title>
+      <link>http://cpeak.github.com/blog/2012/03/30/speedometer</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/03/30/speedometer</guid>
+      <description>&lt;h2&gt;1.21 Giggawatts!&lt;/h2&gt;&lt;h3&gt;The JQuery and Javascript speedometer project&lt;/h3&gt;&lt;img class='m_post_image' src='/images/speedo.png' alt='Javascript speedometer project' /&gt;&lt;h3&gt;The Assignment&lt;/h3&gt;&lt;p&gt;This past week my assignment was to create a digital speedometer using CSS3, JQuery and Javascript, using &lt;a href='http://stephaniebriones.com/speedometer/'&gt;Stephanie's project&lt;/a&gt; as inspiration. The original task came about because Billy and Stephanie had found &lt;a href='http://annyas.com/chevrolet-speedometer-design/'&gt;a set of old dashboard typography&lt;/a&gt;, so the challenge was created as a fun way to hone our skills.&lt;/p&gt;&lt;h3&gt;The Challenges&lt;/h3&gt;&lt;p&gt;The first hurdle was going to be figuring out CSS3's rotate property. Once that was taken care of I would have to get the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div to rotate on key press for acceleration and deceleration, limiting rotation from zero to top speed.  I wanted to take it a step further and add an odometer that displayed distance travelled as well, so a bit of math was going to be involved. On top of everything I also wanted to do something different. I wondered if there were any famous cars or dashboards in geek culture - it hit me like a bolt of lightning on November 12th, 1955!&lt;/p&gt;&lt;p&gt;Once I got a few source images of an original Delorean dashboard and watched all three movies (research is important) I had a better scope of how I wanted to design my Time Machine. I would have to create the analog speedometer, a digital speedometer, and a flux capacitor. Great Scott! Lots to do!&lt;/p&gt;&lt;h3&gt;The Speedometer itself&lt;/h3&gt;&lt;p&gt;The whole assignment hinged on the actual speedometer needle itself. I created a thin div 200px high by 6px wide. By default I needed the needle to rest at 0mph, so I set the default rotation value to &lt;code&gt;-webkit-transform: rotate(-140deg);&lt;/code&gt;. -140&amp;deg; being the zero position on an original Delorean.&lt;/p&gt;&lt;p&gt;Stephanies design hinged the needle right from one end but since I am a car geek as well I know that a lot of speedometers actually hinge slightly above the base leaving a small tail. After some interesting errors I found I could create the effect by calling &lt;code&gt;-webkit-transform-origin: 50% 90%;&lt;/code&gt;. This grabs the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div in the middle very close to the bottom. I added a small div underneath to recreate the base.&lt;/p&gt;&lt;p&gt;Now I had to use Javascript and JQuery to listen for a key press. When the space bar is pressed it targets the &lt;code&gt;&amp;lt;needle&amp;gt;&lt;/code&gt; div and adjusts the rotation. I added a &lt;code&gt;-webkit-transition: -webkit-transform: .35s -ease out;&lt;/code&gt; definition to give it a small delay to mimic the lurch between when you hit the gas and when you start accelerating. Now we have a functioning speedometer that rotates the needle as you press the gas but sticks after you let go. Hrm, cruise control must be stuck.  I struggled with this one, but eventually came to the same conclusion that Stephanie and Miles did - by default the vehicle would be decelerating.  I hacked together some ugly Javascript but eventually had to peek at their code and get some inspiration. Finally we had a working speedometer That eases forward when you apply gas, and eases back to 0 as you slow down.&lt;/p&gt;&lt;h3&gt;Going the extra mile&lt;/h3&gt;&lt;p&gt;I also wanted to add a digital speedometer like the one Doc Brown had installed above the time panel and flux capacitor. The data was already in the code I just had to extract and display it correctly. My main issue was with the script being too precise - as it calculates the speed it dumps out a number with around 5-10 trailing decimal places. I did some research and most people recommended a backwards approach of applying math tricks and hacks to round it off but I knew these were inelegant. I knew there had to be a Javascript call to limit the output of a variable to a set number of places, there are plenty of calls to format output like date and time, why not one for decimal points? &lt;code&gt;parseInt()&lt;/code&gt; takes care of that problem, it parses a given string and returns an integer.  Another extra touch was to make sure the digital speedometer always displayed two digits so during our loop the script checks to see if it is less than 10 mph and if it is, it prepends it with a zero. I also wanted to add some functionality to the Flux Capacitor. During the &lt;code&gt;setSpeedometer&lt;/code&gt; loop the script checks to see if the speed is at or above 88mph and if it is, Javascript changes the Capacitor to on.&lt;/p&gt;&lt;p&gt;The more irritating problem was getting the odometer working. Putting on my 8th grade Algebra 1 hat I postulated that since our script cycles at 10 loops/second we had our rate and then could calculate distance. By that logic the loop can figure out how far its travelled in 1/10th of a second at X speed. I had to write some conversion equations in order to change it to MPH for the dial. The odometer even goes up when you are decelerating as well since you are still travelling forward.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Z Index And Positioning</title>
+      <link>http://cpeak.github.com/blog/2012/03/16/Z-Index-and-Positioning</link>
+      <pubDate>Fri, 16 Mar 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/03/16/Z-Index-and-Positioning</guid>
+      <description>&lt;article&gt;
   &lt;h2&gt;Sorting out Position &amp;amp; Z-Index Properties&lt;/h2&gt;
   &lt;p&gt;One concept of web design that can trip up beginners and less-experienced developers is the &lt;code&gt;position&lt;/code&gt; &amp;amp; &lt;code&gt;z-index&lt;/code&gt; properties.  CSS gives the designer flexibility to move elements around the page freely, and not just in two dimensions.  Using these two properties you can stack and layer divs so they flow above, below, and through each other. However when elements are positioned differently they are taken out of the normal flow of the document. Lets take a look&lt;/p&gt;
   &lt;h3&gt;Position&lt;/h3&gt;
@@ -54,15 +56,16 @@
   &lt;p&gt;Just to further the complexity, lets take a look, at &lt;code&gt;z-index&lt;/code&gt;.  This property allows us to stack our elements in 3 dimensions, just like an animator with multiple cells creating a layered effect, we can leverage it to create some interesting designs. If left un-defined any element will have a default &lt;code&gt;z-index&lt;/code&gt; of 0. A div set to 10 will render above, and -10 will render below.  Combine this with the &lt;code&gt;position&lt;/code&gt; property and your design is infinitely more flexible.&lt;/p&gt;
   &lt;h3&gt;Bring it all together&lt;/h3&gt;
   &lt;p&gt;You can go even &lt;em&gt;further&lt;/em&gt; down the rabbit hole by throwing JQuery into the mix, dynamically changing &lt;code&gt;z-index&lt;/code&gt; properties on the fly.  Just remember these are garnishes, if you start moving things around and re-stacking tons of elements things will probably start mis-behaving, or worse confuse your visitors. These are tools any good developer should have in their bag, but remember to &lt;em&gt;use the correct tool for the job&lt;/em&gt;.&lt;/p&gt;
-&lt;/article&gt;</content>
- </entry>
- 
- <entry>
-   <title>Music Theory</title>
-   <link href="http://cpeak.github.com/blog/2012/03/09/Music-Theory"/>
-   <updated>2012-03-09T00:00:00-06:00</updated>
-   <id>http://cpeak.github.com/blog/2012/03/09/Music-Theory</id>
-   <content type="html">&lt;article&gt;
+&lt;/article&gt;</description>
+    </item>
+    
+    <item>
+      <title>Music Theory</title>
+      <link>http://cpeak.github.com/blog/2012/03/09/Music-Theory</link>
+      <pubDate>Fri, 09 Mar 2012 00:00:00 -0600</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/03/09/Music-Theory</guid>
+      <description>&lt;article&gt;
   &lt;h2&gt;Music Theory and Web Design?&lt;/h2&gt;
   &lt;p&gt;In my last post I discussed some practices I have been learning in order to clean up my HTML5 and CSS code on the back end.  This week I have been working on how to improve my typography, design, and layout using a grid based approach aided by the modular scale.&lt;/p&gt;
   &lt;h3&gt;Modular Scale&lt;/h3&gt;
@@ -74,15 +77,16 @@
   &lt;img src='/images/grid_layout.png' alt='Grid Based Layout' /&gt;
   &lt;p&gt;As you can see in the photo above, the main article uses roughly 3 columns, then a gutter, then the sidebar uses precisely 2. Now the layout has a much better and more consistent flow. The photo and caption sit nicely in the second and third column, and to create some tension I made sure the article didn't flow all the way over to the edge of the 3rd column.&lt;/p&gt;
   &lt;p&gt;Just remember that these are guidelines and can be broken when necessary. Bending or breaking these rules create tension and unique design... just be careful when you stray from your scales .&lt;/p&gt;
-&lt;/article&gt;</content>
- </entry>
- 
- <entry>
-   <title>Breaking The Habit</title>
-   <link href="http://cpeak.github.com/blog/2012/03/02/Breaking-the-habit"/>
-   <updated>2012-03-02T00:00:00-06:00</updated>
-   <id>http://cpeak.github.com/blog/2012/03/02/Breaking-the-habit</id>
-   <content type="html">&lt;h2&gt;Breaking The Habit&lt;/h2&gt;&lt;p&gt;Over the past two weeks I have done a lot of reading while diving back into HTML &amp;amp; CSS coding and reviewing the work habits that got me here. Previously I felt my code was strutting like John Travolta in &lt;em&gt;Saturday Night Fever&lt;/em&gt;, but the more I learn it's looking more like Disco Stu.  I am largely self-taught, which in of itself is not a bad thing, but over the years I have developed some bad habits and peculiar idiosyncrasies. Now that I am doing this for a living it's time to break those habits and lay a solid foundation to grow as a professional developer.&lt;/p&gt;&lt;p&gt;Like a lot websites out there my old projects were a big jumble of div IDs and classes using a pseudo-semantic formula that seemed to work well for me at the time. Typical sites would have a &amp;lt;div id=&quot;header&quot;&amp;gt;, a &amp;lt;div id=&quot;nav&quot;&amp;gt;, a few layout divs, some content classes and a &amp;lt;div id=&quot;footer&quot;&amp;gt;, however I never set my naming conventions in stone. Now HTML5 has introduced some new elements that will help make markup and structure more concise and descriptive - better for maintenance, better for human eyes, and better for accessibility.&lt;/p&gt;&lt;p&gt;In my last job I would occasionally get web re-design projects put on my plate, and as a developer there are few things scarier than having to pull the lid off an older website, invariably written by the client's teenage neighbor, and see how utterly terribly it was built in the first place. Markup filled with unconventional naming practices, little or no documentation, or even (*shuddering*) table-based layouts. So lets take a look at some things that we can do to break these habits so we can produce well written, clean, semantic, thoughtful, and efficient code. Now, where do we begin?&lt;/p&gt;&lt;h3&gt;Better semantics in HTML5 &lt;/h3&gt;&lt;p&gt;One of the main goals for the new HTML5 spec was to remove ambiguity by adding concise elements. Some of the bigger additions are: &amp;lt;header&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;article&amp;gt; &amp;lt;aside&amp;gt; and &amp;lt;section&amp;gt;. I could easily fall down the rabbit hole explaining all these, but there are &lt;a href='http://html5doctor.com/'&gt;plenty of other resources&lt;/a&gt; explaining each one in detail. By using these tags as our base skeleton for a site we now have a solid foundation to build from:&lt;/p&gt;&lt;code&gt;
+&lt;/article&gt;</description>
+    </item>
+    
+    <item>
+      <title>Breaking The Habit</title>
+      <link>http://cpeak.github.com/blog/2012/03/02/Breaking-the-habit</link>
+      <pubDate>Fri, 02 Mar 2012 00:00:00 -0600</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/03/02/Breaking-the-habit</guid>
+      <description>&lt;h2&gt;Breaking The Habit&lt;/h2&gt;&lt;p&gt;Over the past two weeks I have done a lot of reading while diving back into HTML &amp;amp; CSS coding and reviewing the work habits that got me here. Previously I felt my code was strutting like John Travolta in &lt;em&gt;Saturday Night Fever&lt;/em&gt;, but the more I learn it's looking more like Disco Stu.  I am largely self-taught, which in of itself is not a bad thing, but over the years I have developed some bad habits and peculiar idiosyncrasies. Now that I am doing this for a living it's time to break those habits and lay a solid foundation to grow as a professional developer.&lt;/p&gt;&lt;p&gt;Like a lot websites out there my old projects were a big jumble of div IDs and classes using a pseudo-semantic formula that seemed to work well for me at the time. Typical sites would have a &amp;lt;div id=&quot;header&quot;&amp;gt;, a &amp;lt;div id=&quot;nav&quot;&amp;gt;, a few layout divs, some content classes and a &amp;lt;div id=&quot;footer&quot;&amp;gt;, however I never set my naming conventions in stone. Now HTML5 has introduced some new elements that will help make markup and structure more concise and descriptive - better for maintenance, better for human eyes, and better for accessibility.&lt;/p&gt;&lt;p&gt;In my last job I would occasionally get web re-design projects put on my plate, and as a developer there are few things scarier than having to pull the lid off an older website, invariably written by the client's teenage neighbor, and see how utterly terribly it was built in the first place. Markup filled with unconventional naming practices, little or no documentation, or even (*shuddering*) table-based layouts. So lets take a look at some things that we can do to break these habits so we can produce well written, clean, semantic, thoughtful, and efficient code. Now, where do we begin?&lt;/p&gt;&lt;h3&gt;Better semantics in HTML5 &lt;/h3&gt;&lt;p&gt;One of the main goals for the new HTML5 spec was to remove ambiguity by adding concise elements. Some of the bigger additions are: &amp;lt;header&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;article&amp;gt; &amp;lt;aside&amp;gt; and &amp;lt;section&amp;gt;. I could easily fall down the rabbit hole explaining all these, but there are &lt;a href='http://html5doctor.com/'&gt;plenty of other resources&lt;/a&gt; explaining each one in detail. By using these tags as our base skeleton for a site we now have a solid foundation to build from:&lt;/p&gt;&lt;code&gt;
     &amp;lt;header&amp;gt; &lt;br /&gt;
     &amp;emsp; &amp;lt;nav&amp;gt; &lt;br /&gt;
     &amp;emsp; &amp;lt;section id=&quot;main_content&quot;&amp;gt; &lt;br /&gt;
@@ -112,8 +116,9 @@
   &amp;emsp;text-align: left;&lt;br /&gt;
   &amp;emsp;width: 96%;&lt;br /&gt;
   }&lt;br /&gt;
-  &lt;/code&gt;&lt;p&gt;Keep in mind you are not the only one who is going to have your hands on the code. Above all else, removing comments to save space is just downright unprofessional.  Is it fair to leave the next developer working on the project an un-documented mess? Is it fair to your client?  I wouldn't want someone doing that to me, and I am surely not going to do it to someone else.&lt;/p&gt;&lt;h3&gt;Why all the trouble?&lt;/h3&gt;&lt;p&gt;We are in an interesting place in web-history right now.  Back in the 90's the web was a mess - sites were optimized for specific browsers, animated gif's were everywhere, and my god, the &amp;lt;blink&amp;gt; tags! During the 00's things were getting better, standards and practices started emerging but it took the better part of the decade get where we are now. As websites start blurring the line between pages and applications we have a responsibility to gather as a community and craft the best code we can. Semantics give meaning while removing ambiguity - cleaner and easier maintained code, better accessibility.&lt;/p&gt;&lt;p&gt;Above all else - using clear, concise markup shows professionalism.  Just like the furniture maker who actually takes time to finish the underside of the cabinet drawers, a craftsman takes pride in every aspect of his or her work.  Take pride in your HTML, take pride in your CSS, and take pride in your markup. If not for anything else just create something you can be proud of.&lt;/p&gt;</content>
- </entry>
- 
- 
-</feed>
+  &lt;/code&gt;&lt;p&gt;Keep in mind you are not the only one who is going to have your hands on the code. Above all else, removing comments to save space is just downright unprofessional.  Is it fair to leave the next developer working on the project an un-documented mess? Is it fair to your client?  I wouldn't want someone doing that to me, and I am surely not going to do it to someone else.&lt;/p&gt;&lt;h3&gt;Why all the trouble?&lt;/h3&gt;&lt;p&gt;We are in an interesting place in web-history right now.  Back in the 90's the web was a mess - sites were optimized for specific browsers, animated gif's were everywhere, and my god, the &amp;lt;blink&amp;gt; tags! During the 00's things were getting better, standards and practices started emerging but it took the better part of the decade get where we are now. As websites start blurring the line between pages and applications we have a responsibility to gather as a community and craft the best code we can. Semantics give meaning while removing ambiguity - cleaner and easier maintained code, better accessibility.&lt;/p&gt;&lt;p&gt;Above all else - using clear, concise markup shows professionalism.  Just like the furniture maker who actually takes time to finish the underside of the cabinet drawers, a craftsman takes pride in every aspect of his or her work.  Take pride in your HTML, take pride in your CSS, and take pride in your markup. If not for anything else just create something you can be proud of.&lt;/p&gt;</description>
+    </item>
+    
+
+  </channel> 
+</rss>

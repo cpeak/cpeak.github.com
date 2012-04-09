@@ -7,9 +7,11 @@ http://cpeak.github.com/index.html
 http://cpeak.github.com/pages.html
 http://cpeak.github.com/projects.html
 http://cpeak.github.com/resources.html
+http://cpeak.github.com/rss.xml
 http://cpeak.github.com/sitemap.txt
 http://cpeak.github.com/tags.html
 
+http://cpeak.github.com/blog/2012/04/06/stay-positive
 http://cpeak.github.com/blog/2012/03/30/uncle-bob
 http://cpeak.github.com/blog/2012/03/30/speedometer
 http://cpeak.github.com/blog/2012/03/16/Z-Index-and-Positioning
