@@ -5,13 +5,13 @@ header : Post Archive
 group: navigation
 ---
 <div class="post l_overflow">
-<section class="m_archives_list">
+<section class="l_half_col l_left">
 <h2>Archive Posts</h2>
   {% assign posts_collate = site.posts %}
   {% include JB/posts_collate %}
 </section>
 
-<section class="m_tags_list">
+<section class="l_half_col l_right">
 <h2>Tags</h2>
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}  

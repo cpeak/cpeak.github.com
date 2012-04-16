@@ -6,12 +6,12 @@
 
 
 
-.m_archives_list {
-  float: left; 
-  margin-right: 39px;
-  width: 388px;
+#m_flip_container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 60px; 
+  width: 500px;
 }
-
 /* ############## INDIVIDUAL BLOG POSTS ################### */
 
 /* Post Date tags that float left */
@@ -75,11 +75,6 @@
 /* ###################################################### */
 /* ############## ARCHIVE TAGS ########################## */
 
-.m_tags_list { 
-  float: left; 
-  width: 350px;
-}
-
 .m_tools_list h4 { margin-top: 20px; }
 
 .tag_box {
@@ -117,4 +112,18 @@
 .m_resources_list {
   list-style: none; 
 }
+
+
+
+.m_flip_book {
+  border: 1px solid #ccc;
+  height: 400px;
+  margin: 0 auto 10px auto;
+  width: 600px;
+}
+
+
+
+/* ################################ */
+
 

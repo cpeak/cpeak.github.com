@@ -11,6 +11,9 @@
 .l_center { margin: 0 auto; }
 
 
+
+.l_half_col { width: 385px; }
+
 .l_overflow { overflow: hidden; padding-bottom: 15px;  }
 
 .l_portrait { padding: 5px 15px 0px 0px; }

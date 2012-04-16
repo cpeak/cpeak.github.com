@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Thoughts on Design</title>
+    <title>Flipping The Div</title>
     
     <meta name="author" content="">
 
@@ -114,16 +114,10 @@
 
 <div class="container">
   <div class="content">
-    <!-- <div class="page-header">
-  <h1>Thoughts on Design  <small>An 8th Light Residency</small></h1>
-</div> -->
-
-<div class='m_post_date'><a href='/blog/2012/04/13/flipping-the-div'>Flipping The Div</a> &raquo; <span>13 Apr 2012</span></div><div class='post'>
-    <article class='unit-article layout-post'>
-    <div class='unit-inner unit-article-inner'>
-            <div class='bd'>
-                <div class='entry-content'>
-                    <h2>Flipping The Div</h2><p>I just wrapped up reading <a href='http://hardboiledwebdesign.com/'><em>Hardboiled Web Design</em></a> by Andy Clarke, which is a fantastic read and I highly recommend it. I really enjoyed one specific example he used in the book and I wanted to really go over each line of code to get a solid understanding of how it worked.  In the book he goes through and creates a mock online book store, and one feature was clicking on the book cover and it flips around to reveal the information on the backside. Here is what it looks like:</p><div id='m_flip_container'>
+    
+<div class="row">
+  <div class="span8">
+    <h2>Flipping The Div</h2><p>I just wrapped up reading <a href='http://hardboiledwebdesign.com/'><em>Hardboiled Web Design</em></a> by Andy Clarke, which is a fantastic read and I highly recommend it. I really enjoyed one specific example he used in the book and I wanted to really go over each line of code to get a solid understanding of how it worked.  In the book he goes through and creates a mock online book store, and one feature was clicking on the book cover and it flips around to reveal the information on the backside. Here is what it looks like:</p><div id='m_flip_container'>
 
 <div class='item' id='s01'>
 <div class='inner'>
@@ -165,38 +159,46 @@ $('div.item a[hash^=#]').click(function (event) {
 </script>
 </div>
 </div><p>In the example the author used books in a bookstore, however since I am a photographer I thought it would be a interesting way to present information about a particular photograph. First I setup the two 'front' div's with unique ID's so we can target them individually.  The entire front div is a link which targets itself led by a hash - this allows the script to listen for specific links so it can apply the flip class using JQuery. Once the script on the page triggers the flip class, CSS3 Animations can do the heavy work.</p><p>Using <code>.cssanimations</code>, we can achieve our flip effect using just a few attributes. First and foremost is the <code>transform: rotateY(180deg);</code>, which flips our div 180&deg; on the Y axis. This achieves the basic functionality of flipping the photograph, but we want to really make it pop. We can add two more attributes to make the design really jump: <code>perspective</code> which keeps the div centered during the animation &amp; <code>transform-style: preserve-3d</code>, which obviously preserves the three-dimensional effect. Once the transform has been triggered the script also toggles visibility of the 'back' of the photo so it swings around and appears to be attached to the back. Another good idea is to have the script toggle the flip class so that only one div can be flipped at once, so when the user clicks another book, or photo in our case, it flips the last one back into place.</p><p>Now one big hurdle is how do we clue the user into the fact that there is additional information on the back of these photos? We could add some sort of icon on each, but that is clunky and not very straightforward. Instead lets have the script fire on page load to give a quick peek at the back then flip over again to its original position. This lets the visitor know that there is additional content on the back of each item and encourages them to click on them to find it.</p><p>This is a very brief description of the entire process, so in future posts I will break down each individual attribute so we can get a solid working understanding of how <code>.cssanimations</code> can add an extra flourish to our designs.</p>
-                </div><!-- entry-content -->
-            </div><!-- bd -->
-    </div><!-- unit-inner -->
-</article>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/blog/2012/04/09/rss-functionality" title="Rss Functionality">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+     
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>13 April 2012</span></div>
 
-    <div class='m_post_break'> </div>
-</div><div class='m_post_date'><a href='/blog/2012/04/09/rss-functionality'>Rss Functionality</a> &raquo; <span>09 Apr 2012</span></div><div class='post'>
-    <article class='unit-article layout-post'>
-    <div class='unit-inner unit-article-inner'>
-            <div class='bd'>
-                <div class='entry-content'>
-                    <h2>New: RSS/Atom Feed Support</h2><p>Today I added RSS and Atom feed support for my residency blog. Thanks to GitHub user <a href='https://github.com/coyled/coyled.com'>Dave Coyle</a> for the Jekyll Atom &amp; RSS templates, as well as a tip of the hat to <a href='https://github.com/beporter'>beporter</a> for the link. If you want to subscribe to my blog, just add <a href='http://cpeak.github.com/rss.xml'>http://cpeak.github.com/rss.xml</a> to your reader of choice.</p>
-                </div><!-- entry-content -->
-            </div><!-- bd -->
-    </div><!-- unit-inner -->
-</article>
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
 
-    <div class='m_post_break'> </div>
-</div><div class='m_post_date'><a href='/blog/2012/04/06/stay-positive'>Stay Positive</a> &raquo; <span>06 Apr 2012</span></div><div class='post'>
-    <article class='unit-article layout-post'>
-    <div class='unit-inner unit-article-inner'>
-            <div class='bd'>
-                <div class='entry-content'>
-                    <h2>Stay Positive</h2><p>This past week I spent a lot of time working on an internal development project and just working on the design principles I have learned over the past six weeks. I wanted to share a quote that has stuck with my over the past few years from Ira Glass.  Its about staying positive when you know you can do better. This applies to just about any field, but is especially important to those of us with a talent for the creative arts:</p><p class='m_quote_block gen_border'>You’ve got to get rid of a lot of crap before you’re going to get anything that’s special. You don’t want to be making mediocre stuff. There’s a gap for the first couple years that you’re making stuff. What you’re making isn’t so good. But your taste, the thing that got you into the game, is good enough that you can tell what you’re making is kind of a disappointment to you. A lot of people at that point, they quit. The thing I would say to you with all my heart is that most everybody I know who does interesting, creative work, went through a phase of years where they had really good taste, they could tell what they were making wasn’t as good as they wanted it to be. They knew it fell short. Everybody goes through that. If you’re going through it right now, or if you’re just starting off and you’re entering into that phase, you’ve got to know its totally normal and the most important thing you could do is a lot of work. Do a huge volume of work because it’s only by actually going through a volume of work that you’re actually going to catch up and close that gap.<br /><strong>- Ira Glass</strong></p><p>I know I have come a long way with my development and design but I know that I can do so much better. So while I continue my journey as an 8th Light Resident I need to stay positive and keep learning.</p>
-                </div><!-- entry-content -->
-            </div><!-- bd -->
-    </div><!-- unit-inner -->
-</article>
 
-    <div class='m_post_break'> </div>
-</div><div class='post'>
-  <p><a href='/archive.html'>Older Posts &raquo;</a></p>
+  
+     
+    	<li><a href="/tags.html#CSS3-ref">CSS3 <span>3</span></a></li>
+     
+    	<li><a href="/tags.html#cssanimations-ref">cssanimations <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
 </div>
 
 
