@@ -1,0 +1,9 @@
+/* Speedometer CSS */
+
+body {
+  position: relative;
+  background: #222; 
+}
+
+p { margin: 0; padding: 0; }
+
