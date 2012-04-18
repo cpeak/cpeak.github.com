@@ -2,28 +2,122 @@
   - Chris Peak
   - 04/03/2012 
   - SCALE: 12 16 -22- 30 39 52 69
+
+
+
+
+  INDEX
+
+  =H HEADER AND NAVIGATION
+  =F FOOTER
+
+  =OV OVERRIDES & POST SPECIFIC
+  =T TYPOGRAPHY
+
  */
 
 
+.content {
+  border-right: 1px solid #f2f2f2; 
+  border-bottom: 1px solid #ccc; 
 
-#m_flip_container {
+  position: relative;
+  background-color: #fff;
   margin: 0 auto;
-  overflow: hidden;
-  padding-top: 60px; 
-  width: 500px;
+  padding: 20px 0px 0px 0px;
+  width: 895px;
 }
+
+.content p { 
+  color: #333;
+  font-family: "prenton",sans-serif;
+  font-size: 22px;
+  line-height: 1.655em;
+  padding-bottom: 15px; 
+ }
+
+
+
+
+/* ############################################## */
+/* ########### HEADER & NAVIGATION ############## */
+/* 
+
+  =H HEADER AND NAVIGATION
+
+*/
+
+header { 
+  background: #222; 
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
+  border-top: 1px solid #000; 
+  border-bottom: 1px solid #000;
+}
+
+header a { text-decoration: none; }
+
+.navbar .brand{
+  float:left;
+  font-family: "bistro-script-web";
+  font-size: 39px;
+  padding: 5px 30px 0px 20px;
+  color:#ffffff;
+}
+
+.navbar {
+  height: 63px;
+  margin: 0 auto;
+  width: 900px; 
+}
+
+.nav a.active { background: #333; color: #fff; }
+
+.nav { 
+  float: left;  
+  margin: 0; 
+  padding: 19px 0px 0px 0px; 
+  width: 400px; 
+}
+
+.nav li { display: inline; }
+
+.nav li a {
+  border-radius: 3px; 
+  color: #bbb; 
+  font-family: "prenton", sans-serif;
+  margin-top: 10px; 
+  padding: 8px 10px;
+}
+
+.nav li a:hover { background-color: #990000; color: #fff !important;  }
+
+/* ########### FOOTER ########################### */
+/* =F						  */
+
+footer { margin: 15px;  }
+footer p {
+  color: #ccc;
+  text-align: center; 
+  text-shadow: 0px -1px 1px #fff; 
+}
+
+
+
+
 /* ############## INDIVIDUAL BLOG POSTS ################### */
 
 /* Post Date tags that float left */
 .m_post_date { 
-  background: #fefefe;
+  background: #5a80b4;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #f2f2f2; 
-  color: #999; 
+  color: #bdcfe8; 
   display: inline-block;
   padding: 5px 15px;  
   margin: 10px 0px 0px -18px;
 }
+.m_post_date a { color: #fff; }
+.m_post_date a:hover { color: #bdcfe8; }
 
 /* Dashed line between posts */
 .m_post_break {	
@@ -39,9 +133,12 @@
   margin-top: 5px;
 }
 
+.post { margin-bottom: 40px; padding: 0px 55px; }
+
+
 /* ###################################################### */
 /* ############## PROJECTS MODULES ###################### */
-
+/* Projects page > Design challenges			  */
 
 .m_project {
   display: block;
@@ -57,20 +154,6 @@
   line-height: 1.15em; 
 }
 .m_project_image { border-bottom: 1px solid #ccc; }
-
-
-
-
-.m_quote_block {
-  background: rgba(229, 233, 243, .5);
-  border-radius: 3px;
-  font-size: 18px !important;
-  font-style: italic;
-  margin: 15px auto;
-  padding: 20px;
-  width: 80%; 
-}
-
 
 /* ###################################################### */
 /* ############## ARCHIVE TAGS ########################## */
@@ -105,15 +188,39 @@
 }
 
 .tag_box a:hover { color: #000; }
-/* ######################## */
 
 
 
-.m_resources_list {
-  list-style: none; 
+/* ################################# */
+/* TYPOGRAPHY			     */
+/* =T		  		     */
+
+
+
+
+.t_quote_block {
+  background: rgba(229, 233, 243, .5);
+  border-radius: 3px;
+  font-size: 18px !important;
+  font-style: italic;
+  margin: 15px auto;
+  padding: 20px 40px 50px 40px;
+  width: 80%; 
 }
 
 
+
+
+/* ################################# */
+/* Overrides and Post Specific Calls */
+/* =OV OVERRIDES		     */
+
+#m_flip_container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 60px; 
+  width: 500px;
+}
 
 .m_flip_book {
   border: 1px solid #ccc;
@@ -121,9 +228,4 @@
   margin: 0 auto 10px auto;
   width: 600px;
 }
-
-
-
-/* ################################ */
-
 

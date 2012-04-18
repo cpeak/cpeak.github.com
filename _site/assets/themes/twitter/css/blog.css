@@ -5,11 +5,6 @@
  */
 
 
-
-/* ########### GLOBALS ########################## */
-/* ############################################## */
-
-
 html, body {
   background-color: #f9f9f9;
   font-family: "prenton", sans-serif;
@@ -38,102 +33,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; 
 }
 
-h2 { font-size: 52px; }
+h2 { font-size: 52px; padding: 20px 0px 15px 0px; }
 h3 { font-size: 39px; margin-top: 15px;  }
 h4 { font-size: 30px; }
 
 p { margin: 0; }
 
-
-/* ########### HEADER & NAVIGATION ############## */
-/* ############################################## */
-
-header { 
-  background: #222; 
-  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
-  border-top: 1px solid #000; 
-  border-bottom: 1px solid #000;
-}
-
-header a { text-decoration: none; }
-
-.navbar .brand{
-  float:left;
-  font-family: "bistro-script-web";
-  font-size: 39px;
-  padding: 5px 30px 0px 20px;
-  color:#ffffff;
-}
-
-.navbar {
-  height: 63px;
-  margin: 0 auto;
-  width: 900px; 
-}
-
-.nav a.active { background: #333; color: #fff; }
-
-.nav { 
-  float: left;  
-  margin: 0; 
-  padding: 19px 0px 0px 0px; 
-  width: 400px; 
-}
-
-.nav li { display: inline; }
-
-.nav li a {
-  border-radius: 3px; 
-  color: #bbb; 
-  font-family: "prenton", sans-serif;
-  margin-top: 10px; 
-  padding: 8px 10px;
-}
-
-.nav li a:hover { background-color: #990000; color: #fff !important;  }
-
-
-/* ############################################## */
-
-
-
-/* ############### BODY ######################### */
-/* ############################################## */
-
-
-.content {
-  /* border-left: 1px solid #eee; */
-  border-right: 1px solid #f2f2f2; 
-  border-bottom: 1px solid #ccc; 
-
-  position: relative;
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 0px 0px 0px 0px;
-  width: 895px;
-}
-
-.content p { 
-  color: #333;
-  font-family: "prenton",sans-serif;
-  font-size: 22px;
-  line-height: 1.655em;
- }
-
-.post { margin-bottom: 40px; padding: 0px 39px; }
-.post h2 { margin-top: 5px; }
-
-/* ########### FOOTER ########################### */
-/* ############################################## */
-
-footer { margin: 15px;  }
-footer p {
-  color: #ccc;
-  text-align: center; 
-  text-shadow: 0px -1px 1px #fff; 
-}
-
-
+ul { list-style: none; }
 
 .row { padding: 40px; } /* Bootstrap hack - need to fix */
 
