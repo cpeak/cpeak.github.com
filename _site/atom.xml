@@ -4,13 +4,21 @@
  <title>Thoughts on Design</title>
  <link href="http://cpeak.github.com/atom.xml" rel="self"/>
  <link href="http://cpeak.github.com"/>
- <updated>2012-04-17T21:58:10-05:00</updated>
+ <updated>2012-04-18T10:17:08-05:00</updated>
  <id>http://cpeak.github.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Share What You Learn</title>
+   <link href="http://cpeak.github.com/blog/2012/04/18/share-what-you-learn"/>
+   <updated>2012-04-18T00:00:00-05:00</updated>
+   <id>http://cpeak.github.com/blog/2012/04/18/share-what-you-learn</id>
+   <content type="html">&lt;h2&gt;Share What You Learn&lt;/h2&gt;&lt;p&gt;Yesterday Darek asked for some help with an application he is writing, so we did a quick UI get together which actually was one of the best moments I have had at 8th Light thus far. To this point I have been rolling full-steam ahead on learning as much as I can and honing my craft. I have helped apprentices out here and there as well contributed during project iteration meetings, but nothing has really made me as happy as just banging out a UI and teaching the finer points of my craft and what I have learned so far.&lt;/p&gt;&lt;p&gt;We sat down and talked about an interface for a run-logging application he is working on, sketching out some ideas together. I explained how I look at designing a user interface as a workflow with beginning, middle, and end states, and try to envision how the flow of the app will work.  I shared a bit of my experience with him and even learned more about how developers tackle the same problem I would. Even though it was only 10 minutes, it made my day. I can't wait to see what he comes up with.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Flipping The Div</title>
