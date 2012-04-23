@@ -118,7 +118,19 @@
   <h1>Thoughts on Design  <small>An 8th Light Residency</small></h1>
 </div> -->
 
-<div class='m_post_date'><a href='/blog/2012/04/18/share-what-you-learn'>Share What You Learn</a> &raquo; <span>18 Apr 2012</span></div><div class='post'>
+<div class='m_post_date'><a href='/blog/2012/04/21/love-your-solution'>Love Your Solution</a> &raquo; <span>21 Apr 2012</span></div><div class='post'>
+    <article class='unit-article layout-post'>
+    <div class='unit-inner unit-article-inner'>
+            <div class='bd'>
+                <div class='entry-content'>
+                    <h2>Love your solution</h2><p>I recently sat up late one night obsessing over a tiny detail of an app we are working on and I had one of those fantastic moments when I came up with a solution that I absolutely loved. One of those moments where you can't work fast enough to implement your idea. These are the details that shine, but they make the less-than-ideal parts stand out even more.  Programmers often talk about 'smells'- various bits of code that aren't quite up to par, and the same is true for UI/UX. If you're sitting in a meeting and not anxious to show off your design, something smells. You know you've done a great job when you want to show off your solution and point out all the little detais. Take pride in your work and make sure at the end of the day it's something worthy of putting your name on.</p><h3>Kill the lazy</h3><p>I was in a meeting and while the team was presenting our application they clicked on a link and up popped a window - formatted with legacy code, didn't fit into the new design, one of those little nooks that is so easy to overlook.  My face and neck got hot and I knew that was one thing that should have been done but wasn't.  I fed myself a few excuses about why I didn't get around to it, but in the end they were just excuses. I was too lazy to put in the extra effort and finish the job. At some point last week I decided to call it a day and catch the train home instead of saying 'I'll stay late, finish this up, and catch the next train'. Yes, sometimes there is too much to do and not enough time to do it, but if you want to be successful learn to find those moments and kill em. Work hard, stay late, sweat the details. Those lazy moments keep your design from being awesome. I don't care if its one button in the 'edit client' popup, or the entire UI for an application, I want to find the best design for it and say 'I did that!'. </p><h3>Be Thankful</h3><p>Aaron Draplin recently posted a video of one of his talks, <em><a href='http://vimeo.com/39441590'>The DDC 50 Point Plan To Ruin Yer Career</a></em> (thanks to <a href='http://www.37signals.com/svn'>37signals</a>) which I highly recommend watching. Blunt and to the point, he makes some great points applicable to anyone in any field and I wanted to share the last point from the talk: <strong><em>Be thankful for everything.</em></strong> I still can't believe I am where I am today, doing what I absolutely love and am able to support myself! I am extremely thankful and I try to remind myself every day. </p>
+                </div><!-- entry-content -->
+            </div><!-- bd -->
+    </div><!-- unit-inner -->
+</article>
+
+    <div class='m_post_break'> </div>
+</div><div class='m_post_date'><a href='/blog/2012/04/18/share-what-you-learn'>Share What You Learn</a> &raquo; <span>18 Apr 2012</span></div><div class='post'>
     <article class='unit-article layout-post'>
     <div class='unit-inner unit-article-inner'>
             <div class='bd'>
@@ -177,18 +189,6 @@ $('div.item a[hash^=#]').click(function (event) {
 </script>
 </div>
 </div><p>In the example the author used books in a bookstore, however since I am a photographer I thought it would be a interesting way to present information about a particular photograph. First I setup the two 'front' div's with unique ID's so we can target them individually.  The entire front div is a link which targets itself led by a hash - this allows the script to listen for specific links so it can apply the flip class using JQuery. Once the script on the page triggers the flip class, CSS3 Animations can do the heavy work.</p><p>Using <code>.cssanimations</code>, we can achieve our flip effect using just a few attributes. First and foremost is the <code>transform: rotateY(180deg);</code>, which flips our div 180&deg; on the Y axis. This achieves the basic functionality of flipping the photograph, but we want to really make it pop. We can add two more attributes to make the design really jump: <code>perspective</code> which keeps the div centered during the animation &amp; <code>transform-style: preserve-3d</code>, which obviously preserves the three-dimensional effect. Once the transform has been triggered the script also toggles visibility of the 'back' of the photo so it swings around and appears to be attached to the back. Another good idea is to have the script toggle the flip class so that only one div can be flipped at once, so when the user clicks another book, or photo in our case, it flips the last one back into place.</p><p>Now one big hurdle is how do we clue the user into the fact that there is additional information on the back of these photos? We could add some sort of icon on each, but that is clunky and not very straightforward. Instead lets have the script fire on page load to give a quick peek at the back then flip over again to its original position. This lets the visitor know that there is additional content on the back of each item and encourages them to click on them to find it.</p><p>This is a very brief description of the entire process, so in future posts I will break down each individual attribute so we can get a solid working understanding of how <code>.cssanimations</code> can add an extra flourish to our designs.</p>
-                </div><!-- entry-content -->
-            </div><!-- bd -->
-    </div><!-- unit-inner -->
-</article>
-
-    <div class='m_post_break'> </div>
-</div><div class='m_post_date'><a href='/blog/2012/04/09/rss-functionality'>Rss Functionality</a> &raquo; <span>09 Apr 2012</span></div><div class='post'>
-    <article class='unit-article layout-post'>
-    <div class='unit-inner unit-article-inner'>
-            <div class='bd'>
-                <div class='entry-content'>
-                    <h2>New: RSS/Atom Feed Support</h2><p>Today I added RSS and Atom feed support for my residency blog. Thanks to GitHub user <a href='https://github.com/coyled/coyled.com'>Dave Coyle</a> for the Jekyll Atom &amp; RSS templates, as well as a tip of the hat to <a href='https://github.com/beporter'>beporter</a> for the link. If you want to subscribe to my blog, just add <a href='http://cpeak.github.com/rss.xml'>http://cpeak.github.com/rss.xml</a> to your reader of choice.</p>
                 </div><!-- entry-content -->
             </div><!-- bd -->
     </div><!-- unit-inner -->
