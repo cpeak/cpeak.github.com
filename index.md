@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thoughts on Design
+title: Thoughts on ...
 tagline: An 8th Light Residency
 ---
 
