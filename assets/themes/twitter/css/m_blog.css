@@ -37,6 +37,18 @@
  }
 
 
+.m_code_block {
+  background: #f4f4f4;
+  border: 1px solid #ccc; 
+  color: #333; 
+  display: inline-block;
+  float: left; 
+  font-size: 1.5em;
+  padding: 10px 10px 20px 10px;  
+  margin: 5px 15px;
+}
+
+
 
 
 /* ############################################## */

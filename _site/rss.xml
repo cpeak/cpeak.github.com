@@ -6,9 +6,51 @@
     <atom:link href="http://cpeak.github.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Chris Peak - Residency Blog</description>
     <language>en-us</language>
-    <pubDate>Tue, 24 Apr 2012 12:20:11 -0500</pubDate>
-    <lastBuildDate>Tue, 24 Apr 2012 12:20:11 -0500</lastBuildDate>
+    <pubDate>Wed, 25 Apr 2012 14:27:45 -0500</pubDate>
+    <lastBuildDate>Wed, 25 Apr 2012 14:27:45 -0500</lastBuildDate>
 
+    
+    <item>
+      <title>Gettin Sassy</title>
+      <link>http://cpeak.github.com/blog/2012/04/26/gettin-SASSy</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 -0500</pubDate>
+      <author>cpeak@8thlight.com (Chris Peak)</author>
+      <guid>http://cpeak.github.com/blog/2012/04/26/gettin-SASSy</guid>
+      <description>&lt;h2&gt;Gettin' SASSy&lt;/h2&gt;&lt;p&gt;This past week I finally took the plunge into CSS pre-processing and started playing around with &lt;a href='http://sass-lang.com/'&gt;SASS&lt;/a&gt;.  I've never been a huge fan of pre-processing - I like to be in complete control of what goes into my production level CSS files, but the whole point of my residency is to become a much more well-rounded developer and I want to have as many tools in my bag as I can. I have learned over the years that using the right tool for the job makes life a &lt;em&gt;lot&lt;/em&gt; easier.&lt;/p&gt;&lt;h3&gt;What does it do?&lt;/h3&gt;&lt;p&gt;SASS allows you to use variables and nesting (among other things) in your CSS. Install the gem - &lt;code&gt;gem install sass&lt;/code&gt;, create a new file called &lt;strong&gt;style.scss&lt;/strong&gt;, and run: &lt;code&gt;sass --watch style.scss:style.css&lt;/code&gt;. This translates &lt;strong&gt;style.scss&lt;/strong&gt; file into a normal .css file, automatically updating whenever you edit the original. Now lets take a look at what we can do.&lt;/p&gt;&lt;h4&gt;Variables&lt;/h4&gt;&lt;p&gt;The .scss file is like a normal cascading style sheet, but much more flexible. Using the &lt;a href='http://www.smacss.com'&gt;SMACSS&lt;/a&gt; approach we try to modularize our code the best we can, but there are times where we need to duplicate style calls. With SASS we can set variables which allows us to set global styles from &lt;em&gt;one&lt;/em&gt; location. Setting &lt;code&gt;$var: #3366cc;&lt;/code&gt; &amp;amp; &lt;code&gt; $main_border: 1px solid #ccc;&lt;/code&gt; allows us to use these styles anywhere in our stylesheet. In our style declaration,  set &lt;code&gt;$var&lt;/code&gt; or &lt;code&gt;$main_border&lt;/code&gt; and SASS will automatically translate it when it processes the .scss to .css&lt;/p&gt;&lt;div class='l_overflow'&gt;
+&lt;div class='m_code_block'&gt;&lt;code&gt; .foo { &lt;br /&gt; &amp;emsp; border: $main_border; &lt;br /&gt; &amp;emsp; color: $var; &lt;br /&gt; &amp;emsp; ... &lt;br /&gt;  }&lt;/code&gt;
+&lt;/div&gt;
+&lt;div class='m_code_block'&gt;&lt;code&gt; .foo { &lt;br /&gt; &amp;emsp; border: 1px solid #ccc; &lt;br /&gt;  &amp;emsp; color: #3366cc; &lt;br /&gt; &amp;emsp; ... &lt;br /&gt;}&lt;/code&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4&gt;Nesting&lt;/h4&gt;&lt;p&gt;This also works for style nesting as well, which is a huge time-saver.  Lets see this in action:&lt;/p&gt;&lt;div class='l_overflow'&gt;
+&lt;div class='m_code_block'&gt;&lt;code&gt;
+.foo {&lt;br /&gt;
+&amp;emsp; border: $main_border; &lt;br /&gt;
+&amp;emsp; li { &lt;br /&gt;
+&amp;emsp; &amp;emsp; color: $var;&lt;br /&gt;
+&amp;emsp; &amp;emsp; width: 100px;&lt;br /&gt;
+&amp;emsp; &amp;emsp; &amp;amp;:hover { &lt;br /&gt;
+&amp;emsp; &amp;emsp; &amp;emsp; background-color: #f2f2f2;&lt;br /&gt;
+&amp;emsp; &amp;emsp; } &lt;br /&gt; 
+&amp;emsp; } 
+&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;div class='m_code_block'&gt;&lt;code&gt;
+.foo {&lt;br /&gt;
+&amp;emsp; border: #3366cc; &lt;br /&gt;
+}  &lt;br /&gt;
+.foo li { &lt;br /&gt;
+&amp;emsp; color: #3366cc;&lt;br /&gt;
+&amp;emsp; width: 100px;&lt;br /&gt;
+} &lt;br /&gt;
+.foo li:hover { &lt;br /&gt;
+ &amp;emsp; background-color: #f2f2f2;&lt;br /&gt;
+} 
+&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;p&gt;That's three separate style declarations bundled into one call in my .scss file.  This smooths out the workflow so I don't have to worry about breaking out each individual declaration, I can just define &lt;code&gt;.foo&lt;/code&gt; and let the SASS handle the nitty gritty details.&lt;/p&gt;&lt;h3&gt;The Good, The Bad, and The Ugly&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The Good:&lt;/strong&gt; I like the fact that I can style an entire class in one fell swoop, I don't have to change mental gears and think of all the various declarations I need to cover. I can just go &lt;code&gt;.foo &gt; styles &gt; child &gt; styles &gt; states&lt;/code&gt;. This is a great option for veteran developers who understand the fundementals of it and want to fast-track some of the more monotonous coding.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Bad:&lt;/strong&gt; While I haven't developed a full project with it yet, I can see SASS hurting the practice of modularizing your CSS, and limiting semantic friendly markup.  A class chain might look like &lt;code&gt;&amp;lt;div class=&quot;l_left m_foo m_bar&quot;&amp;gt;...&amp;lt;div&amp;gt;&lt;/code&gt; (the div is has a layout class of left, is a  foo module as well as a bar module). Using the class chain method I can take a look at &lt;code&gt;.foo&lt;/code&gt; and see &amp;amp; change it's properties right from the html file itself. Heavily relying on SASS variables removes a level of semantics. &lt;code&gt;&amp;lt;div class=&quot;foo&quot;&amp;gt;&lt;/code&gt; doesn't tell me nearly as much as the previously mentioned class chain.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Ugly:&lt;/strong&gt; What I like the least is the output of the SASS processing. The production .css file can sometimes be harder to read by humans. As a craftsman I want my production files to be easy to navigate - that way when either I, or another developer goes back into the code six months or a year later it's easy to understand.&lt;/p&gt;&lt;h3&gt;Overall&lt;/h3&gt;&lt;p&gt;I haven't actually used it in a production environment yet, and when I do I will share my experiences in another post. So far I have mixed feelings on it - I like the premise, but I have a control issue (ok, that ones on me) - that's why I still drive a Jeep with a manual transmission and no ABS, I like to be in total control. Variables, nesting, interpolation, operations - these are all things I want to get excited about and want to see in the official CSS spec, but right now they aren't. I will continue experimenting and sharing my thoughts -  To be continued...&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Changin Education Paradigms</title>
