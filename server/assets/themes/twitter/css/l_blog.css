@@ -1,0 +1,21 @@
+/* cpeak.github.com  LAYOUT
+  - Chris Peak
+  - 04/03/2012 
+  - SCALE: 12 16 -22- 30 39 52 69
+ */
+
+
+
+.l_left { float: left; }
+.l_right { float: right; }
+.l_center { margin: 0 auto; }
+
+
+
+.l_half_col { width: 385px; }
+
+.l_overflow { overflow: hidden; padding-bottom: 15px;  }
+
+.l_portrait { padding: 5px 15px 0px 0px; }
+
+.l_third_col { width: 260px; }	

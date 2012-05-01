@@ -1,0 +1,49 @@
+/* Speedo Layout CSS */
+
+
+.mph5 { left: 190px; top: 380px; }
+.mph15 { left: 125px; top: 285px; }
+.mph25 { left: 130px; top: 175px; }
+.mph35 { left: 190px; top: 80px; }
+.mph45 { left: 295px; top: 40px; }
+.mph55 { left: 405px; top: 47px; color: #eb7633; }
+.mph65 { left: 502px; top: 112px; }
+.mph75 { left: 538px; top: 218px; }
+.mph85 { left: 519px; top: 328px; }
+
+
+
+#digital_speedo { 
+  position: fixed;
+  top: 472px;
+  left: 670px;
+}
+
+
+.fixed { position: fixed; }
+
+
+#flux { 
+  top: 80px;
+  left: 700px;
+}
+#flux_capacitor {
+  position: fixed;
+  top: 10px;
+  left: 650px;
+}
+
+#odometer {
+  position: fixed; 
+  top: 180px; 
+  left: 260px;
+}
+
+#speedometer {
+  position: fixed;
+  top: 10px;
+  left: 100px;
+  height: 500px;
+  width: 500px;
+}
+

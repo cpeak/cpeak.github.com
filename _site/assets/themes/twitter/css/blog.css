@@ -7,6 +7,7 @@
 
 html, body {
   background-color: #f9f9f9;
+  background-image: url('/images/bg.png');
   font-family: "prenton", sans-serif;
   margin: 0;
   padding: 0;
@@ -37,6 +38,7 @@ h2 { font-size: 52px; padding: 20px 0px 15px 0px; }
 h3 { font-size: 39px; margin-top: 15px;  }
 h4 { font-size: 30px; margin-top: 5px;  }
 
+img { width: 100%; }
 
 
 p { margin: 0; }

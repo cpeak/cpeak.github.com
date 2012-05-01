@@ -47,7 +47,7 @@ tags : [residency, CSS]
 </code>
 </div>
 
-</div> <!-- close overflow -->
+</div>
 
 <p>That's three separate style declarations bundled into one call in my .scss file.  This smooths out the workflow so I don't have to worry about breaking out each individual declaration, I can just define <code>.foo</code> and let the SASS handle the nitty gritty details.</p>
 
