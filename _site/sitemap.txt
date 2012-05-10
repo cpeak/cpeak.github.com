@@ -11,6 +11,7 @@ http://cpeak.github.com/rss.xml
 http://cpeak.github.com/sitemap.txt
 http://cpeak.github.com/tags.html
 
+http://cpeak.github.com/blog/2012/05/10/improivsation
 http://cpeak.github.com/blog/2012/04/30/the-residency-continues
 http://cpeak.github.com/blog/2012/04/26/gettin-SASSy
 http://cpeak.github.com/blog/2012/04/24/changin-education-paradigms

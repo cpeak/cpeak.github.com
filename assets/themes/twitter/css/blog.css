@@ -42,7 +42,7 @@ h4 { font-size: 30px; margin-top: 5px;  }
 
 p { margin: 0; }
 
-ul { list-style: none; }
+ul { list-style: none; margin: 0; padding: 0; }
 
 .row { padding: 40px; } /* Bootstrap hack - need to fix */
 
