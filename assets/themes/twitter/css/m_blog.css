@@ -95,7 +95,7 @@ header a { text-decoration: none; }
 .nav li a {
   border-radius: 3px; 
   color: #bbb; 
-  font-family: "prenton", sans-serif;
+  font-family: "prenton", Colaborate-Thin, sans-serif;
   margin-top: 10px; 
   padding: 8px 10px;
 }

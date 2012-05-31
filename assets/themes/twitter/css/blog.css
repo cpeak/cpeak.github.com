@@ -8,7 +8,7 @@
 html, body {
   background-color: #f9f9f9;
   background-image: url('/images/bg.png');
-  font-family: "prenton", sans-serif;
+  font-family: "prenton", Colaborate-Thin, sans-serif;
   margin: 0;
   padding: 0;
 }
