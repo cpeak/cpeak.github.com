@@ -1,0 +1,329 @@
+body {
+  background: #f2f2f2;
+  line-height: 1.5em; 
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:visited {
+  color: #336699;
+  text-decoration: none; 
+} 
+
+ p, ul, blockquote, pre, td, th, label {
+  font-family: 'Adobe Garamond Pro';
+  font-style: italic;
+  font-size: 30px;
+  line-height: 1.7em;
+  margin: 0px auto 1.5em auto;
+  padding: 20px;
+  max-width: 800px;
+} 
+
+h1 {
+  font-family: 'League Gothic';
+  font-size: 230px;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 5px #000;
+}
+
+.subtitle {
+  font-family: 'Shit Happens';
+  font-size: 200px;
+  font-weight: normal;
+  margin-top: -100px;
+
+} 
+section {
+  border-bottom: 2px dotted #ccc;
+  padding: 2em 0px 8em 0px;
+}
+.chapter {
+  font-family: Helvetica;
+  font-weight: bold;
+  border: 10px solid #000;
+  border-radius: 2em;
+  display: inline-block;
+  padding: 20px;
+  width: 2.6em;
+}
+
+.chapter-title {
+  font-family: 'Keep Calm';
+  font-size: 50px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.nav a { color: #000; }
+
+/* ------------------------------------------------- */
+#intro {
+  background: url('../img/bananas.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-top: 1px;
+}
+#intro a,
+#bread a {
+  color: #fff;
+}
+
+
+#bread {
+  color: #fff;
+  background: url('../img/bread.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-shadow: 0px 0px 3px #000;
+}
+
+#bread .chapter {
+  border-color: white;
+}
+#baby {
+  background: url('../img/baby.jpg');
+  background-size: cover;
+  background-position: top left;
+}
+
+#choking {
+  background: url('../img/choking.jpg');
+  background-size: cover;
+  background-position: top left;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+#beer {
+  background: url('../img/beer.jpg');
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#conclusion{
+  background: url('../img/nixon.jpg');
+  background-size: cover;
+  background-position: 50% 30%;
+  height: 1000px;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+
+
+
+
+
+/* LAYOUT */
+/* Grid */
+.row {
+  background: #fff;
+	border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -10px;
+}
+
+.row.collapse .column,
+.row.collapse .columns {
+  padding: 0;
+}
+
+.row .row.collapse {
+  margin: 0;
+}
+
+.column, .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.column.centered,
+.columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+[class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+.row .one {
+  width: 8.333%;
+}
+
+.row .two {
+  width: 16.667%;
+}
+
+.row .three {
+  width: 25%;
+}
+
+.row .four {
+  width: 33.333%;
+}
+
+.row .five {
+  width: 41.667%;
+}
+
+.row .six {
+  width: 50%;
+}
+
+.row .seven {
+  width: 58.333%;
+}
+
+.row .eight {
+  width: 66.667%;
+}
+
+.row .nine {
+  width: 75%;
+}
+
+.row .ten {
+  width: 83.333%;
+}
+
+.row .eleven {
+  width: 91.667%;
+}
+
+.row .twelve {
+  width: 100%;
+}
+
+.row .offset-by-one {
+  margin-left: 8.333%;
+}
+
+.row .offset-by-two {
+  margin-left: 16.667%;
+}
+
+.row .offset-by-three {
+  margin-left: 25%;
+}
+
+.row .offset-by-four {
+  margin-left: 33.333%;
+}
+
+.row .offset-by-five {
+  margin-left: 41.667%;
+}
+
+.row .offset-by-six {
+  margin-left: 50%;
+}
+
+.row .offset-by-seven {
+  margin-left: 58.333%;
+}
+
+.row .offset-by-eight {
+  margin-left: 66.667%;
+}
+
+.row .offset-by-nine {
+  margin-left: 75%;
+}
+
+.row .offset-by-ten {
+  margin-left: 83.333%;
+}
+
+.push-two {
+  left: 16.667%;
+}
+
+.pull-two {
+  right: 16.667%;
+}
+
+.push-three {
+  left: 25%;
+}
+
+.pull-three {
+  right: 25%;
+}
+
+.push-four {
+  left: 33.333%;
+}
+
+.pull-four {
+  right: 33.333%;
+}
+
+.push-five {
+  left: 41.667%;
+}
+
+.pull-five {
+  right: 41.667%;
+}
+
+.push-six {
+  left: 50%;
+}
+
+.pull-six {
+  right: 50%;
+}
+
+.push-seven {
+  left: 58.333%;
+}
+
+.pull-seven {
+  right: 58.333%;
+}
+
+.push-eight {
+  left: 66.667%;
+}
+
+.pull-eight {
+  right: 66.667%;
+}
+
+.push-nine {
+  left: 75%;
+}
+
+.pull-nine {
+  right: 75%;
+}
+
+.push-ten {
+  left: 83.333%;
+}
+
+.pull-ten {
+  right: 83.333%;
+}
