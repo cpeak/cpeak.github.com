@@ -19,9 +19,9 @@ a, a:visited {
 } 
 
  p, ul, blockquote, pre, td, th, label {
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'Times';
   font-style: italic;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.7em;
   margin: 0px auto 1.5em auto;
   padding: 20px;
@@ -29,7 +29,7 @@ a, a:visited {
 } 
 
 h1 {
-  font-family: 'League Gothic';
+  font-family: 'league_gothicregular';
   font-size: 230px;
   line-height: 1em;
   text-transform: uppercase;
@@ -37,7 +37,7 @@ h1 {
 }
 
 .subtitle {
-  font-family: 'Shit Happens';
+  font-family: 'shit_happens_cursive';
   font-size: 200px;
   font-weight: normal;
   margin-top: -100px;
@@ -46,6 +46,7 @@ h1 {
 section {
   border-bottom: 2px dotted #ccc;
   padding: 2em 0px 8em 0px;
+  min-height: 1050px;
 }
 .chapter {
   font-family: Helvetica;
@@ -58,13 +59,18 @@ section {
 }
 
 .chapter-title {
-  font-family: 'Keep Calm';
+  font-family: 'keep_calmmedium';
   font-size: 50px;
   line-height: 1.2em;
   text-transform: uppercase;
 }
 
-.nav a { color: #000; }
+.nav a { 
+  color: #000;
+ }
+.nav a:hover {
+  text-decoration: underline;
+}
 
 /* ------------------------------------------------- */
 #intro {
@@ -73,27 +79,21 @@ section {
   color: #fff;
   padding-top: 1px;
 }
-#intro a,
-#bread a {
+#intro a {
   color: #fff;
 }
 
 
 #bread {
-  color: #fff;
+  color: #000;
   background: url('../img/bread.jpg');
   background-size: cover;
   background-position: center center;
-  text-shadow: 0px 0px 3px #000;
 }
 
-#bread .chapter {
-  border-color: white;
-}
 #baby {
   background: url('../img/baby.jpg');
   background-size: cover;
-  background-position: top left;
 }
 
 #choking {
@@ -106,7 +106,7 @@ section {
 #beer {
   background: url('../img/beer.jpg');
   background-size: cover;
-  background-position: 50% 100%;
+  background-position: 50% 80%;
 }
 
 #conclusion{
@@ -114,7 +114,9 @@ section {
   background-size: cover;
   background-position: 50% 30%;
   height: 1000px;
-  text-shadow: 0px 1px 1px #fff;
+  text-shadow: 0px 1px 10px #000;
+  color: #fff;
+  padding-top: 600px;
 }
 
 
