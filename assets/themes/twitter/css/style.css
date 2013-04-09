@@ -1,0 +1,115 @@
+/* 
+  =IN Index
+
+*/
+
+
+
+/* Header and Navigation */
+/* =H                    */
+
+header { 
+  background: #000;
+  border-top: 1px solid #888;
+  border-bottom: 2px solid #d95b44;
+  font-family: 'Oswaldwk';
+  height: 80px;
+  margin-bottom: 1.5em;
+}
+
+header a { text-decoration: none; }
+
+header .brand{
+  float:left;
+  color: #fff; 
+  font-size: 2em;
+  padding-top: 14px;
+}
+
+header span {
+  margin-right: 5px;
+}
+
+
+.nav { 
+  float: left;  
+  margin: 6px 0px 0px 40px; 
+  padding-top: 18px; 
+}
+
+.nav li { display: inline; }
+
+.nav li a {
+  border-radius: 3px; 
+  color: #d95b44; 
+  line-height: 1.5em;
+  margin-top: 10px; 
+  padding: 8px 10px;
+}
+
+.nav li a:hover { 
+  color: #fff; 
+}
+
+footer {
+  margin-top: 50px !important;
+}
+
+footer p {
+  color: #ccc;
+  font-size: .9em;
+  line-height: 3em;
+  text-align: center; 
+  text-shadow: 0px -1px 1px #fff; 
+}
+
+
+.disabled a {
+  color: #ccc;
+}
+
+.pagination {
+  font-size: .9em;
+  margin: 2em 0px;
+  text-align: center;
+}
+.pagination a {
+  text-decoration: none;
+}
+.pagination ul li {
+  display: inline;
+  padding: 10px 20px;
+}
+
+/* ######### Index ############# */
+/* =IN                           */
+
+.index-post {
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: 4em;
+  padding-bottom: 1.5em;
+}
+
+.index-post h1,
+.index-post h2,
+.index-post h3,
+.index-post h4,
+.index-post h5 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+}
+.index-post p {
+  margin: 0px auto 1.5em auto;
+  width: 80%;
+} 
+
+.post-ribbon {
+  background-image: -webkit-gradient(linear, 35% 0%, 0% 0%, from(rgb(242, 242, 242)), to(rgb(255, 255, 255)));
+  background-image: -moz-linear-gradient(center right, rgb(242, 242, 242) 25%, rgb(255, 255, 255) 80%);
+  border-left: 5px solid #d95b44;
+  font-size: .8em;
+  padding: 8px 10px;
+  width: 100% !important;
+}
+  
