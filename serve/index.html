@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cpeak</title>
+    
+    <meta name="author" content="">
+    <link rel="alternate" type="application/atom+xml" title="Subscribe to the 8th
+      Light blog" href="/rss.xml"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/assets/themes/twitter/css/blog.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/twitter/css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="/assets/themes/twitter/js/jquery-1.4.2.min.js"></script>
+    <script src="/assets/themes/twitter/js/modernizr-1.5.min.js"></script>
+  </head>
+
+<body>
+  <header>
+    <div class='row'>
+      <section class='twelve columns'>
+      <a class="brand" href="/"><span class='fontello icon-paper-plane'></span>cpeak</a>
+        <ul class="nav">
+          
+          
+          
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+        </ul>
+      </section>
+    </div>
+  </header>
+
+  <div class='row'>
+    <article class='index-post'>
+    <p class='post-ribbon'><a href='/blog/2013/05/09/manhattan'>Manhattan</a> &raquo; <span>09 May 2013</span></p>
+    <br />
+    <h2>Watch Manhattans's Boundaries Expand over 250 Years</h2>
+<img alt='Map of Manhattan' src='/images/manhattan.gif' />
+<p>Check out the article over at <a href='http://gizmodo.com/watch-new-york-city-s-boundaries-expand-over-250-years-496440467'>Gizmodo</a>. Interesting to see how much it expands over the years, but even more facinating is the fact that the majority of modern Boston is built on landfill. You can see colonial Boston overlaid on the current map.</p>
+<img alt='Boston' src='/images/boston.png' />
+
+
+  </article><article class='index-post'>
+    <p class='post-ribbon'><a href='/blog/2013/04/09/blowing-the-dust-off'>Blowing The Dust Off</a> &raquo; <span>09 Apr 2013</span></p>
+    <br />
+    <h2>Blowing the dust off...</h2><p>This blog was originally written and maintained during my apprenticeship at 8th Light, but quickly fell out of use when I became a Craftsman. I'm blowing the dust off, gutting the code, updating the design, and with a bit of effort hopefully start using it a bit more.  I plan on posting more personal blog entries here, as well as code &amp; design ideas, random photos, and generally whatever catches my attention for more than a few seconds. Stay tuned.</p>
+
+  </article><article class='index-post'>
+    <p class='post-ribbon'><a href='/blog/2012/07/25/mountain-lion'>Mountain Lion</a> &raquo; <span>25 Jul 2012</span></p>
+    <br />
+    <h2>Upgrading to 10.8 Mountain Lion</h2><p>Today I dove right in and upgraded to OS X 10.8 Mountain Lion, and overall the upgrade went very well.  Just a few snags with my development environment.  My Pow configuration came through just fine, but PHP was disabled and it reset my default Document Root.  Lets take a look at how I restored my settings, and how I have my local development environment setup.</p><p>Under 10.7 and below there was a 'Web Sharing' checkbox under the Sharing preference pane. This allowed you to host development sites right in your <code>user/Sites</code> directory.  Upgrading to 10.8 seems to have removed that checkbox and defaulted back to <code>/Library/WebServer/Documents/</code> for hosting development sites. PHP also seems to be disabled as well.  No problem, lets just take care of those:</p><p>To enable PHP, open <code>/etc/apache2/httpd.conf</code> with your editor of choice and un-comment locate this line:</p><p><code>LoadModule php5_module libexec/apache2/libphp5.so</code></p><p>A bit down youll find the section for DocumentRoot. This tells Apache where you store your development sites.  Like I mentioned before, 10.8 sets this back to the root Library directory, and I prefer my <code>~/Sites</code>
+folder. Comment out the Document Root line, and enter <code>DocumentRoot "/Users/username/Sites"</code></p><p>Restart Apache using <code>sudo apachectl restart</code> and check everything out.</p><h4>A Gotcha</h4><p>When I enabled PHP and setup my document root I found that I didn not have permission to access my local sites.  I checked permissions and everything was okay there.  A little investigation turned up that I did not have a username.conf file in <code>/etc/apache2/users</code>.  I created my user conf and added:<br /><code>
+&lt;Directory "/Users/username/Sites/"&gt;<br />
+&emsp;&emsp;Options Indexes MultiViews<br />
+&emsp;&emsp;AllowOverride All<br />
+&emsp;&emsp;Order allow,deny<br />
+&emsp;&emsp;Allow from all<br />
+&lt;/Directory&gt;<br /></code></p><p>Another <code>apachectl restart</code> and everything was setup perfectly.</p><p>So far Mountain Lion has been great, Safari seems much faster and notification center is a nice addition. I would love if BusyCal hooked into Notification Center, hopefully they will add that feature soon. I'll post more thoughts once I use 10.8 for a few days.</p>
+
+  </article><p><a href='/archive.html'>Older Posts &raquo;</a></p>
+
+
+  </div>
+
+  <footer class='row'>
+      <p>&copy;  2012 Chris Peak</p>
+  </footer>
+
+  
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Residency Continues</title>
+    
+    <meta name="author" content="">
+    <link rel="alternate" type="application/atom+xml" title="Subscribe to the 8th
+      Light blog" href="/rss.xml"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/assets/themes/twitter/css/blog.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="/assets/themes/twitter/css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="/assets/themes/twitter/js/jquery-1.4.2.min.js"></script>
+    <script src="/assets/themes/twitter/js/modernizr-1.5.min.js"></script>
+  </head>
+
+<body>
+  <header>
+    <div class='row'>
+      <section class='twelve columns'>
+      <a class="brand" href="/"><span class='fontello icon-paper-plane'></span>cpeak</a>
+        <ul class="nav">
+          
+          
+          
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+        </ul>
+      </section>
+    </div>
+  </header>
+
+  <div class='row'>
+    <article class='ten columns centered'>
+  <h2>The Residency Continues...</h2><p>This past week was spent taking care of a bunch of little projects here and there - cross platform testing, a UI proposal, sketching and wire-framing to name a few. Now, I have always had a fascination with how things work and how to fix them, tearing apart electronics and even pulling the transmission out of my Jeep. Whenever I come across something mechanical or technical I need to know how it works and I wrestle with it until I figure it out. Working on our internal project I have been neck deep in Rails, and the more I work on it the more I want to get a grasp on the internals. I have also been looking for a good waza project for Friday afternoons.</p><p>This weekend I decided to kill a few birds with one stone (or is that a few pigs with one bird?). Over the last ten years I have been researching my family tree, tracing a good portion of it all the way back to the 1500s. However all of my research has been done the old fashioned way - pen and paper:</p><img alt='Family Tree' src='/images/tree.jpg' /><p>I have resorted to pen and paper because every piece of software out there that I have come across has been almost un-usable. So Sunday afternoon I put on Top Gear, fired up the laptop, sketched out my database tables and went to work. I was shocked - one episode later and I had a functional application up and running. I got a much better understanding of how Models and Controllers function on a technical level, as well as database interactions. Another episode later and it was in pretty good shape.  The only snag I ran into was date fields set as 0000-00-00 (ie, members who haven't died) crashed the app when I tried to format the date using <code>.to_s(:pretty)</code> which calls <code>time_formats.rb</code> initializer. There's one problem to solve later. The major hurdle is going to be formatting and displaying the actual tree itself - should be a very interesting design problem. I am also really interested in figuring out how to get the database table relations working, lots to do!</p>
+</article>
+
+<hr>
+
+<div class="pagination">
+  <ul>
+    
+    <li class="prev"><a href="/blog/2012/04/26/gettin-SASSy" title="Gettin Sassy">&larr; Previous</a></li>
+    
+    <li><a href="/archive.html">Archive</a></li>
+    
+    <li class="next"><a href="/blog/2012/05/10/improivsation" title="Improivsation">Next &rarr;</a></li>
+    
+  </ul>
+</div>
+
+
+  </div>
+
+  <footer class='row'>
+      <p>&copy;  2012 Chris Peak</p>
+  </footer>
+
+  
+</body>
+</html>
+

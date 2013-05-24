@@ -13,7 +13,7 @@
 
 html, body {
   background-color: #f2f2f2;
-  font-family: "proxima-nova", serif;
+  font-family: 'Junction', Helvetica, sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -27,33 +27,33 @@ a, a:visited {
 a:hover { color: #000; }
 
 code { 
-  font-size: .9em;
   color: #3366cc;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "nimbus-sans-condensed", serif;
+  font-family: 'Oswaldwk';
+  font-weight: bold;
   margin: 0;
   padding: 0; 
 }
 
 h1 {
-  font-size: 2.77em;
+  font-size: 2.369em;
   line-height: 0.63317856em;
   margin-bottom: 0.63317856em; 
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 1.777em;
   line-height: 0.8441193em;
   margin-bottom: 0.8441193em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.333em;
   line-height: 1.12528132em;
   margin-bottom: 1.12528132em; 
 }   
 h4, h5, h6 {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1em;
 }

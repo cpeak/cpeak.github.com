@@ -1,0 +1,59 @@
+<!doctype>
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/type.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <section id="intro">
+    <h1>Brown Bananas</h1>
+    <h2 class="subtitle">Fuck Yeah</h2>
+    <p class='nav'><a href="#bread">Continue</a></p>
+  </section>
+  <section id="bread">
+    <h2 class="chapter">1</h2>
+    <h3 class="chapter-title">Banana Bread</h3>
+    <p>Did you let your bananas hang on the hook too long, ignoring them like a step-child? Why not make some delicious and moist banana bread? Easy to make, only a few ingredients, and it's a classic. BAM it up with some cinnamon swirls, or chocolate chips, or even some nuts.</p>
+    <p class='nav'><a href="#choking">Tell me more...</a></p>
+  </section>
+  <section id="choking">
+    <h2 class="chapter">2</h2>
+    <h3 class="chapter-title">No way you'll choke on one of these</h3>
+    <p>Raw carrots, peanuts, popcorn, hard candies, hell if you're the President even pretzels can damn near kill you. Brown bananas? I don't fuckin think so. Shit goes down smooth and sweet. Mush it up with a spoon and you don't even have to chew it! How easy is that?</p>
+    <p class='nav'><a href="#baby">You make an excellent point</a></p>
+  </section>
+  <section id="baby">
+    <h2 class="chapter">3</h2>
+    <h3 class="chapter-title">Babies Love 'Em</h3>
+    <p>Sweet. Mushy. Delicious. Um, what are three words to describe every baby food under the god-damn sun Alex? Full of vitamins that are perfect for healthy, growing children. Some kids are fussy about eating fruit, but a mushy banana? No way, they won't even think it's healthy.</p> 
+    <p class='nav'><a href="#beer">Halleluja</a></p>
+  </section>
+  <section id="beer">
+    <h2 class="chapter">4</h2>
+    <h3 class="chapter-title">Two Words. Banana. Beer.</h3>
+    <p>Miller Lite? Budwiser? PBR? Yawn. Why drink what everyone else does? How about mixing it up and brewing some sweet Banana Beer? Embrace your inner hipster and brew up a batch of Banana Beer. Smooth, refreshing, and different, great to share with your friends on a Friday night.</p>
+    <p class='nav'><a href="#conclusion">Mmmmm beer</a></p>
+  </section>
+  <section id="conclusion">
+    <h2 class="chapter-title">Yup. Brown Bananas Mother Fuckers</h2>
+  </section>
+
+    <!-- The JavaScript -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.nav a').bind('click',function(event){
+          var $anchor = $(this);
+            $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500,'easeInOutExpo');
+            event.preventDefault();
+          });
+        });
+    </script>
+
+
+
+
+</body>
