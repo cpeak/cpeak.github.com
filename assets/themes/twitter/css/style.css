@@ -103,6 +103,11 @@ footer p {
   margin: 1.5em auto;
   width: 80%;
 } 
+.index-post img {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
+  max-width: 100%;
+}
 
 .post-ribbon {
   background-image: -webkit-gradient(linear, 35% 0%, 0% 0%, from(rgb(242, 242, 242)), to(rgb(255, 255, 255)));
