@@ -7,6 +7,7 @@
 
 .sidebar {
   background: #f7f5f2;
+  border-right: 1px solid #eeebe7;
   float: left;
   height: 100%;
   margin-right: 2%;
@@ -37,6 +38,7 @@ section article img { max-width: 100%; }
 @media all and (max-width: 850px) {
   body {
     height: auto !important;
+    border-bottom: 5px solid #eeebe7;
   } 
   .sidebar {
     height: 70px;
@@ -73,4 +75,8 @@ section article img { max-width: 100%; }
   .standalone {
     padding: 10px;
   }
+  .portfolio li {
+    width: 48% !important;
+  } 
+
 }

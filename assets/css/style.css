@@ -1,17 +1,17 @@
+/*
+
+ =SBN - Sidebar and Navigation
+
+ */
+
+
+
+
+
+
+
+/* =SBN Sidebar and Navigation */
 .sidebar { padding: 50px 25px; }
-
-.nav li {
-  padding-top: 1.5em;
-  text-align: center;
-}
-.nav li a {
-  color: #990000;
-  text-decoration: none;
-}
-.nav li a:hover {
-  color: #000;
-}
-
 .sidebar .brand {
   display: block;
   text-align: center;
@@ -29,8 +29,6 @@
 .sidebar .brand span:hover {
   background: #333;
 }
-
-
 .sidebar aside {
   color: #999;
   font-size: .7em;
@@ -41,7 +39,23 @@
   margin-right: 10px;
   width: 75px;
 }
+.nav li {
+  padding-top: 1.5em;
+  text-align: center;
+}
+.nav li a {
+  color: #990000;
+  text-decoration: none;
+}
+.nav li a:hover {
+  color: #000;
+}
 
+
+
+
+
+/* Individual Posts */
 .index-post h1,
 .index-post h2,
 .index-post h3,
@@ -74,8 +88,21 @@
 
 
 
+/* Portfolio Page */
+
+.portfolio li {
+  float: left;
+  margin: 0 2% 2% 0;
+  width: 30%;
+}
 
 
+
+
+
+
+
+/* Animations */
 .animated {
   -webkit-animation-fill-mode:both;
 	-moz-animation-fill-mode:both;

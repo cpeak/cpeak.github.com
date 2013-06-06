@@ -11,4 +11,4 @@ title: cpeak
   </article>
 {% endfor %}
 
-<p><a href="/archive.html">Older Posts &raquo;</a></p>
+<!-- <p><a href="/archive.html">Older Posts &raquo;</a></p> -->
