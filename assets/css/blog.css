@@ -23,7 +23,7 @@ html, body {
 
 
 a, a:visited { 
-  color: #d95b44; 
+  color: #2a4e89;
   transition: all .25s;
 }
 a:hover { color: #000; }
