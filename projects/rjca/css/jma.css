@@ -1,0 +1,148 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+} 
+
+header h2 {
+  float: left;
+  display: inline-block;
+  height: 80px;
+  padding-top: 8px;
+}
+header h2 img {
+  max-height: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover { 
+  border-bottom: 2px solid #ffcb48;
+  color: #ffcb48;
+}
+.navbar ul {
+  display: block;
+  float: right;
+  list-style: none;
+  overflow: hidden;
+  margin: 10px 0 0 0;
+}
+.navbar ul li {
+  font-size: .8em;
+  float: left;
+}
+.navbar ul li a {
+  display: block;
+  padding: 22px 15px;
+  text-transform: uppercase;
+}
+
+.marquee {
+  background: url('/images/building.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+}
+.container {
+  background: #fff;
+  margin: -100px auto 0 auto;
+  padding: 40px;
+  width: 960px;
+}
+
+/* ######## INDEX ########## */
+.index-content {
+  text-align: center;
+}
+.index-content h2 {
+  text-transform: uppercase;
+}
+.index-content h3 {
+  color: #777;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.sub-promos section {
+  padding: 20px;
+}
+.sub-promos h3 {
+  font-size: 1em;
+  text-align: center;
+}
+
+
+/* ######## REFERENCES ########## */
+.references {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.references > li {
+  border: 1px solid #ddd;
+  display: block;
+  float: left;
+  padding: 10px;
+  min-height: 220px;
+  margin: 0 2%;
+  text-align: center;
+  width: 45%;
+}
+
+.references .name { font-weight: bold; }
+.references .title { font-style: italic; }
+
+
+/* ######## CLIENT LIST ########## */
+#client_list ul {
+  padding: 5px 0px 20px 5px;
+}
+#client_list  ul li{
+  font-size: .8em; 
+  line-height: 1.3em;
+}
+
+
+
+/* ########## CONTACT PAGE ######## */
+.contact_form label {
+  display: inline-block;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  min-width: 80px;
+  vertical-align: top;
+}
+.contact_form input,
+.contact_form textarea {
+  padding: 10px;
+  width: 300px;
+}
+.contact_form button {
+  margin-left: 290px;
+}
+
+/* ######## TYPOGRAPHY ########## */
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url('/type/proximanova-light-webfont.eot');
+  src: url('/type/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/type/proximanova-light-webfont.woff') format('woff'),
+       url('/type/proximanova-light-webfont.ttf') format('truetype'),
+       url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeagueGothicRegular'; /* Headlines */
+  src: url('/type/League_Gothic-webfont.eot');
+  src: url('/type/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/type/League_Gothic-webfont.woff') format('woff'),
+       url('/type/League_Gothic-webfont.ttf') format('truetype'),
+       url('/type/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
