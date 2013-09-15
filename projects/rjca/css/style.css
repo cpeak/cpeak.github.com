@@ -28,9 +28,20 @@ a, a:visited {
   transition: all 0.15s ease-in;
 }
 
-a:hover {
+a img { border: none; }
+
+hr {
+  max-width: 800px;
+  margin: 2em auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
+.centered { text-align: center; }
 
 .container > footer {
   color: #999;
@@ -41,12 +52,14 @@ a:hover {
   text-align: center; /* center align it with the container */
 }
 
-.content {
-  padding: 20px;
-}
+.content { padding: 20px; }
 
 h2.title {
   border-bottom: 1px solid #ccc;
   padding: 5px 0;
   margin-bottom: 1em;
 }
+
+ul.bullet { list-style-type: disc; }
+
+ul.bullet li { margin-left: 30px; }
