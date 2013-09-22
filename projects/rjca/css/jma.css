@@ -13,9 +13,8 @@ header h2 {
   height: 80px;
   padding-top: 8px;
 }
-header h2 img {
-  max-height: 100%;
-}
+
+header h2 img { max-height: 100%; }
 
 .navbar a {
   color: #fff;
@@ -42,10 +41,11 @@ header h2 img {
   text-transform: uppercase;
 }
 
-.subnav {
+.subnav section {
   height: 30px;
   line-height: 0;
 }
+section.right { text-align: right; }
 
 .marquee {
   background: url('../images/building.jpg') no-repeat center center;
@@ -114,10 +114,14 @@ header h2 img {
   width: 22%;
 }
 
-.partners {
-  background: url('../images/partners.jpg');
-  height: 450px;
+.sdv-notice {
+  color: #990000;
+  font-size: .9em;
+  font-weight: bold;
+  line-height: 0;
+  margin: -35px 0 10px 0;
 }
+.partners img { max-width: 100%; }
 
 .cca { margin-top: 30px; }
 .sdv, .marines { height: 125px; }
