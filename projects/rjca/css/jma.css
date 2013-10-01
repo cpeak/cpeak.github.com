@@ -80,9 +80,8 @@ section.right { text-align: right; }
   text-align: center;
 }
 
-.promos {
-  overflow: hidden;
-}
+.promos { overflow: hidden; }
+
 .promos li {
   float: left;
   margin: 5px;
@@ -130,6 +129,15 @@ section.right { text-align: right; }
 .marines { background: url('../images/marines.jpg'); }
 
 
+.pdf { 
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.pdf img {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+}
 
 
 /* ######## REFERENCES ########## */
