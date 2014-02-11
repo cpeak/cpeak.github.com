@@ -1,0 +1,28 @@
+---
+layout: page
+title: cpeak
+---
+
+{% for post in site.posts limit:8 %}
+  {% include post.html %}
+{% endfor %}
+
+<script>
+  $('.index-post').onScreen({
+    container: window,
+    direction: 'vertical',
+    doIn: function() {
+      addClass: 'animated'
+    },
+    doOut: function() {
+      toggleClass: 'animated'
+    },
+    tolerance: 0,
+    throttle: 50,
+    toggleClass: 'animated',
+    lazyAttr: null,
+    lazyPlaceholder: 'someImage.jpg',
+    debug: false
+  });
+</script>
+

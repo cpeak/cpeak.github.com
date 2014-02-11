@@ -1,6 +1,6 @@
 /* cpeak.github.com  LAYOUT
   - Chris Peak
-  - 04/03/2012 
+  - 04/03/2012
   - SCALE: 12 16 -22- 30 39 52 69
  */
 
@@ -8,7 +8,7 @@
 .sidebar {
   background: #f7f5f2;
   border-right: 1px solid #eeebe7;
-  float: left;
+  position: fixed;
   height: 100%;
   margin-right: 2%;
   width: 20%;
@@ -20,7 +20,7 @@
   left: 0;
 }
 .main-content {
-  max-height: 100%; 
+  float: right;
   overflow: scroll;
   padding-top: 1.5em;
   width: 77%;
@@ -39,21 +39,23 @@ section article img { max-width: 100%; }
   body {
     height: auto !important;
     border-bottom: 5px solid #eeebe7;
-  } 
+  }
   .sidebar {
+    border-bottom: 1px solid #ccc;
     height: 70px;
     padding: 5px 0 0 10px !important;
     width: 100%;
+    z-index: 10;
   }
-  .sidebar .brand { 
+  .sidebar .brand {
     display: inline;
     float: left;
-    text-align: left !important; 
+    text-align: left !important;
   }
   .sidebar .brand {
     width: 60px;
   }
-  .nav { 
+  .nav {
     font-size: .8em;
     float: left;
     margin: 1.5em 0 0 10px;
@@ -65,8 +67,8 @@ section article img { max-width: 100%; }
   .sidebar aside { display: none; }
 
   .main-content {
+    margin-top: 70px;
     width: 100%;
-    height: auto !important;
   }
   .main-content article {
     font-size: .8em;
@@ -76,6 +78,6 @@ section article img { max-width: 100%; }
   }
   .portfolio li {
     width: 48% !important;
-  } 
+  }
 
 }
