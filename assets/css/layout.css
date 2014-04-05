@@ -22,10 +22,13 @@
 .main-content {
   float: left;
   overflow: scroll;
-  margin-left: 20%;
-  padding-top: 1.5em;
+  margin-left: 22%;
+  padding: 1.5em 1.5em 1.5em 1em;
   max-width: 1000px;
   width: 77%;
+}
+.main-content img {
+  max-width: 100%;
 }
 
 section article {
@@ -34,10 +37,29 @@ section article {
 }
 section article img { max-width: 100%; }
 
+
 .standalone {
   padding: 0 40px;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+/*
+  ==============================================================================
+  Media Queries
+  ==============================================================================
+*/
 
 @media all and (max-width: 850px) {
   body {
@@ -72,6 +94,7 @@ section article img { max-width: 100%; }
 
   .main-content {
     margin: 70px 0 0 0;
+    padding: 10px;
     width: 100%;
   }
   .main-content article {
