@@ -1,9 +1,9 @@
 ---
 layout: post
 category : blog
+title: Improvisations
 tags : [residency]
 ---
-<h2>Well-Informed Improvisation</h2>
 <p>In a few other posts I have readily admitted I love to tinker with things - I need to know how things work and what makes them tick. This past week I have done more reading and learning than any previous week of my residency.  I've spent an hour or so each night working on my Family Tree rails app and am really proud of what I have done on my own so far. Today I paired with Doug which was a fantastic experience, and I am also getting a new perspective now that I am working directly with Micah as my mentor. I have started asking more questions and collaborating with other residents as well as picking the brains of the craftsmen.</p>
 
 <p>I read a lot of blogs &amp; articles about programming, design, video games, photography, education, and creativity in general and since I get a lot of time to think about things on the train each day I have been rather introspective this week regarding my residency, what I have learned, and my learning process in general. Im terrible at transitions, so here we go...</p>
@@ -21,7 +21,7 @@ tags : [residency]
 <p>So far this is how my residency has been - a lot of self learning, playing in the sandbox and mastering the tools of my trade while being mentored by master craftsmen who don't hover or feed me answers - they let me learn and I am extremely grateful for that.  My goal is to become a master at improvising and coming up with the best designs and solutions for my clients, setting the correct expectations, guiding them through the process and delivering premier results. With that I want to close with a quote from <a href="http://sandofsky.com/blog/shell-apps.html">Benjamin Sandofsky</a></p>
 
 <div class="t_quote_block">"Great products require more work. They require commitment, attention to detail, and leaving your comfort zone. Shortcuts are just a distraction."</div>
- 
+
 <ul>
   <strong>Followup</strong>
   <li>Go buy <a href="http://www.thinkwithportals.com/">Portal 1 &amp; 2</a></li>

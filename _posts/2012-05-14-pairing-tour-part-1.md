@@ -1,9 +1,9 @@
 ---
 layout: post
 category : blog
+title: Pairing Tour, Part 1
 tags : [residency]
 ---
-<h2>Pairing Tour - Part 1</h2>
 <p>I am now halfway through my Pairing Tour this week, which has given me the chance to follow along with different craftsmen working on various projects in order to get whole lot more experience very quickly.  So far it has been a lot of fun and very challenging, especially since I am a UX/UI Designer working with developers. A few times during the week it has felt like I've taken Italian 101 &amp; 102, and then decided to sit in on a lecture on Italian Literature of the 16th century. Thankfully I can keep up, but there's no way Im going to pass the final.</p>
 <h4>Day 1</h4>
 <p>Monday I paired with Wai-Lee at a clients office which let me see how a much larger project works when stories are broken out into different teams and conflicts arise. A small chicken &amp; the egg situation came up in the morning so there was a lot of discussions about how to tackle various problems involved with it.  There were some disagreements on how some things should be implemented but a scrum in the conference room took care of it - communication was key and work didn't get hung up. I got to see how much is involved in Test Driven Design &amp; how important it is to delivering a quality product, as well as a much closer look into the bowels of MVC Architecture. I was also very pleased to see that there were no ego's involved - discussions were on topic and to the point, issues were resolved and things kept flowing.</p>

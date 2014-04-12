@@ -11,81 +11,60 @@
   cursor: pointer;
 }
 
-.sidebar { padding: 50px 25px; }
-
-.sidebar .brand {
-  display: block;
-  text-align: center;
-  margin-bottom: 2em;
-}
-
-.sidebar .brand span {
-  background: #d95b44;
-  border-radius: 55px;
-  color: #fff;
-  font-size: 45px;
-  font-weight: normal;
-  padding: 30px 20px;
-  transition: all .25s;
-}
-
-.sidebar .brand span:hover { background: #333; }
-
-.sidebar aside {
-  color: #999;
-  font-size: .7em;
-  padding: 15px;
-}
-
-.sidebar aside img {
-  float: left;
-  margin-right: 10px;
-  width: 75px;
-}
-
-.brand {
-  margin: 0 auto;
-  width: 120px;
-}
-
-.brand img { max-width: 100%; }
-
-.nav li { text-align: center; }
-.nav li a { text-decoration: none; }
-.nav li a:hover { color: #000; }
-
-
-
 
 /*
   =======================================================================
   Posts
   =======================================================================
 */
+
+.index-post {
+  border-top: 1px solid #eee;
+  padding: 1em 0;
+  margin-bottom: 4em;
+}
+
+
+.index-post:first-child {
+  border: none;
+}
+
+
 .index-post h1,
 .index-post h2,
 .index-post h3,
 .index-post h4,
 .index-post h5 {
+  color: #333;
   margin-right: auto;
   margin-left: auto;
-  width: 95%;
+  width: 90%;
 }
+.index-post h2 a {
+  text-decoration: none;
+}
+.index-post h2 span {
+  color: #777;
+  font-size: .7em;
+  font-weight: normal;
+  display: block;
+}
+
+
+
 .index-post p {
+  color: #444;
   margin: 1.5em auto;
   width: 88%;
 }
-.index-post img {
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ccc;
+
+.index-post  img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
 }
-
 .post-ribbon {
-  background-image: -webkit-gradient(linear, 35% 0%, 0% 0%, from(rgb(247, 245, 242)), to(rgb(255, 255, 255)));
-  background-image: -moz-linear-gradient(center right, rgb(242, 242, 242) 25%, rgb(255, 255, 255) 80%);
-  border-left: 5px solid #2a4e89;
-  font-size: .8em;
+  font-size: 70%;
   margin: 0 !important;
   padding: 8px 10px;
   width: 100% !important;
@@ -108,6 +87,11 @@
 .disabled a {
   color: #eee;
 }
+
+
+
+
+
 
 /*
   =======================================================================

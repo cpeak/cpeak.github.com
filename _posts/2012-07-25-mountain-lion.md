@@ -1,10 +1,10 @@
 ---
 layout: post
 category : blog
+title: Upgrading To Mountain Lion
 tags : [ Development, OSX, "Mountain Lion" ]
 ---
 
-<h2>Upgrading to 10.8 Mountain Lion</h2>
 <p>Today I dove right in and upgraded to OS X 10.8 Mountain Lion, and overall the upgrade went very well.  Just a few snags with my development environment.  My Pow configuration came through just fine, but PHP was disabled and it reset my default Document Root.  Lets take a look at how I restored my settings, and how I have my local development environment setup.</p>
 <p>Under 10.7 and below there was a 'Web Sharing' checkbox under the Sharing preference pane. This allowed you to host development sites right in your <code>user/Sites</code> directory.  Upgrading to 10.8 seems to have removed that checkbox and defaulted back to <code>/Library/WebServer/Documents/</code> for hosting development sites. PHP also seems to be disabled as well.  No problem, lets just take care of those:</p>
 <p>To enable PHP, open <code>/etc/apache2/httpd.conf</code> with your editor of choice and un-comment locate this line:</p>

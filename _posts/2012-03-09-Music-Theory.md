@@ -3,7 +3,6 @@ layout: post
 category : blog
 tags : [residency, web-design]
 ---
-
 <article>
   <h2>Music Theory and Web Design?</h2>
   <p>In my last post I discussed some practices I have been learning in order to clean up my HTML5 and CSS code on the back end.  This week I have been working on how to improve my typography, design, and layout using a grid based approach aided by the modular scale.</p>
@@ -17,4 +16,4 @@ tags : [residency, web-design]
   <p>As you can see in the photo above, the main article uses roughly 3 columns, then a gutter, then the sidebar uses precisely 2. Now the layout has a much better and more consistent flow. The photo and caption sit nicely in the second and third column, and to create some tension I made sure the article didn't flow all the way over to the edge of the 3rd column.</p>
   <p>Just remember that these are guidelines and can be broken when necessary. Bending or breaking these rules create tension and unique design... just be careful when you stray from your scales .</p>
 </article>
-	
+

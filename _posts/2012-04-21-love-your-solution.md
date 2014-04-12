@@ -1,9 +1,9 @@
 ---
 layout: post
 category : blog
+title: Love Your Solution
 tags : [residency]
 ---
-<h2>Love your solution</h2>
 <p>I recently sat up late one night obsessing over a tiny detail of an app we are working on and I had one of those fantastic moments when I came up with a solution that I absolutely loved. One of those moments where you can't work fast enough to implement your idea. These are the details that shine, but they make the less-than-ideal parts stand out even more.  Programmers often talk about 'smells'- various bits of code that aren't quite up to par, and the same is true for UI/UX. If you're sitting in a meeting and not anxious to show off your design, something smells. You know you've done a great job when you want to show off your solution and point out all the little detais. Take pride in your work and make sure at the end of the day it's something worthy of putting your name on.</p>
 <h3>Kill the lazy</h3>
 <p>I was in a meeting and while the team was presenting our application they clicked on a link and up popped a window - formatted with legacy code, didn't fit into the new design, one of those little nooks that is so easy to overlook.  My face and neck got hot and I knew that was one thing that should have been done but wasn't.  I fed myself a few excuses about why I didn't get around to it, but in the end they were just excuses. I was too lazy to put in the extra effort and finish the job. At some point last week I decided to call it a day and catch the train home instead of saying 'I'll stay late, finish this up, and catch the next train'. Yes, sometimes there is too much to do and not enough time to do it, but if you want to be successful learn to find those moments and kill em. Work hard, stay late, sweat the details. Those lazy moments keep your design from being awesome. I don't care if its one button in the 'edit client' popup, or the entire UI for an application, I want to find the best design for it and say 'I did that!'. </p>

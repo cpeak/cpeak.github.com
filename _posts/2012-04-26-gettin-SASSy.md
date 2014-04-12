@@ -1,9 +1,9 @@
 ---
 layout: post
 category : blog
+title: Gettin SASSy
 tags : [residency, CSS]
 ---
-<h2>Gettin' SASSy</h2>
 <p>This past week I finally took the plunge into CSS pre-processing and started playing around with <a href="http://sass-lang.com/">SASS</a>.  I've never been a huge fan of pre-processing - I like to be in complete control of what goes into my production level CSS files, but the whole point of my residency is to become a much more well-rounded developer and I want to have as many tools in my bag as I can. I have learned over the years that using the right tool for the job makes life a <em>lot</em> easier.</p>
 
 <h3>What does it do?</h3>
@@ -28,8 +28,8 @@ tags : [residency, CSS]
 &emsp; &emsp; width: 100px;<br />
 &emsp; &emsp; &amp;:hover { <br />
 &emsp; &emsp; &emsp; background-color: #f2f2f2;<br />
-&emsp; &emsp; } <br /> 
-&emsp; } 
+&emsp; &emsp; } <br />
+&emsp; }
 </code>
 </div>
 
@@ -43,7 +43,7 @@ tags : [residency, CSS]
 } <br />
 .foo li:hover { <br />
  &emsp; background-color: #f2f2f2;<br />
-} 
+}
 </code>
 </div>
 
@@ -59,5 +59,5 @@ tags : [residency, CSS]
 <p><strong>The Ugly:</strong> What I like the least is the output of the SASS processing. The production .css file can sometimes be harder to read by humans. As a craftsman I want my production files to be easy to navigate - that way when either I, or another developer goes back into the code six months or a year later it's easy to understand.</p>
 
 <h3>Overall</h3>
-<p>I haven't actually used it in a production environment yet, and when I do I will share my experiences in another post. So far I have mixed feelings on it - I like the premise, but I have a control issue (ok, that ones on me) - that's why I still drive a Jeep with a manual transmission and no ABS, I like to be in total control. Variables, nesting, interpolation, operations - these are all things I want to get excited about and want to see in the official CSS spec, but right now they aren't. I will continue experimenting and sharing my thoughts -  To be continued...</p> 
+<p>I haven't actually used it in a production environment yet, and when I do I will share my experiences in another post. So far I have mixed feelings on it - I like the premise, but I have a control issue (ok, that ones on me) - that's why I still drive a Jeep with a manual transmission and no ABS, I like to be in total control. Variables, nesting, interpolation, operations - these are all things I want to get excited about and want to see in the official CSS spec, but right now they aren't. I will continue experimenting and sharing my thoughts -  To be continued...</p>
 
