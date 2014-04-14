@@ -1,3 +1,9 @@
+/*
+  ================================================================
+  Global Styling
+  ================================================================
+*/
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,7 +14,7 @@
 html, body {
   height: 100%;
   background-color: #fff;
-  font-family: "proxima-nova", serif;
+  font-family: 'Proxima Nova', "proxima-nova", serif;
   font-size: 110%;
   margin: 0;
   padding: 0;
@@ -29,6 +35,7 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
 }
@@ -41,8 +48,38 @@ p {
 ul { list-style: none; margin: 0; padding: 0; }
 
 
-.pagination ul { display: block; list-style: none; }
+/*
+  ================================================================
+  Layout
+  ================================================================
+*/
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+.standalone {
+  padding: 0 40px;
+  margin: 2em auto;
+  width: 80%;
+}
+
+
+.main-content {
+  margin: 1em auto;
+  overflow: hidden;
+  max-width: 900px;
+  width: 95%;
+}
+
+
+/*
+  ================================================================
+  Header & Navigation
+  ================================================================
+*/
 
 header {
   border-bottom: 1px solid #f2f2f2;
@@ -55,27 +92,138 @@ header img {
   width: 175px;
 }
 
-.main-content {
+
+
+/*
+  ================================================================
+  Index
+  ================================================================
+*/
+
+.archive-link {
+  background: #f9f9f9;
+  display: block;
+  margin: 3em auto;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 80%;
+}
+
+.archive-link:hover {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+
+.pagination ul { display: block; list-style: none; }
+
+
+.pagination {
   margin: 1em auto;
   overflow: hidden;
-  max-width: 900px;
-  width: 95%;
+  width: 70%;
 }
 
-
-.standalone {
-  padding: 0 40px;
-}
-
-.column {
+.pagination li a {
   float: left;
-  width: 50%;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 33%;
+}
+
+.disabled a {
+  color: #eee;
 }
 
 
 
 
 
+
+/*
+  =======================================================================
+  Index Posts
+  =======================================================================
+*/
+
+.index-post {
+  border-top: 1px solid #eee;
+  padding: 1em 0;
+  margin: 0 auto 4em auto;
+  width: 80%;
+}
+
+
+.index-post:first-child {
+  border: none;
+}
+
+
+.index-post h1,
+.index-post h2,
+.index-post h3,
+.index-post h4,
+.index-post h5 {
+  color: #333;
+  margin-right: auto;
+  margin-left: auto;
+}
+.index-post h2 a {
+  text-decoration: none;
+}
+.index-post h2 span {
+  color: #777;
+  font-size: .7em;
+  font-weight: normal;
+  display: block;
+}
+
+
+
+.index-post p {
+  color: #444;
+  margin: 1.5em auto;
+}
+
+.index-post  img {
+  display: block;
+  margin: 1em auto 0 auto;
+  max-width: 100%;
+}
+.post-ribbon {
+  font-size: 70%;
+  margin: 0 !important;
+  padding: 8px 10px;
+  width: 100% !important;
+}
+
+/*
+  =======================================================================
+  Individual Posts
+  =======================================================================
+*/
+
+
+.individual-post {
+  max-width: 35em;
+  margin: 2em auto;
+}
+
+.individual-post img {
+  max-width: 100%;
+}
+
+/*
+  =======================================================================
+  Archive Page
+  =======================================================================
+*/
+
+.post-list li {
+  padding: 4px 0;
+}
 
 
 
@@ -87,13 +235,8 @@ header img {
 */
 
 @media all and (max-width: 850px) {
-  body {
-    height: auto !important;
-    border-bottom: 5px solid #eeebe7;
-  }
-
   .main-content {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
   }
 }
@@ -103,6 +246,11 @@ header img {
 @media all and (max-width: 600px) {
   .main-content {
     font-size: 80%;
+  }
+
+  .standalone {
+    padding: 0;
+    width: 100%;
   }
   header img {
     width: 100px !important;
@@ -117,5 +265,15 @@ header img {
   .main-content p {
     margin: 0 0 1em 0 !important;
     width: 100% !important;
+  }
+
+  .index-post {
+    margin: 2em 0;
+    width: 100%;
+  }
+
+  .pagination {
+    margin: 0 !important;
+    width: 100%;
   }
 }
