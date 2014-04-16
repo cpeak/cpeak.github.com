@@ -14,8 +14,8 @@
 html, body {
   height: 100%;
   background-color: #fff;
-  font-family: 'Proxima Nova', "proxima-nova", serif;
-  font-size: 110%;
+  font-family: 'freight-text-pro', sans-serif;
+  font-size: 120%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -34,8 +34,10 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -1px;
-  line-height: 1.5em;
+  font-family: "jaf-bernino-sans";
+  font-size: 175%;
+  letter-spacing: -2px;
+  line-height: 1.25em;
   margin: 0;
   padding: 0;
 }
