@@ -15,7 +15,7 @@ html, body {
   height: 100%;
   background-color: #fff;
   font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
-  font-size: 110%;
+  font-size: 105%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -34,7 +34,7 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -2px;
+  font-size: 200%;
   line-height: 1.25em;
   margin: 0;
   padding: 0;
@@ -83,13 +83,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 header {
   border-bottom: 1px solid #f2f2f2;
-  padding: 4%;
+  padding: 5%;
+  margin-bottom: 2em;
 }
 
 header img {
   display: block;
   margin: 0 auto;
-  width: 175px;
 }
 
 
@@ -173,10 +173,12 @@ header img {
 .index-post h2 a {
   text-decoration: none;
 }
-.index-post h2 span {
+.index-post h2 span { /* Post date */
   color: #777;
-  font-size: .7em;
+  font-size: .6em;
   font-weight: normal;
+  letter-spacing: -1px;
+  line-height: .8em;
   display: block;
 }
 
