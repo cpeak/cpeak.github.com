@@ -1,30 +1,11 @@
 ---
-layout: page
-title: cpeak
+layout: landing
+title : cpeak design + code
 ---
-
-{% for post in site.posts limit:8 %}
-  {% include post.html %}
-{% endfor %}
-
-<a class='archive-link' href="/archive.html">Older Posts >> </a>
-
-<script>
-  $('.index-post').onScreen({
-    container: window,
-    direction: 'vertical',
-    doIn: function() {
-      addClass: 'animated'
-    },
-    doOut: function() {
-      toggleClass: 'animated'
-    },
-    tolerance: 0,
-    throttle: 50,
-    toggleClass: 'animated',
-    lazyAttr: null,
-    lazyPlaceholder: 'someImage.jpg',
-    debug: false
-  });
-</script>
-
+<div class='splash animated fadeIn'>
+  <a href="/blog.html"><img class='logo' src="/images/design+code.svg" /></a>
+  <nav>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+  </nav>
+</div>

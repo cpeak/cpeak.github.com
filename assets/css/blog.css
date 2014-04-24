@@ -17,6 +17,7 @@ html, body {
   font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
   font-size: 105%;
   margin: 0;
+  overflow: auto;
   padding: 0;
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +25,7 @@ html, body {
 
 
 a, a:visited {
-  color: #2a4e89;
+  color: #721515;
   transition: all .25s;
 }
 a:hover { color: #000; }
@@ -35,6 +36,7 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 200%;
+  letter-spacing: -1px;
   line-height: 1.25em;
   margin: 0;
   padding: 0;
@@ -53,6 +55,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   Layout
   ================================================================
 */
+
+
+
+
 
 .column {
   float: left;
@@ -74,10 +80,50 @@ ul { list-style: none; margin: 0; padding: 0; }
   width: 95%;
 }
 
+/*
+  ================================================================
+  Index
+  ================================================================
+*/
+body.full {
+  background: #333;
+  background: url('/images/blur.jpg');
+  background-size: cover;
+}
+
+
+.splash {
+  margin: 100px auto;
+  width: 50%;
+}
+
+.splash img.logo {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: block;
+  margin: 4em auto;
+  text-align: center;
+}
+
+nav a {
+  color: white !important;
+  margin: 10px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background: rgba(0,0,0,.75);
+}
+
 
 /*
   ================================================================
-  Header & Navigation
+  Header
   ================================================================
 */
 
@@ -90,13 +136,14 @@ header {
 header img {
   display: block;
   margin: 0 auto;
+  max-width: 100px;
 }
 
 
 
 /*
   ================================================================
-  Index
+  Blog
   ================================================================
 */
 
@@ -246,6 +293,13 @@ header img {
 
 
 @media all and (max-width: 600px) {
+  .splash {
+    margin: 5% auto;
+    width: 90%;
+  }
+  nav a {
+    margin: 5px;
+  }
   .main-content {
     font-size: 80%;
   }
@@ -255,7 +309,7 @@ header img {
     width: 100%;
   }
   header img {
-    width: 100px !important;
+    width: 70px !important;
   }
   .post-ribbon {
     font-size: 100% !important;
