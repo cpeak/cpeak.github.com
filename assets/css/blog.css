@@ -67,6 +67,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 
 .standalone {
+  color: #444;
   padding: 0 40px;
   margin: 2em auto;
   width: 80%;
@@ -110,6 +111,7 @@ nav {
 }
 
 nav a {
+  border-radius: 2px;
   color: white !important;
   margin: 10px;
   padding: 15px 25px;
