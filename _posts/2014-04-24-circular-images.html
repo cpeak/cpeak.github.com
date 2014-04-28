@@ -2,7 +2,7 @@
 layout: post
 title: Circular Images
 category: blog
-published: false
+published: true
 ---
 <p>One interesting problem that came up recently while working on a client project was figuring out a way to make profile images display as a circle, but without having to go back and re-crop all of them either as transparent circular pngs or square cropped jpgs. That would be too much work up front, as well as an additional burden on the client when creating new user images. Lets take a closer look at the problem...</p>
 <img src="/images/ackbar.jpg" />
@@ -12,10 +12,13 @@ published: false
 <img class='wrong-square' src="/images/ackbar.jpg" />
 <p>So how are we going to achieve this? The solution does not actually display the image, it creates a responsive frame in which we will define the background for. While this doesn't work for every situation and may be tedious for completely static sites, in this instance we are dynamically generating the pages, so we simply define the background image of the element by a one line javascript call.</p>
 <p>Lets create a div, set <code>width</code> to be a percentage of its parent, and here's the trick: match the <code>padding-top</code> to whatever the width % is, in this example, 70%. Resize the window and you can see that the box is responsive and stays square. <i>Using SASS you can simply set a variable to use for both, so you only have to change it once.</i></p>
-<p><strong>GIST HERE</strong></p>
+<script src="https://gist.github.com/cpeak/b0c6eb59b083214cf9b4.js"></script>
 <div class='correct-blank'></div>
 <p>Okay, lets put our image in there, with <code>background-size: cover;</code> and <code>background-position: 50%</code> just to make sure its centered.</p>
+<script src="https://gist.github.com/cpeak/2ecf9443703a51eb5928.js"></script>
 <div class='correct-square'></div>
 <p>Awesome, now we're on the right track. Lets apply that <code>border-radius: 50%</code>.</p>
+<script src="https://gist.github.com/cpeak/bf7a8a2243b87e09e4ae.js"></script>
 <div class='correct'></div>
-<p>It's not a trap! Circular images when the source is not a perfect square. You do have to watch out and make sure the subject is centered, but other than that you are good to go.</p>
+<p>It's not a trap! Circular images when the source is not a perfect square. You do have to watch out and make sure the subject is centered, but other than that you are good to go. If you are dynamically generating the pages simply leave the background-image source call out of the CSS, and apply it in each view page using variables to insert the correct image:</p>
+<script src="https://gist.github.com/cpeak/86bea3194e52ebe22fe6.js"></script>
