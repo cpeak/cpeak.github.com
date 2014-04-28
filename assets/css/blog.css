@@ -238,7 +238,8 @@ header img {
   margin: 1.5em auto;
 }
 
-.index-post  img {
+.index-post  img,
+.individual-post img {
   display: block;
   margin: 1em auto 0 auto;
   max-width: 100%;
