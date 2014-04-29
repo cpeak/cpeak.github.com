@@ -25,7 +25,7 @@ html, body {
 
 
 a, a:visited {
-  color: #721515;
+  color: #A12828;
   transition: all .25s;
 }
 a:hover { color: #000; }
@@ -45,6 +45,14 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.5em;
   margin: 0px 0px 1.5em 0px;
+}
+
+blockquote {
+  border-left: 1px solid #a12828;
+  color: #555;
+  line-height: 1.5em;
+  margin: 1em 0 1.5em 0;
+  padding: 0 1em;
 }
 
 ul { list-style: none; margin: 0; padding: 0; }
@@ -122,7 +130,16 @@ nav a:hover {
   background: rgba(0,0,0,.75);
 }
 
-
+nav.normal {
+  font-size: 80%;
+  margin: 4em auto 0 auto;
+}
+nav.normal a {
+  color: black !Important;
+}
+nav.normal a:hover {
+  background: rgba(0,0,0,0.05);
+}
 /*
   ================================================================
   Header
@@ -224,11 +241,12 @@ header img {
 }
 .index-post h2 span { /* Post date */
   color: #777;
+  display: block;
   font-size: .6em;
   font-weight: normal;
   letter-spacing: -1px;
   line-height: .8em;
-  display: block;
+  margin-bottom: 1em;
 }
 
 
@@ -238,10 +256,9 @@ header img {
   margin: 1.5em auto;
 }
 
-.index-post  img,
-.individual-post img {
+.index-post  img {
   display: block;
-  margin: 1em auto 0 auto;
+  margin: 0 auto 1em auto;
   max-width: 100%;
 }
 .post-ribbon {
@@ -264,6 +281,11 @@ header img {
 }
 
 .individual-post img {
+  display: block;
+  margin: 0 auto 1em auto;
+  max-width: 100%;
+}
+.individual-post iframe {
   max-width: 100%;
 }
 
@@ -273,8 +295,20 @@ header img {
   =======================================================================
 */
 
+.post-list {
+  margin: 1em 0;
+  column-gap: 10px;
+
+  -webkit-column-count:3;
+  -moz-column-count:3;
+  column-count:3;
+
+  -webkit-column-rule: 1px outset #f2f2f2;
+  -moz-column-rule: 1px outset #f2f2f2;
+  column-rule: 1px outset #f2f2f2;
+}
 .post-list li {
-  padding: 4px 0;
+  padding: 8px;
 }
 
 

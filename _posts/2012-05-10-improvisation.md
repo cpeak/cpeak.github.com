@@ -20,13 +20,6 @@ tags : [residency]
 
 <p>So far this is how my residency has been - a lot of self learning, playing in the sandbox and mastering the tools of my trade while being mentored by master craftsmen who don't hover or feed me answers - they let me learn and I am extremely grateful for that.  My goal is to become a master at improvising and coming up with the best designs and solutions for my clients, setting the correct expectations, guiding them through the process and delivering premier results. With that I want to close with a quote from <a href="http://sandofsky.com/blog/shell-apps.html">Benjamin Sandofsky</a></p>
 
-<div class="t_quote_block">"Great products require more work. They require commitment, attention to detail, and leaving your comfort zone. Shortcuts are just a distraction."</div>
+<blockquote>"Great products require more work. They require commitment, attention to detail, and leaving your comfort zone. Shortcuts are just a distraction."</blockquote>
 
-<ul>
-  <strong>Followup</strong>
-  <li>Go buy <a href="http://www.thinkwithportals.com/">Portal 1 &amp; 2</a></li>
-  <li>Many many thanks to Mr. Reber &amp; beporter</li>
-  <li>To this day when I hear 'C++' I always want to add 'for you ++'</li>
-  <li>I hope you're following <a href="http://randsinrepose.com/">Rands In Repose</a> as well as <a href="http://www.codinghorror.com/blog/">Jeff Atwood</a></li>
-</ul>
 
