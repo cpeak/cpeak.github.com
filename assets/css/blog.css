@@ -273,7 +273,7 @@ header img {
 
 .individual-post img {
   display: block;
-  margin: 0 auto 1em auto;
+  margin: 1em auto;
   max-width: 100%;
 }
 .individual-post iframe {
@@ -318,7 +318,7 @@ header img {
 .correct-blank {
   background: #f9f9f9;
   border: 1px dashed #555;
-  margin: 0 auto;
+  margin: 1em auto;
   padding-top: 70%;
   width: 70%;
 
@@ -327,7 +327,7 @@ header img {
   background-image: url('/images/ackbar.jpg');
   background-size: cover;
   background-position: 50%;
-  margin: 0 auto;
+  margin: 1em auto;
   padding-top: 70%;
   width: 70%;
 }
@@ -337,7 +337,7 @@ header img {
   background-size: cover;
   background-position: 50%;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 1em auto;
   padding-top: 70%;
   width: 70%;
 }
