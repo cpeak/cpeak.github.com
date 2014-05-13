@@ -101,17 +101,6 @@ body.full {
 }
 
 
-.splash {
-  margin: 100px auto;
-  width: 60%;
-}
-
-.splash img.logo {
-  display: block;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 nav {
   display: block;
   margin: 4em auto 0 auto;
@@ -129,8 +118,6 @@ nav a {
 }
 nav a:hover { background: rgba(0,0,0,.05); }
 
-.splash nav a { color: #fff !important; }
-.splash nav a:hover { background: rgba(0,0,0,0.75); }
 /*
   ================================================================
   Header
@@ -372,28 +359,9 @@ header img {
 
 
 @media all and (max-width: 600px) {
-  .splash {
-    margin: 8% auto 0 auto;
-    width: 90%;
-  }
   header {
     margin: 0;
   }
-  nav {
-    margin: 1em 0 0 0;
-  }
-  nav a {
-    border-bottom: 1px solid rgba(0,0,0,0.15);
-    display: block;
-    margin: 0px;
-  }
-  nav a:last-child {
-    border: none;
-  }
-  .splash nav a {
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-  }
-  .splash nav a:last-child { border: none; }
   .main-content {
     font-size: 80%;
     margin: 0;
