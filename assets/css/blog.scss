@@ -1,3 +1,10 @@
+---
+---
+
+
+
+$semi-black: rgba(0,0,0,0.05);
+
 /*
   ================================================================
   Global Styling
@@ -38,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 200%;
   letter-spacing: -1px;
   line-height: 1.25em;
-  margin: 0;
+  margin: 0 0 1em 0;
   padding: 0;
 }
 
@@ -58,6 +65,41 @@ blockquote {
 ul { list-style: none; margin: 0; padding: 0; }
 
 .centered { text-align: center; }
+
+$block-size: 33.3333%;
+ul.block-list {
+  li {
+    background-size: cover;
+    //border: 1px solid white;
+    float: left;
+    padding-top: $block-size;
+    position: relative;
+    width: $block-size;
+    span {
+      background: rgba(0,0,0,0.5);
+      bottom: 0;
+      color: white;
+      left: 0;
+      opacity: 0;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      transition: all 0.25s ease-in;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  ul.block-list li {
+    padding-top: 50%;
+    width: 50%;
+  }
+}
 
 /*
   ================================================================
@@ -82,7 +124,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .main-content {
   margin: 1em auto;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 1000px;
   width: 95%;
 }
 
@@ -102,18 +144,29 @@ nav {
   display: block;
   margin: 4em auto 0 auto;
   text-align: center;
+  a {
+    border-radius: 2px;
+    color: black !important;
+    font-size: .85em;
+    margin: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      background: $semi-black;
+
+    }
+  }
 }
 
-nav a {
-  border-radius: 2px;
-  color: black !important;
-  font-size: .85em;
-  margin: 10px;
-  padding: 15px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+@media screen and (max-width: 650px) {
+  nav {
+    margin-bottom: 1em;
+    a {
+      margin: 0;
+    }
+  }
 }
-nav a:hover { background: rgba(0,0,0,.05); }
 
 /*
   ================================================================
@@ -339,6 +392,26 @@ header img {
 }
 
 #instafeed a img { max-width: 100%; }
+
+/*
+  ==============================================================================
+  Portfolio
+  ==============================================================================
+*/
+
+#just-enuff { background-image: url('/images/just-enuff.jpg'); }
+#twoandseven { background-image: url('/images/2and7.jpg'); }
+#rhs { background-image: url('/images/rhs.jpg'); }
+#modern { background-image: url('/images/modern.jpg'); }
+#champions { background-image: url('/images/8lcl.jpg'); }
+#punchcard { background-image: url('/images/punchcard.jpg'); }
+#als { background-image: url('/images/als.jpg'); }
+#start-basic { background-image: url('/images/start-basic.jpg'); }
+#gostu { background-image: url('/images/gostu.jpg'); }
+#miyc { background-image: url('/images/miyc.jpg'); }
+#owl { background-image: url('/images/owl.jpg'); }
+#family { background-image: url('/images/family.jpg'); }
+#great-peaks{ background-image: url('/images/great-peaks.jpg'); }
 
 /*
   ==============================================================================

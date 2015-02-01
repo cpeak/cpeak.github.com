@@ -13,4 +13,5 @@ twitter : c_peak
 feedburner :
 
 production_url : http://cpeak.github.io
-
+sass:
+  sass_dir: /css/_sass
