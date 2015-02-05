@@ -4,12 +4,14 @@
     {% include head.html %}
   </head>
 
-  <body class='fullscreen animated fadeIn'>
+  <body class='fullscreen'>
     <header>
-    <a class='logo' href="/"><img class='image--circular' src="/images/peak-chris.jpg" /><span>Chris Peak</span></a>
-    {% include nav.html %}
+      <a class='logo' href="/"><img class='image--circular' src="/images/peak-chris.jpg" /><span>Chris Peak</span></a>
+      {% include nav.html %}
     </header>
-    {{ content }}
-    {% include footer.html %}
+    <div class="animated fadeIn">
+      {{ content }}
+      {% include footer.html %}
+    </div>
   </body>
 </html>
