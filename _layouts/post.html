@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class='individual-post animated fadeIn'>
+<div class='post animated fadeIn'>
+  <h2 class='post__headline'>{{ page.title }}<span>{{ page.date | date: "%d %B %Y" }}</span></h2>
   {{ content }}
 </div>
 

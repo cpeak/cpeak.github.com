@@ -1,14 +1,7 @@
 ---
 ---
 
-$semi-black: rgba(0,0,0,0.05);
-
-/*
-  ================================================================
-  Global Styling
-  ================================================================
-*/
-
+/* ------------------------------------------------- Globals */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,17 +12,33 @@ body {
   height: 100%;
   background-color: #fff;
   font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
-  font-size: 105%;
   margin: 0;
   overflow: auto;
-  padding: 0;
+  padding: 0 0 5em 0;
   -webkit-font-smoothing: antialiased;
 }
+
+body.fullscreen {
+  padding-bottom: 60px;
+}
+
 html {
   position: relative;
   min-height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 200%;
+  letter-spacing: -1px;
+  line-height: 1.25em;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0px 0px 1.5em 0px;
+}
 
 a, a:visited {
   color: #A12828;
@@ -49,17 +58,13 @@ code {
   border-radius: 50%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 200%;
-  letter-spacing: -1px;
-  line-height: 1.25em;
-  margin: 0 0 1em 0;
-  padding: 0;
-}
+.centered { text-align: center; }
 
-p {
-  line-height: 1.5em;
-  margin: 0px 0px 1.5em 0px;
+.disabled a { color: #eee; }
+
+.standfirst {
+  display: block;
+  margin: 8%;
 }
 
 blockquote {
@@ -70,19 +75,17 @@ blockquote {
   padding: 0 1em;
 }
 
-ul { list-style: none; margin: 0; padding: 0; }
-
-.centered { text-align: center; }
-
-.standfirst {
-  display: block;
-  margin: 10%;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
+/* ------------------------------------------------- Block List */
 $block-size: 50%;
 $block-size-large: 33.333%;
 ul.block-list {
+  overflow: hidden;
   li {
     background-size: cover;
     font-size: 0.875em;
@@ -110,6 +113,7 @@ ul.block-list {
     }
   }
 }
+
 @media screen and (min-width: 650px) {
   ul.block-list li {
     padding-top: $block-size-large;
@@ -117,272 +121,79 @@ ul.block-list {
   }
 }
 
-/*
-  ================================================================
-  Layout
-  ================================================================
-*/
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-
-.standalone {
-  color: #444;
-  padding: 0 40px;
-  margin: 2em auto;
-  width: 80%;
-}
-
-
+/* ------------------------------------------------- Layout */
 .main-content {
-  margin: 1em auto;
-  overflow: hidden;
-  max-width: 1000px;
-  width: 95%;
+  font-size: 85%;
+  padding: 10px;
 }
 
-/*
-  ================================================================
-  Header & Navigation
-  ================================================================
-*/
-
-header {
-  border-bottom: 1px solid $semi-black;
-  padding: 20px 0;
-  .logo {
-    display: block;
-    overflow: hidden;
-    margin: 20px auto 0 auto;
-    width: 25%;
-    span { display: none; }
+@media screen and (min-width: 650px) {
+  .main-content {
+    font-size: 110%;
+    margin: 0 auto;
+    max-width: 800px;
   }
+}
+
+
+/* ------------------------------------------------- Blog Posts */
+.post {
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+  margin-bottom: 3em;
+  color: #444;
   img {
-    border: 2px solid #990000;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    max-width: 100%;
+  }
+  &:first-child {
+    border: none;
   }
 }
 
-
-nav {
-  display: block;
-  margin: 1em auto 0 auto;
-  text-align: center;
+[class*='post__headline'] {
   a {
-    border-radius: 2px;
-    color: black !important;
-    display: inline-block;
-    font-size: .85em;
-    padding: 15px;
     text-decoration: none;
-    text-transform: uppercase;
-    &:hover {
-      background: $semi-black;
-
-    }
+  }
+  span {
+    color: #777;
+    display: block;
+    font-size: .6em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: .8em;
+    margin-bottom: 1em;
   }
 }
-
-@media screen and (min-width: 650px) {
-  header {
-    overflow: hidden;
-    padding: 0 0 20px 0;
-    .logo {
-      float: left;
-      margin-left: 2em;
-      width: 30%;
-      img {
-        float: left;
-        width: 60px;
-      }
-      span {
-        color: black;
-        font-size: 1.25em;
-        font-weight: bold;
-        display: block;
-        padding: 20px 0 0 10px;
-        float: left;
-      }
-    }
-  }
-  nav {
-    display: inline-block;
-    float: right;
-    margin: 30px 2em 0 0;
-  }
-}
-
-
-
-footer {
-  border-top: 1px solid $semi-black;
-  color: #888;
-  position: absolute;
-  padding: 20px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  p {
-    font-size: .9em;
-    margin: 0;
-    text-align: center;
-  }
-  a, a:visited {
-    color: inherit;
-    padding: 0 4px;
-    text-decoration: none;
-    &:hover {
-      color: black;
-    }
-  }
-}
-
-@media screen and (min-width: 650px) {
-  footer p {
-    text-align: right;
-  }
-}
-
-
-
-
-
-/*
-  ================================================================
-  Blog
-  ================================================================
-*/
 
 .archive-link {
   background: #f9f9f9;
   display: block;
-  margin: 1em auto 6em auto;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
   text-decoration: none;
-  width: 80%;
+  &:hover {
+    background: #f9f9f9;
+    cursor: pointer;
+  }
 }
-
-.archive-link:hover {
-  background: #f9f9f9;
-  cursor: pointer;
-}
-
-
-.pagination ul { display: block; list-style: none; }
-
 
 .pagination {
-  margin: 1em auto 4em auto;
+  margin: 4em auto 0 auto;
   overflow: hidden;
-  width: 70%;
+  width: 100%;
+  li a {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 33.333%;
+  }
 }
 
-.pagination li a {
-  float: left;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  width: 33%;
-}
-
-.disabled a {
-  color: #eee;
-}
-
-
-
-
-
-
-/*
-  =======================================================================
-  Index Posts
-  =======================================================================
-*/
-
-.index-post {
-  border-top: 1px solid #eee;
-  padding: 1em 0;
-  margin: 0 auto 4em auto;
-  width: 80%;
-}
-
-
-.index-post:first-child {
-  border: none;
-}
-
-
-.index-post h1,
-.index-post h2,
-.index-post h3,
-.index-post h4,
-.index-post h5 {
-  color: #333;
-  margin-right: auto;
-  margin-left: auto;
-}
-.index-post h2 a {
-  text-decoration: none;
-}
-.index-post h2 span { /* Post date */
-  color: #777;
-  display: block;
-  font-size: .6em;
-  font-weight: normal;
-  letter-spacing: -1px;
-  line-height: .8em;
-  margin-bottom: 1em;
-}
-
-
-
-.index-post p {
-  color: #444;
-  margin: 1.5em auto;
-}
-
-.index-post  img {
-  display: block;
-  margin: 0 auto 1em auto;
-  max-width: 100%;
-}
-.post-ribbon {
-  font-size: 70%;
-  margin: 0 !important;
-  padding: 8px 10px;
-  width: 100% !important;
-}
-
-/*
-  =======================================================================
-  Individual Posts
-  =======================================================================
-*/
-
-
-.individual-post {
-  max-width: 35em;
-  margin: 2em auto;
-}
-
-.individual-post img {
-  display: block;
-  margin: 1em auto;
-  max-width: 100%;
-}
-.individual-post iframe {
-  max-width: 100%;
-}
-
-/*
-  =======================================================================
-  archive page
-  =======================================================================
-*/
+/* ------------------------------------------------- Archive page */
 
 .post-list {
   margin: 1em 0;
@@ -408,12 +219,45 @@ footer {
   }
 }
 
+/* ------------------------------------------------- Instagram */
+#instafeed {
+  overflow: hidden;
+  a {
+    float: left;
+    margin-bottom: -5px;
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
 
-/*
-  =======================================================================
-  Post Examples Code
-  =======================================================================
-*/
+@media screen and (min-width: 650px) {
+  #instafeed a {
+    width: 20%;
+  }
+}
+
+
+/* ------------------------------------------------- Portfolio */
+
+#just-enuff { background-image: url('/images/just-enuff.jpg'); }
+#twoandseven { background-image: url('/images/2and7.jpg'); }
+#rhs { background-image: url('/images/rhs.jpg'); }
+#modern { background-image: url('/images/modern.jpg'); }
+#champions { background-image: url('/images/8lcl.jpg'); }
+#punchcard { background-image: url('/images/punchcard.jpg'); }
+#als { background-image: url('/images/als.jpg'); }
+#start-basic { background-image: url('/images/start-basic.jpg'); }
+#gostu { background-image: url('/images/gostu.jpg'); }
+#miyc { background-image: url('/images/miyc.jpg'); }
+#owl { background-image: url('/images/owl.jpg'); }
+#family { background-image: url('/images/family.jpg'); }
+#great-peaks{ background-image: url('/images/great-peaks.jpg'); }
+
+
+
+/* ------------------------------------------------- Unique code */
 
 .wrong { border-radius: 50%; }
 .wrong-square {
@@ -448,78 +292,3 @@ footer {
   width: 70%;
 }
 
-/*
-  ==============================================================================
-  Instagram
-  ==============================================================================
-*/
-
-#instafeed a {
-  float: left;
-  margin-bottom: -4px;
-  width: 20%;
-}
-
-#instafeed a img { max-width: 100%; }
-
-/*
-  ==============================================================================
-  Portfolio
-  ==============================================================================
-*/
-
-#just-enuff { background-image: url('/images/just-enuff.jpg'); }
-#twoandseven { background-image: url('/images/2and7.jpg'); }
-#rhs { background-image: url('/images/rhs.jpg'); }
-#modern { background-image: url('/images/modern.jpg'); }
-#champions { background-image: url('/images/8lcl.jpg'); }
-#punchcard { background-image: url('/images/punchcard.jpg'); }
-#als { background-image: url('/images/als.jpg'); }
-#start-basic { background-image: url('/images/start-basic.jpg'); }
-#gostu { background-image: url('/images/gostu.jpg'); }
-#miyc { background-image: url('/images/miyc.jpg'); }
-#owl { background-image: url('/images/owl.jpg'); }
-#family { background-image: url('/images/family.jpg'); }
-#great-peaks{ background-image: url('/images/great-peaks.jpg'); }
-
-/*
-  ==============================================================================
-  Media Queries
-  ==============================================================================
-*/
-
-@media all and (max-width: 850px) {
-  .main-content {
-    padding: 20px;
-    width: 100%;
-  }
-}
-
-
-
-@media all and (max-width: 600px) {
-  .main-content {
-    font-size: 80%;
-    margin: 0;
-  }
-
-  .standalone {
-    padding: 0;
-    width: 100%;
-  }
-  .post-ribbon {
-    font-size: 100% !important;
-    padding: 0 !important;
-  }
-  .index-post {
-    margin: 2em 0;
-    width: 100%;
-  }
-
-  .pagination {
-    width: 100%;
-  }
-  #instafeed a {
-    width: 50%;
-  }
-}
