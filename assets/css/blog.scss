@@ -1,5 +1,6 @@
 ---
 ---
+$salmon: #C14E51;
 
 /* ------------------------------------------------- Globals */
 * {
@@ -47,8 +48,8 @@ p.disclaimer {
 }
 
 a, a:visited {
-  color: #A12828;
-  transition: all .25s;
+  color: $salmon;
+  transition: color .35s;
 }
 a:hover { color: #000; }
 
@@ -210,7 +211,7 @@ ul.block-list {
 /* ------------------------------------------------- Archive page */
 
 .post-list {
-  margin: 1em 0;
+  margin: 1em 0 0 -5px;
   column-gap: 10px;
 
   -webkit-column-count:2;
@@ -221,8 +222,21 @@ ul.block-list {
   -moz-column-rule: 1px outset #f2f2f2;
   column-rule: 1px outset #f2f2f2;
 }
-.post-list li {
+.post-list li a {
+  color: #282828;
+  display: block;
   padding: 8px;
+  text-decoration: none;
+  span {
+    color: #C14E51;
+    font-size: 80%;
+  }
+  &:hover {
+    color: black;
+    span {
+      color: black;
+    }
+  }
 }
 
 @media screen and (min-width: 650px) {
