@@ -12,6 +12,8 @@ body {
   height: 100%;
   background-color: #fff;
   font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
+  font-weight: 200;
+  font-size: 110%;
   margin: 0;
   overflow: auto;
   padding: 0 0 5em 0;
@@ -135,6 +137,14 @@ ul.block-list {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-content {
+    font-size: 130%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+
 
 /* ------------------------------------------------- Blog Posts */
 .post {
@@ -160,7 +170,7 @@ ul.block-list {
     color: #777;
     display: block;
     font-size: .6em;
-    font-weight: normal;
+    font-weight: 200;
     letter-spacing: -1px;
     line-height: .8em;
     margin-bottom: 1em;
@@ -258,7 +268,9 @@ ul.block-list {
 
 
 /* ------------------------------------------------- Unique code */
-
+.gist {
+  margin-bottom: 3em;
+}
 .wrong { border-radius: 50%; }
 .wrong-square {
   border-radius: 50%;
@@ -268,7 +280,7 @@ ul.block-list {
 .correct-blank {
   background: #f9f9f9;
   border: 1px dashed #555;
-  margin: 1em auto;
+  margin: 0 auto 1.5em auto;
   padding-top: 70%;
   width: 70%;
 
@@ -277,7 +289,7 @@ ul.block-list {
   background-image: url('/images/ackbar.jpg');
   background-size: cover;
   background-position: 50%;
-  margin: 1em auto;
+  margin: 0 auto 1.5em auto;
   padding-top: 70%;
   width: 70%;
 }
@@ -287,7 +299,7 @@ ul.block-list {
   background-size: cover;
   background-position: 50%;
   border-radius: 50%;
-  margin: 1em auto;
+  margin: 0 auto 1.5em auto;
   padding-top: 70%;
   width: 70%;
 }
