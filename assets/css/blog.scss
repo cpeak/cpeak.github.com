@@ -1,8 +1,24 @@
 ---
 ---
 $salmon: #C14E51;
+$grey:       #828282;
+$grey-light: lighten($grey, 40%);
+$grey-dark:  darken($grey, 25%);
 
-/* ------------------------------------------------- Globals */
+$black-absolute: #000000;
+$black: #262626;
+$blue-navy: #3F576E;
+$red: #990000;
+$white: #FFF;
+
+
+
+
+
+$medium: "min-width: 600px";
+$large: "min-width: 1000px";
+
+// ------------------------------------------------- Globals
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -31,7 +47,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 200%;
+  //font-size: 200%;
   letter-spacing: -1px;
   line-height: 1.25em;
   margin: 0 0 1em 0;
@@ -54,7 +70,9 @@ a, a:visited {
 a:hover { color: #000; }
 
 code {
-  color: #093CA2;
+  //color: #093CA2;
+  background: #ECF2FF;
+  padding: 4px;
 }
 
 [class*="image"] {
@@ -88,7 +106,7 @@ ul {
   padding: 0;
 }
 
-/* ------------------------------------------------- Block List */
+// ------------------------------------------------- Block List
 $block-size: 50%;
 $block-size-large: 33.333%;
 ul.block-list {
@@ -128,7 +146,7 @@ ul.block-list {
   }
 }
 
-/* ------------------------------------------------- Layout */
+// ------------------------------------------------- Layout
 .main-content {
   font-size: 85%;
   padding: 10px;
@@ -151,7 +169,7 @@ ul.block-list {
 }
 
 
-/* ------------------------------------------------- Blog Posts */
+// ------------------------------------------------- Blog Posts
 .post {
   border-top: 1px solid #eee;
   padding-top: 1em;
@@ -207,8 +225,7 @@ ul.block-list {
     width: 33.333%;
   }
 }
-
-/* ------------------------------------------------- Archive page */
+// ------------------------------------------------- Archive Page
 
 .post-list {
   margin: 1em 0 0 -5px;
@@ -247,7 +264,7 @@ ul.block-list {
   }
 }
 
-/* ------------------------------------------------- Instagram */
+// ------------------------------------------------- Instagram
 #instafeed {
   overflow: hidden;
   a {
@@ -267,25 +284,8 @@ ul.block-list {
 }
 
 
-/* ------------------------------------------------- Portfolio */
 
-#just-enuff { background-image: url('/images/just-enuff.jpg'); }
-#twoandseven { background-image: url('/images/2and7.jpg'); }
-#rhs { background-image: url('/images/rhs.jpg'); }
-#modern { background-image: url('/images/modern.jpg'); }
-#champions { background-image: url('/images/8lcl.jpg'); }
-#punchcard { background-image: url('/images/punchcard.jpg'); }
-#als { background-image: url('/images/als.jpg'); }
-#start-basic { background-image: url('/images/start-basic.jpg'); }
-#gostu { background-image: url('/images/gostu.jpg'); }
-#miyc { background-image: url('/images/miyc.jpg'); }
-#owl { background-image: url('/images/owl.jpg'); }
-#family { background-image: url('/images/family.jpg'); }
-#great-peaks{ background-image: url('/images/great-peaks.jpg'); }
-
-
-
-/* ------------------------------------------------- Unique code */
+// ------------------------------------------------- Unique code
 .gist {
   margin-bottom: 3em;
 }
@@ -322,3 +322,61 @@ ul.block-list {
   width: 70%;
 }
 
+
+// ------------------------------------------------- BIM GRID
+.row {
+  overflow: hidden;
+  width: 100%;
+  }
+
+[class*="block__"] {
+  float: left;
+  margin-bottom: 10px;
+  padding: 10px;
+  -webkit-transition: width 0.25s ease-in;
+  width: 100%;
+}
+
+@media screen and (#{$medium}) {
+  [class*="m--sixth"] { width: 16.66667%; }
+  [class*="m--fifth"] { width: 20%; }
+  [class*="m--fourth"] { width: 25%; }
+  [class*="m--third"] { width: 33.333%; }
+  [class*="m--half"] { width: 50%; }
+  [class*="m--two-thirds"] { width: 66.666%; }
+}
+
+@media screen and ($large) {
+  [class*="l--sixth"] { width: 16.66667%; }
+  [class*="l--fifth"] { width: 20%; }
+  [class*="l--fourth"] { width: 25%; }
+  [class*="l--third"] { width: 33.333%; }
+  [class*="l--half"] { width: 50%; }
+  [class*="l--two-thirds"] { width: 66.666%; }
+}
+
+.grid__container {
+  overflow: hidden;
+}
+
+
+.example {
+  margin-bottom: 1.5em;
+  text-align: center;
+
+  [class*="block__"] {
+    background: $grey-light;
+  }
+  @media screen and (#{$medium}) {
+    [class*="block__"] {
+      border: 1px solid $white;
+      background: $blue-navy;
+      color: $white;
+    }
+  }
+  @media screen and (#{$large}) {
+    [class*="block__"] {
+      background: $red;
+    }
+  }
+}
