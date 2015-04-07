@@ -10,7 +10,7 @@ published: true
 <p>Every div must have at least the <code>block</code> class, but it is not necessary to have a medium or large class assigned to it. It will just default to 100% if nothing is defined. Also, if the medium breakpoint size applies to the large layout as well, no additional class definition is needed.</p>
 
 <h3>Standard Grid</h3>
-<p>Here is a standard grid example. Grey is the default size, blue is the medium breakpoint, and red is the large. Each block only has a <code>m--</code> sclass size defined, since they do not change at the large size.</p>
+<p>Here is a standard grid example. Grey is the default size, blue is the medium breakpoint, and red is the large. Each block only has a <code>m--</code> class size defined, since they do not change at the large size.</p>
 <p>Blocks are defined <code>block__m--full</code>, <code>block__m--third</code>, etc..</p>
 <div class="example grid__container">
   <div class="block__m--full">Full</div>
@@ -42,7 +42,7 @@ published: true
 </div>
 
 <h3>Different Breakpoints</h3>
-<p>Here is a grid where some of the elements change at differnet breakpoints. Again, by default they are all full, but if we look at the second line - at a medium breakpoint, it is split half and half, while at the large breakpoint its two-thirds/one-third. The two blocks are defined as so:</p>
+<p>Here is a grid where some of the elements change at different breakpoints. Again, by default they are all full, but if we look at the second line - at a medium breakpoint, it is split half and half, while at the large breakpoint its two-thirds/one-third. The two blocks are defined as so:</p>
 <p><code>block__m--half l--two-thirds</code></p>
 <p><code>block__m--half l--one-third</code></p>
 <p>Looking down to the bottom, they are set to thirds on medium, but sixths on large. </p>
@@ -74,9 +74,9 @@ published: true
 <h2>Thoughts so far...</h2>
 <p>I haven't used this system in production yet as its still mainly just a thought experiment. I also haven't done any conditionals where you may want to float blocks to the right, or centered, thats on the list if I like where this is headed.</p>
 <h3>Pros</h3>
-<p>I like the idea of a symantic markup that represents the layout of content across multiple breakpoints. Ideally I won't have to fiddle with widths or floats or any ugly hacks using this system. Its also warming me to the idea of using a BIM style convention, as I haven't used that on a large scale before. However...</p>
+<p>I like the idea of a semantic markup that represents the layout of content across multiple breakpoints. Ideally I won't have to fiddle with widths or floats or any ugly hacks using this system. Its also warming me to the idea of using a BIM style convention, as I haven't used that on a large scale before. However...</p>
 <h3>Cons</h3>
-<p>I almost want to put an asterik on the symantic comment from above. Yes, it is, but it also isn't as one class isn't used at every size. It also clogs up the markup a little bit. However when I use this only on an as-needed basis and not on every element in the layout then its not too bad (again, in my experimentation).</p>
+<p>I almost want to put an asterisk on the semantic comment from above. Yes, it is, but it also isn't as one class isn't used at every size. It also clogs up the markup a little bit. However when I use this only on an as-needed basis and not on every element in the layout then its not too bad (again, in my experimentation).</p>
 
 <h2>Conclusion</h2>
-<p>Okay, no conclusion yet. I plan on building a rough site using this method to shake it down and see if its feisable to use in the real world. I'm not exactly racing off to try it, but I am cautiosly optimistic. Ill provide a few followup posts as I continue this experiment.</p>
+<p>Okay, no conclusion yet. I plan on building a rough site using this method to shake it down and see if it's feasable to use in the real world. I'm not exactly racing off to try it, but I am cautiously optimistic. Ill provide a few followup posts as I continue this experiment.</p>
