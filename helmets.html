@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /helmets/
+title: Helmets
+---
+<div class="post">
+  <h2>Boba Fett &amp; Daft Punk</h2>
+  <p>Hello world, this is an introduction post</p>
+</div>
+
+{% for post in site.tags.helmets %}
+  {% include post-listed.html %}
+{% endfor %}

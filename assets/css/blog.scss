@@ -164,7 +164,7 @@ ul.block-list {
 
 @media screen and (min-width: 1200px) {
   .main-content {
-    font-size: 130%;
+    font-size: 140%;
     margin: 0 auto;
     max-width: 1000px;
   }
@@ -268,15 +268,34 @@ ul.block-list {
 
 // ------------------------------------------------- Builds
 #projects {
-  section {
+  margin-bottom: 3em;
+  a {
+    background-size: cover;
+    background-position: 50% 50%;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    text-shadow: 0 0 40px black;
+    &:hover {
+    }
+    h3 {
+      color: white;
+      font-weight: bold;
+      margin: 5px;
+    }
   }
+  #mei { background-image: url("/images/starting.jpg"); }
+  #boba { background-image: url("/images/remote.jpg"); }
+  #daft { background-image: url("/images/blur.jpg"); }
 }
 
 @media screen and (#{$medium}) {
   #projects {
-    section {
+    a {
       float: left;
       text-align: center;
+      padding-top: 30%;
+      padding-bottom: 0;
       width: 33.333%;
     }
   }
