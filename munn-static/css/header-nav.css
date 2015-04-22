@@ -1,0 +1,71 @@
+/* -------------------------------------- Colors */
+/* -------------------------------------- Settings */
+.centered {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
+
+/* -------------------------------------- Media queries */
+.primary-navigation {
+  background-color: #272727;
+  padding: 15px 10px 10px 10px;
+  overflow: hidden;
+  position: relative; }
+  .primary-navigation .brand {
+    display: block;
+    width: 75%;
+    overflow: hidden;
+    float: left; }
+  .primary-navigation .nav-toggle {
+    color: white;
+    top: 25px;
+    right: 15px; }
+  .primary-navigation .nav-collapse {
+    width: 100%; }
+    .primary-navigation .nav-collapse a {
+      color: #FFFFFF; }
+
+.subnav {
+  background: #DDD;
+  padding: 10px; }
+  .subnav p {
+    margin: 0;
+    text-align: left; }
+
+.notice {
+  background: #EEE;
+  padding: 10px; }
+  .notice p {
+    font-weight: bold;
+    margin: 0;
+    text-align: center; }
+
+@media screen and (min-width: 600px) {
+  .brand {
+    width: 100% !important; }
+    .brand img {
+      display: block;
+      margin: 0 auto; }
+
+  .nav-collapse {
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100% !important; }
+    .nav-collapse ul {
+      overflow: hidden; }
+    .nav-collapse li {
+      overflow: hidden;
+      float: left;
+      width: 14.28% !important; }
+      .nav-collapse li a {
+        padding: 25px;
+        width: 100%; }
+
+  .subnav p {
+    float: left;
+    width: 33.333%; }
+    .subnav p:nth-child(even) {
+      text-align: center; }
+    .subnav p:last-child {
+      text-align: right; } }

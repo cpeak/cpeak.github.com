@@ -1,0 +1,219 @@
+/* -------------------------------------- Colors */
+/* -------------------------------------- Settings */
+.centered {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
+
+/* -------------------------------------- Media queries */
+footer {
+  border-top: 1px solid #DDD;
+  text-align: center;
+  margin-top: 20px; }
+
+/* ----------------------------- Common Intro */
+.content-intro {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center; }
+  .content-intro h2 {
+    line-height: 1.25em;
+    text-transform: uppercase; }
+  .content-intro h3 {
+    color: #777;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 100; }
+  .content-intro .sdv-notice {
+    text-align: center;
+    width: 100%; }
+  .content-intro .sdv,
+  .content-intro .marines {
+    float: left;
+    margin-bottom: 10px;
+    width: 50%; }
+
+.sdv-notice {
+  color: #990000;
+  font-size: .9em;
+  font-weight: bold;
+  margin: 10px 0; }
+
+.cca {
+  margin-top: 30px; }
+
+.sdv, .marines {
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+  height: 125px; }
+
+.sdv {
+  background: url("../images/sdv.jpg"); }
+
+.marines {
+  background: url("../images/marines.jpg"); }
+
+@media screen and (min-width: 600px) {
+  .content-intro .sdv,
+  .content-intro .marines {
+    width: 20%; }
+  .content-intro .sdv {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1; }
+  .content-intro .marines {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3; }
+  .content-intro .cca {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    float: left;
+    width: 60%; }
+  .content-intro .intro-paragraph {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+    width: 100%; } }
+/* ----------------------------- Index */
+.sub-promos {
+  overflow: hidden; }
+  .sub-promos h2, .sub-promos h3 {
+    line-height: 1.25em; }
+  .sub-promos > div {
+    margin-bottom: 10px;
+    padding: 10px; }
+    .sub-promos > div img {
+      display: block;
+      margin: 10px auto;
+      width: 80%; }
+    .sub-promos > div .pdf img {
+      width: 25%; }
+
+@media screen and (min-width: 600px) {
+  .sub-promos {
+    overflow: hidden; }
+    .sub-promos > div {
+      float: left;
+      width: 20%; }
+    .sub-promos .primary {
+      text-align: center;
+      width: 60%; }
+      .sub-promos .primary .promos {
+        overflow: hidden; }
+        .sub-promos .primary .promos li {
+          float: left;
+          line-height: 1.25em;
+          padding: 10px;
+          width: 33.333%; }
+      .sub-promos .primary .hero-quote h2 {
+        font-size: 2.5em;
+        padding: 0 15px; }
+    .sub-promos .aside {
+      background: #f9f9f9;
+      padding: 20px; } }
+/* --------------------------------- Project List */
+@media screen and (min-width: 600px) {
+  #client_list div {
+    float: left;
+    font-size: 125%;
+    width: 50%; } }
+#client_list ul {
+  padding: 5px 0px 20px 5px; }
+
+#client_list ul li {
+  font-size: .8em;
+  line-height: 1.3em; }
+
+/* --------------------------------- References */
+.references > li {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  float: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%; }
+  .references > li .name {
+    font-weight: bold; }
+  .references > li .title {
+    font-style: italic; }
+
+@media screen and (min-width: 600px) {
+  .references {
+    overflow: hidden;
+    -webkit-column-count: 2; }
+    .references > li {
+      display: block;
+      height: 220px; } }
+/* -------------------------------------------- Audit Page */
+.sub-panel {
+  background: #cce5c8;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 10px; }
+  .sub-panel p {
+    background: #fff;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 10px; }
+    .sub-panel p:last-child {
+      margin: 0; }
+
+.insurances {
+  margin-bottom: 25px; }
+  .insurances li {
+    color: #990000;
+    font-size: 1.25em;
+    margin: 10px 0 10px 0; }
+
+@media screen and (min-width: 600px) {
+  #audits-page > div {
+    float: left;
+    padding-right: 10px;
+    width: 50%; }
+  #audits-page div:last-child {
+    padding-left: 10px; } }
+/* -------------------------------------------- Contact Page */
+.contact_form label {
+  display: inline-block;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  min-width: 80px;
+  vertical-align: top; }
+
+.contact_form input,
+.contact_form textarea {
+  padding: 10px;
+  width: 70%; }
+
+.contact_form button {
+  margin-top: 1em;
+  margin-left: 5em; }
+
+@media screen and (min-width: 600px) {
+  #contact_page .contact-address {
+    float: left;
+    width: 20%; }
+  #contact_page form {
+    float: left;
+    width: 80%; } }
