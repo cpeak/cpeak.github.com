@@ -1,10 +1,10 @@
 ---
 layout: post
-title: BIM Grid v0.01
+title: BEM Grid v0.01
 category: blog
 published: true
 ---
-<p>Experimenting with a BIM based grid system. Previous grids were structured based on a row/column-x based approach, but a class of column-ten only applies to the desktop, so the markup was incorrect at different sizes. Using this approach all columns default to 100% width on mobile (first), and then a class is applied for each breakpoint - in this case 2, medium and large.</p>
+<p>Experimenting with a BEM based grid system. Previous grids were structured based on a row/column-x based approach, but a class of column-ten only applies to the desktop, so the markup was incorrect at different sizes. Using this approach all columns default to 100% width on mobile (first), and then a class is applied for each breakpoint - in this case 2, medium and large.</p>
 <p>In this example we have a div that on mobile by default is 100% width, at a medium breakpoint (<code>m--</code>) it spans half the row, while at the largest (<code>l--</code>) and beyond it spans two thirds the row.</p>
 <p><code>&lt;div class="block__m--half l--two-thirds"&gt;</code></p>
 <p>Every div must have at least the <code>block</code> class, but it is not necessary to have a medium or large class assigned to it. It will just default to 100% if nothing is defined. Also, if the medium breakpoint size applies to the large layout as well, no additional class definition is needed.</p>
@@ -74,7 +74,7 @@ published: true
 <h2>Thoughts so far...</h2>
 <p>I haven't used this system in production yet as its still mainly just a thought experiment. I also haven't done any conditionals where you may want to float blocks to the right, or centered, thats on the list if I like where this is headed.</p>
 <h3>Pros</h3>
-<p>I like the idea of a semantic markup that represents the layout of content across multiple breakpoints. Ideally I won't have to fiddle with widths or floats or any ugly hacks using this system. Its also warming me to the idea of using a BIM style convention, as I haven't used that on a large scale before. However...</p>
+<p>I like the idea of a semantic markup that represents the layout of content across multiple breakpoints. Ideally I won't have to fiddle with widths or floats or any ugly hacks using this system. Its also warming me to the idea of using a BEM style convention, as I haven't used that on a large scale before. However...</p>
 <h3>Cons</h3>
 <p>I almost want to put an asterisk on the semantic comment from above. Yes, it is, but it also isn't as one class isn't used at every size. It also clogs up the markup a little bit. However when I use this only on an as-needed basis and not on every element in the layout then its not too bad (again, in my experimentation).</p>
 
