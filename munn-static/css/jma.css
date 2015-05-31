@@ -36,6 +36,8 @@ footer {
   .content-intro .sdv-notice {
     text-align: center;
     width: 100%; }
+    .content-intro .sdv-notice p {
+      margin: 0; }
   .content-intro .sdv,
   .content-intro .marines {
     float: left;
@@ -169,30 +171,24 @@ footer {
   background: #cce5c8;
   border-radius: 2px;
   margin-bottom: 20px;
-  padding: 10px; }
+  padding: 5px; }
   .sub-panel p {
     background: #fff;
     border-radius: 2px;
-    margin: 0 0 10px 0;
+    line-height: 1em;
+    margin: 0 0 20px 0;
     overflow: hidden;
     padding: 10px; }
     .sub-panel p:last-child {
       margin: 0; }
 
-.insurances {
-  margin-bottom: 25px; }
-  .insurances li {
-    color: #990000;
-    font-size: 1.25em;
-    margin: 10px 0 10px 0; }
+#audit-example li {
+  padding: 4px; }
+#audit-example li:nth-child(even) {
+  background: #eee; }
+#audit-example span {
+  float: right; }
 
-@media screen and (min-width: 600px) {
-  #audits-page > div {
-    float: left;
-    padding-right: 10px;
-    width: 50%; }
-  #audits-page div:last-child {
-    padding-left: 10px; } }
 /* -------------------------------------------- Contact Page */
 .contact_form label {
   display: inline-block;

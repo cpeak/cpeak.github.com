@@ -10,6 +10,18 @@
   padding: 10px;
   position: relative; }
 
+@media screen and (min-width: 650px) {
+  [class*="panel__half"] {
+    width: 50%; }
+
+  .panel__half--left {
+    float: left;
+    padding-right: 20px; }
+
+  .panel__half--right {
+    border-left: 1px solid #999;
+    float: right;
+    padding-left: 20px; } }
 /* Clearfix */
 .cf:before, .cf:after {
   content: "";
