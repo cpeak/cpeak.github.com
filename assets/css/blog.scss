@@ -23,7 +23,6 @@ $large: "min-width: 1000px";
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: all 0.15s ease-in;
 }
 
 body {
@@ -69,6 +68,7 @@ img {
 
 a, a:visited {
   color: $salmon;
+  transition: all 0.15s ease-in;
 }
 a:hover { color: #000; }
 
