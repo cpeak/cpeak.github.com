@@ -1,0 +1,14 @@
+<div class="module--blog" id="blog">
+  <div>
+    <i class="module-label fa fa-file-text-o"></i>
+    <section>
+    <h3>Latest <span>Blog Posts</span></h3>
+      <ul>
+        {% for post in site.posts limit: 4 %}
+        <li><a href="{{ post.url }}">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
+

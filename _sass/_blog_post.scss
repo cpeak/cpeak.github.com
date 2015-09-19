@@ -1,0 +1,56 @@
+.post {
+  color: #444;
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 95%;
+  max-width: 900px;
+  .post-title {
+    color: $red;
+    font-weight: 800;
+  }
+  .post-meta {
+    color: darken($red, 20%);
+  }
+  p,
+  img,
+  figure {
+    margin-bottom: 1.5em;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1.5em;
+  }
+  article {
+    margin-bottom: 3em;
+  }
+  .page-navigation a {
+    background: #f2f2f2;
+    color: #999;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .post {
+    font-size: 1.25em;
+    .page-navigation {
+      overflow: hidden;
+    }
+    .page-navigation a {
+      display: inline-block;
+      font-size: 0.8em;
+      padding: 10px 2em;
+    }
+    a.prev { float: left; }
+    a.next { float: right; }
+  }
+}
+
+

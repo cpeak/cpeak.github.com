@@ -1,0 +1,39 @@
+// ------------------------------------ Buttons
+
+[class*="button--"] {
+  background: none;
+  border: 2px solid;
+  font-family: "Open Sans";
+  display: inline-block;
+  padding: 1em 3em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+// ------------------------------------ Forms
+
+form {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid $hairline;
+    font-family: "Open Sans";
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+  textarea {
+    border: 1px solid $hairline;
+    height: 8em;
+  }
+  .button--normal {
+    font-size: 0.9em;
+  }
+}

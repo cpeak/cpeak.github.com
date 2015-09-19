@@ -1,25 +1,11 @@
 ---
-layout: page
-title: cpeak
+layout: default
 ---
-<h2 class='standfirst'>My name is Chris Peak, and I am a designer and <a href="http://www.gorilla-studios.com" target="_blank">photographer</a> from Chicago, IL. I am currently a Design Craftsman at <a href="http://www.8thlight.com" target="_blank">8th Light</a>. In my limited spare time I also like to <a href="/create/">create things</a>.</h2>
 
-<script>
-  $('.index-post').onScreen({
-    container: window,
-    direction: 'vertical',
-    doIn: function() {
-      addClass: 'animated'
-    },
-    doOut: function() {
-      toggleClass: 'animated'
-    },
-    tolerance: 0,
-    throttle: 50,
-    toggleClass: 'animated',
-    lazyAttr: null,
-    lazyPlaceholder: 'someImage.jpg',
-    debug: false
-  });
-</script>
+{% include /content/skills.html %}
 
+<!-- {% include /content/portfolio_link.html %} -->
+
+{% include /content/blog_module.html %}
+
+{% include /content/contact.html %}

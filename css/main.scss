@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$salmon: #C14E51;
+$grey:       #828282;
+$grey-light: lighten($grey, 40%);
+$grey-dark:  darken($grey, 25%);
+
+$black-absolute: #000000;
+$blue-navy: #3F576E;
+$white: #FFF;
+
+
+$blue: #4A4E69;
+$black: #291F1E;
+$red: #F64740;
+$red--dark: #A3333D;
+$green: #C4D6B0;
+
+
+$hairline: #ddd;
+
+
+
+// Our variables
+$base-font-family: "open-sans", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #ffffff;
+$brand-color:      $blue;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "header_nav",
+  "content",
+  "elements",
+  "blog_post",
+  "vendor/font-awesome",
+  "vendor/animate"
+;
