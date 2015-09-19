@@ -1,14 +1,15 @@
-# Site settings
-title: Chris Peak
-email: cpeak66@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://chrispeak.me" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+permalink: /:categories/:year/:month/:day/:title
 
-# Build settings
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
 markdown: kramdown
+
+title : Chris Peak
+author : "Chris Peak"
+name : "Chris"
+email : cpeak66@gmail.com
+github : cpeak
+twitter : c_peak
+feedburner :
+
+production_url : http://cpeak.github.io
