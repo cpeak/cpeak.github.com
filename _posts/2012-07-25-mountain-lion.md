@@ -3,6 +3,7 @@ layout: post
 category : blog
 title: Upgrading To Mountain Lion
 tags : [ Development, OSX, "Mountain Lion" ]
+thumbnail: code.jpg
 ---
 
 <p>Today I dove right in and upgraded to OS X 10.8 Mountain Lion, and overall the upgrade went very well.  Just a few snags with my development environment.  My Pow configuration came through just fine, but PHP was disabled and it reset my default Document Root.  Lets take a look at how I restored my settings, and how I have my local development environment setup.</p>

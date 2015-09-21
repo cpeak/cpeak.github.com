@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 ---
-<div class="post">
+<div class="post animated fadeIn">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -13,11 +13,29 @@ layout: blog_post
   </article>
 
   <div class="page-navigation">
-    {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}"><i class="fa fa-arrow-left"></i> {{ page.previous.title }}</a>
+     {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">
+      <span class="arrow"><i class="fa fa-arrow-left"></i></span>
+      <div>
+        <p class="subtitle">Previous post</p>
+        <h3>{{ page.previous.title }}</h3>
+        <p>{{ page.previous.intro }}</p>
+        <p class="date">{{ page.previous.date | date: "%B %-d %Y" }}</p>
+        <span class="post-preview-image" style="background-image: url('/images/thumbnails/{{ page.previous.thumbnail }}')"></span>
+      </div>
+    </a>
     {% endif %}
     {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{ page.next.title }} <i class="fa fa-arrow-right"></i></a>
+    <a class="next" href="{{page.next.url}}">
+      <span class="arrow"><i class="fa fa-arrow-right"></i></span>
+      <div>
+        <p class="subtitle">Next post</p>
+        <h3>{{page.next.title}}</h3>
+        <p>{{ page.next.intro }}</p>
+        <p class="date">{{ page.next.date | date: "%B %-d %Y" }}</p>
+        <span class="post-preview-image" style="background-image: url('/images/thumbnails/{{ page.next.thumbnail }}')"></span>
+      </div>
+    </a>
     {% endif %}
   </div>
 

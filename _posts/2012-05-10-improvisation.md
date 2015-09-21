@@ -3,6 +3,7 @@ layout: post
 category : blog
 title: Improvisations
 tags : [residency]
+thumbnail: code.jpg
 ---
 <p>In a few other posts I have readily admitted I love to tinker with things - I need to know how things work and what makes them tick. This past week I have done more reading and learning than any previous week of my residency.  I've spent an hour or so each night working on my Family Tree rails app and am really proud of what I have done on my own so far. Today I paired with Doug which was a fantastic experience, and I am also getting a new perspective now that I am working directly with Micah as my mentor. I have started asking more questions and collaborating with other residents as well as picking the brains of the craftsmen.</p>
 

@@ -5,7 +5,7 @@
     <h3>Latest <span>Blog Posts</span></h3>
       <ul>
         {% for post in site.posts limit: 4 %}
-        <li><a href="{{ post.url }}">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></a></li>
+        <li><a class="link" href="{{ post.url }}">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></a></li>
         {% endfor %}
       </ul>
     </section>

@@ -3,6 +3,7 @@ layout: post
 category : blog
 title: Love Your Solution
 tags : [residency]
+thumbnail: code.jpg
 ---
 <p>I recently sat up late one night obsessing over a tiny detail of an app we are working on and I had one of those fantastic moments when I came up with a solution that I absolutely loved. One of those moments where you can't work fast enough to implement your idea. These are the details that shine, but they make the less-than-ideal parts stand out even more.  Programmers often talk about 'smells'- various bits of code that aren't quite up to par, and the same is true for UI/UX. If you're sitting in a meeting and not anxious to show off your design, something smells. You know you've done a great job when you want to show off your solution and point out all the little detais. Take pride in your work and make sure at the end of the day it's something worthy of putting your name on.</p>
 <h3>Kill the lazy</h3>

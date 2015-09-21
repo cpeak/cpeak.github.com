@@ -2,6 +2,7 @@
 layout: post
 category : blog
 tags : [residency, web-design, CSS3]
+thumbnail: code.jpg
 ---
 <article>
   <h2>Sorting out Position &amp; Z-Index Properties</h2>
@@ -17,5 +18,5 @@ tags : [residency, web-design, CSS3]
   <h3>Bring it all together</h3>
   <p>You can go even <em>further</em> down the rabbit hole by throwing JQuery into the mix, dynamically changing <code>z-index</code> properties on the fly.  Just remember these are garnishes, if you start moving things around and re-stacking tons of elements things will probably start mis-behaving, or worse confuse your visitors. These are tools any good developer should have in their bag, but remember to <em>use the correct tool for the job</em>.</p>
 </article>
-  
-	
+
+

@@ -2,6 +2,7 @@
 layout: post
 category : blog
 tags : [ residency, javascript, jquery, CSS3]
+thumbnail: code.jpg
 ---
 <h3>The JQuery and Javascript speedometer project</h3>
 <img class="m_post_image" src="/images/speedo.png" alt="Javascript speedometer project" />

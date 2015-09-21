@@ -37,3 +37,27 @@ form {
     font-size: 0.9em;
   }
 }
+
+
+.list--blocks {
+  overflow: hidden;
+  padding: 2%;
+  li {
+    border: 1px solid red;
+    float: left;
+    margin: 1em 2%;
+    padding: 2em 0;
+    text-align: center;
+    width: 46%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .list--blocks {
+    padding: 4%;
+    li {
+      margin: 1em 2.5%;
+      width: 20%;
+    }
+  }
+}
