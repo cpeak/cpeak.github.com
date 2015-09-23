@@ -43,21 +43,23 @@ form {
   overflow: hidden;
   padding: 2%;
   li {
-    border: 1px solid red;
+    border: 1px solid blue;
     float: left;
-    margin: 1em 2%;
-    padding: 2em 0;
     text-align: center;
+    margin: 1em 2%;
     width: 46%;
+    a {
+      border: 1px solid red;
+      display: block;
+      padding: 2em 0;
+      width: 100%;
+    }
   }
 }
 
 @media screen and (min-width: 600px) {
-  .list--blocks {
-    padding: 4%;
-    li {
-      margin: 1em 2.5%;
-      width: 20%;
-    }
+  .list--blocks li {
+    margin: 1em 1.5%;
+    width: 22%;
   }
 }
