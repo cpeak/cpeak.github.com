@@ -22,6 +22,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -33,6 +34,7 @@ ul, ol, dl, figure,
 
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "freight-sans-pro", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   span {
@@ -41,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 *:focus {
-  background: rgba(255,255,255,0.25);
-  outline: 2px solid $red;
+  //background: rgba(255,255,255,0.25);
+  outline: 1px solid $red;
 }
 
 img {

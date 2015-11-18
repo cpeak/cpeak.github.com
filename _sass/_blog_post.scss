@@ -6,7 +6,7 @@
   max-width: 900px;
   .post-title {
     color: $red;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1em;
     margin: 0;
   }
@@ -17,6 +17,9 @@
   p,
   img,
   figure {
+    font-family: "freight-text-pro", serif;
+    font-weight: 200;
+    line-height: 1.75em;
     margin-bottom: 1.5em;
   }
   img {
@@ -32,7 +35,7 @@
 @media screen and (min-width: 600px) {
   .post {
     font-size: 1.25em;
-    padding: 2em 30px;
+    padding: 4em 30px;
     .post-title,
     .post-meta {
       display: inline-block;
