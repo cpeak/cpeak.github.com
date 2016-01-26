@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="animated fadeIn">
-    {% include header.html %}
-    <div class="page-content">
-      <div class="wrapper">
+  <body>
+    <div class="content-wrapper">
+      {% include header.html %}
+      <div class="page-content animated fadeIn">
         {{ content }}
       </div>
     </div>
-    {% include footer.html %}
   </body>
 </html>

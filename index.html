@@ -2,8 +2,49 @@
 layout: default
 ---
 
-{% include /content/skills.html %}
+<section class="module__about">
+  <h3 id="about" class="title">About</h3>
+  <div class="content">
+    <h4 class="intro-splash">My name is <span>Chris Peak</span>. I am a designer and photographer from Chicago, IL.</h4>
+  </div>
+</section>
 
-{% include /content/blog_module.html %}
+<section id="writing" class="module__writing">
+  <h3 class="title">Writing</h3>
+  <div class="content">
+    {% for post in site.posts limit: 5 %}
+    <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
+      <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
+      <p>{{ post.preview }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
 
-{% include /content/contact.html %}
+<section id="twitter" class="module__twitter">
+  <h3 class="title">Twitter</h3>
+  <div id="tw-widget1" class="content"></div>
+</section>
+
+<section id="contact" class="module__contact">
+  <h3 class="title">Contact</h3>
+  <form class="content" action="//formspree.io/cpeak66@gmail.com"
+    method="POST">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="_replyto" placeholder="Email">
+    <textarea name="body" placeholder="Message"></textarea>
+    <input type="submit" value="Send">
+    <input type="hidden" name="_next" value="//chrispeak.me" />
+  </form>
+</section>
+
+
+<script>
+  var config1 = {
+    "id": '644694824172453888',
+    "domId": 'tw-widget1',
+    "maxTweets": 5,
+    "enableLinks": true
+  };
+  twitterFetcher.fetch(config1);
+</script>

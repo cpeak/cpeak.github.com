@@ -1,0 +1,40 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include outer-container;
+}
+
+header.site-header {
+  padding: 10px 10px 40px 10px;
+  text-align: center;
+  .brand {
+    display: block;
+    font-size: 0.875em;
+    margin: 0 auto 2em auto;
+    width: 75px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  nav a {
+    padding: 10px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  header.site-header {
+    @include span-columns(3);
+    padding: 54px 20px;
+    nav a {
+      color: #444;
+      display: block;
+      margin-bottom: 0.5em;
+      padding: 4px;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
