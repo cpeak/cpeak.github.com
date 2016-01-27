@@ -74,6 +74,8 @@ textarea {
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 textarea {
@@ -91,6 +93,8 @@ input[type="submit"] {
   padding: 0.5em 2em;
   text-transform: uppercase;
   transition: all 0.15s ease-in;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   &:hover {
     background: darken($brand-color, 5%);
     cursor: pointer;
