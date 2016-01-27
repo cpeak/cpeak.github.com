@@ -112,6 +112,12 @@ a {
   }
 }
 
+a.underlined {
+  border-bottom: 1px solid $hairline;
+  &:hover {
+    border-color: black;
+  }
+}
 
 
 
