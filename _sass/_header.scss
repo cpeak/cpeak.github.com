@@ -23,11 +23,13 @@ header.site-header {
 
 
 @media screen and (min-width: 600px) {
-  header.site-header {
+  #sticker-sticky-wrapper {
     @include span-columns(3);
+  }
+  header.site-header {
     padding: 54px 20px;
     nav a {
-      color: #444;
+      color: #222;
       display: block;
       margin-bottom: 0.5em;
       padding: 4px;
@@ -38,3 +40,11 @@ header.site-header {
   }
 }
 
+
+
+@media screen and (max-width: 600px) {
+  .site-header {
+    position: inherit !important;
+    padding-bottom: 1em;
+  }
+}
