@@ -1,0 +1,25 @@
+---
+layout: post
+title: Content Agnostic Classes
+published: false
+preview: 'Strive to decouple your class names from your content'
+---
+<p>One bad habit I have caught myself and others doing quite often is coupling CSS classes in our markup to the actual content itself. This applies to both content and layout classes, so lets go over a few examples of why this isn't a good thing to do and how we can start writing better, more semantic, and reusable code that is content agnostic.</p>
+<h3>A Real World Example</h3>
+<p>As an example lets say you've been tasked with adding some functionality to a record label's website. They request that you clean up the view pages for Albums and Artists so let's take a look at the code. The index page for Albums was written very simply, just a <code>&lt;ul class="album-list"&gt;</code> for each loop, and each list element has the class <code>album</code>. Okay, lets look at the Artists page - another <code>&lt;ul class="album-list"&gt;</code> and list elements with that <code>album</code> class. Hrmm, all of our Artists are using the Album classes and styling. Thats a code smell.</p>
+<ul class="example-album-list">
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+  <li class="album">Album</li>
+</ul>
+<p>So why is this bad? They both are identical styling wise! Okay, what happens when that needs to change? You need to go in and refactor both your CSS and your markup. Thats not the end of the world here since we only have Albums and Artists, but what happens in a year when they want to add tshirts, stickers, patches, and other merchandise? Now you have five or six content types all using the <code>album</code> class? Thats just bad code right there.</p>
+<p>Alright, how do we clean this up and make it reusable in the future no matter what content we want to display? This is the tricky part (I never said it would be easy). Lets try <code>&lt;ul class="product-list"&gt;</code>. Hmm, okay, not too bad, but what happens when we want to use this structure for an admin panel or something on the backend. Lets take it further and abstract it out to <code>&lt;ul class="block-list"&gt;</code></p>
+<h3>Layout</h3>
+<h3>Layout Example</h3>
+<h3>Conclusion</h3>

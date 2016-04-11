@@ -16,7 +16,7 @@ layout: default
     <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
       <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
       <p>{{ post.preview }}</p>
-    </a>
+    </a><br>
     {% endfor %}
   </div>
 </section>
@@ -49,10 +49,11 @@ layout: default
 
 <script>
   var config1 = {
-    "id": '644694824172453888',
+    "id": '719554380039630848',
     "domId": 'tw-widget1',
     "maxTweets": 5,
-    "enableLinks": true
+    "enableLinks": true,
+    "showPermalinks": false
   };
   twitterFetcher.fetch(config1);
 </script>

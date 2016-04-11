@@ -23,10 +23,14 @@ $hairline: #ddd;
 
 
 
-$base-font-family: 'Brandon Grotesque', "brandon-grotesque", sans-serif;
+$base-font-family: "Merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
+$headline-font-family: "Open Sans", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+
+$font--small: 0.75em;
 
 $spacing-unit:     30px;
 

@@ -16,8 +16,7 @@
 #tw-widget1 {
   .user,
   .timePosted,
-  .interact,
-  img {
+  .interact {
     display: none;
   }
   li {
@@ -38,9 +37,11 @@
   font-size: 0.875em;
   margin-left: 0.5em;
 }
+
 // ------------------------------------------------- Blog Posts - Actual
 .post {
   overflow: hidden;
+  margin-bottom: 1.5em;
   &-title {
     margin: 0;
   }
@@ -59,10 +60,22 @@
       border-color: $black;
     }
   }
-  img.small {
+  img {
     display: block;
-    margin: 0 auto;
-    max-width: 500px;
+  }
+}
+.previous-article,
+.next-article {
+  border: 1px solid $hairline;
+  display: block;
+  margin-bottom: 2em;
+  padding: 1em;
+  text-align: center;
+  span {
+    display: block;
+    font-family: $headline-font-family;
+    font-size: $font--small;
+    text-transform: uppercase;
   }
 }
 
@@ -76,7 +89,18 @@
   .post p {
     font-size: 1.25em;
   }
+  .post img.small {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .previous-article,
+  .next-article {
+    @include span-columns(6);
+  }
 }
+
+
+
 
 
 // ------------------------------------------------- Thank You
@@ -89,6 +113,8 @@
 .gist {
   margin-bottom: 3em;
 }
+
+// ----------------------------- Circular Images Post
 .wrong { border-radius: 50%; }
 .wrong-square {
   border-radius: 50%;
@@ -121,3 +147,23 @@
   padding-top: 70%;
   width: 70%;
 }
+
+// ----------------------------- Content Agnostic Post
+
+.example-album-list {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .example-album-list {
+    display: block;
+    @include outer-container;
+    li {
+      border: 1px solid $grey;
+      @include span-columns(3);
+      @include omega(4n);
+      margin-bottom: 10px;
+    }
+  }
+}
+
