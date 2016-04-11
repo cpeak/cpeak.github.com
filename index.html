@@ -29,7 +29,7 @@ layout: default
   </div>
 </section>
 
-<section id="twitter" class="module__twitter">
+<section id="twitter" class="module__twitter section">
   <h3 class="title">Twitter</h3>
   <div id="tw-widget1" class="content"></div>
 </section>
@@ -56,4 +56,22 @@ layout: default
     "showPermalinks": false
   };
   twitterFetcher.fetch(config1);
+</script>
+
+
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 500);
+          return false;
+        }
+      }
+    });
+  });
 </script>
