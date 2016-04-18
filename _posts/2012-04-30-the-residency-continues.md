@@ -3,7 +3,6 @@ layout: post
 category : blog
 title: The Residency Continues
 tags : [residency]
-thumbnail: code.jpg
 ---
 <p>This past week was spent taking care of a bunch of little projects here and there - cross platform testing, a UI proposal, sketching and wire-framing to name a few. Now, I have always had a fascination with how things work and how to fix them, tearing apart electronics and even pulling the transmission out of my Jeep. Whenever I come across something mechanical or technical I need to know how it works and I wrestle with it until I figure it out. Working on our internal project I have been neck deep in Rails, and the more I work on it the more I want to get a grasp on the internals. I have also been looking for a good waza project for Friday afternoons.</p>
 <p>This weekend I decided to kill a few birds with one stone (or is that a few pigs with one bird?). Over the last ten years I have been researching my family tree, tracing a good portion of it all the way back to the 1500s. However all of my research has been done the old fashioned way - pen and paper:</p>

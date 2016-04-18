@@ -1,15 +1,18 @@
 [class*="module__"] {
-  border-top: 2px solid #eee;
+  border-top: 1px solid $hairline;
   margin-bottom: 4em;
   padding: 10px 0;
   .title {
     color: #777;
   }
+  &.no-border {
+    border-top: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
   [class*="module__"] {
-    padding-top: 20px;
+    padding-top: 60px;
     @include span-columns(12);
     .title {
       @include span-columns(2 of 9);
@@ -23,12 +26,6 @@
 
 // ---------------------- Page Content
 .page-content {
-  padding: 10px;
-}
-
-@media screen and (min-width: 600px) {
-  .page-content {
-    @include span-columns(9);
-    padding: 50px 20px;
-  }
+  @include outer-container(850px);
+  padding: 5em 10px;
 }

@@ -1,51 +1,45 @@
 ---
 layout: default
 ---
-
 <section class="module__about">
-  <h3 id="about" class="title">About</h3>
-  <div class="content">
-    <h4 class="intro-splash">My name is <span>Chris Peak</span>. I am a designer and photographer from Chicago, IL.</h4>
-  </div>
+<h3 id="about" class="title"></h3>
+<div class="content">
+  <h4 class="intro-splash">My name is <span>Chris Peak</span>.<br> I am a designer and photographer from Chicago, IL.</h4>
+  <p>I am a Design Craftsman at <a href="http://8thlight.com" class="underlined" target="blank">8th Light</a> in Chicago, where I spend most of my time creating beautiful &amp; simple websites and applications. In my free time I enjoy spending time with my wife and daughter, and have also been an avid photographer for over twenty years.</p>
+</div>
 </section>
 
+
 <section id="writing" class="module__writing">
-  <h3 class="title">Writing</h3>
-  <div class="content">
-    {% for post in site.posts limit: 5 %}
-    <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
-      <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
-      <p>{{ post.preview }}</p>
-    </a><br>
-    {% endfor %}
-  </div>
+<h3 class="title">Writing</h3>
+<div class="content">
+  {% for post in site.posts limit: 6 %}
+  <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
+    {% if post.thumbnail %}
+      <img class="preview" src="/images/previews/{{ post.thumbnail }}">
+    {% else %}
+      <img class="slug" src="/images/blog-slug.svg">
+    {% endif %}
+    <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
+    <p>{{ post.preview }}</p>
+  </a>
+  {% endfor %}
+</div>
 </section>
 
 <section id="photography" class="module__photography">
-  <h3 class="title">Photography</h3>
-  <div class="content">
-    <img src="/images/CRW_7615.jpg" alt="Untitled snowscape" />
-    <p>To browse my entire portfolio please visit <a class="underlined" target="blank" href="http://www.gorilla-studios.com">Gorilla-Studios Photography</a></p>
-  </div>
+<h3 class="title">Photography</h3>
+<div class="content">
+  <img src="/images/CRW_7615.jpg" alt="Untitled snowscape" />
+  <p><br>To browse my entire portfolio please visit <a class="underlined" target="blank" href="http://www.gorilla-studios.com">Gorilla-Studios Photography</a></p>
+</div>
 </section>
+
 
 <section id="twitter" class="module__twitter section">
   <h3 class="title">Twitter</h3>
   <div id="tw-widget1" class="content"></div>
 </section>
-
-<section id="contact" class="module__contact">
-  <h3 class="title">Contact</h3>
-  <form class="content" action="//formspree.io/cpeak66@gmail.com"
-    method="POST">
-    <input type="text" name="name" placeholder="Name">
-    <input type="email" name="_replyto" placeholder="Email">
-    <textarea name="body" placeholder="Message"></textarea>
-    <input type="submit" value="Send">
-    <input type="hidden" name="_next" value="//chrispeak.me/thanks" />
-  </form>
-</section>
-
 
 <script>
   var config1 = {
@@ -75,3 +69,4 @@ layout: default
     });
   });
 </script>
+

@@ -2,7 +2,6 @@
 layout: post
 category : blog
 tags : [residency, web-design]
-thumbnail: grid-assignment.jpg
 ---
 <article>
   <h2>Music Theory and Web Design?</h2>

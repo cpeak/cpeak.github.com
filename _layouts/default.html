@@ -2,19 +2,9 @@
 <html>
   {% include head.html %}
   <body>
-    <div id="fullpage" class="content-wrapper">
-      {% include header.html %}
-      <div class="page-content animated fadeIn">
-        {{ content }}
-      </div>
+    {% include header.html %}
+    <div class="page-content animated fadeIn">
+      {{ content }}
     </div>
-    <script>
-      $(document).ready(function(){
-        $("#sticker").sticky({
-          topSpacing:0,
-          responsiveWidth: '600px'
-        });
-      });
-    </script>
   </body>
 </html>

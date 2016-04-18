@@ -1,0 +1,47 @@
+.blog-link {
+  border: 1px solid $hairline;
+  display: block;
+  margin-bottom: 2em;
+  padding: 10px;
+  text-align: center;
+  img {
+    margin: 1em 0;
+  }
+  img.preview {
+    border-radius: 50%;
+    width: 100px;
+  }
+  img.slug {
+    width: 50px;
+  }
+  .blog-post-title {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    span {
+      color: #999;
+      font-size: 1rem;
+      display: block;
+    }
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .blog-link {
+    @include span-columns(4);
+    @include omega(3n);
+    img.preview,
+    img.slug {
+      padding: 10% 25%;
+      width: 100%;
+    }
+    img.slug {
+      padding: 10% 30%;
+      opacity: 0.5;
+    }
+  }
+}

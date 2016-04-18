@@ -1,50 +1,147 @@
-.content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  @include outer-container;
+@keyframes menuIn {
+  0% {
+    left: -200px;
+    right: 100%;
+  }
+  100% {
+    left: 0;
+    right: 30%;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  @keyframes menuIn {
+    0% {
+      left: -200px;
+      right: 100%;
+      opacity: 0;
+    }
+    100% {
+      left: 0;
+      right: 50%;
+      opacity: 1;
+    }
+  }
+}
+
+
+@keyframes menuOut {
+  0% {
+    left: 0;
+    right: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: -200px;
+    right: 100%;
+    opacity: 0;
+  }
+}
+
+
+#menu-toggle {
+  background: rgba(255,255,255,0.95);
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  img {
+    margin: -2px 10px 0 0;
+    width: 20px;
+  }
+  &:hover {
+    background: #f5f5f5;
+  }
+}
+
+#menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  img {
+    width: 20px;
+  }
+  &:hover {
+    background: #f5f5f5;
+  }
 }
 
 header.site-header {
-  padding: 10px 10px 40px 10px;
-  text-align: center;
-  .brand {
+  background: rgba(255,255,255,0.98);
+  border-right: 1px solid $hairline;
+  bottom: 0;
+  left: -9999px;
+  padding: 10% 20px 20px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  &.opened {
+    animation: menuIn 0.35s forwards;
+  }
+  &.closed {
+    animation: menuOut 0.35s forwards;
+  }
+  .brand img {
+    border-radius: 50%;
     display: block;
-    font-size: 0.875em;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 20px auto;
     width: 75px;
-    img {
-      border-radius: 50%;
-    }
   }
-  nav a {
-    padding: 10px;
-  }
-}
-
-
-@media screen and (min-width: 600px) {
-  #sticker-sticky-wrapper {
-    @include span-columns(3);
-  }
-  header.site-header {
-    padding: 54px 20px;
-    nav a {
-      color: #222;
+  nav {
+    a {
+      border-bottom: 1px solid $hairline;
+      font-family: "Playfair Display";
       display: block;
-      margin-bottom: 0.5em;
-      padding: 4px;
-      &:hover {
-        color: $brand-color;
+      font-size: 1.2em;
+      padding: 10px 0;
+    }
+    section {
+      overflow: hidden;
+      a {
+        float: left;
+        text-align: center;
+        width: 33.333%;
+        img {
+          height: 30px;
+          opacity: 0.5;
+          transition: all 0.25s ease-in;
+          width: 30px;
+        }
+        &:hover img {
+          opacity: 1;
+        }
       }
     }
   }
 }
 
 
+@media screen and (min-width: 600px) {
+  #menu-toggle,
+  #menu-close {
+    padding: 25px;
+  }
 
-@media screen and (max-width: 600px) {
-  .site-header {
-    position: inherit !important;
-    padding-bottom: 1em;
+  header.site-header {
+    nav a {
+      border: none;
+      color: $grey;
+      font-size: 2.5em;
+      text-align: center;
+      transform: all 0.25s ease-in;
+      &:hover {
+        color: black;
+      }
+    }
+    nav section {
+      margin: 3em auto;
+      max-width: 60%;
+      a img {
+        height: 40px;
+        width: 40px;
+      }
+    }
   }
 }

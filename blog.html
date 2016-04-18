@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /blog/
+---
+
+<section>
+  {% for post in site.posts %}
+  <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
+    {% if post.thumbnail %}
+      <img class="preview" src="/images/previews/{{ post.thumbnail }}">
+    {% else %}
+      <img class="slug" src="/images/blog-slug.svg">
+    {% endif %}
+    <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
+    <p>{{ post.preview }}</p>
+  </a>
+  {% endfor %}
+</section>

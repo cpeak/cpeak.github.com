@@ -1,9 +1,36 @@
-<header class="site-header" id="sticker">
-  <a class="brand" href="/"><img class="headshot" src="/images/headshot.jpg" alt="Chris Peak Designer 8th Light" /></a>
+<a href="#" id="menu-toggle"><img src="/images/menu.svg">Menu</a>
+
+<header class="site-header">
   <nav role="navigation">
-    <a href="/#writing">Writing</a>
-    <a href="/#photography">Photography</a>
-    <a href="/#twitter">Twitter</a>
-    <a href="/#contact">Contact</a>
+    <a href="/" class="brand"><img src="/images/peak-chris.jpg" alt="Chris Peak Web Design and Photography"></a>
+    <a href="/">Home</a>
+    <a href="/blog">Writing</a>
+    <a href="/contact">Contact</a>
+    <section>
+      <a href="http://twitter.com/c_peak" target="blank"><img src="/images/twitter.svg"></a>
+      <a href="http://www.instagram.com/gorillastudios/" target="blank"><img src="/images/instagram.svg"></a>
+      <a href="http://www.dribbble.com/cpeak" target="blank"><img src="/images/dribbble.svg"></a>
+    </section>
   </nav>
+  <a href="#" id="menu-close"><img src="/images/close.svg"></a>
 </header>
+
+
+<script>
+  $('#menu-toggle').click(function()
+  {
+    if ($('.site-header').hasClass('opened')) {
+      $('.site-header').removeClass('opened').addClass('closed');
+      return false;
+    }
+    if ($('.site-header').hasClass('closed')) {
+      $('.site-header').removeClass('closed').addClass('opened');
+      return false;
+    }
+    else ($('.site-header').addClass('opened'))
+  });
+
+  $('#menu-close').click(function() {
+    $('.site-header').removeClass('opened').addClass('closed');
+  });
+</script>

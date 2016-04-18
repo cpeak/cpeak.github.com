@@ -11,6 +11,20 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+$bounce: cubic-bezier(.32, -0.25, .78, 1.27);
+
+.fadeIn {
+  animation: fadeIn 0.75s $bounce forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 // ----------------------------------------------- Globals
@@ -66,29 +80,43 @@ code {
 }
 
 // ----------------------------------------------- Inputs
+#contact {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
-  border: 1px solid $hairline;
-  display: block;
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+  background: #f9f9f9;
+  border: none;
+  border-bottom: 1px solid $hairline;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 1em;
+  padding: 5px 10px;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
 
 textarea {
-  min-height: 15em;
+  display: block;
+  min-height: 10em;
+  margin-bottom: 2em;
+  padding: 10px;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder, text-area::-webkit-input-placeholder {
+  color: #ccc;
 }
 
 input[type="submit"] {
   background: $brand-color;
   border: none;
   color: white;
-  float: right;
-  font-size: 1em;
-  font-family: $base-font-family;
+  font-size: 0.75em;
+  font-family: $headline-font-family;
   font-weight: 800;
   padding: 0.5em 2em;
   text-transform: uppercase;
@@ -98,6 +126,12 @@ input[type="submit"] {
   &:hover {
     background: darken($brand-color, 5%);
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #contact {
+    font-size: 1.5em;
   }
 }
 
@@ -117,26 +151,14 @@ a {
 }
 
 a.underlined {
-  border-bottom: 1px solid $hairline;
+  color: $brand-color;
+  border-bottom: 1px solid $brand-color;
   &:hover {
     border-color: black;
+    color: black;
   }
 }
 
-
-
-
-// ----------------------------------------------- Index Blog Links
-.blog-link {
-  display: block;
-  margin: 8px 0 16px 0;
-  .blog-post-title {
-    margin: 0;
-  }
-  p {
-    margin-bottom: 5px;
-  }
-}
 
 .hvr-underline-from-center {
   display: inline-block;
@@ -170,3 +192,6 @@ a.underlined {
   left: 0;
   right: 0;
 }
+
+
+

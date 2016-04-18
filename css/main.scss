@@ -23,8 +23,8 @@ $hairline: #ddd;
 
 
 
-$base-font-family: "Merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
-$headline-font-family: "Open Sans", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
+$base-font-family: "Merriweather", "merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
+$headline-font-family: 'Brandon Grotesque', "brandon-grotesque", sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -41,11 +41,6 @@ $brand-color:      #EE6352;
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -56,6 +51,7 @@ $on-laptop:        800px;
   "header",
   "typography",
   "content",
+  "blog",
   "vendor/font-awesome",
   "vendor/animate"
 ;

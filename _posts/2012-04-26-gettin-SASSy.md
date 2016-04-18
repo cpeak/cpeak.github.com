@@ -3,7 +3,6 @@ layout: post
 category : blog
 title: Gettin SASSy
 tags : [residency, CSS]
-thumbnail: code.jpg
 ---
 <p>This past week I finally took the plunge into CSS pre-processing and started playing around with <a href="http://sass-lang.com/">SASS</a>.  I've never been a huge fan of pre-processing - I like to be in complete control of what goes into my production level CSS files, but the whole point of my residency is to become a much more well-rounded developer and I want to have as many tools in my bag as I can. I have learned over the years that using the right tool for the job makes life a <em>lot</em> easier.</p>
 
