@@ -1,0 +1,18 @@
+---
+layout: post
+title: Perfect Photo Grid
+published: true
+tags: art
+thumbnail: 'grid.jpg'
+preview: 'Creating the perfect photo grid for my photography site'
+date: 2016-05-19
+---
+<p>For a while now I have been trying to use <a href="http://masonry.desandro.com/" target="blank">Masonry</a> to create a seamless grid of photos on my <a href="http://www.gorilla-studios.com" target="blank">photography site, Gorilla-Studios</a>, but haven't been able to get a layout without small gaps or breaks in the grid. The problem was that it had to be responsive meaning Masonry was a must, and I needed both horizontal and vertical images plus oversized 'marquee' images that would take up two of the 4 columns (on desktop).</p>
+<p>The root of the problem is that un-cropped photos from my camera have an aspect ratio of 1:1.5. This means when our grid columns are, for simplicity, 1000px wide a horizontal photo would be 667px tall. Two of them on top of each other would be 1334px tall. If we have a vertical photo in the next column at 1000px wide, it would be 1500px tall, 166px taller then the neighboring horizontal images.</p>
+<p>I tried to order the images the best I could to achieve a balance minimizing the gaps, but the whole point of Masonry is to have it re-order the grid depending on the window size. Sure it was close, but that wasn't good enough.</p>
+<p>A few months ago I was creating some various marketing materials for a conference in London when the client reminded me that the European paper sizes (A2, A3, A4...) make much more sense than the arbitrary US Letter size. European paper sizes are modular meaning if you cut an A2 in half you have two A3 sheets, and so on.</p>
+<p>This stuck in the back of my head for months when it re-surfaced the other day. If I used the same aspect ratio for my grid images, everything should theoretically fit together perfectly.</p>
+<p>Lets run the numbers. International paper sizes are all at 1:1.41, slightly off from the 1:1.5, but not dramatically. At our 1000px width column, horizontal image would be 707px tall, two stacked would be 1414px. In the next column a vertical image at 1000px wide would be, with our new 1:1.41 ratio, <strong>1414px tall</strong>, exactly the height of two horizontal images. Perfect. Lastly, a marquee image that spans two columns at 2000px wide is again 1414px tall.</p>
+<img src="/images/example-grid.jpg" alt="Photo Grid"/>
+<p>There it is. A perfect photo grid that can handle both horizontal and vertical images, as well as marquee images that span two columns, in any order thats completely responsive.</p>
+<img src="/images/grid.jpg" alt="Photo Grid"/>
