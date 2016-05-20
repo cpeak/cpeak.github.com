@@ -35,6 +35,19 @@ layout: default
 </div>
 </section>
 
+<section id="design" class="module__design">
+<h3 class="title">Design</h3>
+<div class="content">
+  <ul class="portfolio">
+    <li><img src="/images/portfolio/just-enuff.svg"></li>
+    <li><img src="/images/portfolio/spaces.svg"></li>
+    <li><img src="/images/portfolio/two-and-seven.svg"></li>
+    <li><img src="/images/portfolio/dribble.svg"></li>
+    <li><img src="/images/portfolio/als.svg"></li>
+    <li><img src="/images/portfolio/owl.svg"></li>
+  </ul>
+</div>
+</section>
 
 <section id="twitter" class="module__twitter section">
   <h3 class="title">Twitter</h3>
@@ -45,9 +58,11 @@ layout: default
   var config1 = {
     "id": '719554380039630848',
     "domId": 'tw-widget1',
-    "maxTweets": 5,
+    "maxTweets": 6,
     "enableLinks": true,
-    "showPermalinks": false
+    "showPermalinks": false,
+    "showRetweet": false,
+    "showImages": true
   };
   twitterFetcher.fetch(config1);
 </script>

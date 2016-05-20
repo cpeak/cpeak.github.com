@@ -20,7 +20,8 @@
     display: none;
   }
   li {
-    margin-bottom: 1.5em;
+    border-bottom: 1px solid $hairline;
+    padding: 15px 0 0 0;
     a {
       border-bottom: 1px solid $brand-color;
       color: $brand-color;
@@ -29,7 +30,18 @@
         color: $black;
       }
     }
+    img {
+      max-height: 400px;
+      margin-bottom: 15px;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
   }
+}
+
+img[src*="undefined"] {
+  display: none;
 }
 
 // ------------------------------------------------- Blog Posts - Actual
@@ -98,7 +110,30 @@
 
 
 
+// ------------------------------------------------- Portfolio
 
+.portfolio {
+  @include outer-container;
+  li {
+    @include span-columns(6);
+    @include omega(2n);
+    margin-bottom: 1em;
+    padding: 20px;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio li {
+    margin-bottom: 3em;
+    padding: 0 30px 30px 30px;
+  }
+}
 
 // ------------------------------------------------- Thank You
 @media screen and (min-width: 600px) {
@@ -143,24 +178,5 @@
   margin: 0 auto 1.5em auto;
   padding-top: 70%;
   width: 70%;
-}
-
-// ----------------------------- Content Agnostic Post
-
-.example-album-list {
-  display: none;
-}
-
-@media screen and (min-width: 600px) {
-  .example-album-list {
-    display: block;
-    @include outer-container;
-    li {
-      border: 1px solid $grey;
-      @include span-columns(3);
-      @include omega(4n);
-      margin-bottom: 10px;
-    }
-  }
 }
 
