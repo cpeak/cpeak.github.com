@@ -1,5 +1,5 @@
 .blog-link {
-  border: 1px solid $hairline;
+  border-bottom: 1px solid $hairline;
   display: block;
   margin-bottom: 2em;
   padding: 10px;
@@ -31,9 +31,26 @@
 
 
 @media screen and (min-width: 600px) {
+  .blog-index,
+  .module__writing .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   .blog-link {
-    @include span-columns(4);
-    @include omega(3n);
+    border-bottom: 1px solid $hairline;
+    border-right: 1px solid $hairline;
+    margin-bottom: 0;
+    padding: 20px;
+    width: 33.33%;
+    &:nth-child(3n) {
+      border-right: none;
+    }
     img.preview,
     img.slug {
       padding: 10% 25%;
@@ -43,5 +60,8 @@
       padding: 10% 30%;
       opacity: 0.5;
     }
+  }
+  #writing .content .blog-link:nth-child(n+4) {
+    border-bottom: 0;
   }
 }
