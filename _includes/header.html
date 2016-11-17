@@ -1,36 +1,26 @@
-<a href="#" id="menu-toggle"><img src="/images/menu.svg">Menu</a>
+<header class="site-header colorful" id="primary-header">
+  <ul class="weather-elements">
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+    <li class="weather-element"><img src="/images/leaf.svg"></li>
+  </ul>
+  <div id="moon"></div>
 
-<header class="site-header">
-  <nav role="navigation">
-    <a href="/" class="brand"><img src="/images/peak-chris.jpg" alt="Chris Peak Web Design and Photography"></a>
-    <a href="/">Home</a>
-    <a href="/blog">Writing</a>
-    <a href="/contact">Contact</a>
-    <section>
-      <a href="http://twitter.com/c_peak" target="blank"><img src="/images/twitter.svg"></a>
-      <a href="http://www.instagram.com/gorillastudios/" target="blank"><img src="/images/instagram.svg"></a>
-      <a href="http://www.dribbble.com/cpeak" target="blank"><img src="/images/dribbble.svg"></a>
-    </section>
-  </nav>
-  <a href="#" id="menu-close"><img src="/images/close.svg"></a>
+  <div class="content">
+    <a class="site-anchor" href="/">
+      <svg class="test" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 86.602 100" enable-background="new 0 0 86.602 100" xml:space="preserve">
+            <path d="M86.602,25L43.301,0L0,25v50l43.301,25l43.301-25 M10.007,30.778l28.283-16.33v71.104l-28.283-16.33V30.778z
+             M76.595,69.222L48.426,85.486V65.208l28.169-16.264V69.222z M76.595,37.388L48.426,53.653V14.514l28.169,16.264"/>
+      </svg></a>
+    <h3 class="intro-splash">My name is <span>Chris Peak</span>.<br> I am a designer &amp; photographer from Chicago, IL.</h3>
+    <p>I am a Designer at <a href="http://8thlight.com" class="underlined" target="blank">8th Light</a> in Chicago, where I spend most of my time creating beautiful &amp; simple websites and applications.</p>
+  </div>
 </header>
-
-
-<script>
-  $('#menu-toggle').click(function()
-  {
-    if ($('.site-header').hasClass('opened')) {
-      $('.site-header').removeClass('opened').addClass('closed');
-      return false;
-    }
-    if ($('.site-header').hasClass('closed')) {
-      $('.site-header').removeClass('closed').addClass('opened');
-      return false;
-    }
-    else ($('.site-header').addClass('opened'))
-  });
-
-  $('#menu-close').click(function() {
-    $('.site-header').removeClass('opened').addClass('closed');
-  });
-</script>

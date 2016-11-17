@@ -1,14 +1,16 @@
-.intro-splash {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  span {
-    color: $brand-color;
-  }
-}
 
-@media screen and (min-width: 600px) {
-  .intro-splash {
-    font-size: 3em;
+// ------------------------------------------------- Instagram
+.instagram-strip {
+  overflow: hidden;
+  margin-bottom: 0.5em;
+  img {
+    float: left;
+    width: 50%;
+  }
+  @include media-query($small) {
+    img {
+      width: 25%;
+    }
   }
 }
 
@@ -20,7 +22,7 @@
     display: none;
   }
   li {
-    border-bottom: 1px solid $hairline;
+    border-bottom: 1px dotted $hairline;
     padding: 15px 0 0 0;
     a {
       border-bottom: 1px solid $brand-color;
@@ -44,96 +46,6 @@ img[src*="undefined"] {
   display: none;
 }
 
-// ------------------------------------------------- Blog Posts - Actual
-.post {
-  overflow: hidden;
-  margin-bottom: 3em;
-  &-title {
-    font-size: 1.75em;
-    margin: 0;
-  }
-  &-meta {
-    color: #888;
-    font-size: 0.55em;
-    display: block;
-  }
-  p {
-    color: #333;
-    margin: 1.5em 0;
-  }
-  a {
-    border-bottom: 1px solid $hairline;
-    &:hover {
-      border-color: $black;
-    }
-  }
-  img {
-    display: block;
-  }
-}
-.previous-article,
-.next-article {
-  border: 1px solid $hairline;
-  display: block;
-  margin-bottom: 2em;
-  padding: 1em;
-  text-align: center;
-  span {
-    display: block;
-    font-family: $headline-font-family;
-    font-size: $font--small;
-    text-transform: uppercase;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .post-title {
-    font-size: 2.5em;
-    margin-bottom: 0.75em;
-  }
-  .post-meta {
-    display: inline;
-  }
-  .post p {
-    font-size: 1.4em;
-    line-height: 1.75em;
-  }
-  .post img.small {
-    margin: 0 auto;
-    max-width: 500px;
-  }
-  .previous-article,
-  .next-article {
-    @include span-columns(6);
-  }
-}
-
-
-
-// ------------------------------------------------- Portfolio
-
-.portfolio {
-  @include outer-container;
-  li {
-    @include span-columns(6);
-    @include omega(2n);
-    margin-bottom: 1em;
-    padding: 20px;
-    img {
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto;
-    }
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .portfolio li {
-    margin-bottom: 3em;
-    padding: 0 30px 30px 30px;
-  }
-}
 
 // ------------------------------------------------- Thank You
 @media screen and (min-width: 600px) {
@@ -145,6 +57,7 @@ img[src*="undefined"] {
 .gist {
   margin-bottom: 3em;
 }
+
 
 // ----------------------------- Circular Images Post
 .wrong { border-radius: 50%; }

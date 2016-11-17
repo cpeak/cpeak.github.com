@@ -8,11 +8,13 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-</div>
 
-{% if page.previous.url %}
-  <a class="previous-article hvr-underline-from-center" href="{{ page.previous.url }}"><span>Previous Post</span>{{ page.previous.title }}</a>
-{% endif %}
-{% if page.next.url %}
-  <a class="next-article hvr-underline-from-center" href="{{ page.next.url }}"><span>Next Post</span>{{ page.next.title }}</a>
-{% endif %}
+  <div class="post-navigation">
+    {% if page.previous.url %}
+    <a class="previous-article hvr-underline-from-center" href="{{ page.previous.url }}"><span>Previous Post</span>{{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+    <a class="next-article hvr-underline-from-center" href="{{ page.next.url }}"><span>Next Post</span>{{ page.next.title }}</a>
+    {% endif %}
+  </div>
+</div>

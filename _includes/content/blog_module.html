@@ -1,14 +1,22 @@
-<div class="module--blog" id="blog">
-  <div>
-    <i class="module-label fa fa-file-text-o"></i>
-    <section>
-    <h3>Latest <span>Blog Posts</span></h3>
-      <ul>
-        {% for post in site.posts limit: 4 %}
-        <li><a class="link" href="{{ post.url }}">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></a></li>
-        {% endfor %}
-      </ul>
-    </section>
+<div class="module__blog-posts">
+  <div class="module-title">
+    <h3>Recent Posts</h3>
   </div>
+
+  <section class="content-wrap">
+    <div class="content">
+      <div class="blog-post-list">
+        {% for post in site.posts limit: 3 %}
+          <div class="blog-post-truncated">
+            <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
+            <p>{{ post.content | split:'<!--break-->' | first }}
+            {% if post.content contains '<!--break-->' %}
+            <a class="blog-read-more-link" href="{{ post.url }}">Read More</a>
+            {% endif %}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </div>
 

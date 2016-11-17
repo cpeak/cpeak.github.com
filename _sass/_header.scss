@@ -1,147 +1,77 @@
-@keyframes menuIn {
-  0% {
-    left: -200px;
-    right: 100%;
+.site-header {
+  border-bottom: 1px solid $blue-stone;
+  padding: 20px;
+  .content {
+    margin: 0 auto;
+    position: relative;
+    max-width: 400px;
   }
-  100% {
-    left: 0;
-    right: 30%;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  @keyframes menuIn {
-    0% {
-      left: -200px;
-      right: 100%;
-      opacity: 0;
-    }
-    100% {
-      left: 0;
-      right: 50%;
-      opacity: 1;
-    }
-  }
-}
-
-
-@keyframes menuOut {
-  0% {
-    left: 0;
-    right: 50%;
-    opacity: 1;
-  }
-  100% {
-    left: -200px;
-    right: 100%;
-    opacity: 0;
-  }
-}
-
-
-#menu-toggle {
-  background: rgba(255,255,255,0.95);
-  padding: 10px;
-  position: fixed;
-  right: left;
-  z-index: 999;
-  img {
-    margin: -2px 10px 0 0;
-    width: 20px;
-  }
-  &:hover {
-    background: #f5f5f5;
-  }
-}
-
-#menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px;
-  img {
-    width: 20px;
-  }
-  &:hover {
-    background: #f5f5f5;
-  }
-}
-
-header.site-header {
-  background: rgba(255,255,255,0.98);
-  border-right: 1px solid $hairline;
-  bottom: 0;
-  left: -9999px;
-  padding: 10% 20px 20px 20px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  &.opened {
-    animation: menuIn 0.35s forwards;
-  }
-  &.closed {
-    animation: menuOut 0.35s forwards;
-  }
-  .brand img {
-    border-radius: 50%;
+  .site-anchor {
     display: block;
-    margin: 0 auto 20px auto;
-    width: 75px;
-  }
-  nav {
-    a {
-      border-bottom: 1px solid $hairline;
-      font-family: "Playfair Display";
-      display: block;
-      font-size: 1.2em;
-      padding: 10px 0;
+    text-align: center;
+    svg {
+      fill: $charcoal;
+      margin: 1em auto 1em auto;
+      transition: all 0.25s ease-in;
+      max-width: 60px;
+      width: 100%;
     }
-    section {
-      overflow: hidden;
-      a {
-        float: left;
-        text-align: center;
-        width: 33.333%;
-        img {
-          height: 30px;
-          opacity: 0.5;
-          transition: all 0.25s ease-in;
-          width: 30px;
-        }
-        &:hover img {
-          opacity: 1;
-        }
+    &:hover {
+      .test {
+        transform: scale(1.1);
       }
+    }
+  }
+  .intro-splash {
+    font-size: 1.25em;
+    line-height: 1.1em;
+    span {
+      color: $brand-color;
+    }
+  }
+  @include media-query($small) {
+    border-bottom: 0;
+    border-right: 1px solid $blue-stone;
+    bottom: 0;
+    font-size: 110%;
+    left: 0;
+    overflow: hidden;
+    padding-top: 7%;
+    position: fixed;
+    right: 60%;
+    top: 0;
+    .site-anchor svg {
+      margin-bottom: 2em;
+      max-width: 75px;
+    }
+  }
+  @include media-query($medium) {
+    font-size: 125%;
+    .site-anchor svg {
+      margin-bottom: 3em;
+      max-width: 110px;
     }
   }
 }
 
 
-@media screen and (min-width: 600px) {
-  #menu-toggle,
-  #menu-close {
-    padding: 25px;
+.site-header.colorful {
+  .site-anchor svg {
+    fill: $blue-stone;
   }
-
-  header.site-header {
-    nav a {
-      border: none;
-      color: $grey;
-      font-size: 2.5em;
-      text-align: center;
-      transform: all 0.25s ease-in;
-      &:hover {
-        color: black;
-      }
+  @include media-query($small) {
+    background: #12253e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #12253e 0%, #72a1a1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #12253e 0%,#72a1a1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #12253e 0%,#72a1a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12253e', endColorstr='#72a1a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    .site-anchor svg {
+      fill: white;
     }
-    nav section {
-      margin: 3em auto;
-      max-width: 60%;
-      a img {
-        height: 40px;
-        width: 40px;
-      }
+    a {
+      color: white;
+      border-color: white;
     }
   }
 }

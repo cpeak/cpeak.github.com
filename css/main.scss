@@ -1,47 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$salmon: #C14E51;
-$grey:       #828282;
-$grey-light: lighten($grey, 40%);
-$grey-dark:  darken($grey, 25%);
-
-$black-absolute: #000000;
-$blue-navy: #3F576E;
-$white: #FFF;
-
-
-$blue: #2098D1;
-$black: #291F1E;
-$hairline: #ddd;
-
-
-
-$base-font-family: "Merriweather", "merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
-$headline-font-family: 'Brandon Grotesque', "brandon-grotesque", sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-
-$font--small: 0.75em;
-
-$spacing-unit:     30px;
-
-$text-color:       #2b2b2b;
-$background-color: #ffffff;
-$brand-color:      #EE6352;
-
-// Width of the content area
-$content-width:    800px;
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "vendor/bourbon",
@@ -52,6 +11,8 @@ $content-width:    800px;
   "typography",
   "content",
   "blog",
+  "weather",
+  "moon",
   "vendor/font-awesome",
   "vendor/animate"
 ;

@@ -3,9 +3,9 @@ layout: default
 permalink: /blog/
 ---
 
-<section class="blog-index">
+<div class="blog-post-list">
   {% for post in site.posts %}
-  <a class="blog-link hvr-underline-from-center" href="{{ post.url }}">
+  <a class="blog-post-link hvr-underline-from-center" href="{{ post.url }}">
     {% if post.thumbnail %}
       <img class="preview" src="/images/previews/{{ post.thumbnail }}">
     {% else %}
@@ -15,4 +15,4 @@ permalink: /blog/
     <p>{{ post.preview }}</p>
   </a>
   {% endfor %}
-</section>
+</div>

@@ -1,0 +1,29 @@
+.waning.gibbous { background-image: url('/images/moon/waning-gibbous.svg'); }
+.waning.crescent { background-image: url('/images/moon/waning-crescent.svg'); }
+.waxing.gibbous { background-image: url('/images/moon/waxing-gibbous.svg'); }
+.waning.crescent { background-image: url('/images/moon/waxing-crescent.svg'); }
+.waning.crescent { background-image: url('/images/moon/waxing-crescent.svg'); }
+.full { background-image: url('/images/moon/full-moon.svg'); }
+
+
+#moon {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  animation: orbit 440s forwards infinite;
+}
+
+.moonIsUp {
+  @include media-query($small) {
+    opacity: 0.5 !important;
+  }
+}
+
+@keyframes orbit {
+  from {  transform: rotate(-180deg) translateX(500%) rotate(180deg); }
+  to {  transform: rotate(0deg) translateX(500%) rotate(0deg); }
+}
