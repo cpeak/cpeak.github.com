@@ -32,9 +32,12 @@
         color: $black;
       }
     }
-    img {
+    .media img { // Embedded images
       max-height: 400px;
       margin-bottom: 15px;
+    }
+    .tweet img { // Emoticons
+      width: 30px;
     }
     &:first-child {
       padding-top: 0;

@@ -1,5 +1,10 @@
 .site-header {
-  border-bottom: 1px solid $blue-stone;
+  background: #2d4053; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2d4053 0%, #44648e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2d4053 0%,#44648e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2d4053 0%,#44648e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d4053', endColorstr='#44648e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: white;
   padding: 20px;
   .content {
     margin: 0 auto;
@@ -9,12 +14,10 @@
   .site-anchor {
     display: block;
     text-align: center;
-    svg {
-      fill: $charcoal;
-      margin: 1em auto 1em auto;
+    img {
+      margin: 1em auto 2em auto;
       transition: all 0.25s ease-in;
-      max-width: 60px;
-      width: 100%;
+      max-width: 80px;
     }
     &:hover {
       .test {
@@ -47,31 +50,9 @@
   }
   @include media-query($medium) {
     font-size: 125%;
-    .site-anchor svg {
+    .site-anchor img {
       margin-bottom: 3em;
       max-width: 110px;
-    }
-  }
-}
-
-
-.site-header.colorful {
-  .site-anchor svg {
-    fill: $blue-stone;
-  }
-  @include media-query($small) {
-    background: #12253e; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #12253e 0%, #72a1a1 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #12253e 0%,#72a1a1 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #12253e 0%,#72a1a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12253e', endColorstr='#72a1a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    color: white;
-    .site-anchor svg {
-      fill: white;
-    }
-    a {
-      color: white;
-      border-color: white;
     }
   }
 }
