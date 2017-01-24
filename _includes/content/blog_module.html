@@ -1,13 +1,11 @@
 <div class="module__blog-posts">
-  <div class="module-title">
-    <h3>Recent Posts</h3>
-  </div>
+  <h3 class="module-title">Recent Posts</h3>
 
   <section class="content-wrap">
     <div class="content">
       <div class="blog-post-list">
         {% for post in site.posts limit: 3 %}
-          <div class="blog-post-truncated">
+          <div class="blog-post-link">
             <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
             <p>{{ post.content | split:'<!--break-->' | first }}
             {% if post.content contains '<!--break-->' %}

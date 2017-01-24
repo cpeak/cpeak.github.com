@@ -19,7 +19,7 @@ $white: #FFF;
 $yellow-moon: #FFFE9F;
 $blue: #2098D1;
 $black: #291F1E;
-$hairline: #ddd;
+$hairline: #eee;
 
 
 
@@ -39,6 +39,7 @@ $background-color: #ffffff;
 $brand-color:      #EE6352;
 
 // Width of the content area
+$site-width: 850px;
 $content-width:    800px;
 
 
@@ -87,12 +88,13 @@ $bounce: cubic-bezier(.32, -0.25, .78, 1.27);
 
 
 body {
+  background-color: $background-color;
+  color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
   font-weight: 300;
-  color: $text-color;
-  background-color: $background-color;
+  line-height: $base-line-height;
+  padding-top: 6em;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -253,23 +255,8 @@ a.underlined {
 
 
 .module-title {
-  position: relative;
-  margin: 1.5em 0 3em 0;
-  h3 {
-    background: #fff;
-    padding: 0 1em 0 0;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    z-index: 10;
-  }
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 13px;
-    border-top: 1px solid rgba(0,0,0,0.15);
-    width: 100%;
+  @include media($small) {
+    @include span-columns(4);
   }
 }
 

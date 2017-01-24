@@ -1,26 +1,19 @@
 .page-content {
+  @include outer-container;
   padding: 20px;
-  @include media-query($small) {
-    bottom: 0;
-    left: 40%;
-    overflow-y: scroll;
-    padding: 3em;
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
 }
 
 
 [class*="module__"] {
+  @include outer-container;
+  border-top: 1px solid darken($hairline, 10%);
   margin: 0 auto 3em auto;
-  max-width: 850px;
-  .content-wrap {
-  }
+  padding-top: 1em;
+  max-width: $site-width;;
   @include media-query($small) {
     margin-bottom: 6em;
     .content-wrap {
-      margin-left: 3em;
+      @include span-columns(8);
     }
   }
 }

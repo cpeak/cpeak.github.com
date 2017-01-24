@@ -3,13 +3,13 @@ layout: default
 permalink: /blog/
 ---
 
-<div class="blog-post-list">
+<div class="blog-post-list grid">
   {% for post in site.posts %}
   <a class="blog-post-link hvr-underline-from-center" href="{{ post.url }}">
     {% if post.thumbnail %}
-      <img class="preview" src="/images/previews/{{ post.thumbnail }}">
+      <img class="blog-post-preview" src="/images/previews/{{ post.thumbnail }}">
     {% else %}
-      <img class="slug" src="/images/blog-slug.svg">
+      <img class="blog-post-preview slug" src="/images/blog-slug.svg">
     {% endif %}
     <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
     <p>{{ post.preview }}</p>

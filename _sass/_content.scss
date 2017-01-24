@@ -1,3 +1,19 @@
+.module__about {
+  border: none;
+}
+
+.intro-splash {
+  font-size: 1.5em;
+  line-height: 1.15em;
+  span {
+    color: $brand-color;
+  }
+  @include media-query($small) {
+    font-size: 2.25em;
+  }
+}
+
+
 
 // ------------------------------------------------- Instagram
 .instagram-strip {

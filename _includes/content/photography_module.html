@@ -1,7 +1,5 @@
 <div id="photography" class="module__photography">
-  <div class="module-title">
-    <h3>Photography</h3>
-  </div>
+  <h3 class="module-title">Photography</h3>
   <section class="content-wrap">
     <div class="content">
       <div class="instagram-strip" id="instafeed"></div>
@@ -10,18 +8,17 @@
   </section>
 </div>
 
-  {% assign url = '{{image}}' %}
+{% assign url = '{{image}}' %}
 
 
 <script type="text/javascript">
   var feed = new Instafeed({
-        get: 'user',
-        userId: '372454912',
-        accessToken: '372454912.1677ed0.9cda430b28334da59d00bbb3ab3d829c',
-        resolution: 'low_resolution',
-        limit: '12',
-        template: '<img src="{{ url }}" />'
+    get: 'user',
+    userId: '372454912',
+    accessToken: '372454912.1677ed0.9cda430b28334da59d00bbb3ab3d829c',
+    resolution: 'low_resolution',
+    limit: '12',
+    template: '<img src="{{ url }}" />'
   });
   feed.run();
 </script>
-

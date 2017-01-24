@@ -7,40 +7,4 @@
       {{ content }}
     </div>
   </body>
-
-  <!--    Moon -->
-  <script>
-    $.getJSON(
-      'http://api.usno.navy.mil/rstt/oneday?date=today&loc=Los Angeles, CA',
-      function(data) {
-        $('#moon').addClass(data.curphase.toLowerCase());
-      });
-  </script>
-
-  <!--    Weather -->
-
-  <script>
-    var hour = new Date().getHours();
-
-    // between 7 PM and 7 AM respectively
-    if(hour >= 19 || hour <= 8) {
-      $("#moon").addClass('moonIsUp');
-    }
-
-    $(document).ready(function() {
-      $.simpleWeather({
-        location: '60174',
-        woeid: '',
-        unit: 'f',
-        success: function(weather) {
-          $('#primary-header').addClass(weather.currently.toLowerCase());
-        },
-        error: function(error) {
-          $("#weather").html('<p>'+error+'</p>');
-        },
-      });
-    });
-  </script>
-
-
 </html>

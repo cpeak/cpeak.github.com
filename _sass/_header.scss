@@ -1,58 +1,24 @@
-.site-header {
-  background: #2d4053; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #2d4053 0%, #44648e 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #2d4053 0%,#44648e 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #2d4053 0%,#44648e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d4053', endColorstr='#44648e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  color: white;
-  padding: 20px;
-  .content {
-    margin: 0 auto;
-    position: relative;
-    max-width: 400px;
-  }
-  .site-anchor {
-    display: block;
-    text-align: center;
+.site__header {
+  background: rgba(255,255,255,0.98);
+  border-bottom: 1px solid $hairline;
+  left: 0;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  a {
+    display: inline-block;
+    font-family: $headline-font-family;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
     img {
-      margin: 1em auto 2em auto;
-      transition: all 0.25s ease-in;
-      max-width: 80px;
-    }
-    &:hover {
-      .test {
-        transform: scale(1.1);
-      }
-    }
-  }
-  .intro-splash {
-    font-size: 1.25em;
-    line-height: 1.1em;
-    span {
-      color: $brand-color;
-    }
-  }
-  @include media-query($small) {
-    border-bottom: 0;
-    border-right: 1px solid $blue-stone;
-    bottom: 0;
-    font-size: 110%;
-    left: 0;
-    overflow: hidden;
-    padding-top: 7%;
-    position: fixed;
-    right: 60%;
-    top: 0;
-    .site-anchor svg {
-      margin-bottom: 2em;
-      max-width: 75px;
-    }
-  }
-  @include media-query($medium) {
-    font-size: 125%;
-    .site-anchor img {
-      margin-bottom: 3em;
-      max-width: 110px;
+      max-width: 50px;
+      display: inline-block;
+      margin: -5px 10px 0 0;
+      vertical-align: middle;
     }
   }
 }
+
