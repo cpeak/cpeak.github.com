@@ -17,3 +17,10 @@
     }
   }
 }
+
+
+.module-title {
+  @include media($small) {
+    @include span-columns(4);
+  }
+}

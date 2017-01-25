@@ -7,18 +7,29 @@
   right: 0;
   top: 0;
   z-index: 10;
-  a {
-    display: inline-block;
-    font-family: $headline-font-family;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    img {
-      max-width: 50px;
-      display: inline-block;
-      margin: -5px 10px 0 0;
-      vertical-align: middle;
-    }
-  }
 }
 
+.site__header--anchor {
+  @include span-columns(7);
+  font-family: $headline-font-family;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+
+.site__header--information {
+  @include span-columns(5);
+  text-align: right;
+  padding-top: 12px;
+}
+
+.brand-icon {
+  border-radius: 50%;
+  border: 1px solid $hairline;
+  display: inline-block;
+  margin: -5px 10px 0 0;
+  max-width: 50px;
+  vertical-align: middle;
+}

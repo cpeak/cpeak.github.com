@@ -24,6 +24,7 @@
     margin: 0 auto;
     padding: 20px;
     max-width: 200px;
+    width: 100%;
   }
   &.slug {
     padding: 40px;
@@ -56,61 +57,40 @@
 
 
 // ------------------------------------------------- Blog Posts - Actual
-.post {
+.blog-post {
   padding: 10px;
-  &-title {
+  margin: 0 auto;
+  max-width: 800px;
+  &__title {
     font-size: 1.75em;
     margin: 0;
   }
-  &-meta {
+  &__meta {
     color: #888;
     font-size: 0.55em;
     display: block;
   }
   p {
-    color: #333;
     margin: 1.5em 0;
-  }
-  a {
-    border-bottom: 1px solid $hairline;
-    &:hover {
-      border-color: $black;
+    a {
+      background: $red--link;
+      box-shadow: 0px 0px 0px 1px $red--link;
+      &:hover {
+        background: lighten($red--link, 20%);
+        box-shadow: 0px 0px 0px 1px $red--link;
+      }
     }
   }
   img {
     display: block;
   }
 
-  .post-navigation {
-    @include outer-container;
-    padding: 4em 0 1em 0;
-  }
-  .previous-article,
-  .next-article {
-    border: 1px solid $hairline;
-    display: block;
-    margin-bottom: 2em;
-    padding: 1em;
-    text-align: center;
-    span {
-      display: block;
-      font-family: $headline-font-family;
-      font-size: $font--small;
-      text-transform: uppercase;
-    }
-    &:hover {
-      border-color: $hairline !important;
-    }
-  }
-
   @include media-query($small) {
-    margin: 0 auto;
-    max-width: 800px;
-    .post-title {
-      font-size: 1.5em;
+    .blog-post__title {
+      font-size: 2em;
       margin-bottom: 0.75em;
     }
-    .post-meta {
+    .blog-post__meta {
       display: inline;
     }
     p {
@@ -121,13 +101,8 @@
       margin: 0 auto;
       max-width: 500px;
     }
-    .post-navigation {
-      padding: 4em 0;
-    }
     .previous-article,
     .next-article {
-      @include span-columns(6);
-      margin-bottom: 0;
     }
   }
   @include media-query($medium) {
@@ -138,3 +113,29 @@
 }
 
 
+.blog-post__navigation {
+  @include outer-container;
+  padding: 4em 0 1em 0;
+  @include media-query($small) {
+    padding: 4em 0;
+  }
+}
+
+.blog-post__previous-article,
+.blog-post__next-article {
+  border: 1px solid $hairline;
+  display: block;
+  margin-bottom: 2em;
+  padding: 1em;
+  text-align: center;
+  span {
+    display: block;
+    font-family: $headline-font-family;
+    font-size: $font--small;
+    text-transform: uppercase;
+  }
+  @include media-query($small) {
+    @include span-columns(6);
+    margin-bottom: 0;
+  }
+}

@@ -1,7 +1,3 @@
-.module__about {
-  border: none;
-}
-
 .intro-splash {
   font-size: 1.5em;
   line-height: 1.15em;
@@ -66,12 +62,6 @@ img[src*="undefined"] {
 }
 
 
-// ------------------------------------------------- Thank You
-@media screen and (min-width: 600px) {
-  .mail-thanks {
-    margin-top: 4em;
-  }
-}
 // ------------------------------------------------- Unique code
 .gist {
   margin-bottom: 3em;

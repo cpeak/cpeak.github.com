@@ -1,26 +1,22 @@
 @charset "utf-8";
 
+$black: #291F1E;
+$black-absolute: #000000;
+$blue: #2098D1;
+$blue-navy: #3F576E;
+$blue-stone: #304F5F;
+$charcoal: #2b2b2b;
+$grey:       #828282;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-
-$salmon: #C14E51;
-$charcoal: #2b2b2b;
-$grey:       #828282;
 $grey-light: lighten($grey, 40%);
 $grey-dark:  darken($grey, 25%);
-
-$black-absolute: #000000;
-$blue-navy: #3F576E;
-$blue-stone: #304F5F;
-$white: #FFF;
-
-
-$yellow-moon: #FFFE9F;
-$blue: #2098D1;
-$black: #291F1E;
 $hairline: #eee;
-
+$red: #EE6352;
+$red--link: rgba(238,99,81, 0.25);
+$salmon: #C14E51;
+$white: #FFF;
 
 
 $base-font-family: "Merriweather", "merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
@@ -36,7 +32,7 @@ $spacing-unit:     30px;
 
 $text-color:       #2b2b2b;
 $background-color: #ffffff;
-$brand-color:      #EE6352;
+$brand-color:      $red;
 
 // Width of the content area
 $site-width: 850px;
@@ -202,6 +198,7 @@ input[type="submit"] {
 a {
   color: $black;
   text-decoration: none;
+  transition: all 0.15s ease-in;
   &.bare {
     border: none;
   }
@@ -218,45 +215,3 @@ a.underlined {
     color: black;
   }
 }
-
-
-.hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: $brand-color;
-  height: 2px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
-
-
-.module-title {
-  @include media($small) {
-    @include span-columns(4);
-  }
-}
-
