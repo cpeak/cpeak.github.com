@@ -1,5 +1,5 @@
 .blog-post-list.grid {
-  @include outer-container;
+  @include outer-container(1200px);
   @include media-query($small) {
     .blog-post-link {
       @include span-columns(3);
