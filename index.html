@@ -5,3 +5,10 @@ layout: default
 {% include content/blog_module.html %}
 {% include content/photography_module.html %}
 {% include content/twitter_module.html %}
+
+<script>
+  $('.module').addClass("hidden").viewportChecker({
+    classToAdd: 'visible animated fadeIn',
+    offset: 100
+  });
+</script>
