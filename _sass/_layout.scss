@@ -10,6 +10,9 @@
   margin: 0 auto 3em auto;
   padding-top: 1em;
   max-width: $site-width;;
+  &.no-border {
+    border: 0px;
+  }
   @include media-query($small) {
     margin-bottom: 6em;
     .content-wrap {
@@ -22,5 +25,18 @@
 .module-title {
   @include media($small) {
     @include span-columns(4);
+  }
+}
+
+.module__portfolio img {
+  border: 1px solid $hairline;
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 2%;
+  width: 48%;
+  @include media($small) {
+    @include span-columns(4);
+    @include omega(3n);
+    margin-bottom: 1.25em;
   }
 }
