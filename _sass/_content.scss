@@ -55,6 +55,16 @@
       padding-top: 0;
     }
   }
+  &:empty {
+    background: $off-white;
+    color: $grey;
+    padding: 6em 0;
+    &:before {
+      content: "No tweets at the moment";
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 img[src*="undefined"] {
