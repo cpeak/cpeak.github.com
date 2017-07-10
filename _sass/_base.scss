@@ -67,14 +67,25 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  &.bullet-list {
+    list-style: disc;
+    margin-left: 1em;
+  }
 }
 
 ul.inline li {
   display: inline;
 }
 
+ol {
+  margin: 0 1em;
+}
+ol > li {
+  margin-bottom: 1.5em;
+}
+
 code {
-  font-size: 0.875em;
+  //font-size: 0.875em;
   background: lighten($blue, 49%);
   padding: 0 0.25em;
 }
