@@ -1,0 +1,13 @@
+#example-grid {
+  display: grid;
+  border: 1px dashed red;
+
+  grid-template-columns: 25% 25% 25% 25%;
+
+
+  .item {
+    border: 1px solid blue;
+    padding: 1em;
+    text-align: center;
+  }
+}
