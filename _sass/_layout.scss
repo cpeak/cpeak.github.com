@@ -43,6 +43,6 @@
   @include media($small) {
     @include span-columns(4);
     @include omega(3n);
-    margin-bottom: 1.25em;
+    margin-bottom: .7em;
   }
 }

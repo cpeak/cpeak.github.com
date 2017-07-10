@@ -14,7 +14,7 @@
 // ------------------------------------------------- Instagram
 .instagram-strip {
   overflow: hidden;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   img {
     float: left;
     width: 50%;
@@ -22,6 +22,16 @@
   @include media-query($small) {
     img {
       width: 33.333%;
+    }
+  }
+  &:empty {
+    border: 1px solid $hairline;
+    background: $off-white;
+    font-size: .9em;
+    padding: 6em 0;
+    text-align: center;
+    &:before {
+      content: "There seems to be a problem loading my Instagram feed.";
     }
   }
 }
@@ -53,16 +63,6 @@
     }
     &:first-child {
       padding-top: 0;
-    }
-  }
-  &:empty {
-    background: $off-white;
-    color: $grey;
-    padding: 6em 0;
-    &:before {
-      content: "No tweets at the moment";
-      display: block;
-      text-align: center;
     }
   }
 }
