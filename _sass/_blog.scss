@@ -82,6 +82,11 @@
   }
   img {
     display: block;
+    width: 100%;
+    &.vertical {
+      margin: 0 auto;
+      max-width: 70%;
+    }
   }
 
   @include media-query($small) {
