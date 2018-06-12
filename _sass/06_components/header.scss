@@ -1,0 +1,15 @@
+.site__header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.site__header--anchor {
+  display: block;
+  margin: 2em auto;
+  max-width: 40px;
+
+  @include media-query($small) {
+    margin: 3em;
+  }
+}

@@ -1,0 +1,17 @@
+.vd-tiles {
+  @include reverse-order;
+  background: $charcoal;
+  color: white;
+}
+
+.vd-tile.image {
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 100%;
+  @include media-query($small) {
+    padding-top: 50%;
+  }
+  @include media-query($medium) {
+    padding-top: 33.333%;
+  }
+}

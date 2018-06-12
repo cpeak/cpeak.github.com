@@ -1,0 +1,43 @@
+// ------------------------------------------------- Unique code
+.gist {
+  margin: 0 auto 1.5em auto;
+  width: 600px;
+}
+
+
+// ----------------------------- Circular Images Post
+.wrong { border-radius: 50%; }
+.wrong-square {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.correct-blank {
+  background: #f9f9f9;
+  border: 1px dashed #555;
+  margin: 0 auto 1.5em auto;
+  padding-top: 70%;
+  width: 70%;
+
+}
+.correct-square {
+  background-image: url('/images/ackbar.jpg');
+  background-size: cover;
+  background-position: 50%;
+  margin: 0 auto 1.5em auto;
+  padding-top: 70%;
+  width: 70%;
+}
+
+.correct {
+  background-image: url('/images/ackbar.jpg');
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+  margin: 0 auto 1.5em auto;
+  padding-top: 70%;
+  width: 70%;
+}
+

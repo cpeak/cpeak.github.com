@@ -1,0 +1,14 @@
+.module__hero {
+  @include module-base($blue, $white);
+  @include reversed;
+}
+
+.module__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  @include media-query($small) {
+    width: 75%;
+  }
+}

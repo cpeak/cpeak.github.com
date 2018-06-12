@@ -3,16 +3,21 @@
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "vendor/bourbon",
-  "vendor/neat",
-  "settings",
-  "base",
-  "layout",
-  "header",
-  "content",
-  "utilities",
-  "blog",
-  "grid",
-  "vendor/font-awesome",
-  "vendor/animate"
+  "01_settings/tokens",
+
+  "02_tools/mixins",
+
+  "03_generic/normalize",
+
+  "04_elements/typography",
+
+  "05_objects/content",
+  "05_objects/modules",
+
+  "06_components/blog-post-tiles",
+  "06_components/blog-post",
+  "06_components/header",
+  "06_components/photography-tiles",
+  "06_components/tile-list",
+  "06_components/visual-design-tiles"
 ;

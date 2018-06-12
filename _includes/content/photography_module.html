@@ -1,11 +1,7 @@
-<div id="photography" class="module module__photography">
-  <h3 class="module-title">Photography</h3>
-  <section class="content-wrap">
-    <div class="content">
-      <div class="instagram-strip" id="instafeed"></div>
-      <p class="photography-link">To browse my entire portfolio please visit <a class="underlined" target="blank" href="http://www.gorilla-studios.com">Gorilla-Studios Photography</a></p>
-    </div>
-  </section>
+<div class="module__tiles photography-tiles" id="instafeed">
+  <div class="tile module__tiles--title medium"><section>
+      <h2 class="centered">Photography<span>@gorillastudios</span></h2>
+    </section></div>
 </div>
 
 {% assign url = '{{image}}' %}
@@ -17,7 +13,8 @@
       clientId: '28ce3bf51fc94bc782b20529f5ef000d',
       accessToken: '372454912.1677ed0.93d681db897b43ebb7cbd5df61be33a3',
       limit: '12',
-      template: '<img src="{{url}}" />'
+      resolution: 'standard_resolution',
+      template: '<div class="tile photography-tile"><img src="{{ url }}" /></div>'
     });
     feed.run();
 </script>

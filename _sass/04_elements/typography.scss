@@ -1,0 +1,12 @@
+.module__headline--xlarge {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  @include media-query($small) {
+    font-size: 2.75em;
+  }
+}
+
+
+.centered {
+  text-align: center;
+}

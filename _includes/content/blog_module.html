@@ -1,20 +1,9 @@
-<div class="module module__blog-posts">
-  <h3 class="module-title">Recent Posts</h3>
-
-  <section class="content-wrap">
-    <div class="content">
-      <div class="blog-post-list">
-        {% for post in site.posts limit: 3 %}
-          <div class="blog-post-link">
-            <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
-            <p>{{ post.content | split:'<!--break-->' | first }}
-            {% if post.content contains '<!--break-->' %}
-            <a class="blog-read-more-link" href="{{ post.url }}">Read More</a>
-            {% endif %}</p>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+<div class="module__tiles blog-post-tiles">
+  <a class="tile module__tiles--title medium"><section><h2 class="centered">BLOG</h2></section></a></li>
+  {% for post in site.posts limit: 7 %}
+    <a class="tile" href="{{ post.url }}"><section>
+      <h4 class="blog-post-tile__title">{{ post.title }}</span></h4>
+      <p class="blog-post-tile__preview">{{ post.content | strip_html | truncatewords: 50 }}</p>
+      </section></a>
+  {% endfor %}
 </div>
-
