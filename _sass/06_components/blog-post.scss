@@ -16,6 +16,10 @@ $blog-post-content-width: 800px;
     display: block;
     margin: 0 auto 1.5em auto;
   }
+  h1, h2, h3, h4, h5 {
+    @include post-content-wrap;
+    margin-bottom: 1.5em;
+  }
   p {
     @include post-content-wrap;
     margin-bottom: 1.5em;

@@ -27,11 +27,13 @@
       box-shadow: inset 0 0 10px 1000px rgba(0,0,0,0.3);
     }
   }
-  .tile:nth-child(6n+2) { background: $red; }
-  .tile:nth-child(6n+3) { background: $waterfall; }
-  .tile:nth-child(6n+4) { background: $blue-eggshell; }
-  .tile:nth-child(6n+5) { background: $orange; }
-  .tile:nth-child(6n+6) { background: $blue-navy; }
-  .tile:nth-child(6n+7) { background: $purple; }
+  .tile:nth-child(7n+2) { background: $red; }
+  .tile:nth-child(7n+3) { background: $waterfall; }
+  .tile:nth-child(7n+4) { background: $blue-eggshell; }
+  .tile:nth-child(7n+5) { background: $orange; }
+  .tile:nth-child(7n+6) { background: $blue-navy; }
+  .tile:nth-child(7n+7) { background: $purple; }
+  .tile:nth-child(7n+8) { background: $pink; }
+
   .tile:first-child { background: $charcoal; }
 }
