@@ -24,7 +24,8 @@ $blog-post-content-width: 800px;
     @include post-content-wrap;
     margin-bottom: 1.5em;
     a {
-      box-shadow: 0 0 5px $highlighting;
+      border-radius: 3px;
+      box-shadow: 0 0 0 2px $highlighting;
       background: $highlighting;
       padding: 0 3px;
       &:hover {
