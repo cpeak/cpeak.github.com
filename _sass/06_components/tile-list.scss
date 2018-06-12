@@ -18,12 +18,12 @@
     &.medium {
       width: 100%;
     }
-    section {
-      padding: $spacing-large;
-    }
   }
   @include media-query($medium) {
     width: 33.333%;
+    section {
+      padding: $spacing-large;
+    }
     &.medium {
       width: 66.666%;
     }
