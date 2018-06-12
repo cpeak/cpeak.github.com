@@ -15,6 +15,9 @@
 
   @include media-query($small) {
     width: 50%;
+    section {
+      padding: $spacing-medium;
+    }
     &.medium {
       width: 100%;
     }
