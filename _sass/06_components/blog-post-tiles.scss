@@ -40,3 +40,10 @@
 
   .tile:first-child { background: $charcoal; }
 }
+
+.blog-index__intro {
+  padding-top: 4em;
+  @include media-query($small) {
+    padding-top: 0;
+  }
+}
