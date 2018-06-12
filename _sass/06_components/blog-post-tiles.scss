@@ -7,8 +7,11 @@
 .blog-post-tile__title {
   font-size: $font-size--medium;
   @include media-query($small) {
-    font-size: $font-size--x-large;
+    font-size: $font-size--large;
     line-height: 1em;
+  }
+  @include media-query($large) {
+    font-size: 2.25em;
   }
 }
 
