@@ -2,17 +2,12 @@
 layout: default
 permalink: /blog/
 ---
-
-<div class="blog-post-list grid">
+<div class="module__tiles blog-post-tiles">
+  <a class="tile module__tiles--title medium"><section><h2 class="centered">BLOG</h2></section></a></li>
   {% for post in site.posts %}
-  <a class="blog-post-link hvr-underline-from-center" href="{{ post.url }}">
-    {% if post.thumbnail %}
-      <img class="blog-post-preview" src="/images/previews/{{ post.thumbnail }}">
-    {% else %}
-      <img class="blog-post-preview slug" src="/images/blog-slug.svg">
-    {% endif %}
-    <h4 class="blog-post-title">{{ post.title }} <span>{{ post.date | date: '%b %d %Y' }}</span></h4>
-    <p>{{ post.preview }}</p>
-  </a>
+    <a class="tile" href="{{ post.url }}"><section>
+      <h4 class="blog-post-tile__title">{{ post.title }}</span></h4>
+      <p class="blog-post-tile__preview">{{ post.content | strip_html | truncatewords: 50 }}</p>
+      </section></a>
   {% endfor %}
 </div>

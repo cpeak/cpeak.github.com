@@ -19,6 +19,16 @@ $blog-post-content-width: 800px;
   p {
     @include post-content-wrap;
     margin-bottom: 1.5em;
+    a {
+      box-shadow: 0 0 5px $highlighting;
+      background: $highlighting;
+      padding: 0 3px;
+      &:hover {
+        background: lighten($highlighting, 20%);
+        box-shadow: none;
+        color: black;
+      }
+    }
     @include media-query($small) {
       font-size: $font-size--medium;
       line-height: 1.75em;
