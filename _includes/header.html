@@ -1,3 +1,7 @@
 <header class="site__header">
-  <a class="site__header--anchor"  href="/"><img class="brand-icon" src="/images/cp-white.svg" alt="Chris Peak, Designer"></a>
+  {% if page.header == 'light' %}
+    <a class="site__header--anchor"  href="/"><img class="brand-icon" src="/images/cp-white.svg" alt="Chris Peak, Designer"></a>
+  {% else %}
+    <a class="site__header--anchor"  href="/"><img class="brand-icon" src="/images/cp-black.svg" alt="Chris Peak, Designer"></a>
+  {% endif %}
 </header>

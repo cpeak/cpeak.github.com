@@ -8,6 +8,8 @@ $blog-post-content-width: 800px;
 
 .blog-post__header {
   background: $mustard;
+  background-size: cover;
+  background-position: 50%;
   color: $grey-dark;
 }
 
@@ -47,6 +49,9 @@ $blog-post-content-width: 800px;
   margin-bottom: 2em;
   padding: 5em 10px 3em 10px;
   text-align: center;
+  &.light {
+    color: white;
+  }
   span {
     display: block;
     font-size: $font-size--small;

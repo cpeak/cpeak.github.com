@@ -1,9 +1,16 @@
 ---
-layout: dark
+layout: default
 ---
 <div class="blog-post">
-  <header class="blog-post__header">
-    <h1 class="blog-post__title">{{ page.title }} <span class="blog-post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span></h1>
+  <header class="blog-post__header"
+          {% if page.header-background-image %}
+            style="background-image: url('/images/{{ page.header-background-image }}"
+          {% else if page.header-background %}
+            style="background-color:#{{ page.header-background }}"
+          {% endif %}
+  >
+
+    <h1 class="blog-post__title {% if page.header == 'light' %}light{% endif %}">{{ page.title }} <span class="blog-post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span></h1>
   </header>
 
   <article class="blog-post__content">
@@ -18,5 +25,4 @@ layout: dark
     <a class="blog-post__next-article hvr-underline-from-center" href="{{ page.next.url }}"><span>Next Post</span>{{ page.next.title }}</a>
     {% endif %}
   </div>
-
 </div>
