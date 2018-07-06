@@ -100,6 +100,7 @@ blockquote {
       width: 50%;
       &:first-child {
         border-right: 1px dotted rgba(255,255,255,.5);
+        border-bottom: none;
       }
       &:hover {
         background: $black;
