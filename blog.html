@@ -1,12 +1,14 @@
 ---
 layout: default
 permalink: /blog/
+header: light
 ---
 <div class="module__tiles blog-post-tiles">
   <a class="tile module__tiles--title blog-index__intro medium"><section><h2 class="centered">BLOG</h2></section></a></li>
   {% for post in site.posts %}
     <a class="tile" href="{{ post.url }}"><section>
       <h4 class="blog-post-tile__title">{{ post.title }}</span></h4>
+      <p class="blog-post-tile__date">{{ post.date | date: "%B %d %Y"}}</p>
       <p class="blog-post-tile__preview">{{ post.content | strip_html | truncatewords: 50 }}</p>
       </section></a>
   {% endfor %}

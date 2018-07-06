@@ -1,6 +1,8 @@
 .module__hero {
   @include module-base($blue, $white);
-  @include reversed;
+  background-image: url('/images/test.jpg');
+  background-size: cover;
+  background-position: 50%;
 }
 
 .module__content {
