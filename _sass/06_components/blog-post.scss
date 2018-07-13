@@ -22,6 +22,11 @@ $blog-post-content-width: 800px;
     @include post-content-wrap;
     margin-bottom: 1.5em;
   }
+  ul {
+    @include post-content-wrap;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
   p {
     @include post-content-wrap;
     margin-bottom: 1.5em;
