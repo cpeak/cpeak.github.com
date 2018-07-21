@@ -41,12 +41,19 @@
   .tile:nth-child(7n+7) { background: $purple; }
   .tile:nth-child(7n+8) { background: $pink; }
 
-  .tile:first-child { background: $charcoal; }
+  .tile:first-child {
+    background: white;
+    color: $charcoal;
+  }
 }
 
 .blog-index__intro {
   padding-top: 4em;
   @include media-query($small) {
     padding-top: 0;
+  }
+  &:hover {
+    cursor: default;
+    box-shadow: none !important;
   }
 }
