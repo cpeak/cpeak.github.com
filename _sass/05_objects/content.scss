@@ -41,3 +41,57 @@
   width: 70%;
 }
 
+
+
+
+// ----------------------------- Sandbox
+.foo {
+  border: 1px solid red;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  .content {
+    padding: 100px;
+    width: 50%;
+    p {
+      max-width: 30em;
+    }
+  }
+  .image {
+    background-image: url('/images/0K6A1996.jpg');
+    background-size: cover;
+    background-position: 50%;
+    width: 50%;
+  }
+}
+
+
+.foobar {
+  border: 1px solid red;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 200px;
+  flex-direction: row;
+  .content {
+    padding: 15% 100px;
+    width: 50%;
+    p {
+      max-width: 30em;
+    }
+  }
+  .image {
+    background-image: url('/images/0K6A1996.jpg');
+    background-size: cover;
+    background-position: 50%;
+    width: 50%;
+  }
+}
+
+
+
+
+.bar {
+  border-top: 1px solid white;
+  margin-bottom: 200px;
+}

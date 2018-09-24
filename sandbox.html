@@ -3,14 +3,20 @@ layout: default
 permalink: /sandbox/
 ---
 
-<p>wat</p>
-<picture>
-   <source media="(min-width: 36em)"
-      srcset="/images/bg-rocks.jpg  1024w,
-         /images/als.jpg 640w,
-         /images/ackbar.jpg  320w"
-      sizes="33.3vw" />
-   <source srcset="/images/als.jpg 2x,
-         /images/ackbar.jpg 1x" />
-   <img src="small.jpg" alt="A rad wolf" />
-</picture>
+<p class="bar"></p>
+<div class="foo">
+  <div class="content">
+    <h2>Fixed padding top & bottom</h2>
+    <p>This module has fixed top and bottom padding for the content per spec and does not change. This means that as the browser window opens horizontally, the image module gets pulled but does not grow vertically.</p>
+  </div>
+  <div class="image"></div>
+</div>
+
+<div class="foobar">
+  <div class="content">
+    <h2>Responsive padding top & bottom</h2>
+    <p>This module has a responsive, percentage based padding for the content. As the browser grows horizontally the image module is pulled but also grows vertically since the content module is also growing. The downside is there can be a lot of whitespace on larger screens.</p>
+  </div>
+  <div class="image"></div>
+</div>
+
