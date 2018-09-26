@@ -1,0 +1,16 @@
+.button__pill {
+  background: $blue;
+  border-radius: 200px;
+  color: white;
+  display: table;
+  font-weight: bold;
+  margin: 3em auto;
+  padding: 1em 2em;
+  text-align: center;
+  width: auto;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 4px lighten($blue, 30%);
+    outline: none;
+  }
+}

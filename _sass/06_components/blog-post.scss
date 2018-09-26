@@ -20,7 +20,12 @@ $blog-post-content-width: 800px;
   }
   h1, h2, h3, h4, h5 {
     @include post-content-wrap;
+    font-size: $font-size--medium;
     margin-bottom: 1.5em;
+    letter-spacing: -0.025em;
+    @include media-query($small) {
+      font-size: $font-size--large;
+    }
   }
   ul {
     @include post-content-wrap;
@@ -29,7 +34,9 @@ $blog-post-content-width: 800px;
   }
   p {
     @include post-content-wrap;
+    font-family: $body-font;
     margin-bottom: 1.5em;
+    letter-spacing: -0.025em;
     a {
       border-radius: 3px;
       box-shadow: 0 0 0 2px $highlighting;
@@ -44,29 +51,43 @@ $blog-post-content-width: 800px;
     @include media-query($small) {
       font-size: $font-size--medium;
       line-height: 1.75em;
+      margin-bottom: 3em;
+    }
+    @include media-query($medium) {
+      font-size: 1.5em;
     }
   }
 }
 
 
 .blog-post__title {
-  font-size: $font-size--medium;
-  margin-bottom: 2em;
-  padding: 5em 10px 3em 10px;
+  display: block;
+  font-size: $font-size--large;
+  letter-spacing: -0.05em;
+  padding: 20% 0;
+  margin-bottom: 20px;
   text-align: center;
   &.light {
     color: white;
   }
   span {
+    font-size: .75em;
     display: block;
-    font-size: $font-size--small;
     font-weight: 300;
+    letter-spacing: -0.025em;
   }
   @include media-query($small) {
-    font-size: $font-size--x-large;
-    padding: 4em 10px;
+    font-size: 6vw;
+    margin-bottom: 1em;
     span {
-      font-size: $font-size--x-small;
+      font-size: .45em;
+    }
+  }
+  @include media-query($medium) {
+    font-size: 6vw;
+    padding: 15% 0;
+    span {
+      font-size: .25em;
     }
   }
 }

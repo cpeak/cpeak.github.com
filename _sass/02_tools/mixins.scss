@@ -3,21 +3,3 @@
     @content;
   }
 }
-
-
-
-@mixin module-base($background, $text-color) {
-  color: $text-color;
-  background: $background;
-  display: flex;
-  min-height: 90vh;
-}
-
-
-@mixin reverse-order {
-  flex-direction: row-reverse;
-}
-
-@mixin reversed {
-  justify-content: flex-end;
-}

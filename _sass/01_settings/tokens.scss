@@ -21,13 +21,15 @@ $purple:            #865DCA;
 $red:               #C1292E;
 $red-dark:          #b71540;
 $salmon:            #C14E51;
+$slate:             #141414;
 $waterfall:         #2A9D8F;
 $white:             #FFF;
 $yellow:            #FFBC42;
 
 
-$base-font-family: "Merriweather", "merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
-$headline-font-family: "Lato", "lato", "Merriweather", "merriweather", 'Brandon Grotesque', "brandon-grotesque", sans-serif;
+$base-font-family: "Helvetica", "Arial", sans-serif;
+$headline-font-family: "Helvetica", "Arial", sans-serif;
+$body-font: "PT Sans", sans-serif;
 $base-font-size:   17px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -47,7 +49,7 @@ $brand-color:       $red;
 $red--link:         $red;
 
 // Width of the content area
-$site-width: 850px;
+$site-width: 1000px;
 $content-width:    800px;
 
 

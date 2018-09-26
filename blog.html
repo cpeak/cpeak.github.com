@@ -2,14 +2,14 @@
 layout: default
 permalink: /blog/
 ---
-<div class="module__tiles blog-post-tiles">
-  <!-- <a class="tile module__tiles--title blog-index__intro medium"><section><h2 class="centered">BLOG</h2></section></a></li> -->
-  <h2 class="tile module__tiles--title blog-index__intro medium centered">BLOG</h2>
+<h2 class="section-title">Blog posts</h2>
+
+<div class="blog__previews fullsize">
   {% for post in site.posts %}
-    <a class="tile" href="{{ post.url }}"><section>
-      <h4 class="blog-post-tile__title">{{ post.title }}</span></h4>
-      <p class="blog-post-tile__date">{{ post.date | date: "%B %d %Y"}}</p>
-      <p class="blog-post-tile__preview">{{ post.content | strip_html | truncatewords: 50 }}</p>
-      </section></a>
+    <a class="blog__preview" href="{{ post.url }}">
+      <h4 class="blog__preview--title">{{ post.title }}</span></h4>
+      <p class="blog__preview--date">{{ post.date | date: "%B %d %Y"}}</p>
+      <p class="blog__preview--text">{{ post.content | strip_html | truncatewords: 30 }}</p>
+    </a>
   {% endfor %}
 </div>

@@ -1,7 +1,9 @@
-<div class="module__tiles vd-tiles">
-  <div class="tile module__tiles--title medium"><section><h2 class="centered">Graphic Design</h2></section></div>
+<h2 class="section-title" id="design">Visual Design</h2>
+
+<div class="visual-design">
   {% for tile in site.data.visual-design %}
-    <div class="tile vd-tile image {{ tile.size }}" style="background-image: url('/images/portfolio/{{ tile.url }}">
+    <div class="visual-design__tile">
+      <img src="/images/portfolio/{{ tile.url }}" />
     </div>
   {% endfor %}
 </div>
