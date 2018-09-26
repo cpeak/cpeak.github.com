@@ -12,6 +12,7 @@ $hero-highlight-color: $red;
     flex-direction: row;
     height: 70vh;
     padding: 0;
+    min-height: 500px;
   }
   @include media-query($medium) {
     height: 80vh;
