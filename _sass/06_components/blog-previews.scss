@@ -51,6 +51,9 @@
 
 .blog__preview--title {
   font-size: $font-size--large;
+  line-height: 1.2em;
+  letter-spacing: -0.025em;
+  margin: 0;
   @include media-query($large) {
     font-size: 2vw;
     line-height: 2.5rem;
