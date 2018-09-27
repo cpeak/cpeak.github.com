@@ -18,6 +18,10 @@ $blog-post-content-width: 800px;
     display: block;
     margin: 0 auto 3em auto;
   }
+  iframe {
+    @include post-content-wrap;
+    display: block;
+  }
   h1, h2, h3, h4, h5 {
     @include post-content-wrap;
     font-size: $font-size--medium;
@@ -31,6 +35,9 @@ $blog-post-content-width: 800px;
     @include post-content-wrap;
     font-size: 1.2em;
     margin-bottom: 1.5em;
+  }
+  .l_overflow {
+    @include post-content-wrap;
   }
   p {
     @include post-content-wrap;
@@ -51,7 +58,6 @@ $blog-post-content-width: 800px;
     @include media-query($small) {
       font-size: $font-size--medium;
       line-height: 1.75em;
-      margin-bottom: 3em;
     }
     @include media-query($medium) {
       font-size: 1.5em;
@@ -94,11 +100,15 @@ $blog-post-content-width: 800px;
 
 blockquote {
   @include post-content-wrap;
+  font-family: $body-font;
   border-left: 2px solid $red;
   padding-left: 1.5em;
   margin-bottom: 1.5em;
   @include media-query($small) {
     font-size: $font-size--regular;
+  }
+  @include media-query($medium) {
+    font-size: 1.3em;
   }
 }
 
@@ -134,3 +144,6 @@ blockquote {
     }
   }
 }
+
+
+

@@ -9,7 +9,7 @@ tags : [residency]
 <p>I read a lot of blogs &amp; articles about programming, design, video games, photography, education, and creativity in general and since I get a lot of time to think about things on the train each day I have been rather introspective this week regarding my residency, what I have learned, and my learning process in general. Im terrible at transitions, so here we go...</p>
 
 <p>Rands in Repose has <a href="http://www.randsinrepose.com/archives/2012/05/09/two_universes.html">an amazing blog post</a> on Portal and 'Sandboxed Learning' - I am a huge Portal fan so the article had an extra layer to the cake for me, so to speak. One quote stood out for me that I want to share: </p>
-<div class="t_quote_block"> "Mastery is Well-Informed Improvisation"</div>
+<blockquote> "Mastery is Well-Informed Improvisation"</blockquote>
 
 <p><em>Well-Informed Improvisation</em>. I love that. When I learn, I <strong>hate</strong> being given an answer or guided through a tutorial or spoon-fed what I supposedly should learn. Rands puts it more eloquently, but I believe that I will be the most successful if you give me a sandbox and tools, make it fun and interesting, and let me discover what I need to. To me that is exactly what my residency is all about! Apprenticeship is a journey of self-learning and discovery as much as it is working with a mentor.</p>
 

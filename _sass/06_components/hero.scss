@@ -2,7 +2,7 @@ $hero-highlight-color: $red;
 
 
 .hero__module {
-  background: #1b1b1b;
+  background: $blue-navy;
   display: flex;
   flex-direction: column;
   transition: all .5s ease;
@@ -121,7 +121,7 @@ $hero-highlight-color: $red;
   font-weight: bold;
   font-size: 1.75rem;
   transition: all .5s ease;
-  max-width: 10em;
+  max-width: 287px;
   margin: 0 auto;
   &:hover,
   &:focus {
@@ -135,6 +135,7 @@ $hero-highlight-color: $red;
     font-size: 9vw;
     padding-right: 3rem;
     text-align: right;
+    max-width: 10em;
   }
   @include media-query($medium) {
     font-size: 6rem;

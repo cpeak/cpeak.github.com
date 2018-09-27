@@ -28,7 +28,7 @@ body.with-header-spacing {
   }
   &:focus {
     outline: none;
-    box-shadow: 0 5px 0px -2px $red;
+    box-shadow: -8px 0px 0px -4px $red;
   }
 
   @include media-query($medium) {
