@@ -97,7 +97,7 @@ $hero-highlight-color: $red;
     }
     &:focus {
       outline: none;
-      box-shadow: 0 4px 0px -2px $hero-highlight-color;
+      box-shadow: 0 2px 0px -2px $hero-highlight-color;
     }
   }
   @include media-query($medium) {

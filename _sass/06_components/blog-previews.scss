@@ -30,7 +30,7 @@
       &:first-child {
         border: 0;
         text-align: center;
-        padding: 4rem 10rem;
+        padding: 4rem 0;
         width: 100%;
       }
       &:last-child {
@@ -69,4 +69,6 @@
 
 .blog__preview--text {
   font-family: $body-font;
+  max-width: 35em;
+  margin: 0 auto;
 }

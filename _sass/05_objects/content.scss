@@ -46,10 +46,12 @@
 
 // ----------------------------- Sandbox
 .foo {
-  border: 1px solid red;
+  border: 1px dashed red;
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  position: relative;
+  margin: 2em 0;
 
   .content {
     padding: 100px;
@@ -59,29 +61,49 @@
     }
   }
   .image {
-    background-image: url('/images/0K6A1996.jpg');
+    background-image: url('/images/doctor-who.jpg');
     background-size: cover;
     background-position: 50%;
     width: 50%;
   }
 }
 
+.fixed-block {
+  background: rgba(255,0,0,0.1);
+  height: 105px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 50%;
+}
+.fixed-block-bottom {
+  background: rgba(255,0,0,0.1);
+  height: 110px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 50%;
+}
 
 .foobar {
-  border: 1px solid red;
-  overflow: hidden;
+  border: 1px dashed red;
   display: flex;
-  margin-bottom: 200px;
   flex-direction: row;
+  margin-bottom: 200px;
+  overflow: hidden;
+  position: relative;
   .content {
-    padding: 15% 100px;
+    padding: 9% 100px;
     width: 50%;
+    h2 {
+      line-height: 1.2em;
+    }
     p {
       max-width: 30em;
     }
   }
   .image {
-    background-image: url('/images/0K6A1996.jpg');
+    background-image: url('/images/doctor-who.jpg');
     background-size: cover;
     background-position: 50%;
     width: 50%;
@@ -94,4 +116,11 @@
 .bar {
   border-top: 1px solid white;
   margin-bottom: 200px;
+}
+
+
+.sandbox-text {
+  padding: 20px;
+  max-width: 45em;
+  margin: 0 auto;
 }
