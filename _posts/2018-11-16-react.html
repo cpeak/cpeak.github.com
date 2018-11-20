@@ -1,0 +1,9 @@
+---
+layout: post
+title: Learning React
+tags: blog
+date: 2018-11-16
+---
+<p>I'm continuing to learn React while not working on client engagements, and to make things more realistic I am building a small web application that we might be able to use here at work. One portion of the app is a 'Yearbook' of all the current and former employees along with who they mentored. I originally wrote it using Middleman and a simple YML file, but am porting this into React. This week I wrestled with how to parse a YML file in React, finally throwing in the towel and converting it to JSON which is much easier to work with. I have the app mapping the JSON file and using that data in an 'employee' component. Next step is going to be taking the array of each employees apprentices and looking them up to pull the correct photo. I haven't figured out nested components yet.</p>
+<p>One problem I had was with the blank <code>&lt;div&gt;</code>'s that wrap each React component. They really interfere with Flexbox since the relationship between parent and child is very important. The best thing I've learned so far is that you can replace the outer div with <code>&lt;React.Fragment&gt;</code> and it will skip inserting the div into the DOM. This keeps the HTML structure much cleaner and I don't have to hop through a ton of hoops in Flexbox.</p>
+<p>I am setting a goal to get most of it completed by the end of the year, so lots more to learn!</p>
