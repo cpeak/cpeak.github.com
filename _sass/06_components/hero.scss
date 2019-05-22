@@ -47,7 +47,6 @@ $hero-highlight-color: $red;
 
 .hero__headshot {
   border-radius: 50%;
-  box-shadow: 0 0 10px 0px black;
   display: block;
   margin: 2rem auto;
   max-width: 100px;
@@ -88,16 +87,18 @@ $hero-highlight-color: $red;
   a {
     display: inline-block;
     margin-right: 20px;
-    vertical-align: middle;
     padding: 10px 0;
+    transition: all .25s ease;
+    vertical-align: middle;
     width: 25px;
     img {
       display: block;
       width: 100%;
     }
     &:focus {
+      box-shadow: 0 4px 0 0px $hero-highlight-color;
       outline: none;
-      box-shadow: 0 2px 0px -2px $hero-highlight-color;
+      transform: scale(1.5);
     }
   }
   @include media-query($medium) {

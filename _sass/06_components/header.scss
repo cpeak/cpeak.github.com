@@ -18,7 +18,7 @@ body.with-header-spacing {
 .site__header--anchor {
   display: block;
   margin: 10px;
-  padding-bottom: 4px;
+  padding: 4px 0;
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: -.05em;
@@ -29,7 +29,7 @@ body.with-header-spacing {
   }
   &:focus {
     outline: none;
-    box-shadow: -8px 0px 0px -4px $red;
+    box-shadow: -10px 2px 0px 0px $red;
   }
 
   @include media-query($medium) {
