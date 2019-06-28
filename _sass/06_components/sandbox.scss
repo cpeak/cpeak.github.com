@@ -1,9 +1,11 @@
 
-.list {
-  border: 5px solid red;
-  margin-bottom: 1em;
-  li {
-    border: 1px solid blue;
-    display: block;
-  }
+.foo {
+  border: 1px solid blue;
+  margin-top: 200px;
+}
+.bar {
+  border: 1px solid red;
+  width: 750px;
+  max-width: 90%;
+  margin: auto;
 }
