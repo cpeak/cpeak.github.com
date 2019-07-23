@@ -1,11 +1,17 @@
-<div class="blog__previews">
-  {% for post in site.posts limit: 5 %}
+---
+layout: default
+permalink: /design-posts/
+---
+<h2 class="section-title">Blog posts</h2>
+
+<div class="blog__previews fullsize">
+  {% for post in site.posts %}
+    {% if post.category == "designstudio" %}
     <a class="blog__preview" href="{{ post.url }}">
       <h4 class="blog__preview--title">{{ post.title }}</span></h4>
       <p class="blog__preview--date">{{ post.date | date: "%B %d %Y"}}</p>
       <p class="blog__preview--text">{{ post.content | strip_html | truncatewords: 30 }}</p>
     </a>
+    {% endif %}
   {% endfor %}
 </div>
-
-<a class="button__pill" href="/blog">More posts</a>
