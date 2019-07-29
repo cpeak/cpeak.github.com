@@ -18,11 +18,13 @@ layout: default
   </article>
 
   <div class="blog-post__navigation">
-    {% if page.previous.url %}
-    <a class="blog-post__previous-article hvr-underline-from-center" href="{{ page.previous.url }}"><span>Previous Post</span>{{ page.previous.title }}</a>
+
+    {% if page.next_in_category.url %}
+      <a class="blog-post__previous-article" href="{{ page.previous.url }}"><span>Previous Post</span>{{ page.previous.title }}</a>
     {% endif %}
-    {% if page.next.url %}
-    <a class="blog-post__next-article hvr-underline-from-center" href="{{ page.next.url }}"><span>Next Post</span>{{ page.next.title }}</a>
+
+    {% if page.previous_in_category.url %}
+      <a class="blog-post__next-article" href="{{ page.next.url }}"><span>Next Post</span>{{ page.next.title }}</a>
     {% endif %}
   </div>
 </div>

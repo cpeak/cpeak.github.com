@@ -1,7 +1,7 @@
 ---
 layout: post
-category : blog
-tags : [residency, web-design, CSS3]
+category: blog
+tags: [residency, web-design, CSS3]
 ---
 <article>
   <h2>Sorting out Position &amp; Z-Index Properties</h2>

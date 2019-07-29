@@ -1,7 +1,7 @@
 ---
 layout: post
-category : blog
-tags : [residency, web-design]
+category: blog
+tags: [residency, web-design]
 ---
 <article>
   <h2>Music Theory and Web Design?</h2>

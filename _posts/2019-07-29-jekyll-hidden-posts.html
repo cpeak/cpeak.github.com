@@ -1,0 +1,16 @@
+---
+layout: post
+title: Jekyll Hidden Posts
+date: 2019-07-29
+category: designstudio
+header-background: ad3e3e
+header: light
+---
+<p>Recently I decided to write more posts to share information with the design team, but didn't really want it open up to the public. Yeah, I only have a few readers of the blog, but still I'd like to write casually for just us. First problem: how can I hide a set of blog posts and not have them mixed into the usual drivel I call a blog? Answer: Categories</p>
+<p>Jekyll uses the Liquid template language, enabling you to write all kinds of crazy variables and have them accessible throughout the site. For instance in each blog post header I have a <code>header-background</code> variable where I can drop a hex value and that controls the header background color. Same for the header text, and an image if I would like.</p>
+<img src="/images/jekyll-liquid-template.jpg" alt="Example blog post header with liquid variables"/>
+<p>I enabled post categories which I can use to filter them when I list them on a page, but in the footer of each post is a Next &amp; Previous button that just takes you through them, irregardless of the category. Jekyll is powerful but can't get around that out of the box. However I stumbled across <a href="https://ajclarkson.co.uk/blog/jekyll-category-post-navigation/" target="blank">a plugin by ajclarkson</a> that enables your post navigation to ignore all other post categories and keep you on track with the current one.</p>
+<img src="/images/blog-post-navigation.jpg" />
+<p>This tells Jekyll if there is a newer or older post <i>in the same category</i> display it with a link to them. If not, don't show anything.</p>
+<p>So now if you go to <a href="/design-posts" target="blank">my page for Design Studio posts</a> you'll only see the posts with the category of <code>designstudio</code>. When you click into them the footer navigation will keep you contained to that category. Similarly if you see a post on my homepage that is categorized <code>blog</code> it will bypass the design studio posts and only show the usual garbage that I write.</p>
+<p>Is this secure? No, not really, it's just meant to keep them separate in an organizational level. Will this cause issues in the future? Maybe. I keep thinking I might want to do a tagging system or something in the future and this will add a level of complexity. But for now? Eh, lets roll with it.</p>
