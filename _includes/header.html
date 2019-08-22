@@ -1,3 +1,9 @@
-<header class="site__header">
-  <a class="site__header--anchor"  href="/"><img class="brand-icon" src="/images/chris-peak.jpg" alt="Chris Peak, Designer"> Chris Peak</a>
+<header class="c-header" style="border-color: #{{ page.text-color }}">
+  <a class="nameplate" href="/"><span>{{ site.title }}</span></a>
+  <span>
+    {% include icon.html %}
+  </span>
+  <section class="c-header__navigation">
+    <a href="/blog">Writing</a>
+  </section>
 </header>

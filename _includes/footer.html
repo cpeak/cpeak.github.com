@@ -1,12 +1,9 @@
-<footer class="site-footer">
-  <div class="content-wrap">
-    <div class="site-footer__primary">
-      <p><strong>Chris Peak</strong> &copy; 2018</p>
-    </div>
-    <div class="site-footer__secondary">
-      <a href="/">Home</a><br>
-      <a href="/blog">Blog</a><br>
-      <a href="mailto:cpeak66@gmail.com">Email</a>
-    </div>
-  </div>
+<footer class="c-footer
+  {% if page.background %}
+    no-color
+  {% else %}
+    default
+  {% endif %}">
+  {% include icon.html %}
+  <p>&copy; 2019 | Chris Peak</p>
 </footer>

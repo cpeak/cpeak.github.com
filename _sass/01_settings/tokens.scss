@@ -1,66 +1,14 @@
-$black:             #111111;
-$black-absolute:    #000000;
-$blue-navy:         #1E2642;
-$blue-stone:        #304F5F;
-$blue-eggshell:     #59A5D8;
-$blue:              #144a82;
-$charcoal:          #2b2b2b;
-$grey:              #828282;
-$grey-color:        #828282;
-$grey-color-dark:   darken($grey-color, 25%);
-$grey-color-light:  lighten($grey-color, 40%);
-$grey-dark:         darken($grey, 25%);
-$grey-light:        lighten($grey, 40%);
-$hairline:          #eee;
-$highlighting:      #FDF285;
-$mustard:           #ffe27e;
-$off-white:         #f9f9f9;
-$orange:            #FF6700;
-$pink:              #E44B93;
-$purple:            #865DCA;
-$red:               #C1292E;
-$red-dark:          #b71540;
-$salmon:            #C14E51;
-$slate:             #141414;
-$waterfall:         #2A9D8F;
-$white:             #FFF;
-$yellow:            #FFBC42;
+$content-width: 850px;
+
+$color-black:     #2b2b2b;
+$color-slate:     #383C56;
+$color-yellow:    #F7C982;
+$color-hairline:  #e5e5e5;
+$color-cream:     #F8F6F4;
+$color-red:       #D85C6F;
+$color-mint:      #9FD8D5;
+$color-off-white: #F7F8F9;
 
 
-
-$base-font-family: "Helvetica", "Arial", sans-serif;
-$headline-font-family: "Helvetica", "Arial", sans-serif;
-$body-font: "PT Sans", sans-serif;
-$base-font-size:   17px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$font-size--x-small: .6em;
-$font-size--small: .75em;
-$font-size--regular: 1em;
-$font-size--medium: 1.25em;
-$font-size--large: 1.75em;
-$font-size--x-large: 2.5em;
-
-$spacing-unit:     30px;
-
-$text-color:        #2b2b2b;
-$background-color:  #ffffff;
-$brand-color:       $red;
-$red--link:         $red;
-
-// Width of the content area
-$site-width: 1000px;
-$content-width:    800px;
-
-
-$spacing-small:     20px;
-$spacing-medium:    40px;
-$spacing-large:     60px;
-$spacing-x-large:   80px;
-
-// ------------------------------------------- Breakpoints
-$small: 600px;
-$medium: 1000px;
-$large: 1400px;
-$xlarge: 1600px;
+$font-regular: 'PT Sans', Helvetica, sans-serif;
+$font-family-bold: 'PT Sans Narrow', Helvetica, sans-serif;

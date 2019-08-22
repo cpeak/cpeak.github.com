@@ -1,39 +1,72 @@
-body.with-header-spacing {
-  margin-top: 80px;
-  @include media-query($medium) {
-    margin-top: 100px;
+.c-header {
+  align-items: center;
+  border-bottom: 1px solid $color-hairline;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  transition: all .2s ease;
+  @include media(640px) {
+    padding: 2em;
   }
 }
 
-.site__header {
-  border-bottom: 1px solid $hairline;
-  background: white;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 10;
-}
 
-.site__header--anchor {
-  display: block;
-  margin: 10px;
-  padding: 4px 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: -.05em;
-  max-width: 400px;
-  img {
-    border-radius: 50%;
-    max-width: 60px;
+// -------------------------------- NAMEPLATE
+.nameplate {
+  color: inherit;
+  font-family: $font-family-bold;
+  font-size: calc(16px + 1.25vw);
+  font-weight: 700;
+  margin-right: auto;
+  text-decoration: none;
+  width: 33.333%;
+    span {
+    display: inline-block;
+    padding: .25em;
+    transition: all .5s ease;
   }
   &:focus {
     outline: none;
-    box-shadow: -10px 2px 0px 0px $red;
-  }
+    span {
+      color: $color-black;
+      background: lighten($color-yellow, 20%);
+      box-shadow: 0 4px 0 0 $color-yellow;
 
-  @include media-query($medium) {
-    font-size: 2em;
-    margin: 20px;
+    }
+  }
+}
+
+
+// -------------------------------- MOON ICON
+.c-header > span {
+  width: 33.333%;
+}
+
+.c-header svg {
+  display: block;
+  fill: currentColor;
+  height: calc(16px + 1.25vw);
+  margin: 0 auto;
+  width: auto;
+}
+
+// -------------------------------- NAVIGATION
+.c-header__navigation {
+  text-align: right;
+  width: 33.333%;
+  a {
+    color: inherit;
+    display: inline-block;
+    font-size: calc(16px + .08vw);
+    text-decoration: none;
+    padding: 1em .5em;
+    transition: all .5s ease;
+    &:hover,
+    &:focus {
+      color: $color-black;
+      outline: none;
+      background: lighten($color-yellow, 20%);
+      box-shadow: 0 4px 0 0 $color-yellow;
+    }
   }
 }

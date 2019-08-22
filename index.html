@@ -1,9 +1,13 @@
 ---
-layout: no-header
+layout: default
 ---
-{% include content/hero.html %}
-<h2 class="section-title">Latest posts</h2>
-{% include content/blog_module.html %}
-{% include content/photography_module.html %}
-{% include content/visual_design.html %}
+<div class="blog__previews">
+  {% for post in site.posts limit: 4 %}
+    {% include _blog-preview.html %}
+  {% endfor %}
+</div>
+
+<p><a class="button__box" href="/blog">More posts</a></p>
+
+{% include about.html %}
 

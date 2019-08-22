@@ -1,149 +1,85 @@
-$blog-post-content-width: 800px;
-
-@mixin post-content-wrap {
-  margin: 0 auto;
-  padding: 0 10px;
-  max-width: $blog-post-content-width;
+.post {
+  padding: 1em;
+  @include media(640px) {
+    padding: 2em;
+  }
 }
 
-.blog-post__header {
-  background: $mustard;
-  background-size: cover;
-  background-position: 50%;
-  color: $grey-dark;
+
+.post-header {
+  padding: 6%;
+  text-align: center;
 }
 
-.blog-post__content {
-  img {
-    display: block;
-    margin: 0 auto 3em auto;
+.post-title {
+  @include letter-spacing;
+  line-height: 1;
+  font-size: 8vw;
+  margin: 0;
+}
+
+.post-meta {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  @include media(640px) {
+    font-size: 1.5vw;
   }
-  iframe {
-    @include post-content-wrap;
-    display: block;
-  }
-  h1, h2, h3, h4, h5 {
-    @include post-content-wrap;
-    font-size: $font-size--medium;
-    margin-bottom: 1.5em;
-    letter-spacing: -0.025em;
-    @include media-query($small) {
-      font-size: $font-size--large;
-    }
-  }
-  ul {
-    @include post-content-wrap;
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-  }
-  .l_overflow {
-    @include post-content-wrap;
+}
+
+.post-content {
+  h2, h3, h4, h5 {
+    font-size: calc(16px + 1.1vw);
+    margin: 0 auto 3vw auto;
+    max-width: $content-width;
   }
   p {
-    @include post-content-wrap;
-    font-family: $body-font;
-    margin-bottom: 1.5em;
-    letter-spacing: -0.025em;
-    a {
-      border-radius: 3px;
-      box-shadow: 0 0 0 2px $highlighting;
-      background: $highlighting;
-      padding: 0 3px;
-      &:hover {
-        background: lighten($highlighting, 20%);
-        box-shadow: none;
-        color: black;
-      }
-    }
-    @include media-query($small) {
-      font-size: $font-size--medium;
-      line-height: 1.75em;
-    }
-    @include media-query($medium) {
-      font-size: 1.5em;
-    }
+    font-size: calc(16px + .5vw);
+    max-width: $content-width;
+    line-height: 1.75;
+    margin: 0 auto 3vw auto;
   }
 }
 
 
-.blog-post__title {
-  display: block;
-  font-size: $font-size--large;
-  letter-spacing: -0.05em;
-  padding: 20% 0;
-  margin-bottom: 20px;
-  text-align: center;
-  &.light {
-    color: white;
-  }
-  span {
-    font-size: .75em;
-    display: block;
-    font-weight: 300;
-    letter-spacing: -0.025em;
-  }
-  @include media-query($small) {
-    font-size: 6vw;
-    margin-bottom: 1em;
-    span {
-      font-size: .45em;
-    }
-  }
-  @include media-query($medium) {
-    font-size: 6vw;
-    padding: 15% 0;
-    span {
-      font-size: .25em;
-    }
-  }
-}
-
-blockquote {
-  @include post-content-wrap;
-  font-family: $body-font;
-  border-left: 2px solid $red;
-  padding-left: 1.5em;
-  margin-bottom: 1.5em;
-  @include media-query($small) {
-    font-size: $font-size--regular;
-  }
-  @include media-query($medium) {
-    font-size: 1.3em;
-  }
-}
-
-
-.blog-post__navigation {
-  background: $charcoal;
-  text-align: center;
+// ------------------------------ POST NAVIGATION
+.post__navigation {
+  margin: 0 auto;
+  max-width: $content-width;
+  padding: 1em;
+  border-top: 1px solid;
   a {
+    background: rgba(0,0,0,0.5);
     color: white;
-    display: block;
-    padding: 3em 0;
+    display: inline-block;
+    padding: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-decoration: none;
     width: 100%;
+    transition: all .4s ease;
     span {
-      font-weight: bold;
       display: block;
+      width: 100%;
     }
-    &:first-child {
-      border-bottom: 1px dotted rgba(255,255,255,.5);
+    .label {
+      text-transform: uppercase;
+      font-size: .9em;
+    }
+    .title {
+      font-size: calc(16px + .8vw);
+      font-family: $font-family-bold;
+    }
+    &:hover {
+      background: rgba(0,0,0,0.75);
     }
   }
-  @include media-query($small) {
+  @include media(640px) {
+    padding: 4em 0 0 0;
     display: flex;
-    margin-top: 6em;
+    flex-direction: row;
+    justify-content: space-between;
     a {
-      width: 50%;
-      &:first-child {
-        border-right: 1px dotted rgba(255,255,255,.5);
-        border-bottom: none;
-      }
-      &:hover {
-        background: $black;
-      }
+      width: 33.333%;
     }
   }
 }
-
-
-

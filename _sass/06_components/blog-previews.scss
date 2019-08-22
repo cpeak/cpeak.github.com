@@ -1,74 +1,70 @@
 .blog__previews {
-  max-width: $site-width;
-  margin: 0 auto;
-  a {
-    border-bottom: 1px solid $red;
-    display: block;
-    padding: 1rem;
-    transition: all .5s ease;
-  }
-
-  &.fullsize {
-    max-width: 1400px;
-    margin-bottom: 4em;
-  }
-
-  @include media-query(800px) {
+  padding: 1em;
+  transition: all .2s ease;
+  @include media(640px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    a {
-      border: 0;
-      border-right: 1px solid $red;
-      padding: 2rem;
-      width: 33.333%;
-      &:hover,
-      &:focus {
-        background: $yellow;
-        outline: none;
-      }
-      &:first-child {
-        border: 0;
-        text-align: center;
-        padding: 4rem 0;
-        width: 100%;
-      }
-      &:last-child {
-        border: 0;
-      }
-    }
-    &.fullsize a:nth-child(3n+1) {
-      border: 0;
-    }
+    padding: 2em 5%;
   }
-  @include media-query($large) {
-    a {
-      padding: 4rem;
-    }
+  @include media(1024px) {
+    padding: 2em 15%;
   }
 }
 
 
-.blog__preview--title {
-  font-size: $font-size--large;
-  line-height: 1.2em;
-  letter-spacing: -0.025em;
-  margin: 0;
-  @include media-query($large) {
-    font-size: 2vw;
-    line-height: 2.5rem;
+// --------------------------------- Basic Style
+.blog__preview {
+  border-bottom: 3px solid $color-yellow;
+  color: $color-black;
+  display: block;
+  padding: 2em 0 1em 0;
+  text-decoration: none;
+  transition: all .4s ease;
+  .blog__preview--tagline {
+    color: $color-red;
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+  .blog__preview--title {
+    font-size: calc(16px + 1.25vw);
+    line-height: 1;
+    margin: 0;
+  }
+  .blog__preview--date {
+    text-transform: uppercase;
+  }
+  .blog__preview--text {
+    display: none;
+    font-size: calc(16px + .25vw);
+    line-height: 1.5;
+  }
+  &:hover,
+  &:focus {
+    background: lighten($color-yellow, 20%);
+    box-shadow: 0 8px 0 0 $color-yellow;
+    outline: none;
+  }
+  @include media(640px) {
+    background: white;
+    padding: 2em;
+    margin: 1em 1%;
+    width: 31.333%;
+  }
+  @include media(1300px) {
+    padding: 4em;
   }
 }
 
-.blog__preview--date {
-  font-family: $body-font;
-  color: $red;
-  font-size: $font-size--regular;
-  margin-top: 0;
-}
-
-.blog__preview--text {
-  font-family: $body-font;
-  max-width: 35em;
-  margin: 0 auto;
+// --------------------------------- First Entry
+.blog__preview:first-child {
+  .blog__preview--title {
+    font-size: calc(16px + 5vw);
+  }
+  .blog__preview--text {
+    display: block;
+  }
+  @include media(640px) {
+    width: 100%;
+  }
 }

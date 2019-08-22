@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  {% include header.html %}
-  <body class="with-header-spacing">
-    <div class="page-content">
-      {{ content }}
-    </div>
+  <body
+    style="
+    {% if page.text-color %}
+      color: #{{ page.text-color }};
+    {% endif %}
+    {% if page.background %}
+      background-color: #{{ page.background }};
+    {% endif %}
+    "
+    >
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>

@@ -1,17 +1,18 @@
-.button__pill {
-  background: $blue;
-  border-radius: 200px;
-  color: white;
-  display: table;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  margin: 3em auto;
-  padding: 1em 2em;
+.button__box {
+  border: 2px solid $color-yellow;
+  color: $color-black;
+  display: block;
+  font-size: calc(16px + .5vw);
+  padding: .5em 1em;
+  text-decoration: none;
   text-align: center;
-  width: auto;
+  transition: all .4s ease;
+  width: 10em;
+  margin: 0 auto;
   &:hover,
   &:focus {
-    box-shadow: 0 0 0 4px lighten($blue, 30%);
+    box-shadow: 0 4px 0 0 $color-yellow;
+    background: lighten($color-yellow, 20%);
     outline: none;
   }
 }

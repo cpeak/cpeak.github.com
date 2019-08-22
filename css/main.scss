@@ -1,27 +1,23 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "utf-8";
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "01_settings/tokens",
+  "01_settings/media-queries.scss",
+  "01_settings/tokens.scss",
 
-  "02_tools/mixins",
+  "02_tools/mixins.scss",
 
   "03_generic/normalize",
 
-  "04_elements/typography",
   "04_elements/buttons",
 
-  "05_objects/content",
-
-
-  "06_components/hero",
-  "06_components/blog-post",
-  "06_components/blog-previews",
   "06_components/header",
   "06_components/footer",
-  "06_components/photography-module",
-  "06_components/tile-list",
-  "06_components/visual-design",
-  "06_components/sandbox"
+  "06_components/blog-previews",
+  "06_components/blog-post",
+  "06_components/about"
 ;

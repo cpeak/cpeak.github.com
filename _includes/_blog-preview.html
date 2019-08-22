@@ -1,0 +1,8 @@
+<a class="blog__preview" href="{{ post.url }}">
+  {% if post.tagline %}
+    <p class="blog__preview--tagline">{{ post.tags }} &gt; {{ post.tagline }}</p>
+  {% endif %}
+  <h4 class="blog__preview--title">{{ post.title }}</span></h4>
+  <p class="blog__preview--date">{{ post.date | date: "%B %d %Y"}}</p>
+  <p class="blog__preview--text">{{ post.content | strip_html | truncatewords: 60 }}</p>
+</a>
