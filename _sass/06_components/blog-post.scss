@@ -32,6 +32,10 @@
     margin: 0 auto 3vw auto;
     max-width: $content-width;
   }
+  img {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
   p {
     font-size: calc(16px + .5vw);
     max-width: $content-width;

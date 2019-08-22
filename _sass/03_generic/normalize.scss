@@ -163,6 +163,12 @@ samp {
   font-size: 1em; /* 2 */
 }
 
+code {
+  display: inline-block;
+  background: white;
+  padding: 0 .5em;
+}
+
 /**
  * Add the correct font style in Android 4.3-.
  */
