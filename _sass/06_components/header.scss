@@ -38,11 +38,48 @@
 
 
 // -------------------------------- MOON ICON
-.c-header > span {
+#moon-icon {
   width: 33.333%;
+  &.newMoon .all-moons #new { display: block; }
+  &.waxingCrescent .all-moons #crescent {
+    display: block;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+  }
+  &.firstQuarter .all-moons #quarter {
+    display: block;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+  }
+
+  &.waxingGibbous .all-moons #gibbous {
+    display: block;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+  }
+
+  &.fullMoon .all-moons #full { display: block; }
+
+  &.waningGibbous .all-moons #gibbous {
+    display: block;
+  }
+  &.thirdQuarter .all-moons #quarter {
+    display: block;
+  }
+  &.waningCrescent .all-moons #crescent{
+    display: block;
+  }
 }
 
-.c-header svg {
+.all-moons {
+  g {
+    fill: currentColor;
+    display: none;
+  }
+}
+
+#moon-icon svg {
+  overflow: visible;
   display: block;
   fill: currentColor;
   height: calc(16px + 1.25vw);

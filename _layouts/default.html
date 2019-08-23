@@ -2,13 +2,8 @@
 <html>
   {% include head.html %}
   <body
-    style="
-    {% if page.text-color %}
-      color: #{{ page.text-color }};
-    {% endif %}
-    {% if page.background %}
-      background-color: #{{ page.background }};
-    {% endif %}
+    style="{% if page.text-color %}color: #{{ page.text-color }};{% endif %}
+    {% if page.background %}background-color: #{{ page.background }};{% endif %}
     "
     >
     {% include header.html %}

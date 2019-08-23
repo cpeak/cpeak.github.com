@@ -1,6 +1,10 @@
 .l-padded-wrapper {
   padding: 1em;
   @include media(640px) {
+    margin: 1%;
+    padding: 5%;
+  }
+  @include media(1024px) {
     padding: 5% 15%;
   }
 }
@@ -9,6 +13,7 @@
   background: $color-off-white;
   padding: 2em;
   @include media(640px) {
+    align-items: center;
     display: flex;
     flex-direction: row;
   }
@@ -42,9 +47,8 @@
 .c-about__bio {
   font-size: calc(16px + .25vw);
   line-height: 1.5;
-  a {
-  }
   span {
+    color: $color-red;
     font-weight: bold;
   }
   @include media(640px) {
