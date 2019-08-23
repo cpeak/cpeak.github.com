@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body
-    style="{% if page.text-color %}color: #{{ page.text-color }};{% endif %}
+  <body style="
+    {% if page.text-color %}color: #{{ page.text-color }};{% endif %}
     {% if page.background %}background-color: #{{ page.background }};{% endif %}
-    "
-    >
+  ">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
