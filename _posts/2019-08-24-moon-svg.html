@@ -1,0 +1,24 @@
+---
+layout: post
+title: Dynamic Moon Phase SVG
+date: 2019-08-24
+tags: blog
+tagline: Thats no moon...
+background: f9f9f9
+text-color: 555555
+---
+<p>I am an unabashed, card carrying, telescope loving, space geek. I love photographing the moon - I do it a lot, and I mean <i>a lot</i>. I've shot a dozen or so lunar eclipses and even successfully captured <a href="http://gorilla-studios.com/astrophotography/2018/12/26/iss-transit.html" class="link-arrow" target="blank">ISS transits</a>.</p>
+<p>I've always wanted to come up with a personalized logo - a monogram of my initials, or some kind of mark, but was never happy with anything I designed. During this recent wipe and restart of my site I was looking at simple moon icons and created a dead simple gibbous moon. Suddenly I remembered I had previously tried (and failed) to have a dynamic moon phase icon embedded somewhere on my site. I had attempted to hook into a free weather API to parse what the current phase was, but it was buggy and would often take seconds to render (if it even rendered at all). Could I do better?</p>
+<h3>Determining the phase</h3>
+<p>After a lot of searching, playing around, head scratching, and dead ends I finally found <a href="https://github.com/tingletech/moon-phase" class="link-arrow" target="blank">Ben Danglish's awesome Moon Phase script</a> that used emoji for each phase. I figured I could strip out the display portion of the script and just use the logic.</p>
+<h3>Ranges</h3>
+<p>Ben's script calculates the current phase and returns a number between 0 and 1 - those being the New Moon and 0.5 being a Full Moon (today is 0.81325344501654). I tweaked the script to return a class name based on the number value instead of the emoji. I noticed the range calculation is off by a little bit - today is August 24th which is the exact third quarter moon, but his original ranges categorized it as a Waning Crescent. A few tweaks to the numbers and it should be good to go.</p>
+<p>So now I knew what the current phase was, but how do I get that to actually display something?</p>
+<h3>Layered SVG</h3>
+<p>My initial static design required using an inline SVG so it could inherit the text color set on each page, but now the SVG needed to change during all 8 lunar phases. My knee-jerk reaction was to create 8 separate SVGs and swap them in and out, however I realized I could flip the Crescent, Quarter, and Gibbous moons so I would only need 5.</p>
+<img src="/images/posts/illustrator-moon-svg.jpg" alt="Illustrator file containing all 5 phase icons"/>
+<p>I created them all in one Illustrator file and when I looked at the code it generated it dawned on me I could have <i>one</i> inline SVG, and toggle the layers - much better! I was surprised that the layer names in Illustrator were embedded in the code - I set them to lowercase to avoid confusion and dropped the code into my site.</p>
+<img src="/images/posts/moon-svg-inline.jpg" alt="Code for the inline SVG containing all phase icons" />
+<h3>Putting it all together</h3>
+<p>The Javascript calculates the phase and targets the SVG to append a class name. The CSS then toggles which layer of the SVG needs to be visible, and flips the moon 180&deg; if necessary.</p>
+<p>I love how simple it is, and that it doesn't rely on an API. I need to keep an eye on it over the next month and adjust the number ranges so it doesn't switch too early or too late, but I think I'm in great shape. I may add some easter eggs for special celestial events, but Ill figure that out later.</p>

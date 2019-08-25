@@ -58,7 +58,7 @@ function phase_junk(phase) {
       className="fullMoon";
     } else if (phase <= 0.68) {
       className="waningGibbous";
-    } else if (phase <= 0.81) {
+    } else if (phase <= 0.84) {
       className="thirdQuarter";
     } else if (phase <= 0.93) {
       className="waningCrescent";
@@ -70,6 +70,7 @@ function phase_junk(phase) {
 
   function init(){
     console.log(className);
+    console.log(phase);
     document.getElementById("moon-icon").classList.add(className);
   }
 }
