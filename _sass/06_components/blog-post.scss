@@ -33,8 +33,13 @@
     max-width: $content-width;
   }
   img {
-    width: 100%;
+    display: block;
     margin-bottom: 3em;
+    width: 100%;
+    &.slim {
+      margin: 0 auto 3em auto;
+      max-width: $content-width;
+    }
   }
   p {
     font-size: calc(16px + .5vw);
