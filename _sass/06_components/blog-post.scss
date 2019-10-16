@@ -41,15 +41,27 @@
       max-width: $content-width;
     }
   }
-  p {
+  p, quote {
     font-size: calc(16px + .5vw);
     max-width: $content-width;
     line-height: 1.75;
     margin: 0 auto 3vw auto;
   }
+  quote {
+    border-left: 5px solid;
+    display: block;
+    padding-left: 1em;
+    font-style: italic;
+  }
   a, a:visited {
     color: inherit;
   }
+}
+
+.post-content-container {
+  margin: 0 auto;
+  max-width: $content-width;
+
 }
 
 

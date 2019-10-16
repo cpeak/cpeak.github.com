@@ -1,3 +1,5 @@
+
+// -------------------------------------- CLIP PATH POST
 .sb__clip-path-before-example {
   background: $color-mint;
   display: block;
@@ -36,4 +38,69 @@
   p {
     margin-bottom: 0;
   }
+}
+
+// -------------------------------------- ASPECT RATIO POST
+.ex-circle__wrong {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 50%;
+}
+.ex-non-responsive {
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  height: 400px;
+  width: 400px !important;
+  border-radius: 50%;
+}
+
+.ex-fifty-fifty {
+  border: 1px solid $color-slate;
+  margin-bottom: 3em;
+  .ex-content {
+    align-items: center;
+    display: flex;
+    padding: 4em;
+    width: 100%;
+    p {
+      font-size: .8em;
+    }
+  }
+  .ex-image {
+    background-image: url('/images/posts/ackbar.jpg');
+    background-size: cover;
+    background-position: 50%;
+    padding-top: 60%;
+    width: 100%;
+  }
+  @include media(800px) {
+    display: flex;
+    flex-direction: row;
+    .ex-image {
+      padding-top: 50%;
+      width: 50%;
+    }
+    .ex-content {
+      width: 50%;
+    }
+  }
+}
+.ex-letterbox {
+  background-image: url('/images/posts/ackbar-wide.jpg');
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 56.25%;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.ex-circle {
+  background-image: url('/images/posts/ackbar.jpg');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto 3em auto;
+  padding-top: 50%;
+  width: 50%;
 }
