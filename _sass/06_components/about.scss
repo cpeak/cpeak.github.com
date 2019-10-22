@@ -1,11 +1,13 @@
 .l-padded-wrapper {
   padding: 1em;
   @include media(640px) {
-    margin: 1%;
     padding: 5%;
   }
   @include media(1024px) {
     padding: 5% 15%;
+  }
+  @media (prefers-color-scheme: dark) {
+    background: $color-black;
   }
 }
 
@@ -19,6 +21,10 @@
   }
   @include media(1024px) {
     padding: 4em;
+  }
+  @media (prefers-color-scheme: dark) {
+    background: lighten($color-black, 5%);
+    color: white;
   }
 }
 

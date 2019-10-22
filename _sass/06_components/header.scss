@@ -1,12 +1,15 @@
 .c-header {
   align-items: center;
-  border-bottom: 1px solid $color-hairline;
   display: flex;
   justify-content: center;
   padding: 1em;
   transition: all .2s ease;
   @include media(640px) {
     padding: 2em;
+  }
+  @media (prefers-color-scheme: dark) {
+    background: $color-black;
+    color: white;
   }
 }
 

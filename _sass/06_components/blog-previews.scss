@@ -10,13 +10,19 @@
   @include media(1024px) {
     padding: 2em 15%;
   }
+  @media (prefers-color-scheme: dark) {
+    background: $color-black;
+    color: white;
+  }
+  p {
+  }
 }
 
 
 // --------------------------------- Basic Style
 .blog__preview {
   border-bottom: 3px solid $color-yellow;
-  color: $color-black;
+  color: inherit;
   display: block;
   padding: 2em 0 1em 0;
   text-decoration: none;
@@ -46,13 +52,18 @@
     outline: none;
   }
   @include media(640px) {
-    background: white;
     padding: 2em;
     margin: 1em 1%;
     width: 31.333%;
   }
   @include media(1300px) {
     padding: 4em;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:hover,
+    &:focus {
+      background: $color-slate;
+    }
   }
 }
 
