@@ -1,64 +1,37 @@
-.l-padded-wrapper {
-  padding: 1em;
-  @include media(640px) {
-    padding: 5%;
-  }
-  @include media(1024px) {
-    padding: 5% 15%;
-  }
+.c-about {
+  align-items: center;
+  display: flex;
+  padding: 1em 10%;
+  transition: padding .2s ease;
+  width: 100%;
   @media (prefers-color-scheme: dark) {
     background: $color-black;
   }
 }
 
-.c-about {
-  background: $color-off-white;
-  padding: 2em;
-  @include media(640px) {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-  @include media(1024px) {
-    padding: 4em;
-  }
-  @media (prefers-color-scheme: dark) {
-    background: lighten($color-black, 5%);
-    color: white;
-  }
-}
-
-.c-about__photo {
-  text-align: center;
-  img {
-    border-radius: 50%;
-    max-width: 150px;
-    width: 100%;
-
-  }
-  @include media(640px) {
-    padding-right: 1em;
-    width: 25%;
-    img {
-      display: flex;
-      align-self: left;
-      max-width: 200px;
-    }
-  }
-  @include media(640px) {
-    padding-right: 2em;
-  }
-}
-
 .c-about__bio {
-  font-size: calc(16px + .25vw);
   line-height: 1.5;
+  max-width: 60em;
   span {
     color: $color-red;
     font-weight: bold;
   }
-  @include media(640px) {
-    text-align: left;
-    width: 75%;
+  h1 {
+    font-size: calc(16px + 4vw);
+    line-height: 1.2;
+  }
+  a {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    @include highlight-link;
+  }
+  p {
+    color: inherit;
+    font-size: calc(16px + .8vw);
+    line-height: 1.65;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: white;
   }
 }

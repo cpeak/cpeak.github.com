@@ -1,3 +1,7 @@
+.post-container {
+  width: 100%;
+}
+
 .post {
   padding: 1em;
   @include media(640px) {
@@ -12,7 +16,6 @@
 }
 
 .post-title {
-  @include letter-spacing;
   line-height: 1;
   font-size: 8vw;
   margin: 0;
@@ -55,6 +58,9 @@
   }
   a, a:visited {
     color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -98,7 +104,7 @@
     }
   }
   @include media(640px) {
-    padding: 4em 0 0 0;
+    padding: 4em 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

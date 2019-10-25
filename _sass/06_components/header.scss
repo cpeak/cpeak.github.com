@@ -1,4 +1,5 @@
 .c-header {
+  border-top: 3px solid $color-red;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -22,8 +23,7 @@
   font-weight: 700;
   margin-right: auto;
   text-decoration: none;
-  width: 33.333%;
-    span {
+  span {
     display: inline-block;
     padding: .25em;
     transition: all .5s ease;
@@ -42,7 +42,7 @@
 
 // -------------------------------- MOON ICON
 #moon-icon {
-  width: 33.333%;
+  margin-right: .5em;
   &.newMoon .all-moons #new { display: block; }
   &.waxingCrescent .all-moons #crescent {
     display: block;
@@ -85,28 +85,35 @@
   overflow: visible;
   display: block;
   fill: currentColor;
-  height: calc(16px + 1.25vw);
-  margin: 0 auto;
+  height: calc(16px + 1vw);
+  margin: -2px auto 0 auto;
   width: auto;
 }
 
 // -------------------------------- NAVIGATION
 .c-header__navigation {
   text-align: right;
-  width: 33.333%;
+  width: 50%;
   a {
     color: inherit;
     display: inline-block;
     font-size: calc(16px + .08vw);
     text-decoration: none;
+    opacity: .6;
     padding: 1em .5em;
     transition: all .5s ease;
+    &.active {
+      box-shadow: 0 4px 0 0 $color-red;
+      font-weight: bold;
+      opacity: 1;
+    }
     &:hover,
     &:focus {
-      color: $color-black;
-      outline: none;
       background: lighten($color-yellow, 20%);
       box-shadow: 0 4px 0 0 $color-yellow;
+      color: $color-black;
+      opacity: 1;
+      outline: none;
     }
   }
 }

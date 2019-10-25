@@ -1,9 +1,24 @@
 <header class="c-header" style="border-color: #{{ page.text-color }}">
-  <a class="nameplate" href="/"><span>{{ site.title }}</span></a>
   <span id="moon-icon">
     {% include moons.html %}
   </span>
-  <section class="c-header__navigation">
-    <a href="/blog">Writing</a>
-  </section>
+  <a class="nameplate" href="/"><span>{{ site.title }}</span></a>
+  <nav class="c-header__navigation">
+    <a href="/"
+      {% if page.url == '/' %}
+        class="active"
+      {% endif %}
+    >Home</a>
+
+    <a href="/about"
+      {% if page.url == '/about' %}
+        class="active"
+      {% endif %}
+    >About</a>
+    <a href="/blog"
+      {% if page.url == '/blog' %}
+        class="active"
+      {% endif %}
+    >Writing</a>
+  </nav>
 </header>

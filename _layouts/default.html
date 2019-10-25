@@ -6,7 +6,9 @@
     {% if page.background %}background-color: #{{ page.background }};{% endif %}
   ">
     {% include header.html %}
-    {{ content }}
+    <main role="main">
+      {{ content }}
+    </main>
     {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,21 @@
+---
+layout: post
+title: OS X Dark Mode Flip
+date: 2019-10-25
+tags: tech-tip
+tagline: Going Dark
+background: ffffff
+text-color: 2b2b2b
+---
+<p>After upgrading to OS X Mojave one major feature I was interested in was Dark Mode. I like the idea of being able to toggle it on or off, but I was disappointed when I realized that it wouldn't switch your desktop image unless you used the stock Apple photo. I typically use a photo I took of a minimalist snowscape, which means Dark Mode is pretty much negated by a blinding white desktop.</p>
+<p>How can I get Dark Mode to turn on <i>and</i> change my desktop(s) all at once? I didn't want to do it manually every time.</p>
+<h4>Script Editor to the rescue</h4>
+<p>I looked around online and found a few different scripts to toggle Dark Mode on/off, and found a few more going over the semantics on changing the desktop. Everything seemed pretty straightforwards, just combine the two and that should be it.</p>
+<p>AppleScript hasn't changed much since the OS 7 days, and its very readable from a human perspective, so playing around is not too challenging. This script simply checks if Dark Mode is active, and if its not, turns it on and sets my desktop backgrounds to two defined dark images. If Dark Mode is on, it simply turns it off and sets the backgrounds to light images.</p>
+<div class="post-content-container">
+  <script src="https://gist.github.com/cpeak/1c5088fc180f87055ece12a75a072a7e.js"></script>
+  <br />
+</div>
+<p>In Script Editor I saved the script as an App, and plopped it on my desktop for the time being. I double click it to toggle Light/Dark Mode. No fussing with System Prefs, n manually changing images, just a double click.</p>
+<p>The last piece I need to figure out is how to schedule the App to run at specific times which shouldn't be super difficult but it's not straight forward.</p>
+<p>Feel free to grab the script and try it out on your machine - replace the 'PATH TO X IMAGE' with specific location paths of the images you want to use. If you only have 1 desktop, replace line 8 and 18 with 'tell every desktop', and remove the tell desktop 2 block. If you don't make the change and only have one display it will throw a warning every time.</p>
