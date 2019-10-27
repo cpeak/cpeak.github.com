@@ -104,3 +104,45 @@
   padding-top: 50%;
   width: 50%;
 }
+
+
+// -------------------------------------- GRID TOGGLE
+.ex-grid {
+  .cell {
+    padding: 1.5em 3em;
+    p {
+      font-size: 1em;
+      margin: 0;
+      line-height: 1.25;
+      text-align: center;
+    }
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  @include media(640px) {
+    display: grid;
+    grid-template-rows: repeat(8);
+    grid-template-columns: repeat(2, 1fr);
+    .cell:nth-child(odd) {
+      border-right: 1px solid $color-black;
+    }
+  }
+}
+
+.ex-grid.left .cell:nth-child(even) {
+  display: none;
+  @include media(640px) {
+    display: block;
+    background: #eee;
+  }
+}
+
+.ex-grid.right .cell:nth-child(odd) {
+  display: none;
+  @include media(640px) {
+    display: block;
+    background: $color-hairline;
+  }
+}

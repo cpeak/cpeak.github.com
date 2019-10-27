@@ -1,0 +1,37 @@
+.c-hero {
+  align-items: center;
+  display: flex;
+  padding: 1em 10%;
+  transition: padding .2s ease;
+  width: 100%;
+  @media (prefers-color-scheme: dark) {
+    background: $color-black;
+  }
+}
+
+.c-hero__bio {
+  line-height: 1.5;
+  max-width: 60em;
+  span {
+    color: $color-red;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: calc(16px + 4vw);
+    line-height: 1.2;
+  }
+  a {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    @include highlight-link;
+  }
+  p {
+    color: inherit;
+    font-size: calc(16px + .8vw);
+    line-height: 1.65;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}

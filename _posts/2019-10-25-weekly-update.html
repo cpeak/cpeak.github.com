@@ -1,0 +1,66 @@
+---
+layout: post
+title: Week Notes
+date: 2019-10-25
+tags: blog
+tagline: Week 43
+background: f9f9f9
+text-color: 2b2b2b
+---
+<h2>What I worked on</h2>
+<p>This week I started on a new project... sort of. I received a design PDF that wasn't 100% complete but gave me enough to get the basic styles in place and content setup. The client uses a private Git repo that I didn't have access to, so I just built things out statically on my machine. I got access this morning and for a marketing site, this is way too complicated. I have to download a Vagrant box and jump through about 1000 hoops to get it setup. No wonder this industry is so backwards...</p>
+<h2>Positive Notes</h2>
+<p>One problem I had to tackle involved a tricky table-like layout - the two main challenges were making sure each cell matched the height of the one next to it, and it needed to break down into one column at a time on mobile with the ability to flip columns. I couldn't use a <code>table</code> because that wouldn't be responsive. I couldn't use Flexbox to match the heights because they wouldn't be direct siblings, and using JQuery meant targeting an unknown number of cells. I admit I was a little frustrated but after some pondering I decided to use a CSS Grid layout. Since it was only two columns I could target the odd or even cells effectively grabbing each column. A simple class toggle and I could turn on or off each column on mobile. Not bad at all.</p>
+
+<div class="post-content-container">
+  <div class="ex-grid left">
+    <section class="cell">
+      <p><span class="toggle">Click to toggle Left/Right</span></p>
+    </section>
+    <section class="cell">
+      <p><span class="toggle">Click to toggle Left/Right</span></p>
+    </section>
+    <section class="cell">
+      <p>Left Column</p>
+    </section>
+    <section class="cell">
+      <p>Right Column</p>
+    </section>
+    <section class="cell">
+      <p>Left Column - the rows will match height if one cell has more content than the other, pretty handy.</p>
+    </section>
+    <section class="cell">
+      <p>Right Column</p>
+    </section>
+    <section class="cell">
+      <p>Left Column</p>
+    </section>
+    <section class="cell">
+      <p>Right Column</p>
+    </section>
+    <section class="cell">
+      <p>Left Column</p>
+    </section>
+    <section class="cell">
+      <p>Right Column</p>
+    </section>
+    <section class="cell">
+      <p>Left Column</p>
+    </section>
+    <section class="cell">
+      <p>Right Column</p>
+    </section>
+  </div>
+</div>
+
+<h2>Reflection</h2>
+<p>I've realized for a while now that my thought process for challenging design problems (implementation wise) goes through a few distinct phases: 1) That won't work, not possible without a lot of hacks, 2) Angry that I can't do it, 3) Deep thinking and looking for solutions, 4) Dead-ending through a number of ideas, and finally 5) Ah! This can be solved like so... It's nice being aware of this, so I can usually skip 1 &amp; 2 and move to step 3 immediately.</p>
+<h2>What's next</h2>
+<p>Next week is going to be interesting, I have to dive into the super complicated Vagrant box to implement a simple 4 page marketing site. Not looking forward to it, but hopefully I can get it knocked out in a day or two. Lets see how it goes...</p>
+
+<script>
+  $('.toggle').click(function() {
+    $('.ex-grid').toggleClass('left right');
+  });
+</script>
+
