@@ -42,7 +42,7 @@
 
 // -------------------------------- MOON ICON
 #moon-icon {
-  margin-right: .5em;
+  margin-right: .25em;
   &.newMoon .all-moons #new { display: block; }
   &.waxingCrescent .all-moons #crescent {
     display: block;
@@ -93,14 +93,14 @@
 // -------------------------------- NAVIGATION
 .c-header__navigation {
   text-align: right;
-  width: 50%;
+  width: 60%;
   a {
     color: inherit;
     display: inline-block;
     font-size: calc(16px + .08vw);
     text-decoration: none;
     opacity: .6;
-    padding: 1em .5em;
+    padding: 1em .25em;
     transition: all .5s ease;
     &.active {
       box-shadow: 0 4px 0 0 $color-red;
@@ -114,6 +114,16 @@
       color: $color-black;
       opacity: 1;
       outline: none;
+    }
+  }
+  @include media(640px) {
+    a {
+      padding: 1em .5em;
+    }
+  }
+  @include media(1000px) {
+    a {
+      padding: 1em 1.5em;
     }
   }
 }
