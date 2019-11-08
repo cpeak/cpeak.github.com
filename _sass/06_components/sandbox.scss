@@ -151,6 +151,27 @@
 
 .ex-underline-1 {
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: .25em;
   text-underline-offset: 3px;
+}
+
+.ex-grow-link {
+  font-size: 2em;
+  position: relative;
+  span {
+    position: absolute;
+    left: 50%;
+    height: 8px;
+    width: 0;
+    background: #ad5151;
+    top: 100%;
+    transition: 2s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    span {
+      left: 0;
+      width: 100%;
+    }
+  }
 }
