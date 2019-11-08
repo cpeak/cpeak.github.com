@@ -1,0 +1,28 @@
+---
+layout: post
+title: Cascading Colors
+date: 2019-11-07
+tags: tech-tip
+tagline: Color Flexibility
+background: 393950
+text-color: ffffff
+---
+<p>I briefly wrote about how this site handles color switches across pages in one of my first re-write posts, but I wanted to dive deeper and specifically look at how I set my code up and what things I needed to cover. Lets take a look.</p>
+<p>The key to being able to define a different color set on each page is <a href="https://jekyllrb.com/docs/front-matter/" target="blank">Jekyll's Front Matter block</a>. It's a small block of code that defines a set of variables for that particular page. There are a number of pre-defined ones like title, layout, date, etc.., but what is really important is you can define your own <i>custom</i> variables.</p>
+<p>Here is the front matter block for this particular post.</p>
+<div class="post-content-container">
+  <script src="https://gist.github.com/cpeak/4d718e9e8d3d0e7311398efcced3902a.js"></script>
+</div>
+<p>You can see I define which layout template to use, set the title, date, tags, etc.., but the last two lines I define both the background color and the text color for the page.</p>
+<p>In my default template which all pages are rendered with, I add those two page variables into the body tag at the top (line 4).</p>
+<div class="post-content-container">
+  <script src="https://gist.github.com/cpeak/01190eb3a315ecfa815f72a369e64cdb.js"></script>
+</div>
+<p>Now we have to remember a fundamental rule of HTML + CSS: inline styling takes precedent over CSS. This means if the text color is defined in the body tag, CSS classes will <i>not</i> override it. This seems sort of backwards and for years I avoided inline styling, but in this case it works perfectly. I want to be able to define the background and text color on a per-page basis. If I don't do it, or if I forget to, the design will fall back to my CSS styling as a default which is white background with black text.</p>
+<h3>Gotcha #1</h3>
+<p>The navigation links at the top of the page. I wanted to animate the underline to grow outwards from the center, which means I couldn't use a simple text-decoration, border, or box shadow. Initially I tried to use an :after tag, but I realized if I set the color to inherit, it would inherit the default black color, <i>not</i> the page.text-color.</p>
+<p>After some head scratching I inserted an empty span after each nav element. I used inline styling to define the <i>background-color</i> to the page.text-color (I know, thats on the confusing side). I set the span to be 3px tall and 0% wide centered under the link, then on hover it opens to 100% wide and left aligned - making it look like its growing outwards. Since it's background color is the page.text-color it will match the link &amp; text on the page.</p>
+<h3>Gotcha #2</h3>
+<p>Dark Mode. The site does support Dark Mode, but only on the pages without defined colors. Since inline styling overrides CSS, pages where it is set would trample over the <code>prefers-color-scheme:dark</code> definitions. I could go in and use a !important to enfore Dark Mode on all pages, but I just don't think thats the right path currently. Maybe if I do some research and find a large number of people use Dark Mode I may change my mind, but until then Im happy with how things are set up.</p>
+<h3>Potential Pitfall</h3>
+<p>Color contrast. Since I am setting the colors on a per-post basis I have to be very aware of color contrast and visual accessibility. Typically I eyeball it and if Im curious I'll run it through the <a href="https://webaim.org/resources/contrastchecker/" target="blank">WebAIM checker</a>, but I'm usually in the clear (this page is at 11.19, very good contrast).</p>

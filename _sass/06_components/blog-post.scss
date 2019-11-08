@@ -1,12 +1,12 @@
 .post-container {
   width: 100%;
-}
-
-.post {
   padding: 1em;
   @include media(640px) {
     padding: 2em;
   }
+}
+
+.post {
 }
 
 
@@ -73,10 +73,8 @@
 
 // ------------------------------ POST NAVIGATION
 .post__navigation {
-  margin: 0 auto;
+  margin: 4em auto 0 auto;
   max-width: $content-width;
-  padding: 1em;
-  border-top: 1px solid;
   a {
     background: rgba(0,0,0,0.5);
     color: white;

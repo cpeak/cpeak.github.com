@@ -5,7 +5,7 @@
   padding: 1em;
   width: 100%;
   @include media(640px) {
-    padding: 10%;
+    padding: 5% 10%;
   }
 }
 
@@ -64,7 +64,7 @@
   }
   @media (prefers-color-scheme: dark) {
     color: white;
-    background: $color-black;
+    background: $dark-mode;
   }
 }
 

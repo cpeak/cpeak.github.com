@@ -6,6 +6,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 4em;
+  @include media(640px) {
+    padding-top: 8em;
+  }
 }
 
 main {
