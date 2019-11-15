@@ -175,3 +175,47 @@
     }
   }
 }
+
+
+.centered { text-align: center; }
+.ex-spinner-static {
+  border-bottom: 10px solid $color-slate;
+  border-left: 10px solid $color-slate;
+  border-right: 10px solid $color-slate;
+  border-top: 10px solid white;
+  display: inline-block;
+  height: 5em;
+  margin-top: 1em;
+  margin-right: 2em;
+  width: 5em;
+}
+
+.ex-spinner-circle {
+  border-bottom: 10px solid $color-slate;
+  border-left: 10px solid $color-slate;
+  border-radius: 50%;
+  border-right: 10px solid $color-slate;
+  border-top: 10px solid white;
+  display: inline-block;
+  height: 5em;
+  margin-right: 2em;
+  width: 5em;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.ex-spinner-spinning {
+  animation: spinner 2000ms linear infinite;
+  border-bottom: 10px solid $color-slate;
+  border-left: 10px solid $color-slate;
+  border-radius: 50%;
+  border-right: 10px solid $color-slate;
+  border-top: 10px solid white;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+}
