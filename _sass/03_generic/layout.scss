@@ -16,3 +16,10 @@ main {
   display: flex;
   flex: 1;
 }
+
+.l-container {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: $content-width;
+  width: 100%;
+}

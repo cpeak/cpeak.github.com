@@ -1,0 +1,28 @@
+.year-progress-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.daily-progress {
+  border-bottom: 1px solid $color-hairline;
+  padding: 1em 0;
+  p {
+    background: $color-yellow;
+    color: darken($color-yellow, 50%);
+    display: inline-block;
+    font-size: .9em;
+    margin: 0;
+    padding: .5em .75em .4em .75em;
+    width: auto;
+  }
+  section {
+    margin: .5em 0;
+    span {
+      display: block;
+      color: $color-slate;
+      font-weight: bold;
+    }
+  }
+}
