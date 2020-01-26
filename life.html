@@ -1,0 +1,29 @@
+---
+layout: default
+title: Life
+permalink: /life
+---
+{% capture current_week %}{{ site.time | date: '%U' }}{% endcapture %}
+{% assign current_week_num = current_week | plus: 1 %}
+
+<div class="life-span">
+  {% for years in (1..90) %}
+    {% if years < 38 %}
+      <section class="life-span__row completed">
+    {% elsif years == 38 %}
+      <section class="life-span__row current">
+    {% else %}
+      <section class="life-span__row">
+    {% endif %}
+      {% for week in (1..52) %}
+        {% if week < current_week_num %}
+          <span class="completed"></span>
+        {% elsif week == current_week_num %}
+          <span class="current-week"></span>
+        {% else %}
+          <span></span>
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+</div>

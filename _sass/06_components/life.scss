@@ -1,0 +1,31 @@
+.life-span {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1em;
+}
+
+.life-span__row {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-around;
+  span {
+    background: #ccc;
+    border-radius: 50%;
+    height: .5em;
+    width: .5em;
+  }
+  &.completed span {
+    background: $color-red;
+  }
+}
+
+.current .completed {
+  background: $color-red;
+}
+
+.current .current-week {
+  background: #F0AD3D;
+  box-shadow: 0 0 0 2px darken(#F0AD3D, 20%);
+  z-index: 10;
+}

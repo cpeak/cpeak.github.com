@@ -1,21 +1,77 @@
-.year-progress-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.year-progress h1 {
+  font-size: calc(16px + 4vw);
+  text-align: center;
+}
+
+.year-progress h2 {
+  font-size: calc(16px + 1vw);
+  text-align: center;
+}
+
+.year-progress__calendar span {
+  background: $color-hairline;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: .9em;
+  height: 2em;
+  line-height: 1.5em;
+  margin: .2em;
+  padding: .35em;
+  text-align: center;
+  width: 2em;
+  &.poor {
+    background: $color-red;
+    color: white;
+  }
+  &.okay {
+    background: $color-yellow--bright;
+    color: darken($color-yellow--bright, 45%);
+  }
+  &.great {
+    background: $color-green;
+    color: white;
+  }
+  &.blank {
+    display: none;
+  }
+  @include media(640px) {
+    &.blank {
+      display: inline-block;
+    }
+  }
 }
 
 
-.daily-progress {
+.year-progress-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.year-progress-list__day {
   border-bottom: 1px solid $color-hairline;
-  padding: 1em 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 50%;
   p {
-    background: $color-yellow;
-    color: darken($color-yellow, 50%);
     display: inline-block;
     font-size: .9em;
     margin: 0;
     padding: .5em .75em .4em .75em;
     width: auto;
+    &.poor {
+      background: $color-red;
+      color: white;
+    }
+    &.okay {
+      background: $color-yellow--bright;
+      color: darken($color-yellow--bright, 45%);
+    }
+    &.great {
+      background: $color-green;
+      color: white;
+    }
   }
   section {
     margin: .5em 0;
@@ -24,5 +80,8 @@
       color: $color-slate;
       font-weight: bold;
     }
+  }
+  @include media(640px) {
+    width: 33.333%;
   }
 }
