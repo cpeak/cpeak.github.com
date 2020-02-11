@@ -1,0 +1,16 @@
+---
+layout: post
+title: CSS Grid
+date: 2020-02-07
+tags: blog
+tagline: Week 6
+background: 9bd9fd
+text-color: 7d3939
+---
+<h2>What I worked on:</h2>
+<p>So on my internal project we're going full in on CSS Grid, and while I've dabbled in the past, I've never actually used it 100% on a project. It's been a lot of fun using it with real content instead of demos or just following tutorials. I scaffolded out about 6 pages worth of content, mainly lorem ipsum while creating the generic layout modules. We haven't set a type hierarchy, colors, or visual style yet, but the skeleton is coming along nicely.</p>
+<h2>What I learned:</h2>
+<p>One thing I wanted to figure out was how to keep the content grid at a max of 1200px or so, centered on the page, but not wrap it in a secondary html element. If you have simple backgrounds thats not an issue, but when you try to get full bleed images working or strangely positioned items it gets really tricky. After a lot of different ideas, I finally realized using the <code>calc</code> function in SCSS I could take the 1200px, subtract it from the viewport - <code>100vw</code>, then split the remainder in two, I would get the width of the gutters on either side. The last trick was to be able to feed it a variable instead of hard coding the 1200, and I realized I just needed to interpolate it. My final solution was to set <code>calc((100vw - #{$content-width}) / 2);</code>.</p>
+<p>The only trick is I have to set this in a media query, because the math goes all haywire if the viewport is less than 1200px</p>
+<h2>Positive notes:</h2>
+<p>Looking forward to continuing the build out and get a better feel for CSS Grid.</p>
