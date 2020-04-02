@@ -46,8 +46,7 @@
     }
   }
   .blog__preview--text {
-    display: none;
-    font-size: calc(16px + .25vw);
+    font-size: calc(13px + .25vw);
     line-height: 1.5;
     width: 100%;
   }
@@ -101,7 +100,7 @@
     font-size: calc(16px + 5vw);
   }
   .blog__preview--text {
-    display: block;
+    font-size: calc(16px + .25vw);
   }
   @include media(640px) {
     padding: 6em 15%;
