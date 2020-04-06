@@ -2,16 +2,19 @@
   display: flex;
   padding: 5%;
   text-align: center;
+
   svg {
     fill: currentColor;
     height: calc(16px + 1.25vw);
     opacity: 0.3;
   }
+
   p {
     font-size: .9em;
     opacity: 0.5;
     width: 100%;
   }
+
   @media (prefers-color-scheme: dark) {
     background: $dark-mode;
     color: white;
