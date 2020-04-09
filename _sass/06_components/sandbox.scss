@@ -219,3 +219,76 @@
   height: 5em;
   width: 5em;
 }
+
+
+
+
+// ---------------------------------- JEN! CODE!!!!
+
+// ----------------------- Just the page wrapper
+.poc__wrapper {
+  background: linear-gradient(90deg, rgba(66,166,222,1) 0%, rgba(25,73,123,1) 100%);
+  margin-top: 2em;
+  padding: 4em;
+  width: 100%;
+}
+
+// --------------------- The wrapper around each one, sort of a Lego brick we can stack
+.milestone__wrapper {
+  border-bottom: 1px dashed rgba(255,255,255,0.5);
+  border-left: 2px solid white;
+  border-right: 1px dashed rgba(255,255,255,0.5);
+  border-top: 1px dashed rgba(255,255,255,0.5);
+  padding: 0 0 2em 2em;
+  position: relative;
+  &.above-squiggle {
+    padding-bottom: 0;
+  }
+  &.big-gap {
+    padding-bottom: 4em;
+  }
+}
+
+// ----------- The actual Milestone bubble
+.milestone {
+  border-radius: 4px;
+  background: white;
+  padding: 1em;
+  position: relative;
+  // ------------ The Triangle
+  &:before {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    border-top: 10px solid transparent;
+    content: "";
+    height: 0;
+    left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+  }
+  // ------------ The Dot
+  &:after {
+    background: white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: .75em;
+    left: -2.45em;
+    margin-top: -0.35em;
+    position: absolute;
+    top: 50%;
+    width: .75em;
+  }
+}
+
+// -------------- The squiggle
+.squiggle {
+  display: block;
+  height: 3em;
+  margin-bottom: -1px;
+  margin-left: -1em;
+  margin-top: -1px;
+  width: 2em;
+}
