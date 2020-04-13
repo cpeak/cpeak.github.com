@@ -235,10 +235,8 @@
 
 // --------------------- The wrapper around each one, sort of a Lego brick we can stack
 .milestone__wrapper {
-  border-bottom: 1px dashed rgba(255,255,255,0.5);
   border-left: 2px solid white;
   border-right: 1px dashed rgba(255,255,255,0.5);
-  border-top: 1px dashed rgba(255,255,255,0.5);
   padding: 0 0 2em 2em;
   position: relative;
   &.above-squiggle {
@@ -287,8 +285,6 @@
 .squiggle {
   display: block;
   height: 3em;
-  margin-bottom: -1px;
-  margin-left: -1em;
-  margin-top: -1px;
+  margin-left: -.96em;
   width: 2em;
 }
