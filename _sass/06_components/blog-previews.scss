@@ -1,11 +1,11 @@
 .blog__previews {
   transition: all .2s ease;
   @include media(640px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-  @include media(1024px) {
+  @include media(1300px) {
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (prefers-color-scheme: dark) {
     background: $dark-mode;
@@ -16,74 +16,78 @@
 
 // --------------------------------- Basic Style
 .blog__preview {
-  align-items: flex-start;
   border-bottom: 1px solid $color-hairline;
   color: inherit;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: block;
   padding: 2em;
   text-decoration: none;
   transition: all .4s ease;
+
+  header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+  }
+
   .blog__preview--title {
     font-size: calc(16px + 1.25vw);
     line-height: 1;
     margin: 0;
-    width: 80%;
   }
+
   .blog__preview--date {
-    display: flex;
-    flex-direction: column;
+    justify-self: end;
     overflow: hidden;
     margin: 0;
-    width: 20%;
-    text-align: right;
     text-transform: uppercase;
+
     .day {
       margin: 0 5px 0 0;
       font-family: $font-family-bold;
       font-size: calc(16px + .5vw);
     }
   }
+
   .blog__preview--text {
     font-size: calc(13px + .25vw);
     line-height: 1.5;
     width: 100%;
   }
+
   .blog__preview--tagline {
     color: $color-red;
     font-size: .9em;
     text-transform: uppercase;
     margin-bottom: 0;
   }
+
   &:hover,
   &:focus {
     background: lighten($color-yellow, 20%);
     box-shadow: 0 8px 0 0 $color-yellow;
     outline: none;
   }
+
   @include media(640px) {
     padding: 3em;
-    width: 50%;
+
     .blog__preview--tagline {
       padding-top: 4em;
     }
+
     &:nth-child(even) {
       border-right: 1px solid $color-hairline;
     }
   }
   @include media(1300px) {
     padding: 4em;
-    width: 33.333%;
-    &:nth-child(even) {
+    border-right: 1px solid $color-hairline;
+
+    &:nth-child(3n + 1) {
       border-right: none;
-      border-left: none;
-    }
-    &:nth-child(3n) {
-      border-right: 1px solid $color-hairline;
-      border-left: 1px solid $color-hairline;
     }
   }
+
   @media (prefers-color-scheme: dark) {
     &:hover,
     &:focus {
@@ -96,16 +100,20 @@
 // --------------------------------- First Entry
 .blog__preview:first-child {
   border-right: none;
+
   .blog__preview--title {
     font-size: calc(16px + 5vw);
   }
+
   .blog__preview--text {
     font-size: calc(16px + .25vw);
   }
+
   @include media(640px) {
+    grid-column: 1 / -1;
     padding: 6em 15%;
-    width: 100%;
   }
+
   @include media(1024px) {
     padding: 6em 20%;
   }

@@ -1,9 +1,11 @@
 <a class="blog__preview" href="{{ post.url }}">
-  <h4 class="blog__preview--title">{{ post.title }}</span></h4>
-  <p class="blog__preview--date">
-    <span class="day">{{ post.date | date: "%d"}}</span>
-    <span class="month">{{ post.date | date: "%b"}}</span>
-  </p>
+  <header>
+    <h4 class="blog__preview--title">{{ post.title }}</span></h4>
+    <p class="blog__preview--date">
+      <span class="day">{{ post.date | date: "%d"}}</span>
+      <span class="month">{{ post.date | date: "%b"}}</span>
+    </p>
+  </header>
   <p class="blog__preview--text">{{ post.content | strip_html | truncatewords: 60 }}</p>
   {% if post.tagline %}
     <p class="blog__preview--tagline">{{ post.tags }} &gt; {{ post.tagline }}</p>
