@@ -63,7 +63,19 @@
 .post-content-container {
   margin: 0 auto 3em auto;
   max-width: $content-width;
+}
 
+figure.post-image {
+  margin: 0 auto 3em auto;
+  max-width: $content-width;
+  img {
+    margin-bottom: 5px;
+  }
+  figcaption {
+    font-size: 0.9em;
+    text-align: right;
+    margin: 0;
+  }
 }
 
 

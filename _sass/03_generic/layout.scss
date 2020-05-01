@@ -12,6 +12,10 @@ body {
   }
 }
 
+body.l-sandbox {
+  padding: 0;
+}
+
 main {
   display: flex;
   flex: 1;
