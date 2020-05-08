@@ -71,10 +71,19 @@ figure.post-image {
   img {
     margin-bottom: 5px;
   }
+  &.vertical {
+    img {
+      max-width: 60%;
+      margin: 0 auto 5px auto;
+    }
+    figcaption {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+  }
   figcaption {
     font-size: 0.9em;
     text-align: right;
-    margin: 0;
   }
 }
 
