@@ -1,0 +1,311 @@
+
+// ------------------------------------- OVERFLOW WRAPPER
+.solar-system__wrap {
+  border: 1px solid blue;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: absolute;
+  right: 0;
+  top: 9em;
+}
+
+.solar-system__wrap::-webkit-scrollbar {
+  height: 2em;
+  width: 1em;
+}
+
+.solar-system__wrap::-webkit-scrollbar-track {
+  background: white;
+}
+
+.solar-system__wrap::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+// ------------------------------------- GUIDE POSTS
+
+// Halfway debug line
+.stripe {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.guide-post-track {
+  border: 1px solid red;
+  position: fixed;
+  bottom: 2em;
+  z-index: 10;
+  width: 100vw;
+  a {
+    color: white;
+    border: 1px solid red;
+    padding: 4px;
+    display: inline-block;
+  }
+  .tick {
+    border-right: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    height: 2em;
+  }
+}
+
+
+
+// ------------------------------------- CONTAINER
+.solar-system {
+  height: 100%;
+  position: relative;
+  width: 4300000px;
+}
+
+.planet-label {
+  background: #555555;
+  top: 35%;
+  position: absolute;
+  opacity: 0.5;
+  padding: 6px 12px;
+  &:after {
+    width: 0;
+    height: 0;
+    border-top: 20px solid #555555;
+    border-right: 20px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+// ------------------------------------- THE SUN
+#sun {
+  //background-image: url('../images/solar-system/sun.png');
+  background: #F3E36E;
+  background-size: cover;
+  background-position: 50%;
+  left: -500px;
+  border-radius: 50%;
+  top: -100px;
+  bottom: 0;
+  height: 1000px;
+  position: absolute;
+  width: 1000px;
+}
+
+// ------------------------------------- MERCURY
+
+#mercury-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 48000px;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+
+#mercury-marker {
+  left: 1.5%;
+}
+
+
+#mercury {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #DBD7D7;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+}
+
+// ------------------------------------- VENUS
+#venus-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 77586px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+#venus {
+  background: #DBD7D7;
+  border-radius: 50%;
+  height: 8px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 8px;
+}
+
+// ------------------------------------- EARTH
+#earth-system {
+  border-left: 1px solid red;
+  position: absolute;
+  left: 109260px;
+  top: 0;
+  bottom: 0;
+  width: 9px;
+}
+
+#earth {
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('../images/solar-system/earth.png');
+  border-radius: 50%;
+  height: 9px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 9px;
+}
+
+#luna {
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('../images/solar-system/moon.png');
+  width: 3px;
+  right: -276px;
+  height: 3px;
+  margin-top: -1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+// ------------------------------------- MARS
+#mars-system {
+  border-left: 1px solid red;
+  position: absolute;
+  left: 900px;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+
+#mars {
+  background: #CD8C64;
+  border-radius: 50%;
+  height: 5px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 5px;
+}
+
+// ------------------------------------- JUPITER
+#jupiter-system {
+  border-left: 1px solid red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 102px;
+  left: 1200px;
+}
+
+#jupiter {
+  //background-image: url('../images/solar-system/jupiter.png');
+  background: #D7A56C;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+  height: 102px;
+  width: 102px;
+  top: 50%;
+  margin-top: -51px;
+  position: absolute;
+}
+
+// ------------------------------------- SATURN
+#saturn-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 1400px;
+  position: absolute;
+  top: 0;
+  width: 86px;
+}
+
+#saturn {
+  border-radius: 50%;
+  background: #DDD2B4;
+  height: 84px;
+  position: absolute;
+  top: 50%;
+  margin-top: -42px;
+  transform: rotate(-26deg);
+  width: 86px;
+  &:before {
+    border-bottom: 1px solid #8B8276;
+    content: "";
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    margin-left: -30px;
+  }
+}
+
+// ------------------------------------- URANUS
+#uranus-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 1600px;
+  position: absolute;
+  top: 0;
+  width: 36px;
+}
+
+#uranus {
+  background: #C9E6E9;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  top: 50%;
+  margin-top: -18px;
+  position: absolute;
+}
+
+// ------------------------------------- NEPTUNE
+#neptune-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 1700px;
+  position: absolute;
+  top: 0;
+  width: 35px;
+}
+
+#neptune {
+  background: #4864EE;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  top: 50%;
+  margin-top: -17px;
+  position: absolute;
+}
+
+// ------------------------------------- PLUTO
+#pluto-system {
+  border-left: 1px solid red;
+  bottom: 0;
+  left: 1800px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+#pluto {
+  background: #DBAE84;
+  border-radius: 50%;
+  height: 2px;
+  width: 2px;
+  top: 50%;
+  margin-top: -1px;
+  position: absolute;
+}

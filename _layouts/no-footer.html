@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body style="color: #{{ page.text-color }}; background-color: #{{ page.background }};">
+    {% include header.html %}
+    <main role="main">
+      {{ content }}
+    </main>
+  </body>
+</html>
