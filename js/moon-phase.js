@@ -65,6 +65,7 @@ function phase_junk(phase) {
     } else if (phase <= 1) {
       className="newMoon"
     } else {
+      className="newMoon"
     }
   window.onload = init;
 
