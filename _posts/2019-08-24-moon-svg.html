@@ -2,7 +2,7 @@
 layout: post
 title: Dynamic Moon Phase SVG
 date: 2019-08-24
-tags: blog
+tags: ["javascript", "svg"]
 tagline: Thats no moon...
 background: f9f9f9
 text-color: 555555
@@ -16,9 +16,15 @@ text-color: 555555
 <p>So now I knew what the current phase was, but how do I get that to actually display something?</p>
 <h3>Layered SVG</h3>
 <p>My initial static design required using an inline SVG so it could inherit the text color set on each page, but now the SVG needed to change during all 8 lunar phases. My knee-jerk reaction was to create 8 separate SVGs and swap them in and out, however I realized I could flip the Crescent, Quarter, and Gibbous moons so I would only need 5.</p>
-<img src="/images/posts/illustrator-moon-svg.jpg" alt="Illustrator file containing all 5 phase icons"/>
+<figure class="post-image">
+  <img src="/images/posts/illustrator-moon-svg.jpg" alt="Illustrator file containing all 5 phase icons"/>
+  <figcaption>Moon SVG layers in Adobe Illustrator</figcaption>
+</figure>
 <p>I created them all in one Illustrator file and when I looked at the code it generated it dawned on me I could have <i>one</i> inline SVG, and toggle the layers - much better! I was surprised that the layer names in Illustrator were embedded in the code - I set them to lowercase to avoid confusion and dropped the code into my site.</p>
-<img src="/images/posts/moon-svg-inline.jpg" alt="Code for the inline SVG containing all phase icons" />
+<figure class="post-image">
+  <img src="/images/posts/moon-svg-inline.jpg" alt="Code for the inline SVG containing all phase icons" />
+  <figcaption>SVG Code for the moon</figcaption>
+</figure>
 <h3>Putting it all together</h3>
 <p>The Javascript calculates the phase and targets the SVG to append a class name. The CSS then toggles which layer of the SVG needs to be visible, and flips the moon 180&deg; if necessary.</p>
 <p>I love how simple it is, and that it doesn't rely on an API. I need to keep an eye on it over the next month and adjust the number ranges so it doesn't switch too early or too late, but I think I'm in great shape. I may add some easter eggs for special celestial events, but Ill figure that out later.</p>
