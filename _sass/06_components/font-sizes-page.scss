@@ -1,0 +1,18 @@
+.font-sizes-examples {
+  border: 1px solid red;
+  margin: 2em auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.font-sizes-examples label {
+  color: red;
+}
+
+.font-sizes-example__title {
+  font-size: calc(16px + 4vw);
+}
+
+.font-sizes-vw {
+  font-size: 4vw;
+}
