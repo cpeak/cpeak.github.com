@@ -1,0 +1,71 @@
+---
+layout: default
+title: Bingo
+permalink: /bingo
+---
+
+<div id="bingo">
+  <h1>
+    <span>B</span>
+    <span>I</span>
+    <span>N</span>
+    <span>G</span>
+    <span>O</span>
+  </h1>
+  <div id="grid"></div>
+</div>
+
+<script>
+  function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+  }
+
+  var bingoEntries = [
+      "&quot;Contingency&quot;",
+      "Horrible backlighting",
+      "&quot;Next slide please&quot;",
+      "+1 in zoom chat",
+      "&quot;We're still working on that&quot;",
+      "&quot;We've heard your feedback&quot;",
+      "&quot;You’re on mute&quot;",
+      "Hot mic",
+      "“Hang on im not good at Zoom”",
+      "&quot;Can everyone see my screen?&quot;",
+      "&quot;Can you stop sharing&quot;",
+      "Construction / ambulance / firetruck noise",
+      "Cat walks across desk",
+      "Weird camera angle",
+      "Notification sounds",
+      "Someone eating",
+      "Awkward virtual background",
+      "&quot;Sorry, no, you go...&quot;",
+      "&quot;I have to jump on another call&quot;",
+      "Echo or feedback",
+      "Waiting for everyone to show up",
+      "&quot;Sorry, I had a hard time with the invite&quot;",
+      "Really cluttered desktop",
+      "Can't figure out screensharing",
+      "Frozen video"
+    ];
+
+  var shuffled = shuffle(bingoEntries);
+  var foo = bingoEntries.splice(12, 1, "FREE");
+
+  var bingoEntriesLength = bingoEntries.length;
+
+  var output = "";
+
+  var i;
+
+  for (i = 0; i < bingoEntriesLength; i++) {
+    output += "<p>" + bingoEntries[i] + "</p>";
+  }
+
+  document.getElementById("grid").innerHTML = output;
+
+
+  $("p").click(function(){
+    $(this).toggleClass("active");
+  });
+
+</script>
