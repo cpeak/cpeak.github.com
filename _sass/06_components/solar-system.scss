@@ -1,7 +1,6 @@
 
 // ------------------------------------- OVERFLOW WRAPPER
 .solar-system__wrap {
-  border: 1px solid blue;
   bottom: 0;
   left: 0;
   overflow-y: hidden;
@@ -17,11 +16,11 @@
 }
 
 .solar-system__wrap::-webkit-scrollbar-track {
-  background: white;
+  background: rgba(255,255,255,0.5);
 }
 
 .solar-system__wrap::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: white;
 }
 
 // ------------------------------------- GUIDE POSTS
@@ -36,16 +35,21 @@
 }
 
 .guide-post-track {
-  border: 1px solid red;
-  position: fixed;
   bottom: 2em;
-  z-index: 10;
+  padding: .25em;
+  position: fixed;
   width: 100vw;
-  a {
+  z-index: 10;
+  button {
+    background: rgba(0,0,0,0.2);
+    border-radius: 2px;
+    border: 1px solid white;
     color: white;
-    border: 1px solid red;
-    padding: 4px;
+    cursor: pointer;
+    font-size: .8em;
     display: inline-block;
+    margin-right: 1em;
+    padding: 4px 8px;
   }
   .tick {
     border-right: 1px solid black;
@@ -59,7 +63,9 @@
 
 // ------------------------------------- CONTAINER
 .solar-system {
+  background: url('/images/solar-system/starfield.jpg');
   height: 100%;
+  overflow-y: hidden;
   position: relative;
   width: 4300000px;
 }
@@ -70,17 +76,49 @@
   position: absolute;
   opacity: 0.5;
   padding: 6px 12px;
-  &:after {
-    width: 0;
-    height: 0;
-    border-top: 20px solid #555555;
-    border-right: 20px solid transparent;
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
+}
+
+
+// ------------------------------------- DISTANCES
+// 1392 = 1000px
+// Mercury is 62.976m KM or 45,0000px
+// Venus is 108.3m km or 77,801px
+// Earth 150.99m km or 108,469px
+// Mars is 208.73m km or 149,949px
+// Jupiter is 769.17m km or 552,564px
+// Saturn is 1.494b km or 1073275.862068966
+// Uranus is 2.9b km or 2126508.620689655
+// Neptune is 4.4764b km or 3215804.59770115
+// Pluto is 5.9b km or 4238505.747126437
+
+#distances {
+  display: flex;
+  flex-direction: column;
+  font-size: .8em;
+  position: absolute;
+  left: 700px;
+  top: 10%;
+  span {
+    padding: .5em;
+    text-align: right;
+    &:after {
+      content: "\2192";
+      margin-left: 2em;
+    }
   }
 }
+
+#voyager-1-distance:after {
+  display: inline-block;
+  transform: rotate(-35deg);
+}
+
+#voyager-2-distance:after {
+  display: inline-block;
+  transform: rotate(48deg);
+}
+
+
 
 // ------------------------------------- THE SUN
 #sun {
@@ -90,9 +128,10 @@
   background-position: 50%;
   left: -500px;
   border-radius: 50%;
-  top: -100px;
+  top: 50%;
   bottom: 0;
   height: 1000px;
+  margin-top: -500px;
   position: absolute;
   width: 1000px;
 }
@@ -100,16 +139,15 @@
 // ------------------------------------- MERCURY
 
 #mercury-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 48000px;
+  left: 45241px;
   position: absolute;
   top: 0;
   width: 3px;
 }
 
 #mercury-marker {
-  left: 1.5%;
+  left: 1.4%;
 }
 
 
@@ -125,9 +163,8 @@
 
 // ------------------------------------- VENUS
 #venus-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 77586px;
+  left: 77801px;
   position: absolute;
   top: 0;
   width: 8px;
@@ -143,11 +180,14 @@
   width: 8px;
 }
 
+#venus-marker {
+  left: 2.1%;
+}
+
 // ------------------------------------- EARTH
 #earth-system {
-  border-left: 1px solid red;
   position: absolute;
-  left: 109260px;
+  left: 108469px;
   top: 0;
   bottom: 0;
   width: 9px;
@@ -178,11 +218,14 @@
   top: 50%;
 }
 
+#earth-marker {
+  left: 2.87%;
+}
+
 // ------------------------------------- MARS
 #mars-system {
-  border-left: 1px solid red;
   position: absolute;
-  left: 900px;
+  left: 149949px;
   top: 0;
   bottom: 0;
   width: 5px;
@@ -198,18 +241,20 @@
   width: 5px;
 }
 
+#mars-marker {
+  left: 3.77%;
+}
+
 // ------------------------------------- JUPITER
 #jupiter-system {
-  border-left: 1px solid red;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 102px;
-  left: 1200px;
+  left: 552564px;
 }
 
 #jupiter {
-  //background-image: url('../images/solar-system/jupiter.png');
   background: #D7A56C;
   background-size: cover;
   background-position: 50%;
@@ -221,11 +266,54 @@
   position: absolute;
 }
 
+#io {
+  background: white;
+  width: 2px;
+  right: -302px;
+  height: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+#europa {
+  background: white;
+  width: 3px;
+  right: -481px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+#ganymede {
+  background: white;
+  width: 4px;
+  right: -769px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+#callisto {
+  background: white;
+  width: 3px;
+  right: -1362px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+#jupiter-marker {
+  left: 13.0487%;
+}
+
 // ------------------------------------- SATURN
 #saturn-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 1400px;
+  left: 1073275px;
   position: absolute;
   top: 0;
   width: 86px;
@@ -250,11 +338,24 @@
   }
 }
 
+#titan {
+  background: #D0AF68;
+  width: 4px;
+  right: -1000px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+#saturn-marker {
+  left: 25.14%;
+}
+
 // ------------------------------------- URANUS
 #uranus-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 1600px;
+  left: 2126508px;
   position: absolute;
   top: 0;
   width: 36px;
@@ -270,11 +371,14 @@
   position: absolute;
 }
 
+#uranus-marker {
+  left: 49.43%;
+}
+
 // ------------------------------------- NEPTUNE
 #neptune-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 1700px;
+  left: 3215804px;
   position: absolute;
   top: 0;
   width: 35px;
@@ -290,11 +394,14 @@
   position: absolute;
 }
 
+#neptune-marker {
+  left: 74.56%;
+}
+
 // ------------------------------------- PLUTO
 #pluto-system {
-  border-left: 1px solid red;
   bottom: 0;
-  left: 1800px;
+  left: 4238505px;
   position: absolute;
   top: 0;
   width: 2px;
@@ -305,7 +412,11 @@
   border-radius: 50%;
   height: 2px;
   width: 2px;
-  top: 50%;
+  top: 33%;
   margin-top: -1px;
   position: absolute;
+}
+
+#pluto-marker {
+  left: 98.15%;
 }

@@ -2,21 +2,29 @@
 layout: no-footer
 permalink: our-solar-system/
 title: Our Solar System
-background: 2b2b2b
+background: 191919
 text-color: FFFFFF
 ---
 <div class="guide-post-track">
-  <a href="#sun">Sun</a>
+  <button onclick="(document.getElementById('sun').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Sun</button>
+  <button onclick="(document.getElementById('mercury').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Mercury</button>
+  <button onclick="(document.getElementById('venus').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Venus</button>
+  <button onclick="(document.getElementById('earth').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Earth</button>
+  <button onclick="(document.getElementById('mars').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Mars</button>
+  <button onclick="(document.getElementById('jupiter').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Jupiter</button>
+  <button onclick="(document.getElementById('saturn').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Saturn</button>
+  <button onclick="(document.getElementById('uranus').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Uranus</button>
+  <button onclick="(document.getElementById('neptune').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Neptune</button>
+  <button onclick="(document.getElementById('pluto').scrollIntoView({ inline: 'center', block: 'center', behavior: 'smooth'}))">Pluto</button>
   <span class="tick" id="mercury-marker"></span>
-  <a href="#mercury">Mercury</a>
-  <a href="#venus">Venus</a>
-  <a href="#earth">Earth</a>
-  <a href="#mars">Mars</a>
-  <a href="#jupiter">Jupiter</a>
-  <a href="#saturn">Saturn</a>
-  <a href="#uranus">Uranus</a>
-  <a href="#neptune">Neptune</a>
-  <a href="#pluto">Pluto</a>
+  <span class="tick" id="venus-marker"></span>
+  <span class="tick" id="earth-marker"></span>
+  <span class="tick" id="mars-marker"></span>
+  <span class="tick" id="jupiter-marker"></span>
+  <span class="tick" id="saturn-marker"></span>
+  <span class="tick" id="uranus-marker"></span>
+  <span class="tick" id="neptune-marker"></span>
+  <span class="tick" id="pluto-marker"></span>
 </div>
 
 <div class="solar-system__wrap">
@@ -25,6 +33,20 @@ text-color: FFFFFF
     <section class="stripe"></section>
 
     <div id="sun">
+    </div>
+
+    <div id="distances">
+      <span>Mercury 54,241px</span>
+      <span>Venus 77,801px</span>
+      <span>Earth 108,469px</span>
+      <span>Mars 149,949px</span>
+      <span>Jupiter 552,564px</span>
+      <span>Saturn 1,073,275px</span>
+      <span>Uranus 2,126,508px</span>
+      <span>Neptune 3,215,804px</span>
+      <span>Pluto 4,238,505px</span>
+      <span id="voyager-1-distance">Voyager 1 16,270,350px (and counting)</span>
+      <span id="voyager-2-distance">Voyager 2 13,016,280px (and counting)</span>
     </div>
 
     <div id="mercury-system">
@@ -51,11 +73,16 @@ text-color: FFFFFF
     <div id="jupiter-system">
       <section class="planet-label">Jupiter</section>
       <span id="jupiter"></span>
+      <span id="io"></span>
+      <span id="europa"></span>
+      <span id="ganymede"></span>
+      <span id="callisto"></span>
     </div>
 
     <div id="saturn-system">
       <section class="planet-label">Saturn</section>
       <span id="saturn"></span>
+      <span id="titan"></span>
     </div>
 
     <div id="uranus-system">
