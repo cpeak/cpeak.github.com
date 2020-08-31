@@ -269,32 +269,35 @@
 
 #io {
   background: white;
-  width: 2px;
-  right: -302px;
-  height: 2px;
   border-radius: 50%;
+  height: 2px;
+  margin-top: -1px;
   position: absolute;
+  right: -302px;
   top: 50%;
+  width: 2px;
 }
 
 #europa {
   background: white;
-  width: 3px;
-  right: -481px;
-  height: 3px;
   border-radius: 50%;
+  height: 3px;
   position: absolute;
+  right: -481px;
+  margin-top: -1px;
   top: 50%;
+  width: 3px;
 }
 
 #ganymede {
   background: white;
-  width: 4px;
-  right: -769px;
-  height: 4px;
   border-radius: 50%;
+  height: 4px;
+  margin-top: -2px;
   position: absolute;
+  right: -769px;
   top: 50%;
+  width: 4px;
 }
 
 #callisto {
@@ -345,6 +348,7 @@
   right: -1000px;
   height: 4px;
   border-radius: 50%;
+  margin-top: -2px;
   position: absolute;
   top: 50%;
 }
