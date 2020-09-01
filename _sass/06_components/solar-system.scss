@@ -62,7 +62,6 @@
 
 // ------------------------------------- CONTAINER
 .solar-system {
-  background: url('/images/solar-system/starfield.jpg');
   background: #000000;
   height: 100%;
   overflow-y: hidden;
@@ -71,11 +70,8 @@
 }
 
 .planet-label {
-  background: #555555;
-  top: 35%;
+  color: white;
   position: absolute;
-  opacity: 0.5;
-  padding: 6px 12px;
 }
 
 
@@ -91,13 +87,30 @@
 // Neptune is 4.4764b km or 3215804.59770115
 // Pluto is 5.9b km or 4238505.747126437
 
+#foo {
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-size: .9em;
+  left: 1200px;
+  padding: .5em 1em;
+  position: absolute;
+  top: 10%;
+  content: "hello";
+  &.expanded {
+    content: "goodbye";
+  }
+}
+
 #distances {
   display: flex;
   flex-direction: column;
   font-size: .8em;
   position: absolute;
-  left: 700px;
-  top: 10%;
+  left: 800px;
+  top: 5%;
   span {
     padding: .5em;
     text-align: right;
@@ -119,6 +132,32 @@
 }
 
 
+// ------------------------------------- PLANETARY SYSTEM
+
+.planetary-system {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  &.compare {
+    .moon {
+      display: none;
+    }
+  }
+}
+
+.planet:after {
+  display: block;
+  font-size: .9em;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.moon:after {
+  display: block;
+  font-size: .8em;
+  margin-top: 25px;
+  opacity: 0.5;
+}
 
 // ------------------------------------- THE SUN
 #sun {
@@ -138,11 +177,11 @@
 // ------------------------------------- MERCURY
 
 #mercury-system {
-  bottom: 0;
   left: 45241px;
-  position: absolute;
-  top: 0;
   width: 3px;
+  &.compare {
+    left: 700px;
+  }
 }
 
 #mercury-marker {
@@ -151,22 +190,25 @@
 
 
 #mercury {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
   background: #DBD7D7;
+  border-radius: 50%;
+  height: 3px;
+  margin-top: -1px;
   position: absolute;
   top: 50%;
-  margin-top: -1px;
+  width: 3px;
+  &:after {
+    content: "Mercury";
+  }
 }
 
 // ------------------------------------- VENUS
 #venus-system {
-  bottom: 0;
   left: 77801px;
-  position: absolute;
-  top: 0;
   width: 8px;
+  &.compare {
+    left: 800px;
+  }
 }
 
 #venus {
@@ -180,6 +222,9 @@
   position: absolute;
   top: 50%;
   width: 8px;
+  &:after {
+    content: "Venus";
+  }
 }
 
 #venus-marker {
@@ -188,36 +233,42 @@
 
 // ------------------------------------- EARTH
 #earth-system {
-  position: absolute;
   left: 108469px;
-  top: 0;
-  bottom: 0;
   width: 9px;
+  &.compare {
+    left: 900px;
+  }
 }
 
 #earth {
-  background-size: cover;
-  background-position: 50%;
   background-image: url('../images/solar-system/earth.png');
+  background-position: 50%;
+  background-size: cover;
   border-radius: 50%;
   height: 9px;
   margin-top: -4px;
   position: absolute;
   top: 50%;
   width: 9px;
+  &:after {
+    content: "Earth";
+  }
 }
 
 #luna {
-  background-size: cover;
-  background-position: 50%;
   background-image: url('../images/solar-system/moon.png');
-  width: 3px;
-  right: -276px;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 50%;
   height: 3px;
   margin-top: -1px;
-  border-radius: 50%;
   position: absolute;
+  right: -276px;
   top: 50%;
+  width: 3px;
+  &:after {
+    content: "The\00a0Moon";
+  }
 }
 
 #earth-marker {
@@ -226,11 +277,11 @@
 
 // ------------------------------------- MARS
 #mars-system {
-  position: absolute;
   left: 149949px;
-  top: 0;
-  bottom: 0;
   width: 5px;
+  &.compare {
+    left: 1000px;
+  }
 }
 
 #mars {
@@ -242,6 +293,9 @@
   position: absolute;
   top: 50%;
   width: 5px;
+  &:after {
+    content: "Mars";
+  }
 }
 
 #mars-marker {
@@ -250,24 +304,26 @@
 
 // ------------------------------------- JUPITER
 #jupiter-system {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 102px;
   left: 552564px;
+  width: 102px;
+  &.compare {
+    left: 1100px;
+  }
 }
 
 #jupiter {
-  background: #D7A56C;
   background-image: url('/images/solar-system/jupiter.png');
-  background-size: 110%;
   background-position: 50%;
+  background-size: 110%;
   border-radius: 50%;
   height: 102px;
-  width: 102px;
-  top: 50%;
   margin-top: -51px;
   position: absolute;
+  top: 50%;
+  width: 102px;
+  &:after {
+    content: "Jupiter";
+  }
 }
 
 #io {
@@ -279,6 +335,9 @@
   right: -302px;
   top: 50%;
   width: 2px;
+  &:after {
+    content: 'Io';
+  }
 }
 
 #europa {
@@ -290,6 +349,9 @@
   margin-top: -1px;
   top: 50%;
   width: 3px;
+  &:after {
+    content: 'Europa';
+  }
 }
 
 #ganymede {
@@ -301,6 +363,9 @@
   right: -769px;
   top: 50%;
   width: 4px;
+  &:after {
+    content: 'Ganymede';
+  }
 }
 
 #callisto {
@@ -311,6 +376,9 @@
   border-radius: 50%;
   position: absolute;
   top: 50%;
+  &:after {
+    content: 'Calisto';
+  }
 }
 
 #jupiter-marker {
@@ -319,11 +387,11 @@
 
 // ------------------------------------- SATURN
 #saturn-system {
-  bottom: 0;
   left: 1073275px;
-  position: absolute;
-  top: 0;
   width: 86px;
+  &.compare {
+    left: 1300px;
+  }
 }
 
 #saturn {
@@ -333,7 +401,7 @@
   top: 50%;
   margin-top: -42px;
   width: 86px;
-  &:after {
+  &:before {
     background-image: url('../images/solar-system/saturn.png');
     background-position: 50%;
     background-size: cover;
@@ -342,6 +410,49 @@
     height: 112px;
     margin-left: -55px;
     width: 220px;
+  }
+  &:after {
+    content: "Saturn";
+    margin-top: -150px;
+  }
+}
+
+#enceladus {
+  background: #D0AF68;
+  width: 1px;
+  right: -172px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  &:after {
+    content: "Enceladus";
+  }
+}
+
+#rhea {
+  background: #D0AF68;
+  width: 1px;
+  right: -235px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  &:after {
+    content: "Rhea";
+  }
+}
+
+#enceladus {
+  background: #D0AF68;
+  width: 1px;
+  right: -172px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  &:after {
+    content: "Enceladus";
   }
 }
 
@@ -354,6 +465,9 @@
   margin-top: -2px;
   position: absolute;
   top: 50%;
+  &:after {
+    content: "Titan";
+  }
 }
 
 #saturn-marker {
@@ -362,21 +476,26 @@
 
 // ------------------------------------- URANUS
 #uranus-system {
-  bottom: 0;
   left: 2126508px;
-  position: absolute;
-  top: 0;
   width: 36px;
+  &.compare {
+    left: 1500px;
+  }
 }
 
 #uranus {
   background: #C9E6E9;
+  background-image: url('../images/solar-system/uranus.png');
+  background-size: cover;
   border-radius: 50%;
   height: 36px;
-  width: 36px;
-  top: 50%;
   margin-top: -18px;
   position: absolute;
+  top: 50%;
+  width: 36px;
+  &:after {
+    content: "Uranus";
+  }
 }
 
 #uranus-marker {
@@ -385,21 +504,26 @@
 
 // ------------------------------------- NEPTUNE
 #neptune-system {
-  bottom: 0;
   left: 3215804px;
-  position: absolute;
-  top: 0;
   width: 35px;
+  &.compare {
+    left: 1600px;
+  }
 }
 
 #neptune {
   background: #4864EE;
+  background-image: url('../images/solar-system/neptune.png');
+  background-size: cover;
   border-radius: 50%;
   height: 35px;
-  width: 35px;
-  top: 50%;
   margin-top: -17px;
   position: absolute;
+  top: 50%;
+  width: 35px;
+  &:after {
+    content: "Neptune";
+  }
 }
 
 #neptune-marker {
@@ -408,21 +532,27 @@
 
 // ------------------------------------- PLUTO
 #pluto-system {
-  bottom: 0;
   left: 4238505px;
-  position: absolute;
-  top: 0;
   width: 2px;
+  &.compare {
+    #pluto {
+      top: 50%;
+    }
+    left: 1700px;
+  }
 }
 
 #pluto {
   background: #DBAE84;
   border-radius: 50%;
   height: 2px;
-  width: 2px;
-  top: 33%;
   margin-top: -1px;
   position: absolute;
+  top: 33%;
+  width: 2px;
+  &:after {
+    content: "Pluto";
+  }
 }
 
 #pluto-marker {

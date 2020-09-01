@@ -35,6 +35,8 @@ text-color: FFFFFF
     <div id="sun">
     </div>
 
+    <button id="foo">Compare Sizes</button>
+
     <div id="distances">
       <span>Mercury 54,241px</span>
       <span>Venus 77,801px</span>
@@ -49,55 +51,64 @@ text-color: FFFFFF
       <span id="voyager-2-distance">Voyager 2 13,016,280px (and counting)</span>
     </div>
 
-    <div id="mercury-system">
-      <section class="planet-label">Mercury</section>
-      <section id="mercury"></section>
+    <div class="planetary-system" id="mercury-system">
+      <section class="planet" id="mercury"></section>
     </div>
 
-    <div id="venus-system">
-      <section class="planet-label">Venus</section>
-      <section id="venus"></section>
+    <div class="planetary-system" id="venus-system">
+      <section class="planet" id="venus"></section>
     </div>
 
-    <div id="earth-system">
-      <section class="planet-label">Earth</section>
-      <span id="earth"></span>
-      <span id="luna"></span>
+    <div class="planetary-system" id="earth-system">
+      <span class="planet" id="earth"></span>
+      <span class="moon" id="luna"></span>
     </div>
 
-    <div id="mars-system">
-      <section class="planet-label">Mars</section>
-      <section id="mars"></section>
+    <div class="planetary-system" id="mars-system">
+      <section class="planet" id="mars"></section>
     </div>
 
-    <div id="jupiter-system">
-      <section class="planet-label">Jupiter</section>
-      <span id="jupiter"></span>
-      <span id="io"></span>
-      <span id="europa"></span>
-      <span id="ganymede"></span>
-      <span id="callisto"></span>
+    <div class="planetary-system" id="jupiter-system">
+      <span class="planet" id="jupiter"></span>
+      <span class="moon" id="io"></span>
+      <span class="moon" id="europa"></span>
+      <span class="moon" id="ganymede"></span>
+      <span class="moon" id="callisto"></span>
     </div>
 
-    <div id="saturn-system">
-      <section class="planet-label">Saturn</section>
-      <span id="saturn"></span>
-      <span id="titan"></span>
+    <div class="planetary-system" id="saturn-system">
+      <span class="planet" id="saturn"></span>
+      <span class="moon" id="enceladus"></span>
+      <span class="moon" id="rhea"></span>
+      <span class="moon" id="titan"></span>
     </div>
 
-    <div id="uranus-system">
-      <section class="planet-label">Uranus</section>
-      <span id="uranus"></span>
+    <div class="planetary-system" id="uranus-system">
+      <span class="planet" id="uranus"></span>
     </div>
 
-    <div id="neptune-system">
-      <section class="planet-label">Neptune</section>
-      <span id="neptune"></span>
+    <div class="planetary-system" id="neptune-system">
+      <span class="planet" id="neptune"></span>
     </div>
 
-    <div id="pluto-system">
-      <section class="planet-label">Pluto</section>
-      <span id="pluto"></span>
+    <div class="planetary-system" id="pluto-system">
+      <span class="planet" id="pluto"></span>
     </div>
   </div>
 </div>
+
+
+<script>
+  $("#foo").click(function(){
+    $(".planetary-system").toggleClass("compare");
+
+
+    $.fn.extend({
+    toggleText: function(a, b){
+        return this.text(this.text() == b ? a : b);
+      }
+    });
+
+    $(this).toggleText('Compare Sizes', 'Show actual distance');
+  });
+</script>
