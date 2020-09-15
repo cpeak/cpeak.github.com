@@ -1,0 +1,140 @@
+#writing {
+  background: #ECE4E0;
+}
+
+// --------------------- PREVIEW GRID
+[class*="blog-previews--"] {
+  list-style: none;
+  padding: 0;
+
+  @include media(900px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 0 10% 5% 10%;
+  }
+}
+
+// --------------------- INDIVIDUAL PREVIEW
+[class*="blog-preview--"] {
+  margin-bottom: 1em;
+  padding: 0;
+
+  h3 {
+    font-size: calc(16px + 1.75vw);
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: calc(16px + .25vw);
+    line-height: 1.5;
+  }
+
+  span {
+    color: #832807;
+    font-family: $font-family-bold;
+    text-transform: capitalize;
+  }
+
+  a {
+    border: 1px solid;
+    color: inherit;
+    display: inline-block;
+    padding: .5em .75em;
+    text-decoration: none;
+    transition: all .2s ease;
+
+    &:hover,
+    &:focus {
+      background: $color-black;
+      border-color: $color-black;
+      box-shadow: 0 0 0 10px $color-highlight;
+      color: white;
+      outline: none;
+    }
+  }
+
+  @include media(900px) {
+    padding: 2em 0;
+  }
+}
+
+// --------------------- FIRST POST
+.blog-previews--large .blog-preview--large:first-child {
+  grid-column: 1 / -1;
+
+  @include media(900px) {
+    padding: 5% 35% 5% 0;
+  }
+}
+
+// --------------------- SHOW MORE / SHOW LESS BUTTON
+
+.blog-grid--show-more-button {
+  margin: 0 0 4em 0;
+  text-align: center;
+
+  button {
+    -webkit-appearance: none;
+    background: none;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: $font-regular;
+    display: inline-block;
+    padding: .75em 1.25em;
+    transition: all .2s ease;
+
+    &:hover,
+    &:focus {
+      background: $color-black;
+      border-color: $color-black;
+      box-shadow: 0 0 0 10px $color-highlight;
+      color: white;
+      outline: none;
+    }
+  }
+}
+
+
+// --------------------- SMALL POSTS
+
+.blog-previews--small {
+  display: none;
+  &.open {
+    display: grid;
+  }
+}
+
+.blog-preview--small {
+  align-items: center;
+  border-bottom: 1px solid #999;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-bottom: 2em;
+  padding: 0 0 1em 0;
+
+  &.open {
+    background: red;
+  }
+
+  h3 {
+    font-size: calc(16px + .6vw);
+    margin: 0 1em 0 0;
+  }
+
+  span {
+    font-family: $font-regular;
+    font-size: .8em;
+  }
+
+  p {
+    display: none !important;
+  }
+
+  a {
+    text-align: center;
+    display: block;
+  }
+}
+
+

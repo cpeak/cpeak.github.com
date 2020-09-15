@@ -1,28 +1,40 @@
-<header class="c-header" style="border-color: #{{ page.text-color }}; background-color: #{{page.background}}; color: #{{page.text-color}}">
-  <span id="moon-icon">
-    {% include moons.html %}
-  </span>
-  <a class="nameplate" href="/"><span>{{ site.title }}</span></a>
-  <nav class="c-header__navigation">
+<header class="c-header" style="border-color: #{{ page.text-color }}; color: #{{page.text-color}}">
+  <a href="/" class="home-anchor">{% include icons/cp.html %}</a>
 
-    <a href="/about" {% if page.url == '/about' %} class="active" {% endif %}>
-      About
-      <span style="background-color: #{{ page.text-color}}"></span>
-    </a>
-    <a href="/blog" {% if page.url == '/blog' %} class="active" {% endif %}>
-      Writing
-      <span style="background-color: #{{ page.text-color}}"></span>
-    </a>
+  <button
+    id="navigation-button"
+    aria-label="Toggle site navigation"
+  >
+    &#9776;
+  </button>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/#writing">Writing</a>
+    <a href="/#about">About</a>
+    <a href="/#visual-design">Visual Design</a>
+    <a href="/#contact">Contact</a>
+
+    <button
+      id="close-nav"
+      aria-label="Close site navigation"
+    >
+      CLOSE
+    </button>
   </nav>
+
 </header>
 
 <script>
-  $(window).on("scroll", function(){
-    if (window.pageYOffset > 0) {
-      $('.c-header').addClass('minimized');
-    }
-    if (window.pageYOffset == 0) {
-      $('.c-header').removeClass('minimized');
-    }
-  })
+  $("#navigation-button").click(function(){
+    $("nav").toggleClass("open");
+  });
+
+  $("nav a").click(function(){
+    $("nav").toggleClass("open");
+  });
+
+  $("#close-nav").click(function(){
+    $("nav").toggleClass("open");
+  });
 </script>

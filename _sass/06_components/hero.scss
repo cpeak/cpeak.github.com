@@ -1,9 +1,20 @@
 .c-hero {
   align-items: center;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
   display: flex;
-  padding: 1em 10%;
+  padding: 10% 1em;
   transition: padding .2s ease;
   width: 100%;
+
+  @include media(900px) {
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-bottom: 20px solid white;
+    padding: 10% 25% 10% 10%;
+  }
+
   @media (prefers-color-scheme: dark) {
     background: $dark-mode;
   }
@@ -11,27 +22,35 @@
 
 .c-hero__bio {
   line-height: 1.5;
-  max-width: 60em;
-  span {
-    color: $color-red;
-    font-weight: bold;
-  }
+
   h1 {
-    font-size: calc(16px + 4vw);
-    line-height: 1.2;
+    font-size: calc(16px + 5vw);
+    line-height: 1;
   }
+
   a {
     color: inherit;
     display: inline-block;
     position: relative;
-    @include highlight-link;
+    &:hover {
+      text-decoration: none;
+    }
   }
+
   p {
     color: inherit;
-    font-size: calc(16px + .8vw);
+    font-size: calc(16px + .6vw);
     line-height: 1.65;
   }
+
   @media (prefers-color-scheme: dark) {
     color: white;
   }
+}
+
+
+.highlighted {
+  background: url("/images/highlight.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
 }

@@ -1,158 +1,115 @@
 .c-header {
-  border-top: 3px solid $color-red;
-  background: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  transition: all .2s ease;
-  position: fixed;
-  top: 0;
-  right: 0;
+  bottom: 0;
   left: 0;
-  z-index: 10;
-  @include media(640px) {
-    padding: 2em;
-  }
-  @media (prefers-color-scheme: dark) {
-    background: $dark-mode;
-    color: white;
-  }
-}
-
-// -------------------------------- MINIMIZED
-.c-header.minimized {
-  padding: .5em 1em;
-  .nameplate {
-    font-size: calc(16px + .7vw);
-  }
-  #moon-icon svg {
-    height: calc(16px + .4vw);
-  }
-  .c-header__navigation a {
-    font-size: 15px;
-  }
-  @include media(640px) {
-    padding: .5em 2em;
-  }
-}
-
-
-// -------------------------------- NAMEPLATE
-.nameplate {
-  color: inherit;
-  font-family: $font-family-bold;
-  font-size: calc(16px + 1.25vw);
-  font-weight: 700;
-  margin-right: auto;
-  text-decoration: none;
-  span {
-    display: inline-block;
-    padding: .25em;
-    transition: all .5s ease;
-  }
-  &:focus {
-    outline: none;
-    span {
-      color: $color-black;
-      background: lighten($color-yellow, 20%);
-      box-shadow: 0 4px 0 0 $color-yellow;
-
-    }
-  }
-}
-
-
-// -------------------------------- MOON ICON
-#moon-icon {
-  margin-right: .25em;
-  &.newMoon .all-moons #new { display: block; }
-  &.waxingCrescent .all-moons #crescent {
-    display: block;
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
-  }
-  &.firstQuarter .all-moons #quarter {
-    display: block;
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
-  }
-
-  &.waxingGibbous .all-moons #gibbous {
-    display: block;
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
-  }
-
-  &.fullMoon .all-moons #full { display: block; }
-
-  &.waningGibbous .all-moons #gibbous {
-    display: block;
-  }
-  &.thirdQuarter .all-moons #quarter {
-    display: block;
-  }
-  &.waningCrescent .all-moons #crescent{
-    display: block;
-  }
-}
-
-.all-moons {
-  g {
-    fill: currentColor;
-    display: none;
-  }
-}
-
-#moon-icon svg {
-  overflow: visible;
-  display: block;
-  fill: currentColor;
-  height: calc(16px + 1vw);
-  transition: all .5s ease;
-  margin: -2px auto 0 auto;
-  width: auto;
-}
-
-// -------------------------------- NAVIGATION
-.c-header__navigation {
+  position: fixed;
+  right: 0;
   text-align: right;
-  width: 60%;
-  a {
+  top: auto;
+  z-index: 10;
+
+  .home-anchor {
     color: inherit;
-    display: inline-block;
-    font-size: calc(16px + .08vw);
+    left: 0;
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    width: 3em;
+
+    svg {
+      fill: currentColor;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 20px $color-highlight;
+    }
+  }
+
+  #navigation-button {
+    -webkit-appearance: none;
+    background: #000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: $font-regular;
+    padding: 1em 1.25em;
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 20px $color-highlight;
+    }
+  }
+
+  @include media(900px) {
+    top: 0;
+    bottom: auto;
+  }
+}
+
+
+header nav {
+  display: none;
+}
+
+header nav.open {
+  background: $color-black;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(16px + 1.5vw);
+  justify-content: center;
+  left: 0;
+  padding: 0 10%;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 100;
+
+  a {
+    background: rgba(255,255,255,0.05);
+    color: white;
+    display: block;
+    font-family: $font-family-bold;
+    margin-bottom: .5em;
+    padding: 1em;
     text-decoration: none;
-    margin: 0 1em;
-    padding: 1em 0;
-    position: relative;
-    transition: all .2s ease;
-    span {
-      background: $color-red;
-      content: "";
-      height: 3px;
-      transition: all .3s  ease;
-      left: 50%;
-      position: absolute;
-      width: 0px;
-      top: 100%;
+    transition: .2s ease;
+
+    &:hover {
+      background: rgba(255,255,255,0.2);
     }
-    &:hover,
-    &.active {
-      span {
-        left: 0%;
-        width: 100%;
-      }
+
+    &:focus {
+      outline: none;
+      background: white;
+      color: black;
+      box-shadow: 0px 0px 0px 10px $color-highlight;
     }
   }
-  @include media(640px) {
-    a {
-      padding: 1em 0;
+
+  #close-nav {
+    -webkit-appearance: none;
+    background: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: $font-regular;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 10px $color-highlight;
     }
-  }
-  @include media(1000px) {
-    a {
-      padding: 1em 0;
+
+    @include media(900px) {
+      top: 0;
+      bottom: auto;
     }
   }
 }

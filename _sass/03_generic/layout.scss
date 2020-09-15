@@ -3,13 +3,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 4em;
-  @include media(640px) {
-    padding-top: 8em;
-  }
 }
 
 body.l-sandbox {
@@ -17,12 +10,4 @@ body.l-sandbox {
 }
 
 main {
-  display: flex;
-  flex: 1;
-}
-
-.l-container {
-  margin: 0 auto;
-  padding: 1em;
-  width: 100%;
 }

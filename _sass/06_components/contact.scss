@@ -1,0 +1,54 @@
+#contact {
+  background: $color-black;
+  color: white;
+  margin-top: 2em;
+
+  @include media(900px) {
+    margin-top: 6em;
+  }
+}
+
+.contact-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 4em 0;
+
+  > span {
+    text-align: center;
+    display: flex;
+  }
+
+  a {
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: inherit;
+    display: flex;
+    font-size: calc(16px + .8vw);
+    text-decoration: none;
+    transition: .2s ease;
+    padding: .5em;
+
+    svg {
+      fill: currentColor;
+      height: 1.5em;
+      width: 1.5em;
+      margin-right: .5em;
+    }
+
+    &:hover,
+    &:focus {
+      background: black;
+      box-shadow: 0 0 0 10px $color-highlight;
+      outline: none;
+    }
+  }
+
+  @include media(900px) {
+    padding: 5% 10% 10% 10%;
+    a {
+      padding: .75em 1em;
+    }
+  }
+}

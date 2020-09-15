@@ -1,10 +1,11 @@
 #bingo {
-  margin: 0 auto;
   background: #B03E28;
-  width: 80%;
-  max-width: 800px;
   border-radius: 20px;
+  margin: 10% auto;
+  max-width: 800px;
   padding: 2em;
+  width: 80%;
+
   h1 {
     color: white;
     display: grid;
@@ -22,6 +23,7 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 0;
+
   p {
     align-items: center;
     border-bottom: 1px solid #B03E28;
@@ -33,6 +35,7 @@
     margin: 0;
     padding: 2em 1em;
     text-align: center;
+
     &:nth-child(13) {
       font-family: $font-family-bold;
       font-size: 2.75em;
@@ -40,12 +43,15 @@
       padding: 0;
       color: #B03E28;
     }
+
     &:nth-child(5n) {
       border-right: 0;
     }
+
     &:nth-child(1n + 21) {
       border-bottom: 0;
     }
+
     &.active {
       background: #B03E28;
       color: white;

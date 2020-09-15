@@ -1,0 +1,33 @@
+<section class="component" id="writing">
+
+  <header class="component__header">
+    <h2><span>Writing</span></h2>
+  </header>
+
+    <ul class="blog-previews--large">
+      {% for post in site.posts | limit: 4 %}
+        <li class="blog-preview--large">{% include _blog-entry.html %}</li>
+      {% endfor %}
+    </ul>
+
+    <br/>
+
+    <section class="blog-grid--show-more-button">
+      <button>Show More</button>
+    </section>
+
+    <ul class="blog-previews--small">
+      {% for post in site.posts | offset: 4 %}
+        <li class="blog-preview--small">{% include _blog-entry.html %}</li>
+      {% endfor %}
+    </ul>
+</section>
+
+<script>
+  $(".blog-grid--show-more-button button").click(function(){
+    $(".blog-previews--small").toggleClass("open");
+    $(this).text(function(i, text){
+          return text === "Show More" ? "Show Less" : "Show More";
+      })
+  });
+</script>

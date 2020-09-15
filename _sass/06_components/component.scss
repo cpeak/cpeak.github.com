@@ -1,0 +1,51 @@
+.component {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+  padding: 1em;
+
+  @include media(900px) {
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-bottom: 20px solid white;
+  }
+}
+
+.component__header {
+  h2 {
+    font-size: calc(16px + 4vw);
+    margin: 1em 0 0 0;
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    span:after {
+      background: $color-highlight;
+      content: "";
+      height: 40%;
+      position: absolute;
+      left: -5%;
+      top: 55%;
+      width: 110%;
+      z-index: -1;
+    }
+
+    @include media(900px) {
+      margin: 2em 0 0 0;
+      padding: 0 10%;
+    }
+  }
+}
+
+.component__content {
+  p {
+    font-size: calc(16px + .5vw);
+    line-height: 1.7;
+  }
+
+  @include media(900px) {
+    padding: 0 33% 5% 10%;
+  }
+}
