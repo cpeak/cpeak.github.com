@@ -4,6 +4,10 @@
   grid-gap: 1em;
   margin-top: 3em;
 
+  img {
+    max-width: 100%;
+  }
+
   @include media(900px) {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
