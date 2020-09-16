@@ -42,8 +42,9 @@
   }
 
   @include media(900px) {
-    top: 0;
     bottom: auto;
+    box-shadow: none;
+    top: 0;
   }
 }
 
