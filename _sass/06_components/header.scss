@@ -1,8 +1,10 @@
 .c-header {
+  box-shadow: 0 -2px 8px 0 #eee;
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
+  background: white;
   text-align: right;
   top: auto;
   z-index: 10;
@@ -11,8 +13,8 @@
     color: inherit;
     left: 0;
     padding: 5px 10px;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 5px;
     width: 3em;
 
     svg {

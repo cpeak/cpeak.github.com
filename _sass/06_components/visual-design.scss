@@ -1,7 +1,10 @@
+#visual-design {
+  padding: 0;
+}
+
 .visual-design-portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
   margin-top: 3em;
 
   img {
@@ -10,6 +13,5 @@
 
   @include media(900px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
   }
 }
