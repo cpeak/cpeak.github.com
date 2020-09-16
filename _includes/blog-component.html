@@ -5,7 +5,7 @@
   </header>
 
     <ul class="blog-previews--large">
-      {% for post in site.posts | limit: 4 %}
+      {% for post in site.posts | limit: 3 %}
         <li class="blog-preview--large">{% include _blog-entry.html %}</li>
       {% endfor %}
     </ul>
@@ -17,7 +17,7 @@
     </section>
 
     <ul class="blog-previews--small">
-      {% for post in site.posts | offset: 4 %}
+      {% for post in site.posts | offset: 3 %}
         <li class="blog-preview--small">{% include _blog-entry.html %}</li>
       {% endfor %}
     </ul>
