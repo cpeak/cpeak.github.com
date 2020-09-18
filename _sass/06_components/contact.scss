@@ -25,7 +25,7 @@
     border-radius: 4px;
     color: inherit;
     display: flex;
-    font-size: calc(16px + .8vw);
+    font-size: calc(16px + .25vw);
     text-decoration: none;
     transition: .2s ease;
     padding: .5em;
@@ -48,7 +48,7 @@
   @include media(900px) {
     padding: 5% 10% 10% 10%;
     a {
-      padding: .75em 1em;
+      padding: .5em .75em;
     }
   }
 }

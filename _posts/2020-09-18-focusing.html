@@ -4,19 +4,22 @@ title: Focus on improving
 date: 2020-09-18
 tags: blog
 tagline: Week 37 &amp; 38
-background: FFFFFF
-text-color: 000000
-published: false
+background: f2fffc
+text-color: 1b4221
 ---
-<h2>This week's win</h2>
-<p>I've been meaning to switch this blogs code repo over from using Master to defaulting to Main for a while now. I did some quick searching and found <a href="https://stevenmortimer.com/5-steps-to-change-github-default-branch-from-master-to-main/" target="blank">a well written and simple blog post</a> by Steven Mortimer. After reading his post, it took me about a minute to make the change and everything worked smoothly. The only gotcha was that when I deleted master, that temporarily disabled Github Pages which is built from master. It didn't automatically pick up the cutover and my site went down about five minutes after the switch. I had a hunch it was still looking for master so I checked the Pages GitHub Pages control panel and sure enough it had actually disabled it. I simply selected Main, clicked save, and my site came back online within about 10 seconds.</p>
+<p>This past week I've just focused on the little things to help improve ... well everything. I've doubled down on using Notion (more on that later), and am just feeling the urge to be more productive. This usually comes after a lull or a bad week (both of which happened the past two weeks). I had a difficult week at work which doesn't happen too often, but then it was followed up with a few sick days. Now I'm feeling I want to catch up and get things in order.</p>
+<h2>This week's win(s)</h2>
+<p>This week I spent a few hours making some improvements to the site. I consolidated everything down to one page to simplify everything, added some visual design &amp; branding examples to hopefully encourage me to get back into that again, and focused on accessibility making sure I had a passing 100 score in <a href="https://developers.google.com/web/tools/lighthouse">Lighhouse</a>.</p>
+<p>I've been meaning to switch this blogs code repo over from using Master to defaulting to Main for a while now. After some searching I found <a href="https://stevenmortimer.com/5-steps-to-change-github-default-branch-from-master-to-main/" target="blank">a well written blog post</a> by Steven Mortimer with clear directions on how to do it. After reading his post it took me about a minute to make the change with zero issues. The only gotcha was that deleting master temporarily disabled GitHub Pages. It didn't automatically pick up the cut-over and my site went down about five minutes. I had a hunch it was still looking for master so I checked the Pages GitHub Pages control panel, and sure enough since master was gone it just turned itself off. I simply selected Main, clicked save, and my site came back online within about 10 seconds. Had I done this at the same time everything would have worked perfectly.</p>
 <figure class="post-image">
   <img src="/images/posts/master-to-main-gotcha.jpg" alt="Github Pages repo selection control panel" />
-  <figcaption>The Github Pages repo selection control panel</figcaption>
+  <figcaption>The GitHub Pages repo selection control panel</figcaption>
 </figure>
+<p>I was also able to simply switch on HTTPS support for the site. So far so good there...</p>
 <h2>This week's challenges</h2>
-<p>Accessibility checks, battling lighthouse.</p>
+<p>This week has been primarily just getting back into a good workflow, staying focused, and trying to be productive. I've really enjoyed using Notion for a while now, and am leaning on it more and more to keep me on task. The simple process of making checklists and then ticking the items as I complete them seems to work well for me.</p>
 <h2>Something I found interesting</h2>
-<p>Something random and fun.</p>
+<p>News is breaking about astronomers finding evidence of the *possibility* of life in the atmosphere of Venus. It's exciting, but certainly not direct evidence of little green men and flying saucers. Take a read of <a href="https://www.syfy.com/syfywire/so-astronomers-may-have-found-evidence-of-life-on-venus" target="blank">Phil Plait's rundown</a> of the new discoveries.</p>
 <h2>Learn with me</h2>
-<p>I usually don't like all these &quot;One Div&quot; or &quot;One Line&quot; articles, but <a href="https://web.dev/one-line-layouts/" target="blank">this One Line Layouts</a> article was pretty handy. The headline is a bit click-baity since you  can't have an entire layout in one line, but I may just be a grouch.</p>
+<p>During my small re-design of the site, I wanted to check the mobile design on my phone but for some reason I couldn't connect to <code>localhost:4000</code> which was odd, I was able to with my other project on port 8000. At first I thought maybe that specific port was closed, so I served up Jekyll on 8000, but that wasn't the case either. After a little head scratching and searching, I came across <a href="https://zarino.co.uk/post/jekyll-local-network/" target="blank">a great blog post</a> by Zarino Zappia explaining that you have to add a <code>--host 0.0.0.0</code> flag to the Jekyll server command to be able to access the site from your local network. Thanks Zarino!</p>
+<p>I usually don't like all these &quot;One Div&quot; or &quot;One Line&quot; articles, but <a href="https://web.dev/one-line-layouts/" target="blank">this One Line Layouts</a> article is a fantastic resource for some wonderful Flexbox and Grid tips. The headline is a bit click-baity since you  can't have an entire layout in one line, but I may just be a grouch. Worth not just a read but a bookmark for quick reference.</p>
