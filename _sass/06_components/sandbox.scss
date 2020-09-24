@@ -1,0 +1,66 @@
+.sandbox {
+  border: 1px solid red;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+
+  .image {
+    border: 1px solid red;
+    max-height: 100%;
+    width: 30%;
+    img {
+      border: 1px solid blue;
+      max-width: 100%;
+    }
+  }
+
+  .content {
+    border: 1px solid red;
+    width: 70%;
+  }
+
+  .button {
+    border: 1px solid blue;
+    width: 100%;
+  }
+
+  a {
+    border: 1px solid red;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: white;
+  }
+
+  @include media(900px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400px;
+
+    .content {
+    }
+
+    .image {
+      order: 3;
+      img {
+        width: 100%;
+        object-position: 100% 100%;
+        object-fit: contain;
+        height: 100%;
+        float: right;
+      }
+    }
+
+    .button {
+      width: 60%;
+      a {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+}
+
