@@ -6,13 +6,14 @@ tags: blog
 tagline: Week 39
 background: ffffff
 text-color: 000000
-published: false
 ---
+<p>It's been a long week, and I'm looking forward to the weekend. Some big challenges ramping up on a new project, but had some wins on my last one.</p>
 <h2>This week's win(s)</h2>
-<p>Getting a bunch of stories over the finish line, possibly ramping up on a new project.</p>
+<p>I was able to finish strong during my last week on an internal project, I got quite a few stories over the finish line, merging in at least 4 or 5 PRs before IPM on Wednesday. Also I got confirmation that I start on a new paid project Monday which is always a relief.</p>
 <h2>This week's challenges</h2>
-<p>Lighthouse and CircleCI</p>
+<p>One major issue this week was CircleCI and Lighthouse - my internal project has them setup to run on each PR, but lately they've been taking between fifteen minutes and a half hour to run. On top of that they don't mirror local runs perfectly - I'd run Lighthouse locally and everything would pass only to have it fail when I push the branch up. To make matters even worse I would get approval on a PR, update it to main, wait a half hour for the tests to pass, then it would need to update again because main was updated during that window. Lots of time wasted there.</p>
+<p>The other challenge was ramping up on my new client project which is a mish-mash of Angular, Storybook, and Twig components, all using Bootstrap. I paired with two 8th Lighters on two separate stories and resolved some issues, but there was a particularly difficult layout we needed to get using Flexbox. Looking at the spec it didn't look too devious, it was a block of content, an image, and a button, but the button would span the whole div on mobile, but then tuck up under the content on larger screens. Using floats or absolute positions weren't going to pass muster, so I started just sketching out the layout on a simple HTML page so I could move fast. Took an hour of tinkering to get it right, then some pairing time to get that structure into the actual project. Sometimes things that look simple are really difficult to implement.</p>
 <h2>Something I found interesting</h2>
-<p>RadioLab translation epsiode</p>
+<p>I'm finally getting back into the habit of listening to the first podcast I fell in love with: Radiolab. My phone served up an episode called <i>Translation</i> where they talked about a few different things, but my favorite is a segment talking about <a href="https://www.wnycstudios.org/podcasts/radiolab/segments/1000-flowers" target="blank">translating a fun little french poem</a>. Poetry definitely is not in my wheelhouse, but it had an interesting structure and pattern to it, almost a Shel Silverstein feel to it. Take 15 minutes and listen to it.</p>
 <h2>Learn with me</h2>
-<p>React useEffect</p>
+<p>One of my final stories for the internal project was to implement a sticky nav, and I wanted the background to fade in as you scroll down. I had to use an event listener for the scroll action and use that to add the background. I'd done this many times in static HTML sites, but never in React. After a few stops and starts I finally started taking a closer look at <a href="https://reactjs.org/docs/hooks-effect.html" target="blank">React Effect Hook</a>. I haven't quite wrapped my head around it, but I'll expand on that later once I get a handle on it.</p>
