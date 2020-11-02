@@ -20,6 +20,14 @@
   margin-bottom: 1em;
   padding: 0;
 
+  &.cycling h3:after {
+    content: url("/images/bent.svg");
+    display: inline-block;
+    margin-left: .25em;
+    opacity: .2;
+    width: 1em;
+  }
+
   h3 {
     font-size: calc(16px + 1.75vw);
     margin-bottom: 0;
