@@ -14,10 +14,6 @@
     border-bottom: 20px solid white;
     padding: 10% 25% 10% 10%;
   }
-
-  @media (prefers-color-scheme: dark) {
-    background: $dark-mode;
-  }
 }
 
 .c-hero__bio {
@@ -41,10 +37,6 @@
     color: inherit;
     font-size: calc(16px + .6vw);
     line-height: 1.65;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
   }
 }
 

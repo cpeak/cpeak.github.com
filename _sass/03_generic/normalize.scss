@@ -37,9 +37,6 @@ body {
   &.text-color--light {
     color: white;
   }
-  @media (prefers-color-scheme: dark) {
-    background: $dark-mode;
-  }
 }
 
 /**

@@ -17,9 +17,4 @@
   @include media(900px) {
     padding: 5%;
   }
-
-  @media (prefers-color-scheme: dark) {
-    background: $dark-mode;
-    color: white;
-  }
 }
