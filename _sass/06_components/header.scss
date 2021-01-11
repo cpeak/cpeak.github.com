@@ -1,10 +1,9 @@
 .c-header {
-  box-shadow: 0 -2px 8px 0 #eee;
+  background: white;
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
-  background: white;
   text-align: right;
   top: auto;
   z-index: 10;
@@ -16,10 +15,6 @@
     position: absolute;
     top: 5px;
     width: 3em;
-
-    svg {
-      fill: currentColor;
-    }
 
     &:focus {
       outline: none;
@@ -46,6 +41,10 @@
     bottom: auto;
     box-shadow: none;
     top: 0;
+    svg {
+      fill: currentColor;
+    }
+
   }
 }
 
