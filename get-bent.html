@@ -1,0 +1,16 @@
+---
+layout: default
+title: Get Bent
+permalink: get-bent/
+---
+
+<div id="get-bent-intro">
+</div>
+
+<section class="component">
+<ul class="blog-previews--large">
+  {% for post in site.tags.cycling %}
+    <li class="blog-preview--large {{ post.tags }}">{% include _blog-entry.html %}</li>
+  {% endfor %}
+</ul>
+</section>
