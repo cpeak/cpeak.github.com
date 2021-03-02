@@ -1,6 +1,6 @@
 .post-container {
-  width: 100%;
   padding: 1em;
+  width: 100%;
   @include media(640px) {
     padding: 2em;
   }
@@ -41,7 +41,7 @@
     }
   }
   p, quote {
-    font-size: calc(16px + .5vw);
+    font-size: calc(16px + .7vw);
     max-width: $content-width;
     line-height: 1.75;
     margin: 0 auto 3vw auto;
