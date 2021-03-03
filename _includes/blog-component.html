@@ -4,11 +4,23 @@
     <h2><span>Writing</span></h2>
   </header>
 
-    <ul class="blog-previews--large">
-      {% for post in site.posts | limit: 3 %}
-        <li class="blog-preview--large {{ post.tags }}">{% include _blog-entry.html %}</li>
-      {% endfor %}
-    </ul>
+    <section class="recent-posts-and-pinned">
+      <section class="recent-posts">
+        <ul>
+          {% for post in site.posts | limit: 2 %}
+            <li class="blog-preview--large {{ post.tags }}">{% include _blog-entry.html %}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="pinned-posts">
+        <h3>Pinned</h3>
+        <ul>
+          {% for post in site.tags.pinned | limit: 4 %}
+            <li class="blog-preview--small">{% include _blog-entry.html %}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </section>
 
     <br/>
 
@@ -16,8 +28,8 @@
       <button>Show More</button>
     </section>
 
-    <ul class="blog-previews--small">
-      {% for post in site.posts | offset: 3 %}
+    <ul class="blog-previews--small" id="collapsed-posts">
+      {% for post in site.posts | offset: 2 %}
         <li class="blog-preview--small">{% include _blog-entry.html %}</li>
       {% endfor %}
     </ul>
@@ -25,7 +37,7 @@
 
 <script>
   $(".blog-grid--show-more-button button").click(function(){
-    $(".blog-previews--small").toggleClass("open");
+    $("#collapsed-posts").toggleClass("open");
     $(this).text(function(i, text){
           return text === "Show More" ? "Show Less" : "Show More";
       })
