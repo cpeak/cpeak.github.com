@@ -13,7 +13,7 @@
         </ul>
       </section>
       <section class="pinned-posts">
-        <h3>Pinned</h3>
+        <h3>Selected posts</h3>
         <ul>
           {% for post in site.tags.pinned | limit: 4 %}
             <li class="blog-preview--small">{% include _blog-entry.html %}</li>
