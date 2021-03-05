@@ -3,19 +3,7 @@
   background-image: url('/images/absurdity.png');
 }
 
-// --------------------- PREVIEW GRID
-[class*="blog-previews--"] {
-  list-style: none;
-  padding: 0;
-
-  @include media(900px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 6em;
-    padding: 0 10% 5% 10%;
-  }
-}
-
+// --------------------- LAYOUT
 .recent-posts-and-pinned {
   ul {
     list-style: none;
@@ -30,19 +18,33 @@
   }
 }
 
+// --------------------- PINNED POSTS
 .pinned-posts {
   h3 {
     font-size: calc(16px + 1.5vw);
-    margin-top: 2.25em;
+    margin-top: 2.45em;
   }
 }
 
-// --------------------- INDIVIDUAL PREVIEW
+// --------------------- PREVIEW GRID
+[class*="blog-previews--"] {
+  list-style: none;
+  padding: 0;
+
+  @include media(900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6em;
+    padding: 0 10% 5% 10%;
+  }
+}
+
+// --------------------- INDIVIDUAL PREVIEWS
 [class*="blog-preview--"] {
   margin-bottom: 1em;
   padding: 0;
 
-  &.cycling h3:after {
+  &[class*="cycling"] h3:after {
     content: url("/images/bent.svg");
     display: inline-block;
     margin-left: .25em;
@@ -102,8 +104,8 @@
     background: none;
     border: 1px solid;
     cursor: pointer;
-    font-family: $font-regular;
     display: inline-block;
+    font-family: $font-regular;
     padding: .75em 1.25em;
     transition: all .2s ease;
 
