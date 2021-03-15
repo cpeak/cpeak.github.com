@@ -87,6 +87,12 @@ figure.post-image {
   }
 }
 
+iframe.post-video {
+  display: block;
+  margin: 0 auto 3em auto;
+  max-width: $content-width;
+}
+
 
 // ------------------------------ POST NAVIGATION
 .post__navigation {
