@@ -1,0 +1,31 @@
+---
+layout: no-footer
+permalink: countdown/
+title: Countdown
+---
+<div id="countdown-container">
+  <h1 id="counter"></h1>
+</div>
+
+
+<script src="/js/countdown.min.js"></script>
+<script>
+
+  var countDownDate = new Date("Jul 15, 2021").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("counter").innerHTML =
+      "<span>" + days + "d</span><span>" + hours + "h</span><span>" + minutes + "m</span><span>" + seconds + "s</span>";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("counter").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>

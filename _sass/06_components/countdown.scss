@@ -1,0 +1,24 @@
+#countdown-container {
+  align-items: center;
+  background: url("/images/cancun.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+#counter {
+  font-size: calc(16px + 8vw);
+  span {
+    color: black;
+    padding: 0 .25em;
+    text-shadow: 0 0 1000px white;
+  }
+}
