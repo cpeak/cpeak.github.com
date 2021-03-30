@@ -4,7 +4,7 @@ permalink: countdown/
 title: Countdown
 ---
 <div id="countdown-container">
-  <h1 id="counter"></h1>
+  <div id="counter"></div>
 </div>
 
 
@@ -21,7 +21,7 @@ title: Countdown
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("counter").innerHTML =
-      "<span>" + days + "d</span><span>" + hours + "h</span><span>" + minutes + "m</span><span>" + seconds + "s</span>";
+      "<section><label>Days</label><span>" + days + "</span></section><section><label>Hours</label><span>" + hours + "</span></section><section><label>Minutes</label><span>" + minutes + "</span></section><section><label>Seconds</label><span>" + seconds + "</span></section>";
 
     if (distance < 0) {
       clearInterval(x);
