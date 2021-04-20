@@ -15,7 +15,7 @@
       <section class="pinned-posts">
         <h3>Selected posts</h3>
         <ul>
-          {% for post in site.tags.pinned | limit: 4 %}
+          {% for post in site.tags.pinned | limit: 5 %}
             <li class="blog-preview--small">{% include _blog-entry.html %}</li>
           {% endfor %}
         </ul>

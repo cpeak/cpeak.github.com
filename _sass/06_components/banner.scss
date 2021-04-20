@@ -1,0 +1,42 @@
+.site-banner {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: .25em;
+    align-items: center;
+  }
+
+  #blm {
+    background: black;
+    color: white;
+    padding-top: .35em;
+  }
+  #tlm {
+    background: #f9f9f9;
+    &:before {
+      content: "";
+      height: 1em;
+      margin-right: .5em;
+      width: 1.5em;
+      background:
+        linear-gradient(0deg,
+        rgba(79,165,194,1) 0%,
+        rgba(79,165,194,1) 20%,
+        rgba(245,135,172,1) 20%,
+        rgba(245,135,172,1) 40%,
+        rgba(249,251,252,1) 40%,
+        rgba(249,251,252,1) 60%,
+        rgba(245,135,172,1) 60%,
+        rgba(245,135,172,1) 80%,
+        rgba(79,165,194,1) 80%,
+        rgba(79,165,194,1) 100%);
+    }
+  }
+}
