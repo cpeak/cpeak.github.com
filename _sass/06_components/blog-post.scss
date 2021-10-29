@@ -63,6 +63,9 @@
 .post-content-container {
   margin: 0 auto 3em auto;
   max-width: $content-width;
+  iframe {
+    border: none;
+  }
 }
 
 figure.post-image {
@@ -85,6 +88,9 @@ figure.post-image {
   figcaption {
     font-size: 0.9em;
     text-align: right;
+  }
+  &.wide {
+    max-width: 2000px;
   }
 }
 
