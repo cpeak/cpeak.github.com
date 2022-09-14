@@ -4,10 +4,10 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
 
-title : Chris Peak
+title : Chris Peak Designs
 author : "Chris Peak"
 name : "Chris"
-email : cpeak66@gmail.com
+email : chrispeak@hey.com
 github : cpeak
 twitter : c_peak
 feedburner :

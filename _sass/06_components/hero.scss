@@ -1,49 +1,41 @@
-.c-hero {
-  align-items: center;
-  border-left: 10px solid white;
-  border-right: 10px solid white;
-  border-bottom: 10px solid white;
-  display: flex;
-  padding: 10% 1em;
-  transition: padding .2s ease;
-  width: 100%;
-
-  @include media(900px) {
-    border-left: 20px solid white;
-    border-right: 20px solid white;
-    border-bottom: 20px solid white;
-    padding: 10% 25% 10% 10%;
-  }
-}
-
-.c-hero__bio {
-  line-height: 1.5;
+#hero {
+  background: white;
+  border: $spacing-large solid white;
+  border-bottom: none;
+  overflow: hidden;
+  padding: 5%;
 
   h1 {
     font-size: calc(16px + 4vw);
-    line-height: 1;
-  }
-
-  a {
-    color: inherit;
-    display: inline-block;
-    position: relative;
-    &:hover {
-      text-decoration: none;
-    }
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    max-width: 700px;
   }
 
   p {
-    color: inherit;
-    font-size: calc(16px + .6vw);
-    line-height: 1.65;
+    font-size: calc(13px + 0.5vw);
+    line-height: 1.75em;
+    max-width: 600px;
   }
-}
 
+  a {
+    white-space: nowrap;
+  }
 
-.highlighted {
-  background: url("/images/highlight.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 95%;
+  span {
+    color: $color-primary;
+    white-space: nowrap;
+  }
+
+  @include media(600px) {
+    padding: 10% 10% 10% 35%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    color: white;
+    border-color: #2b2b2b;
+  }
 }
 

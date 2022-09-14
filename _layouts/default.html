@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   {% include head.html %}
-  <body style="color: #{{ page.text-color }}; background-color: #{{ page.background }};">
+  <body>
     {% include header.html %}
-    <main role="main">
-      {{ content }}
-    </main>
+    {{ content }}
     {% include footer.html %}
   </body>
 </html>

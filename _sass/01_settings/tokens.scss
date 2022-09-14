@@ -1,17 +1,151 @@
-$content-width: 850px;
+// Colors
 
-$color-black:           #2b2b2b;
-$color-cream:           #F8F6F4;
-$color-hairline:        #e5e5e5;
-$color-ice:             #F8FAFC;
-$color-mint:            #9FD8D5;
-$color-off-white:       #F7F8F9;
-$color-red:             #964440;
-$color-slate:           #383C56;
-$color-yellow:          #F7C982;
-$color-yellow--bright:  #FFD23F;
-$color-highlight:       #F8D648;
-$color-green:           #3CBBB1;
+$color-background: #fff;
 
-$font-regular: 'Newsreader', Helvetica, sans-serif;
-$font-family-bold: 'Newsreader', Helvetica, sans-serif;
+$color-primary: #00a5f1;
+$color-primary-dark: darken($color-primary, 30%);
+$color-primary-hover: darken($color-primary, 10%);
+$color-primary-secondary: #9FADD3;
+$color-highlight: #F5DD90;
+$color-secondary: #F5FBFB;
+$color-secondary-hover: darken($color-secondary, 10%);
+$color-black: #3E4045;
+$color-black-hover: darken($color-black, 10%);
+$color-black-secondary: rgba($color-black, .5);
+$color-white: #FFF;
+$color-off-white: darken($color-white, 10%);
+$color-off-white-blue: #E7EFF4;
+$color-accent: #C5C5C5;
+$color-accent-text: darken($color-accent, 10%);
+$color-accent-secondary: #C5C5C5;
+$color-accent-hover: darken($color-accent, 10%);
+$color-header: #F1F1F1;
+$color-success: #58966B;
+$color-success-hover: darken($color-success, 10%);
+$color-alert: #EA4F5E;
+$color-error: #C81905;
+$color-error-hover: darken($color-error, 10%);
+$color-mint: #32BDBA;
+$color-green: #31E08D;
+$color-green-secondary: #32BDBA;
+$color-happy: #F7FF00;
+$color-neutral: #F8D41C;
+$color-orange: #F48F40;
+$color-upset: $color-orange;
+$color-orange-fade: #E8BD76;
+$color-silver: #ABABAB;
+$color-gold: #EABF1D;
+$color-slate: #859bb9;
+
+$color-border-light: #ECECEC;
+$color-border: #E7E7E7;
+$color-border-secondary: #DEE4E4;
+$color-border-dark: #C5C5C5;
+$color-border-input: rgba($color-black, .15);
+$color-border-input-hover: rgba($color-black, .30);
+$color-border-input-active: rgba($color-black, .40);
+
+$color-shadow: #EFEFEF;
+
+// Fonts
+
+$font-family: 'Montserrat', 'Helvetica', Arial, sans-serif;
+$font-family-regular: $font-family;
+$font-family-light: 'Helvetica Light', Arial, sans-serif;
+$font-family-medium: 'Helvetica ', Arial, sans-serif;
+$font-family-bold: 'Montserrat', Arial, sans-serif;
+$font-family-monospace: monospace;
+$font-weight-regular: 400;
+$font-weight-bold: 400;
+
+// Font Size
+
+$font-size-heading-xx-small: .825rem;
+$font-size-heading-x-small: 1rem;
+$font-size-heading-small: 1.25rem;
+$font-size-heading-medium: 1.5rem;
+$font-size-heading-large: 2.25rem;
+$font-size-heading-x-large: 3rem;
+$font-size-heading-xx-large: 4.5rem;
+$font-size-heading-xxx-large: 10rem;
+
+$font-size-text-xx-small: .625rem;
+$font-size-text-x-small: .625rem;
+$font-size-text-small: .7rem;
+$font-size-text-medium: 1rem;
+$font-size-text-large: 1.1rem;
+$font-size-text-x-large: 1.05rem;
+
+// Line Height
+
+$line-height-heading: 1.25;
+$line-height-text: 1.5;
+$line-height-tall: 2.2;
+
+// Kerning
+
+$letter-spacing-narrow: -10px;
+
+// Spacing
+
+$spacing-none: 0;
+$spacing-x-small: .5rem;
+$spacing-xx-small: .25rem;
+$spacing-xxx-small: .125rem;
+$spacing-small: .75rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+$spacing-x-large: 2rem;
+$spacing-xx-large: 3rem;
+$spacing-xxx-large: 4rem;
+
+$height-header: 3rem;
+
+// Borders
+
+$border-width-thin: 1px;
+$border-width-thick: 3px;
+
+// Positioning
+
+$positioning-centered: 0 auto;
+
+// Radius
+
+$border-radius-circle: 50%;
+$border-radius-small: 2px;
+$border-radius-medium: 5px;
+$border-radius-large: 7px;
+$border-radius-x-large: 12px;
+$border-radius-pill: 240px;
+
+$card-border-radius: $border-radius-medium;
+
+// Shadow
+
+$shadow-subtle: 0 2px 4px 0 lighten($color-shadow, 50%);
+$shadow-small: 0 2px 4px 0 $color-shadow;
+$shadow-medium: 0 6px 6px 0 $color-shadow;
+$shadow-large: 0 8px 16px 0 $color-shadow;
+$shadow-big: 0 16px 24px 0 $color-shadow;
+$shadow-deep: 0 24px 32px 0 $color-shadow;
+$shadow-right: 2px 2px 2px 0 darken($color-shadow, 5%);
+
+// Time
+
+$duration-quickly: .1s;
+$duration-immediately: .05s;
+$duration-toast-medium: 9.6s;
+$duration-slowly: .4s;
+$duration-toast-short: 4.8s;
+$duration-paused: 3.2s;
+$duration-promptly: .2s;
+$duration-slide: .25s;
+
+// Z-index
+
+$z-index-spinner: 9000;
+$z-index-default: 1;
+$z-index-toast: 10000;
+$z-index-modal: 8000;
+$z-index-panel: 7000;

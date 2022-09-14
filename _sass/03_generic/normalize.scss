@@ -10,9 +10,7 @@
  */
 
 html {
-  font-size: 16px;
-  font-family: $font-regular;
-  font-weight: 400;
+  box-sizing: border-box;
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -21,7 +19,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /* Sections
@@ -32,11 +30,8 @@ html {
  */
 
 body {
-  color: $color-black;
+  background-color: $color-background;
   margin: 0;
-  &.text-color--light {
-    color: white;
-  }
 }
 
 /**
@@ -60,16 +55,6 @@ section {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: $font-family-bold;
-  letter-spacing: -0.01em;
-  min-height: 0vw;
-}
-
-p {
-  min-height: 0vw;
 }
 
 /* Grouping content
@@ -167,13 +152,6 @@ kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-code {
-  background: white;
-  color: $color-slate;
-  display: inline-block;
-  padding: 0 .5em;
 }
 
 /**

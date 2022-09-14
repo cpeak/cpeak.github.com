@@ -1,0 +1,23 @@
+.component {
+  border: $spacing-large solid white;
+  border-bottom: none;
+  padding: 5%;
+
+  @include media(600px) {
+    padding: 10% 10% 10% 35%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    border-color: #333;
+    color: white;
+  }
+}
+
+.component-title {
+  font-family: $font-family-bold;
+  font-size: calc(16px + 2.5vw);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}

@@ -11,6 +11,8 @@ text-color: 801717
 <p>Sharing work done from your local environment is sometimes a pain, especially at standup, through Zoom, Slack, or some other method. Things don't resolve enough, there's too much lag, and the stakeholder can't click anything or look at it in browser. Thankfully not long ago I learned about a command line tool that can temporarily generate a public URL allowing access to your local development environment. When you share the URL with your client they can view your local server in their browser from anywhere on the internet.</p>
 <p>You can <a href="https://ngrok.com/" class="link-arrow" target="blank">checkout ngrok and install it here</a>.</p>
 <p>Once it's installed, and you have your local server running, simply open another terminal tab and type <code>ngrok http 3000</code> (replace 3000 with whatever port your server is running on). It will generate both a standard and secure address you can share with your client.</p>
-<img src="/images/posts/ngrok.jpg" alt="An example ngrok terminal process" />
+<figure>
+  <figcaption>Example ngrok terminal process</figcaption>
+  <img src="/images/posts/ngrok.jpg" alt="An example ngrok terminal process" />
+</figure>
 <p>This is a great solution for quick demos, questions, or feature testing, however it is temporary. If you close your laptop or shut down your server it will close the link. If you shut down the ngrok process the URL will no longer be valid. I use this for quick demos from branches or in situations where we don't have a staging environment. It's invaluable for quick feedback since the client sees everything right in their browser.</p>
-<img src="/images/posts/ngrok-2.jpg" alt="The client can view your local development environment" />

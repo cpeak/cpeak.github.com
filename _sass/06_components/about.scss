@@ -1,7 +1,15 @@
 #about {
-  background: #d4e0f2;
-  background-image: url('/images/absurdity.png');
-  a {
-    color: inherit;
+  background: #FEFAF3;
+
+  p {
+    font-size: calc(12px + 0.5vw);
+    line-height: 1.5em;
+    max-width: 600px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: #1b1c25;
+    color: white;
   }
 }
+

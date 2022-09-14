@@ -9,37 +9,3 @@
   overflow: scroll;
   position: relative;
 }
-
-
-@mixin highlight-link {
-  z-index: 1;
-  @include media(640px) {
-    text-decoration: none;
-    &:before {
-      background: #eee;
-      content: "";
-      height: .55em;
-      position: absolute;
-      top: .3em;
-      width: 100%;
-      z-index: -1;
-    }
-    &:after {
-      background: $color-yellow;
-      content: "";
-      height: .55em;
-      position: absolute;
-      top: .3em;
-      width: 0;
-      left: 0;
-      transition: width .2s ease;
-      z-index: -1;
-    }
-    &:hover {
-      text-decoration: none;
-      &:after {
-        width: 100%;
-      }
-    }
-  }
-}

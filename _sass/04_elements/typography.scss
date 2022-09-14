@@ -1,0 +1,40 @@
+html {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-text;
+}
+
+h1 {
+  font-family: $font-family-bold;
+  font-size: $font-size-heading-small;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+h2 {
+  font-family: $font-family-bold;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+}
+
+h3 {
+  font-family: $font-family-bold;
+  font-weight: normal;
+}
+
+p {
+  font-size: $font-size-text-medium;
+}
+
+small {
+  color: $color-accent;
+  font-size: $font-size-heading-x-small;
+}
+
+a {
+  color: inherit;
+  font-weight: 600;
+  &:hover {
+    text-decoration: none;
+  }
+}

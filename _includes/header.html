@@ -1,40 +1,5 @@
-<header class="c-header" style="border-color: #{{ page.text-color }}; color: #{{page.text-color}}">
-  <a href="/" class="home-anchor">{% include icons/cp.html %}</a>
-
-  <button
-    id="navigation-button"
-    aria-label="Toggle site navigation"
-  >
-    &#9776;
-  </button>
-
-  <nav>
-    <a href="/">Home</a>
-    <a href="/#writing">Writing</a>
-    <a href="/#about">About</a>
-    <a href="/#visual-design">Visual Design</a>
-    <a href="/#contact">Contact</a>
-
-    <button
-      id="close-nav"
-      aria-label="Close site navigation"
-    >
-      CLOSE
-    </button>
-  </nav>
-
+<header id="site-header">
+  <a class="nav-anchor" href="/">
+    {% include flag.html %}
+  </a>
 </header>
-
-<script>
-  $("#navigation-button").click(function(){
-    $("nav").toggleClass("open");
-  });
-
-  $("nav a").click(function(){
-    $("nav").toggleClass("open");
-  });
-
-  $("#close-nav").click(function(){
-    $("nav").toggleClass("open");
-  });
-</script>

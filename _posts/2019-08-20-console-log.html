@@ -9,10 +9,16 @@ tagline: How's this work?
 ---
 <p>While building out pages in basic HTML + CSS my go to debugging tool is "border: 1px solid red;". I use it so much it's practically a nervous tick. However when I'm working in Javascript or more specifically React <code>console.log()</code> is my hero.</p>
 <p>console.log() outputs anything you need in order to diagnose problems in your dev environment. If you have a simple script tag in an HTML page, you can type <code>console.log('hello world');</code> and when the script executes, the console will output 'hello world'. If you have a variable named x, and you need to know its value at a certain point in your script, <code>console.log(x);</code> has got you covered.</p>
-<img src="/images/posts/console-log-intro.png" alt="A simple example of the console log" />
+<figure>
+  <figcaption>Console.log example</figcaption>
+  <img src="/images/posts/console-log-intro.png" alt="A simple example of the console log" />
+</figure>
 <p>Building a React app means tossing a lot of information (properties, or props) around different components. The problem is you can easily make errors and have no idea where your point of failure is. Because of this, console.log() is my absolute hero for learning React.</p>
 <p>For my genealogy app, I have a component which spits out a table of people, when you click a row it pulls up that person's information in a person card component. In order to do that I have to pass the properties to the card component. While troubleshooting this process, I slipped in a <code>console.log(this.person)</code> into the card render loop. Then when I click a row, the browser will display all the properties of that one person.</p>
-<img src="/images/posts/console-log-react.png" alt="A console log example from a live React app" />
+<figure>
+  <figcaption>Console log while troubleshooting a React genealogy app</figcaption>
+  <img src="/images/posts/console-log-react.png" alt="A console log example from a live React app" />
+</figure>
 <p>Here (ignoring the warnings), I can see that the person <i>object</i> has an array of props like id, firstName, lastName, dateOfBirth, etc.. Why is this helpful? Well first I know the information is being pulled into the person card, and second, its a great reference - I know I can use <code>{person.dateOfBirth}</code> to output that person's DoB in the view. Also I can see that it has a function of closeCard() which handles the close button on the overlay.</p>
 <p>When I am handling button clicks in React console.log() is my first step to make sure things are working. I create the button with the onClick function call. Go to the browser, click the button, and I <i>want</i> it to crash - to make sure its looking for the function that I haven't created yet (if you've heard of red-green-refactor development, this is similar). Then I go and write the function with a simple <code>console.log('button was clicked')</code>. Click the button, the log should tell me that it registered the click, and the function is being fired. Next step is to write the function and hopefully have it do what I need it to.</p>
 <p>console.log() is a simple yet very very powerful diagnostic tool for any development environment. I humbly suggest you play around with it the next time you see some back end code that you don't quite understand. Just remember to take it out before committing it to the repo (which I have done on numerous occasions).</p>

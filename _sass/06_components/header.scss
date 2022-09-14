@@ -1,118 +1,35 @@
-.c-header {
-  background: white;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: right;
-  top: auto;
-  z-index: 10;
-
-  .home-anchor {
-    color: inherit;
-    left: 0;
-    padding: 5px 10px;
-    position: absolute;
-    top: 5px;
-    width: 3em;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0px 0px 0px 20px $color-highlight;
-    }
-  }
-
-  #navigation-button {
-    -webkit-appearance: none;
-    background: #000000;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-family: $font-regular;
-    padding: 1em 1.25em;
-    &:focus {
-      outline: none;
-      box-shadow: 0px 0px 0px 20px $color-highlight;
-    }
-  }
-
-  @include media(900px) {
-    background: none;
-    bottom: auto;
-    box-shadow: none;
-    top: 0;
-    svg {
-      fill: currentColor;
-    }
-
-  }
-}
-
-
-header nav {
-  display: none;
-}
-
-header nav.open {
-  background: $color-black;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(16px + 1.5vw);
-  justify-content: center;
-  left: 0;
-  padding: 0 10%;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  z-index: 100;
+#site-header {
+  padding: $spacing-large;
 
   a {
-    background: rgba(255,255,255,0.05);
-    color: white;
+    transition: all .2s ease;
+    max-width: 6em;
     display: block;
-    font-family: $font-family-bold;
-    margin-bottom: .5em;
-    padding: 1em;
-    text-decoration: none;
-    transition: .2s ease;
+  }
 
-    &:hover {
-      background: rgba(255,255,255,0.2);
-    }
+  svg {
+    fill: #3b3b3b;
+  }
 
-    &:focus {
-      outline: none;
-      background: white;
-      color: black;
-      box-shadow: 0px 0px 0px 10px $color-highlight;
+
+  @include media(600px) {
+    left: $spacing-large;
+    min-width: 12em;
+    position: fixed;
+    top: $spacing-large;
+
+    a {
+      max-width: 8em;
     }
   }
 
-  #close-nav {
-    -webkit-appearance: none;
-    background: black;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-family: $font-regular;
-    font-size: 16px;
-    letter-spacing: 0.025em;
-    padding: 1em;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0px 0px 0px 10px $color-highlight;
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    svg {
+      fill: white;
     }
-
-    @include media(900px) {
-      top: 0;
-      bottom: auto;
+    @include media(600px) {
+      background: none;
     }
   }
 }

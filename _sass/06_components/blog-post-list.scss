@@ -1,0 +1,28 @@
+.blog-post-list--compact {
+  margin-top: $spacing-large;
+
+  .blog-preview {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: $spacing-small 0;
+
+    .date {
+      color: $color-slate;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include media(600px) {
+    .blog-preview {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+}
