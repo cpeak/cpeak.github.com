@@ -4,6 +4,7 @@
   .blog-preview {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-gap: 1em;
     padding: $spacing-small 0;
 
     .date {
