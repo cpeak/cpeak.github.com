@@ -1,0 +1,93 @@
+#resume {
+  background: #F2F5F9;
+}
+
+.resume__block {
+  border-top: 1px dotted #859bb9;
+  margin: $spacing-xx-large 0;
+
+  // -------------------------------------------- GENERIC
+  h3 {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  img {
+    margin: $spacing-xx-large 0;
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .content {
+  }
+
+
+  // -------------------------------------------- CLIENTS
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    color: #666;
+    grid-gap: 3em;
+    margin-top: $spacing-large;
+    .logo {
+      display: block;
+      width: 10em;
+      background: #999;
+      margin: 0 auto 5px auto;
+    }
+  }
+
+  // -------------------------------------------- BREAKPOINTS
+  @include media(600px) {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: $spacing-xx-large;
+  }
+}
+
+
+// -------------------------------------------- EXPERIENCE
+#experience {
+  header {
+    padding-top: $spacing-medium;
+    span {
+      display: block;
+    }
+    .title {
+      font-weight: 600;
+    }
+    .company-and-date {
+      color: #666;
+    }
+  }
+
+  .content {
+    border-left: 4px solid #859bb9;
+    padding-left: $spacing-medium;
+    ul li {
+      font-style: italic;
+      margin-bottom: 0.5em;
+    }
+    &:first-of-type {
+      margin-top: $spacing-large;
+    }
+  }
+
+}
+#skills {
+  .skill-grid {
+    padding-top: $spacing-medium;
+    span {
+      border-radius: 4px;
+      border: 1px solid #666;
+      display: inline-block;
+      font-weight: 600;
+      margin-right: $spacing-small;
+      margin-bottom: $spacing-small;
+      padding: $spacing-xx-small $spacing-small;
+    }
+  }
+}
