@@ -1,0 +1,19 @@
+$var: 3em;
+
+#sandbox {
+  padding: 20%;
+  span {
+    align-items: center;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    height: $var;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding: 4px;
+    width: $var;
+  }
+
+}

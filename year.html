@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /year
+---
+
+<section class="component" id="year">
+  <ul>
+  {% for day in site.data.log %}
+    <li>
+      <h3>{{ day.day }}</h3>
+      <p class="main">{{ day.accomplishment }}</p>
+      <p class="note">{{ day.note }}</p>
+      <span class="stretch {{ day.stretched }}"></span>
+      <span class="read {{ day.read }}"></span>
+    </li>
+  {% endfor %}
+</section>

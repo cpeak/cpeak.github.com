@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /recumbent
+---
+
+<article class="blog-post" id="linear">
+  <header>
+    <h1 class="title">Recumbent Biking</h1>
+  </header>
+  <div class="post-content">
+    <ul class="embedded-post-links">
+      {% for post in site.tags.cycling %}
+        <li class="blog-preview--large {{ post.tags }}"><a href={{ post.url }}>{{ post.title }} <span>{{ post.date | date: "%B %d, %Y" }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="post-content">
+    <figure class="post-image">
+      <figcaption>Linear LWB Recumbent</figcaption>
+      <img src="/images/posts/IMG_9015.jpg" alt="Linear LWB Recumbent" />
+    </figure>
+    <figure class="post-image">
+      <figcaption>Linear SWB Recumbent</figcaption>
+      <img src="/images/posts/IMG_9812.jpg" alt="Linear SWB Recumbent" />
+    </figure>
+  </div>
+
+  <div class="post-gallery">
+      <img src="/images/madison-yorkville/late-afternoon-friday.jpg" alt="Linear LWB Recumbent" />
+      <img src="/images/madison-yorkville/sugar-river-terminus.jpg" alt="Linear LWB Recumbent" />
+      <img src="/images/madison-yorkville/starting.jpg" alt="Linear LWB Recumbent" />
+      <img src="/images/recumbent/riding-peck-farm.jpg" alt="Linear SWB Recumbent riding at Peck Farm Park, Geneva, IL" />
+      <img src="/images/recumbent/montrose-wi.jpg" alt="Montrose Wisconsin" />
+      <img src="/images/recumbent/lsd-southbound.jpg" alt="Linear SWB Recumbent on Lake Shore Drive" />
+      <img src="/images/recumbent/swb-frt.jpg" alt="Linear SWB Recumbent on the Fox River Trail" />
+      <img src="/images/recumbent/lwb-silo.jpg" alt="Linear LWB Recumbent" />
+  </div>
+</article>

@@ -1,0 +1,79 @@
+#year {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-top: 1px solid black;
+    position: relative;
+    padding: 1em;
+    margin-bottom: 3em;
+    margin-left: 2.5em;
+    h3 {
+      background: black;
+      color: white;
+      font-size: 0.9em;
+      font-weight: bold;
+      left: -3em;
+      margin: 0;
+      padding: 0.5em 0;
+      position: absolute;
+      text-align: center;
+      top: -1px;
+      width: 3em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p.main {
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+
+    p.note {
+      color: #666;
+      font-size: 0.9em;
+    }
+    span {
+      background: #eee;
+      height: .7em;
+      position: absolute;
+      top: 2.6em;
+      width: .7em;
+      border-radius: 50%;
+      &.yes {
+        background: #6cc393;
+      }
+    }
+    span.read {
+      left: -1.2em;
+    }
+    span.stretch {
+      left: -2.2em;
+    }
+  }
+
+  @include media(600px) {
+    li {
+      margin-left: 0;
+      margin-right: 25%;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    li {
+      border-color: white;
+      h3 {
+        background: white;
+        color: black;
+      }
+      p.note {
+        color: #eee;
+      }
+    }
+  }
+}

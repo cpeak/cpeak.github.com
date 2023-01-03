@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /resume/
 Disallow: /resume
+Disallow: /year/
+Disallow: /year
 Allow: /
