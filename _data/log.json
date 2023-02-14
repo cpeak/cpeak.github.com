@@ -30,7 +30,280 @@
   {
     "day": 5,
     "accomplishment": "Back to work, new wiper blade",
-    "note": "Getting back into the swing of things at work, lots to learn, I need to get my ass in gear",
+    "note": "Getting back into the swing of things at work, lots to learn, I need to get my ass in gear. No practice today, just wasn't feeling it",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 6,
+    "accomplishment": "Getting aligned at work, FULL yoga session",
+    "note": "Had a busy day at work, getting aligned with what I need to get done next week. More importantly I did the full Yoga For Cyclists routine and I felt a lot of progress. Made it a lot farther in some positions, already feeling progress.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 7,
+    "accomplishment": "Saturday, not much going on",
+    "note": "Took Ali up to Cordelia's, puttered around the house, not too exciting.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 8,
+    "accomplishment": "The Head Shaving Incident, 2023",
+    "note": "Had a great day, made Chili, took a nice nap, hung out with Emma, then Ali decided to get a hold of electric trimmers and make a mess out of the side of her head.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 9,
+    "accomplishment": "Slogging through work, but getting things done",
+    "note": "Trying to get motivated for this project but might be burnt out",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 10,
+    "accomplishment": "Maybe getting sick",
+    "note": "Overall not the best day. Tough time getting Emma to sleep, tired, possibly getting a cold",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 11,
+    "accomplishment": "More motivated at work, great yoga session",
+    "note": "Getting more things done, anxiety going down a little bit day by day. Finished Long Way Home book. Grateful that I am getting back into shape and taking care of this body.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 12,
+    "accomplishment": "First demo with SSI",
+    "note": "Was super anxious about the meeting, went well and I shouldn't have been so worried. Got it done, feeling more comfortable",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 13,
+    "accomplishment": "Taking care of things staying on top of chores",
+    "note": "Back to therapy, actually getting out of the house.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 14,
+    "accomplishment": "Fixed the storm door and date night",
+    "note": "Date night, however Outback smelled like ass. I couldn't stand it",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 15,
+    "accomplishment": "Alison's first D&D session",
+    "note": "Busted out the starter kit and ran K and A through the beginning quest.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 16,
+    "accomplishment": "Finalizing SSI flows, great yoga session",
+    "note": "Really felt good after yoga session. Busted out 'Start Where You Are' book 20 years after buying it.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 17,
+    "accomplishment": "Big SSI UX Meeting, feeling inspired about campaign",
+    "note": "Finally got that first ux interview out of the way. Kendall is excited about D&D which is cool, and I'm putting together campaign ideas",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 18,
+    "accomplishment": "More SSI UX Meetings",
+    "note": "Second UX interview out of the way. Fleshing out campaign ideas",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 19,
+    "accomplishment": "User interviews complete",
+    "note": "Getting into the flow at SSI, but feeling like im falling out of the habit of reading/yoga. Gotta stick with it and get motivated again",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 20,
+    "accomplishment": "Therapy breakthrough",
+    "note": "Relaxing and quiet day at work, no meetings, just a quiet friday. Big day at therapy.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 21,
+    "accomplishment": "Lazy Saturday",
+    "note": "Didn't do much, taking care of Ali, relaxing, playing with Emma for the afternoon. Chill.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 22,
+    "accomplishment": "Sunday D&D",
+    "note": "Weekend fun, continuing the campaign with the girls.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 23,
+    "accomplishment": "Got a raise!",
+    "note": "Busy day working and juggling responsibilities, but got a nice raise this year so its all good",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 24,
+    "accomplishment": "Finished F&O Contracts",
+    "note": "Moving onto Purchase and Sales, getting prepped for next week",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 25,
+    "accomplishment": "Reached out to Mayor Vitak about Rails to Trails advocacy",
+    "note": "Starting to explore how to turn the old St Charles rail line into a bike trail",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 26,
+    "accomplishment": "Kept on workin",
+    "note": "Not much today, busy day with little sleep",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 27,
+    "accomplishment": "Filed the taxes",
+    "note": "Mini conf and filing taxes, busy day but so incredibly tired.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 28,
+    "accomplishment": "Kickstnd on bike, planning in great shape, and a DnD Slap Fest",
+    "note": "Lazy Saturday at home. Im feeling really good about the DC ride planning, things are looking great. Got the kickstand on the SWB. Unfortunately had a rough DnD session that wasn't very enjoyable.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 29,
+    "accomplishment": "Lazy Sunday",
+    "note": "Not much going on today - cleaned up a bit, hung out with the family, chores, had a nice fire and dinner. How Sunday's should be",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 30,
+    "accomplishment": "USB Converter installed on the bike",
+    "note": "Drilled a hole in the beam and snaked the power line through, tucking the brick on the derailleur stem which is a really clever solution if I say so myself",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 31,
+    "accomplishment": "Budget day, progress on Bent page, good yoga session",
+    "note": "Eye still twitching but trying my hardest to fight the doldrums of January. Warmer weather is around the corner but it was -8 this morning so its still going to be a while. Hang in there.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 32,
+    "accomplishment": "Back issues, normal work day",
+    "note": "Trying to get F&O and P&S over the finish line tomorrow. Stick with it",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 33,
+    "accomplishment": "Hard work",
+    "note": "Got F&O and P&S in great shape, but buttonhooked by a last minute cancellation",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 34,
+    "accomplishment": "Easy Friday",
+    "note": "Good therapy session, quiet day at work",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 35,
+    "accomplishment": "Haircut, new Smoke/CO2 detector, decal goo off bike",
+    "note": "Saturday and getting things done. Got some Goo Gone and got the decal residue off the Flyer",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 36,
+    "accomplishment": "Cleaning, chores, just general productivity",
+    "note": "Watched the kids most of the day so it was a slower day",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 37,
+    "accomplishment": "Stakeholder meeting from hell",
+    "note": "Demo went to shit about a minute in, had to throw the script out and just roll with it till the end. Not bad overall, just lots of hard opinions",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 38,
+    "accomplishment": "Mini sick day",
+    "note": "Feeling under the weather - midday nap and just taking it easy",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 39,
+    "accomplishment": "Getting back into it",
+    "note": "Feeling the winter doldrums but fighting through it",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 40,
+    "accomplishment": "Cliking with SSI, lightbulbs in the back yard post",
+    "note": "Client meetings are going well, starting to better understand the business logic of everything, feeling a lot more productive.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 41,
+    "accomplishment": "Great yoga session, boots arrived, weather getting nicer",
+    "note": "Slower day but not a bad one. Work going well, optimistic about spring coming",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 42,
+    "accomplishment": "First bike ride, waiting for nothing",
+    "note": "Took the bike out for the first time with Alison and the dynamo works great. Also had a no-go with the mints",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 43,
+    "accomplishment": "Super Bowl Sunday",
+    "note": "Small party at Jeff & Whitneys, not a bad day.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 44,
+    "accomplishment": "Busy Monday",
+    "note": "Worked, played outside with the girls, took Ali to drum lessons. No time for much else",
     "stretched": "no",
     "read": "yes"
   }
