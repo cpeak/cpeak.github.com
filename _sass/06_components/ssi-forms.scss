@@ -1,0 +1,81 @@
+#ssi-test-forms {
+  font-family: "Open Sans";
+  border: 1px solid red;
+  margin: 2em auto;
+  max-width: 1024px;
+  padding: 0 32px;
+  width: 100%;
+  form {
+    border: 1px dashed #ccc;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    section {
+      max-width: 228px;
+      width: 100%;
+      position: relative;
+      sub {
+        color: #777;
+        line-height: 1em;
+        position: absolute;
+        bottom: -1.5em;
+        left: 1em;
+      }
+      &.wide {
+        max-width: 350px;
+      }
+    }
+  }
+
+  input {
+    border-color: #979A9D !important;
+    height: 56px;
+    padding: 16px;
+    font-family: "Open Sans";
+    color: #2D3134;
+  }
+
+  label {
+    background: white;
+    display: inline-block;
+    font-size: 12px;
+    height: 1em;
+    left: 1em;
+    line-height: 1em;
+    padding: 0 4px;
+    position: absolute;
+    top: -.4em;
+  }
+
+  select {
+    color: #2D3134;
+    font-family: "Open Sans";
+    border-color: #979A9D !important;
+    height: 56px;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  form.compact {
+    input, select {
+      height: 40px;
+      padding: 0 16px;
+    }
+  }
+  form.ultra-compact {
+    font-size: 14px !important;
+    section {
+      max-width: 175px;
+    }
+    section.wide {
+      max-width: 250px;
+    }
+    input, select {
+      font-size: 14px !important;
+      height: 36px;
+      padding: 0 12px;
+    }
+  }
+}

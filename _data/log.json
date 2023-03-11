@@ -306,5 +306,173 @@
     "note": "Worked, played outside with the girls, took Ali to drum lessons. No time for much else",
     "stretched": "no",
     "read": "yes"
+  },
+  {
+    "day": 45,
+    "accomplishment": "First bike ride of the year, also Valentines Day",
+    "note": "Low key day, took the bike out around the neighborhood, dynamo actually works pretty well ",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 46,
+    "accomplishment": "Back into Portal",
+    "note": "Got a ton of work done on Portal for once, feeling better about v2",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 47,
+    "accomplishment": "Establishing myself at SSI",
+    "note": "Finally feeling comfortable at SSI, getting my feet firmly planted on my own without Daisy there",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 48,
+    "accomplishment": "Started Purchase Contracts and got some headway, demonstrated speed to team",
+    "note": "I threw together the Purchase Contracts table real fast and did some live updates on the fly with the team. Also a ton of meetings and a busy day",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 49,
+    "accomplishment": "Saturday Date Night",
+    "note": "Wildfire with the wife",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 50,
+    "accomplishment": "Cleaning and chores",
+    "note": "Getting shit done around the house - re-hung towel hook, toothbrush thingies in bathroom, nice clean bedroom",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 51,
+    "accomplishment": "Bike Ride and work",
+    "note": "Pushed my butt to get on the bike in the afternoon, and had a quick neighborhood ride",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 52,
+    "accomplishment": "Interview, meetings, work, updated Lineage to use single birth array",
+    "note": "Finally blew the dust off Lineage for the first time in a while, updated the birth records to be one array item. Potential designer interview, meetings, work.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 53,
+    "accomplishment": "Bulk of Purchase Contracts form done, flag mount installed",
+    "note": "Put my head down and got a good chunk of work done. Also got the flag mount installed on the bike. Need to order flag now",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 54,
+    "accomplishment": "Problems",
+    "note": "Forms are too long they scream! Customers will hate em! Well shit",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 55,
+    "accomplishment": "Potential solutions",
+    "note": "Came up with the collapsing summary bar form solution, pulled it right out of my ass, then realized its how Portal profiles work. If I solved it in 10 minutes when they've been working on it for months or more I deserve a raise",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 56,
+    "accomplishment": "Lazy Saturday",
+    "note": "Taking care of sick Ali",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 57,
+    "accomplishment": "First long bike ride of the year",
+    "note": "Hung out with Ali in the morning and then took a good long 20 miler in the afternoon. Dynamo added 5% to my phone battery, so full confirmation that it is a net gain on long rides. Great news for the tours",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 58,
+    "accomplishment": "Rainy monday",
+    "note": "Back to work, pressure mounting at SSI, got to read a little bit. Girls still sick",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 59,
+    "accomplishment": "Quiet Tuesday, lite Yoga routine",
+    "note": "Synced up with client designer, working out options for the form issue. Got back into doing Yoga, this time with Pickle apparently, girls slightly better. Feeling good after stretching, keep up with it. Girls still sick but better",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 60,
+    "accomplishment": "Single Parent Day",
+    "note": "Pretty much a PTO day, got some Portal work done but mainly watching the girls since K is sick.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 61,
+    "accomplishment": "Back to work",
+    "note": "Still dealing with sick people in the house but balancing work today. Nothing too exciting.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 62,
+    "accomplishment": "Friday",
+    "note": "Still dealing with sick people in the house but balancing work today. Nothing too exciting.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 63,
+    "accomplishment": "Saturday",
+    "note": "Ali had her Girl Scout cookie booth today, mainly took care of the girls since K was sick",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 64,
+    "accomplishment": "Day out with the girls, Daddy Daughter bike ride",
+    "note": "Park hopping, lunch, and a Sams Club run that was overwhelming",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 65,
+    "accomplishment": "Productive Monday",
+    "note": "Ticking things off the to do list, nothing too exciting",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 65,
+    "accomplishment": "Fiddling with the bike",
+    "note": "Flag mount installed the right way up now, figuring out how to get a rear fender installed",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 66,
+    "accomplishment": "Boring day",
+    "note": "Not much going on, lots of work, so productive there, but still not doing yoga like I should.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 67,
+    "accomplishment": "Productive day",
+    "note": "Got a shit ton done in terms of Purchase Contracts, and the team was happy with the progress during the grooming meeting. I didn't feel prepared but apparently I was",
+    "stretched": "no",
+    "read": "yes"
   }
 ]
