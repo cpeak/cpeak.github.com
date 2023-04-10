@@ -455,24 +455,241 @@
     "read": "yes"
   },
   {
-    "day": 65,
+    "day": 66,
     "accomplishment": "Fiddling with the bike",
     "note": "Flag mount installed the right way up now, figuring out how to get a rear fender installed",
     "stretched": "no",
     "read": "yes"
   },
   {
-    "day": 66,
+    "day": 67,
     "accomplishment": "Boring day",
     "note": "Not much going on, lots of work, so productive there, but still not doing yoga like I should.",
     "stretched": "no",
     "read": "yes"
   },
   {
-    "day": 67,
+    "day": 68,
     "accomplishment": "Productive day",
     "note": "Got a shit ton done in terms of Purchase Contracts, and the team was happy with the progress during the grooming meeting. I didn't feel prepared but apparently I was",
     "stretched": "no",
     "read": "yes"
+  },
+  {
+    "day": 69,
+    "accomplishment": "Treat yo self",
+    "note": "Before therapy I stopped at B&amp;N to pick up a few gaming supplies. Looking forward to continuing the campaign",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 70,
+    "accomplishment": "Another sick day",
+    "note": "Kendall still sick, Emma woke up and immidately was rocking a high fever. Spent the day caring for her, and watching Ali",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 71,
+    "accomplishment": "Emma on the mend, new therapy journal blog",
+    "note": "Emma was up and down, so in between caring for her I setup my new journal blog for Karen. Kendall felt better, enough to take Ali to Into The Woods",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 72,
+    "accomplishment": "Started the DMH repo",
+    "note": "A little rough around the edges, but not bad for one hour during Alisons drum lessons",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 73,
+    "accomplishment": "Not the most productive day",
+    "note": "Tough few weeks are grinding on me, feeling the doldrums, need to get back into gear",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 74,
+    "accomplishment": "Sleep deprivation",
+    "note": "Emma was up from 2-5am so today was a challenge. Despite that I got a lot done, budget is set, ordered the Players Handbook, yay!",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 75,
+    "accomplishment": "Bust your ass Thursday",
+    "note": "Got a shit ton done on the Purchase Contract Minimum Price flow, great meeting with Kendra, and just overall a lot of work.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 76,
+    "accomplishment": "The Wandering Dragon is epic",
+    "note": "Still getting more done but snuck out early to the Wandering Dragon in Plainfield. Awesome, I could easily spend my next paycheck there. Please dont.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 77,
+    "accomplishment": "Game Night",
+    "note": "Bryan, Lindsay, Jeff, and Whitney came over for game night. Lots of fun, had a roaring fire going, and played a bunch of games",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 78,
+    "accomplishment": "Sunday with the family",
+    "note": "Childrens Museum, BDs Mongolian Grill, and then over to The Wandering Dragon. Good times",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 79,
+    "accomplishment": "Lazy Monday",
+    "note": "Getting back into it, kind of a quiet day, but lots of meetings. Nonthing spectactular, took Ali to drums",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 80,
+    "accomplishment": "DMH Breakthrough",
+    "note": "Vastly improved drag n drop, lots of other improvements. Got my rear fender, need to figure out how to adjust the brake mount block.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 81,
+    "accomplishment": "Workin' Wednesday",
+    "note": "Looking for fabricators for the brake mount is tough, workin my butt off for SSI",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 82,
+    "accomplishment": "Thursday",
+    "note": "Busy day, working",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 83,
+    "accomplishment": "Bike Fabrication Friday",
+    "note": "Dropped off the brake bracket for the SWB Libear, hope the pipe guy doesn't mess it up",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 84,
+    "accomplishment": "Zoo Saturday",
+    "note": "Took the girls to the Zoo and then Dad &amp; Mary's",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 85,
+    "accomplishment": "Family Sunday",
+    "note": "Hanging with the family",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 86,
+    "accomplishment": "Monday",
+    "note": "Workin",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 87,
+    "accomplishment": "Tuesday",
+    "note": "Workin before Spring Break",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 88,
+    "accomplishment": "Arboretum with Kendall and Emma",
+    "note": "Alison went to a friends so K and I took Emma to the Arboretum in the flurrying snow. Spring break has started",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 89,
+    "accomplishment": "Park hopping in StC",
+    "note": "Saying goodbye to Rocketship Park, sounds like they're going to bulldoze it soon, the backhoe was there and the fences were getting setup",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 90,
+    "accomplishment": "Zoo day before the storms",
+    "note": "Took the girls to the Zoo with Dad &amp; Mary, then went to therapy in the middle of a tornado watch, not my best move",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 91,
+    "accomplishment": "Lazy Saturday",
+    "note": "Girls had a playdate so K sent me to run some errands and just putz around.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 92,
+    "accomplishment": "Sunday me day",
+    "note": "K took the girls out and I lounged around, then got solo dinner at Crusade. Not bad",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 93,
+    "accomplishment": "Monday",
+    "note": "Back to the grind, having a hard time getting into the swing of working again",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 94,
+    "accomplishment": "Hail storm Tuesday",
+    "note": "Golf ball sized hail, but no damage thankfully",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 95,
+    "accomplishment": "Wednesday",
+    "note": "Finally getting my butt back into gear for work, getting a ton done",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 96,
+    "accomplishment": "Thursday",
+    "note": "Great IPM with Kendra today, just one of those meetings you feel on fire for",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 97,
+    "accomplishment": "Sleepy Friday",
+    "note": "Sleep this week has been awful, apnea results are in but I dont want a fucking cpap. At least the weather is nice.",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 98,
+    "accomplishment": "Easter Saturday",
+    "note": "Easter Saturday at the folks house. I felt like shit. Not the best day",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 99,
+    "accomplishment": "D&amp;D Easter Sunday",
+    "note": "Went to Jeff &amp; Whitney's, relaxed, and played a great D&amp;D mini-session with everyone. Awesome.",
+    "stretched": "no",
+    "read": "no"
   }
 ]
