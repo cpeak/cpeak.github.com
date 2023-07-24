@@ -17,12 +17,14 @@
 #contact-block {
   padding: $spacing-large;
 
-  a {
+  a, p {
     align-items: center;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     text-decoration: none;
     transition: .3s ease;
+    margin-top: 0;
     margin-bottom: $spacing-large;
     padding: $spacing-medium;
 
@@ -46,7 +48,7 @@
     padding: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    a {
+    a, p {
       margin-bottom: 0;
     }
   }
