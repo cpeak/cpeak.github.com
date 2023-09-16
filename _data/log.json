@@ -1769,5 +1769,40 @@
     "note": "Went to the VCF, then hung out with Emma most of the day",
     "stretched": "no",
     "read": "no"
+  },
+  {
+    "day": 253,
+    "accomplishment": "Back to the grind",
+    "note": "Normal Monday, kinda quiet, not too bad.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 254,
+    "accomplishment": "Keynote Tuesday",
+    "note": "Nothing spectacular, worked, took care of things at home. Same old same old",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 255,
+    "accomplishment": "Daddy Daughter Date",
+    "note": "Work, mowed the lawn, then took Alison out for dinner, art class, then ice cream",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 256,
+    "accomplishment": "Typical Thursday",
+    "note": "Nothing too exciting. Worked, power adapter for Pismo almost here.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 257,
+    "accomplishment": "Canceled Therapy, revived the Pismo",
+    "note": "Karen cancelled on me so I took a long bike ride and a little me time, but when I got home I tore down the Pismo and re-soldered the broken DC jack",
+    "stretched": "yes",
+    "read": "yes"
   }
 ]
