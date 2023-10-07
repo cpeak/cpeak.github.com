@@ -1673,135 +1673,282 @@
     "read": "yes"
   },
   {
-    "day": 239,
+    "day": 240,
     "accomplishment": "Quiet Monday",
     "note": "Took Emma to school, got some work done but it was a quiet day thankfully",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 240,
+    "day": 241,
     "accomplishment": "User Testing Tuesday",
     "note": "Pretty basic day, got some work done, user testing, went for a walk, then a walk with Emma.",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 241,
+    "day": 242,
     "accomplishment": "Alison's Birthday",
     "note": "Not a bad day, worked, got a LOT of guitar practice in and am feeling better about that, then celebrated Alison",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 242,
+    "day": 243,
     "accomplishment": "Thursday",
     "note": "Bog standard day, worn out by the end.",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 243,
+    "day": 244,
     "accomplishment": "Normal Friday",
     "note": "Typical Friday, but went to get the bike fixed at Bike Rack, then therapy",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 244,
+    "day": 245,
     "accomplishment": "Mini date night",
     "note": "Alison wellness visit in the morning, dropped the kids off at B&amp;Ls, then mini date night at home. Jersey Mikes and games",
     "stretched": "no",
     "read": "yes"
   },
   {
-    "day": 245,
+    "day": 246,
     "accomplishment": "Bike The Drive",
     "note": "K and I did Bike The Drive in the morning, brunch at Syrup, then went and got the girls",
     "stretched": "yes",
     "read": "no"
   },
   {
-    "day": 246,
+    "day": 247,
     "accomplishment": "Alison Family Party",
     "note": "Setup the pool, played guitar while watching Emma, then had Dad & Mary over for Alison's family party",
     "stretched": "yes",
     "read": "no"
   },
   {
-    "day": 247,
+    "day": 248,
     "accomplishment": "Tuesday back to work",
     "note": "Normal work day, no complaints. Curriculum night at school which wasn't the best",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 248,
+    "day": 249,
     "accomplishment": "Family Therapy Session",
     "note": "Not a bad day overall, got shit done, bike ride at lunch and a good family therapy session with Alison. Then pizza",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 249,
+    "day": 250,
     "accomplishment": "Sleep Deprived Thursday",
     "note": "Up all night with Emma then work. Squeezed in a 10 minute nape before a meeting, but that wasn't enough",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 250,
+    "day": 251,
     "accomplishment": "Not a bad Friday",
     "note": "Guitar practice holding steady, actually turning scales into something more than just notes",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 251,
+    "day": 252,
     "accomplishment": "Alison's Birthday Party",
     "note": "Party at Funway. Good time but my back could barely take it",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 252,
+    "day": 253,
     "accomplishment": "Vintage Computer Fest",
     "note": "Went to the VCF, then hung out with Emma most of the day",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 253,
+    "day": 254,
     "accomplishment": "Back to the grind",
     "note": "Normal Monday, kinda quiet, not too bad.",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 254,
+    "day": 255,
     "accomplishment": "Keynote Tuesday",
     "note": "Nothing spectacular, worked, took care of things at home. Same old same old",
     "stretched": "no",
     "read": "no"
   },
   {
-    "day": 255,
+    "day": 256,
     "accomplishment": "Daddy Daughter Date",
     "note": "Work, mowed the lawn, then took Alison out for dinner, art class, then ice cream",
     "stretched": "no",
     "read": "yes"
   },
   {
-    "day": 256,
+    "day": 257,
     "accomplishment": "Typical Thursday",
     "note": "Nothing too exciting. Worked, power adapter for Pismo almost here.",
     "stretched": "yes",
     "read": "yes"
   },
   {
-    "day": 257,
+    "day": 258,
     "accomplishment": "Canceled Therapy, revived the Pismo",
     "note": "Karen cancelled on me so I took a long bike ride and a little me time, but when I got home I tore down the Pismo and re-soldered the broken DC jack",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 259,
+    "accomplishment": "Rainy Saturday",
+    "note": "Got the new desk mat and its gorgeous. Took Emma out for a little bit then Lindsay and Lilly came over.",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 260,
+    "accomplishment": "Chill Sunday",
+    "note": "More rain, took Emma out for lunch, got a cool new keyboard, lots of Wii time, not a bad day",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 261,
+    "accomplishment": "Workin",
+    "note": "Basic work day, design meeting, debrief from interview on Friday, nothing spectacular",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 262,
+    "accomplishment": "Still workin",
+    "note": "Doubling down on working out and getting my ass in shape. Eating better, stretching, workouts, just overall improvements. Stick to it",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 263,
+    "accomplishment": "Busy busy day",
+    "note": "Taking care of work, then scrambling to get Alison to art lessons with Emma",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 264,
+    "accomplishment": "Earth Wind and Fire Day",
+    "note": "21st day of Septembaaaa. Not the best day. Working, then taking care of the girls most of the night.",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 265,
+    "accomplishment": "Not too bad of a day",
+    "note": "Work, then therapy and a quick quick bike ride around Waubonsee College",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 266,
+    "accomplishment": "Jonamac Orchard Family Day",
+    "note": "Took the family to Jonamac and had a great day overall.",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 267,
+    "accomplishment": "Date night and an amazing trip",
+    "note": "Date night at Wildfire, then popped 20mg and had an amazing trip, waaaay better than the previous times",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 268,
+    "accomplishment": "Back to work",
+    "note": "Got some work done for once, good guitar practice today",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 269,
+    "accomplishment": "Boring Tuesday",
+    "note": "Shit boring day, took care of the girls, at least I had pizza",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 270,
+    "accomplishment": "Rainy Wednesday",
+    "note": "Normal workday, took Alison to art.",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 271,
+    "accomplishment": "Thurdsay",
+    "note": "Work, taking care of the kids. Same shit, different day",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 272,
+    "accomplishment": "Remote Therapy Friday",
+    "note": "Cousins sleepover so I had to do therapy remotely. However I did go and pick up a PS4VR setup",
+    "stretched": "no",
+    "read": "yes"
+  },
+  {
+    "day": 273,
+    "accomplishment": "VR Saturday",
+    "note": "Once the cousins left Alison and I went to dinner and picked up a few games for the PS4. Played Minecraft, then Dokapon with Ali and K. After everyone passed out I tried No Mans Sky which was bananas",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 274,
+    "accomplishment": "Sunday with the girls",
+    "note": "Took Ali and Emma out to the park and Costco, then home for relaxing and dinner.",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 275,
+    "accomplishment": "Anniversary Brunch",
+    "note": "Brunch at Syrup with K, then home for work and watching the girls. K took A to psych eval, then pizza for dinner",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 276,
+    "accomplishment": "Panic about the budget",
+    "note": "K freaked out about the budget, so that was fun. After that everything was fine. Normal work day",
+    "stretched": "yes",
+    "read": "no"
+  },
+  {
+    "day": 277,
+    "accomplishment": "Nice walk to start the day, then work, and Squadrons VR",
+    "note": "Had a nice walk with Kendall, then work. Stayed up way too late playing Squadrons VR which was bananas",
+    "stretched": "no",
+    "read": "no"
+  },
+  {
+    "day": 278,
+    "accomplishment": "Normal Thursday",
+    "note": "Nothing out of the ordinary, work, took care of the girls while K was at therapy. Lots of guitar practice",
+    "stretched": "yes",
+    "read": "yes"
+  },
+  {
+    "day": 279,
+    "accomplishment": "Dropped K off",
+    "note": "Dropped K off for her weekend, took care of the girls. Park, shopping, chilling. Got the Pismo loaded up with OS 9",
     "stretched": "yes",
     "read": "yes"
   }
