@@ -1,3 +1,6 @@
 #cycling {
   background: #d6ece8;
+  @media (prefers-color-scheme: dark) {
+    background: #27403b;
+  }
 }

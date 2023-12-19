@@ -1,0 +1,36 @@
+#journal {
+  padding: 10% 5%;
+  .day {
+    border-bottom: 1px dotted rgba(0,0,0,0.5);
+    max-width: 800px;
+    margin: 0 auto 4em auto;
+    padding-bottom: 2em;
+  }
+
+  h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(14px + 1vw);
+  }
+  .question {
+    font-style: italic;
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.5);
+  }
+  .additional {
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.7);
+  }
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    color: white;
+    .question {
+      color: rgba(255,255,255,0.7);
+    }
+    .additional {
+      color: white;
+    }
+  }
+}

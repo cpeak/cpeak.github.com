@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: /journal24
+---
+
+<section class="" id="journal">
+  {% for day in site.data.journal %}
+    <section class="day">
+      <h3 class="">{{ day.day }}</h3>
+      <p class="question">{{ day.question}}</p>
+      <p class="answer">{{ day.answer }}</p>
+      <p class="additional">{{ day.additional }}</p>
+    </section>
+  {% endfor %}
+</section>
