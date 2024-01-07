@@ -1,10 +1,12 @@
 #journal {
   padding: 10% 5%;
   .day {
+    background: white;
     border-bottom: 1px dotted rgba(0,0,0,0.5);
     max-width: 800px;
     margin: 0 auto 4em auto;
     padding-bottom: 2em;
+    z-index: 1;
   }
 
   h3 {
@@ -23,9 +25,19 @@
     font-size: 0.9em;
     color: rgba(0,0,0,0.7);
   }
+
+  @include media(1000px) {
+    padding: 10% 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
   @media (prefers-color-scheme: dark) {
     background: #2b2b2b;
     color: white;
+    .day {
+      background: #2b2b2b;
+    }
     .question {
       color: rgba(255,255,255,0.7);
     }

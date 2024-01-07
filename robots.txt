@@ -3,4 +3,8 @@ Disallow: /resume/
 Disallow: /resume
 Disallow: /year/
 Disallow: /year
+Disallow: /family
+Disallow: /family/
+Disallow: /journal24
+Disallow: /journal24/
 Allow: /
