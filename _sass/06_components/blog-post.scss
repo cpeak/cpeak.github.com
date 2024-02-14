@@ -21,15 +21,16 @@ article.blog-post {
     }
 
     p {
+      font-size: 1.2em;
       color: $color-primary;
-      font-family: $font-family-bold;
+      font-weight: 300;
       margin: 0;
     }
   }
 
   // ----------------------------------------- CONTENT
   .post-content {
-    color: #364154;
+    color: rgb(51,51,51);
     margin: 0 auto;
     max-width: $post-width;
     width: 100%;
@@ -39,13 +40,14 @@ article.blog-post {
     }
 
     p {
-      font-size: 1em;
-      line-height: 1.75em;
-      margin-bottom: 3em;
+      color: #555;
+      letter-spacing: 0em;
+      line-height: 2.25em;
+      margin-bottom: 2.5em;
     }
 
     figure {
-      margin: 0 auto 4em auto;
+      margin: 0 auto 2.5em auto;
       display: flex;
       flex-direction: column-reverse;
       img {
