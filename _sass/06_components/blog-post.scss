@@ -64,6 +64,12 @@ article.blog-post {
       margin: 0 auto 4em auto;
     }
 
+    .blog-preview p {
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+
     ul.embedded-post-links {
       list-style: none;
       margin: 0 0 3em 0;
@@ -147,6 +153,10 @@ article.blog-post {
     .post-gallery {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .blog-preview a {
+      margin-left: 20%;
+    }
   }
 
   @include media(900px) {
@@ -162,6 +172,9 @@ article.blog-post {
     color: white;
     border-color: #333;
     .post-content {
+      color: white;
+    }
+    .post-content p {
       color: white;
     }
   }
