@@ -1,0 +1,55 @@
+#blog__latest {
+  background: #f6faff;
+  .latest-posts {
+    display: grid;
+    gap: 1em;
+    margin-bottom: 2em;
+    .post-link {
+      text-decoration: none;
+      transition: all .5s ease;
+      padding: 1em;
+      img {
+        aspect-ratio: 24 / 9;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 0.5em;
+        width: 100%;
+      }
+      .title {
+        line-height: 1.2em;
+        margin: 0;
+      }
+      .date {
+        margin: 0;
+        color: #EF8980;
+        font-weight: 400;
+      }
+    }
+    .post-link:hover {
+      background: white;
+      box-shadow: -8px 0px 0px 0px #ef8980;
+    }
+  }
+  .small {
+    gap: 1em;
+    row-gap: 0;
+  }
+
+  @include media(1000px) {
+    .latest-posts {
+      grid-template-columns: repeat(3, 1fr);
+      .post-link img {
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    .latest-posts {
+      .post-link:hover {
+        background: black;
+      }
+    }
+  }
+}

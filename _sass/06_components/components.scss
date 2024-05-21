@@ -3,10 +3,6 @@
   border-bottom: none;
   padding: 5%;
 
-  h2 {
-    margin-bottom: $spacing-large;
-  }
-
   figure {
     max-width: 600px;
     margin: 0 0 $spacing-large 0;
@@ -54,4 +50,24 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0;
+  margin-bottom: $spacing-large;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+.component__new {
+  border: $spacing-large solid white;
+  border-bottom: none;
+  padding: 5%;
+  @include media(600px) {
+    padding: 10% 10% 10% 15%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+    border-color: #333;
+    color: white;
+  }
 }

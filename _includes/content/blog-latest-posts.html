@@ -1,0 +1,21 @@
+<section class="component__new" id="blog__latest">
+  <h2 class="component-title">Writing</h2>
+  <section class="latest-posts">
+    {% for post in site.posts | limit: 3 %}
+    <a href="{{ post.url }}" class="post-link">
+      <img src={{ post.thumbnail }} alt="hello" />
+      <h4 class="title">{{ post.title }}</h4>
+      <p class="date">{{ post.date | date_to_long_string }}</p>
+    </a>
+    {% endfor %}
+  </section>
+
+  <section class="latest-posts small">
+    {% for post in site.posts | offset: 3 %}
+      <a href="{{ post.url }}" class="post-link">
+        <h4 class="title">{{ post.title }}</h4>
+        <p class="date">{{ post.date | date_to_long_string }}</p>
+      </a>
+    {% endfor %}
+  </section>
+</section>
