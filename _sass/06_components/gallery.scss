@@ -1,0 +1,24 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @include media(1000px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    margin-bottom: 2em;
+  }
+
+
+  &.square {
+    img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+  }
+}

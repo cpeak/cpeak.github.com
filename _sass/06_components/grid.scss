@@ -1,0 +1,10 @@
+[class*="grid__"] {
+  display: grid;
+  gap: 1em;
+  @include media(1000px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+}
+

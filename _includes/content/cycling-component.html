@@ -1,13 +1,34 @@
-<section class="component" id="cycling">
+<section class="component__new" id="cycling">
   <h2 class="component-title">Cycling</h2>
-  <section class="component-content">
-    <figure>
-      <figcaption>Lienar SWB Recumbent</figcaption>
-      <img src="/images/recumbent/swb-sunset.jpg" alt="Linear SWB Recumbent Bicycle" />
-    </figure>
-    <figure>
-      <figcaption>My latest recumbent adventures</figcaption>
+
+  <section class="component-content gallery square">
+    <img src="/images/recumbent/riding-peck-farm.jpg" alt="" />
+    <img src="/images/recumbent/swb-fall.jpg" alt="" />
+    <img src="/images/recumbent/swb-batavia.jpg" alt="" />
+    <img src="/images/recumbent/swb-sunset.jpg" alt="" />
+    <img src="/images/recumbent/swb-peck-farm.jpg" alt="" />
+    <img src="/images/recumbent/swb-frt.jpg" alt="" />
+    <img src="/images/recumbent/montrose-wi.jpg" alt="" />
+    <img src="/images/recumbent/lwb-silo.jpg" alt="" />
+    <img src="/images/recumbent/swb-bike-the-drive.jpg" alt="" />
+  </section>
+
+  <section class="grid__two-by-two">
+    <section>
+      <h3>Strava Rides</h3>
       <iframe height='454' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/70878490/latest-rides/6e756ed1083639100e52c171ba8e346e2e1bf5fc'></iframe>
-    </figure>
+    </section>
+
+    <section>
+      <h3>Cycling Blog Posts</h3>
+      <section class="latest-posts small vertical-only">
+        {% for post in site.tags.cycling %}
+          <a href="{{ post.url }}" class="post-link">
+            <h4 class="title">{{ post.title }}</h4>
+            <p class="date">{{ post.date | date_to_long_string }}</p>
+          </a>
+        {% endfor %}
+      </section>
+    </section>
   </section>
 </section>
