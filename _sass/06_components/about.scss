@@ -1,10 +1,81 @@
 #about {
   background: #FEFAF3;
 
-  p {
-    font-size: calc(12px + 0.5vw);
-    line-height: 2em;
-    max-width: 600px;
+  .component-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+
+    main {
+      line-height: 2em;
+    }
+
+    section.sidebar {
+      display: flex;
+      gap: 1em;
+      flex-direction: row;
+      width: 100%;
+
+      section.photo {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        img {
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+          max-width: 175px;
+          width: 100%;
+        }
+      }
+
+
+      section.socials {
+        max-width: 230px;
+        width: 100%;
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          transition: .3s ease;
+          margin: 0 auto 1em auto;
+          svg {
+            height: 1.5em;
+            margin-right: 0.75em;
+            transition: .3s ease;
+            width: 1.5em;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        @media (prefers-color-scheme: dark) {
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+
+  @include media(1000px) {
+    .component-content {
+      flex-direction: row;
+      main {
+        padding-right: 5%;
+        width: 70%;
+      }
+      section.sidebar {
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        section.photo {
+          width: 75%;
+        }
+      }
+    }
   }
 
   @media (prefers-color-scheme: dark) {
