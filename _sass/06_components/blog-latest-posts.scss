@@ -1,5 +1,8 @@
 #blog__latest {
   background: #f6faff;
+  @media (prefers-color-scheme: dark) {
+    background: #2b2b2b;
+  }
 }
 
 .latest-posts {
@@ -51,10 +54,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  background: #2b2b2b;
   .latest-posts {
     .post-link:hover {
       background: black;
     }
   }
 }
+
