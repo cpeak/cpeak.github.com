@@ -5,6 +5,7 @@
   }
 }
 
+// ------------------------------------------------- LATEST POSTS
 .latest-posts {
   display: grid;
   gap: 1em;
@@ -61,3 +62,49 @@
   }
 }
 
+// ------------------------------------------------- COMPACT LISTING
+.blog-post-list--compact {
+  margin-top: $spacing-large;
+
+  .blog-preview {
+    .year {
+      font-weight: 600;
+      font-size: 1.25em;
+    }
+
+    a {
+      box-shadow:  0 1px 0 0 rgba(0,0,0,0.2);
+      display: inline-block;
+      font-weight: 400;
+      margin: 0 .5em 1.25em 0;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover {
+        box-shadow:  0 1px 0 0 rgba(0,0,0,1);
+      }
+    }
+
+    .date {
+      color: $color-slate;
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+
+  @include media(600px) {
+    .blog-preview {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .blog-preview {
+      a {
+        box-shadow:  0 1px 0 0 rgba(255,255,255,0.5);
+        &:hover {
+          box-shadow:  0 1px 0 0 rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+}

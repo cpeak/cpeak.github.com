@@ -7,16 +7,16 @@
 
   h1 {
     font-size: calc(16px + 4vw);
-    line-height: 1em;
+    line-height: calc(16px + 4vw);
     font-weight: 700;
-    max-width: 700px;
+    max-width: 800px;
   }
 
   p {
     font-size: calc(13px + 0.5vw);
     line-height: 2em;
     color: #555;
-    max-width: 600px;
+    max-width: 800px;
   }
 
   a {
@@ -29,7 +29,7 @@
   }
 
   @include media(600px) {
-    padding: 10% 10% 10% 35%;
+    padding: 5% 10% 10% 30%;
   }
 
   @media (prefers-color-scheme: dark) {
