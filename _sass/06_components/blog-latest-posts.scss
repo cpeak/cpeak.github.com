@@ -1,5 +1,5 @@
 #blog__latest {
-  background: #f6faff;
+  background: #EBF7FF;
   @media (prefers-color-scheme: dark) {
     background: #2b2b2b;
   }
@@ -35,10 +35,11 @@
     background: white;
     box-shadow: -8px 0px 0px 0px #ef8980;
   }
-}
-.small {
-  gap: 1em;
-  row-gap: 0;
+  .post-link:nth-child(n+7) {
+    img {
+      display: none;
+    }
+  }
 }
 
 @include media(1000px) {

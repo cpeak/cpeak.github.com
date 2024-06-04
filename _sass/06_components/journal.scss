@@ -17,13 +17,11 @@
     font-size: calc(14px + 1vw);
   }
   .question {
+    font-weight: bold;
     font-style: italic;
-    font-size: 0.9em;
-    color: rgba(0,0,0,0.5);
+    color: #EF8980;
   }
   .additional {
-    font-size: 0.9em;
-    color: rgba(0,0,0,0.7);
   }
 
   @include media(1000px) {

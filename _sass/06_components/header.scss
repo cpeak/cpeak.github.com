@@ -5,6 +5,10 @@
     transition: all .2s ease;
     max-width: 6em;
     display: block;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   svg {
