@@ -889,50 +889,254 @@
   },
   {
     "day": "May 28th",
-    "question": "Who was the last person you apologized to?",
-    "answer": "Kendall, there's really nobody else I talk to other than the girls.",
+    "question": "Favorite magazine or publication?",
+    "answer": "Oh man, this question book is old. Magazines? I dont think I've read a magazine in a decade",
     "additional": "Emma's birthday! Work, waiting to hear back about the Jeep loan - got it! Now just waiting to finalize it and get everything together. Hopefully will pick up tomorrow"
   },
   {
     "day": "May 29th",
-    "question": "",
-    "answer": "",
+    "question": "Who was the last person you apologized to?",
+    "answer": "Kendall, there's really nobody else I talk to other than the girls.",
     "additional": "Semi-normal Wednesday, although K is super pissed the Jeep sale is taking this long. Dealt with all that, and somehow got some work done. Feeling the crunch of getting ready for Emmas party on Saturday."
   },
   {
     "day": "May 30th",
-    "question": "",
-    "answer": "",
+    "question": "Organized or chaotic?",
+    "answer": "I want to be organized so bad, but I married chaotic",
     "additional": "Thursday working, had a good IPM actually, then chores"
   },
   {
     "day": "May 31st",
-    "question": "",
-    "answer": "",
+    "question": "What is your favorite thing about summer?",
+    "answer": "Swinging in the hammock",
     "additional": "Friday just work and prepping for the birthday party tomorrow. High stress."
   },
   {
     "day": "June 1st",
-    "question": "",
-    "answer": "",
+    "question": "Last concert you attended?",
+    "answer": "Hmm, probably the Zelda Orchestra concert with Kendall.",
     "additional": "Emmas birthday party but it rained all day - so just a shit ton of running around then hosting absolute chaos for hours, then collapse. At least the house is clean."
   },
   {
     "day": "June 2nd",
-    "question": "",
-    "answer": "",
+    "question": "Best date you've been on so far this year?",
+    "answer": "When Alison and Emma slept over at Dads, K and I went out. Thats all I'll say.",
     "additional": "EF setup test run with K and Danielle. Setup the cars, canopies, and all the camping gear in front, then broke it all down. Feeling pretty good about everything."
   },
   {
     "day": "June 3rd",
-    "question": "",
-    "answer": "",
+    "question": "Favorite person to confide in?",
+    "answer": "Kendall, if not, this marriage would be in trouble.",
     "additional": "Picking up the Jeep day! Hooray! Took the top and windows off before even getting the keys, the salesman was surprised. Drove home with Emma. THEN went to pick up a loveseat from Bryan's which meant a ton more driving. By the end of the day I was worn out"
   },
   {
     "day": "June 4th",
+    "question": "Biggest fashion mistake you've made recently?",
+    "answer": "I still dress like I'm in high school, so probably ALL of it.",
+    "additional": "Kendall took Emma to Kohls with the Jeep, I went for my annual doctors appointment, took Ali to DQ, then the normal bedtime routine."
+  },
+  {
+    "day": "June 5th",
+    "question": "It feels good when...",
+    "answer": "Things to according to plan",
+    "additional": "Normal work day, Kendall took Alison to therapy and I took Emma to TKD in the Jeep. Home for bedtime routine, ran to get K some tacos, then had a long conversation before bed."
+  },
+  {
+    "day": "June 6th",
+    "question": "Do you think everything happens for a reason?",
+    "answer": "No, if it did I'd like to speak to whoever is in charge.",
+    "additional": "Not a bad work day, got shit done, worked on the Jeep a little bit, then took Emma to get Alison. Kendall went to therapy and Bryans so it was a quiet evening."
+  },
+  {
+    "day": "June 7th",
+    "question": "What was the last rumor spread about you?",
+    "answer": "I have no fucking idea. I only talk to Kendall and the girls, so if someone's talking shit I haven't heard it.",
+    "additional": "FINALLY got the passenger door off the Jeep. K took the girls to Santas Village and I had a quiet day at home before heading to therapy. Long drive around St Charles and just taking it easy. Got ducked by Sunni on the way home, then dinner and Minecraft before passing out."
+  },
+  {
+    "day": "June 8th",
+    "question": "Who was your last argument or fight with and was it stupid?",
+    "answer": "Kendall, and probably yes. I guarantee it was some miscommunication, mostly on my part, and I got upset instead of talking about it.",
+    "additional": "Rainy Saturday. Took the girls to the library then home for playing and hanging out. Pretty quiet day."
+  },
+  {
+    "day": "June 9th",
+    "question": "My dream vacation looks like...",
+    "answer": "Well, I have a two week bike ride on the calendar for September, but I'd say the odds are pretty good that never happens.",
+    "additional": "Setup the new tent in the driveway, did some chores, then K took the girls to the park. Went and picked up Alison, ran to DQ, then home for a quiet evening."
+  },
+  {
+    "day": "June 10th",
+    "question": "How do you feel about meeting people online.",
+    "answer": "Its alright, if you mean dating apps and whatever, but I'm just not a fan of meeting people period.",
+    "additional": "Back to work. Emma and Kendall were both sick so I was running the house all day on top of working. I was able to sync my PS4 controller to the Macbook so I played Warrior of the Eternal Sun last night for, well, way too long"
+  },
+  {
+    "day": "June 11th",
+    "question": "The weirdest thing that happened to me lately was...",
+    "answer": "Not really sure, I'm stuck in such a routine that nothing out of the ordinary happens, or if it did I sure don't remember.",
+    "additional": "Emma and K still sick. Took care of the house and worked. Took Alison to art, then home for dinner. Snuck over to the library with her while K put Emma down."
+  },
+  {
+    "day": "June 12th",
+    "question": "What do you like to do alone?",
+    "answer": "Most things. Bike riding, reading, relaxing, sitting in the hammock. Other things lol",
+    "additional": "Still holding down the fort - a plague has descended upon the house"
+  },
+  {
+    "day": "June 13th",
+    "question": "What do you fantasize about?",
+    "answer": "Nope, not answering that here.",
+    "additional": "Kendall did therapy remote since she was feeling ill, I took care of everything else."
+  },
+  {
+    "day": "June 14th",
+    "question": "Most interesting fact you've heard recently.",
+    "answer": "Hmm, not sure. Probably something trivial on Threads or something stupid like that.",
+    "additional": "Found a wrecked TJ in Rockford, so I drove out there, picked up a questionable center console for cheap, then drove to therapy, and then home. So much drving in one day. Fun though"
+  },
+  {
+    "day": "June 15th",
+    "question": "What is the latest thing you've learned about yourself?",
+    "answer": "I don't like strangers and small talk, and I definitely don't like them when they are drunk or high.",
+    "additional": "Lazy saturday"
+  },
+  {
+    "day": "June 16th",
+    "question": "I can't imagine my life without...",
+    "answer": "Kendall and the girls, my health, the house. I've got it pretty good.",
+    "additional": "Fathers day - ribs on the grill, drive in the Jeep and ice cream, then home for dinner and bed "
+  },
+  {
+    "day": "June 17th",
+    "question": "Who would you take on a cruise around the world?",
+    "answer": "Kendall. Or just myself would be the other choice.",
+    "additional": "Back to work, tried working upstairs mostly. Not a bad day, getting things packed for Forest."
+  },
+  {
+    "day": "June 18th",
+    "question": "I'm lost when...",
+    "answer": "I get very upset and have arguments with Kendall. I just can't think straight, I need time and space.",
+    "additional": "Last day of work before Forest, just getting stuff done."
+  },
+  {
+    "day": "June 19th",
+    "question": "What makes you feel sad?",
+    "answer": "Not getting any time for myself, not taking care of myself",
+    "additional": "Juneteenth, packed the car, dropped the girls off with Dad, then back home. Danielle, K, and I piled into the cars and hit the road about 7"
+  },
+  {
+    "day": "June 20th",
+    "question": "Describe your last awkward moment...",
+    "answer": "Oh I have a lot of those, but I don't recall any major ones. Probably in line in the Dream Emporium, I just was not feeling like small talking at all.",
+    "additional": "All night in line at security and waiting to get to camp. A tiny bit of rest then met with everyone before crashing again. Took a trip by myself and walked around the grounds after everyone else passed out."
+  },
+  {
+    "day": "June 21st",
+    "question": "I know its going to be a good day when...",
+    "answer": "I have free space on the calendar or K takes the girls out for the day. I can get some things done and take some me time.",
+    "additional": "Recovery day for me. I went into the festival with Kendall and Danielle but was feeling like shit, I think I made it an hour or two. Went back to camp to rest."
+  },
+  {
+    "day": "June 22nd",
+    "question": "Who do you want to be trapped on a desert island with?",
+    "answer": "I'd rather not be trapped, but if I had to, Kendall, or maybe a practical answer would be Bear Grylls or something like that.",
+    "additional": "Rain rain rain, all freaking day. Spent it at camp, still feeling like crap, trying to rest."
+  },
+  {
+    "day": "June 23rd",
+    "question": "What is your favorite trend recently?",
+    "answer": "I don't follow trends too much but maybe the de-stigmatizing of therapy. Everyone should go!",
+    "additional": "Feeling a little better we walked around for a while, then back to camp for an early dinner. Met up with everyone at 8 and was doing okay before the next thunderstorm shut everything down. Rest of the evening relaxing in the tent."
+  },
+  {
+    "day": "June 24th",
+    "question": "Who was the last person you hurt?",
+    "answer": "Emma - I told her she couldn't stay up reading late at night, and apparently I was being absolutely horrible and mean. Parenting...",
+    "additional": "Packed up, waited for Danielle, grumpy and tired, waited another two hours to get out, then finally made our way home"
+  },
+  {
+    "day": "June 25th",
+    "question": "Live in the moment or plan ahead?",
+    "answer": "I try to live in the moment with one or two things to look forward to.",
+    "additional": "First day back at work, stomach still feeling absolutely awful"
+  },
+  {
+    "day": "June 26th",
+    "question": "What is something you would never compromise on?",
+    "answer": "Maple Syrup. Has to be real. Not going to eat that fake garbage. I will and have had pancakes dry if there's no syrup.",
+    "additional": "Wednesday, nothing spectactular. Starting to feel a little human again, still not the best"
+  },
+  {
+    "day": "June 27th",
+    "question": "What is a deal breaker in a relationship for you?",
+    "answer": "Phsyical abuse",
+    "additional": "First day back on my feet as it were. Getting work done, watching the girls while K did therapy."
+  },
+  {
+    "day": "June 28th",
+    "question": "Do you judge people off a first impression?",
+    "answer": "Yes, lets be honest. But I wait to see if my impression was correct or not. It typicall is.",
+    "additional": "Mediocre Friday. Work, then went and checked out a junkyard with no luck, therapy, then home for chillin with Alison"
+  },
+  {
+    "day": "June 29th",
+    "question": "Favorite TV show you have recently discovered?",
+    "answer": "Kendall is watching New Girl, it's chuckle worthy, but I'm not into it. I finally watched the first episode of Manhunt which is good. Not great, but good.",
+    "additional": "Saturday family day, we drove up to Geneva and hung out in the library for a while, then a mediocre brunch in St Charles, Island Park in Geneva, then back home. I took care of the girls while Kendall napped and then we did the bedtime routine."
+  },
+  {
+    "day": "June 30th",
+    "question": "Who is your favorite social media personality or influencer?",
+    "answer": "Adam Savage, although I wouldn't really call him that.",
+    "additional": "Sunday family day at Santas Village. Fight to get Emma to bed but then Giordonnos deep dish and relaxing."
+  },
+  {
+    "day": "July 1st",
+    "question": "What is the most random thing you've done lately?",
+    "answer": "K took the girls shopping so I jumped in the Jeep, got some Starbucks and just went for a short drive. It was amazing.",
+    "additional": "Back to work, not a bad day, got a lot done. Fixed the grill, went for a drive, grilled dinner, then bed."
+  },
+  {
+    "day": "July 2nd",
     "question": "",
     "answer": "",
-    "additional": "Kendall took Emma to Kohls with the Jeep, I went for my annual doctors appointment, took Ali to DQ, then the normal bedtime routine."
+    "additional": "Not a bad Tuesday, worked mainly while K took care of the girls. Dinner, then baking cookies with Alison"
+  },
+  {
+    "day": "July 3rd",
+    "question": "",
+    "answer": "",
+    "additional": "Another draining Wednesday. Watching the girls because Kendall is not feeling good, working, trying to get shit done."
+  },
+  {
+    "day": "July 4th",
+    "question": "",
+    "answer": "",
+    "additional": "Kendall pretty much laid down most of the day so I watched the girls till 4 and then we went to Jeff and Whitneys for the evening."
+  },
+  {
+    "day": "July 5th",
+    "question": "",
+    "answer": "",
+    "additional": "Quick day back at work, low key Friday. Therapy, then home, and back out with Alison to DQ and Menards."
+  },
+  {
+    "day": "July 6th",
+    "question": "",
+    "answer": "",
+    "additional": "Liams birthday party, hung out there for a while, then surprise date night with Kendall while the girls stayed at Dereks. We hit golf balls at the range and just had a quiet evening."
+  },
+  {
+    "day": "July 7th",
+    "question": "",
+    "answer": "",
+    "additional": "Woke up early and got stuff done, went to get the girls and hung out at Dereks for a while then home. Dinner and crossword puzzles"
+  },
+  {
+    "day": "July 8th",
+    "question": "",
+    "answer": "",
+    "additional": "Back to work. Quiet day since most people were out. Did a lot of Minecraft, then took Emma to TKD, got her to bed then Lou Malnatis for dinner."
   }
 ]
