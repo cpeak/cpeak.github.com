@@ -1,5 +1,8 @@
 #resume {
   background: #F2F5F9;
+  @media (prefers-color-scheme: dark) {
+    background: #122239;
+  }
 }
 
 .resume__block {
