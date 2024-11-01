@@ -1,0 +1,48 @@
+#contact-page {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+  a {
+    align-items: center;
+    color: $color-gray;
+    display: inline-flex;
+    margin-bottom: 1.5em;
+    text-decoration: underline;
+    text-decoration-color: $color-gray--light;
+    text-underline-offset: 5px;
+    transition: all .5s ease;
+
+    span {
+      display: inline-block;
+      font-weight: 400;
+    }
+    svg {
+      margin-right: 1em;
+      width: 1.2em;
+    }
+  }
+
+  a:hover {
+    color: $color-slate;
+    cursor: pointer;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $color-slate;
+    text-underline-offset: 10px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: white;
+      svg {
+        fill: white;
+      }
+    }
+    a:hover {
+      color: white;
+      text-decoration-color: white;
+    }
+  }
+}

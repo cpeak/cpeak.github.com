@@ -1,0 +1,9 @@
+<div class="blog-post-category-links">
+  <h1 class="section-title">Recumbent Bike Blog Posts</h1>
+  {% for post in site.tags.cycling %}
+    <section class="blog-post-link">
+      <span class="date">{{ post.date | date_to_long_string }}</span>
+      <a class="" href={{ post.url}}>{{ post.title }}</a>
+    </section>
+  {% endfor %}
+</div>

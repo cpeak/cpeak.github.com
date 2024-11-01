@@ -1,11 +1,14 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 1em;
+  padding: 1em;
 
   img {
     display: block;
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
   @include media(1000px) {

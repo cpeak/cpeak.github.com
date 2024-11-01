@@ -1,0 +1,7 @@
+html, body {
+  min-height: 100vh;
+  @media (prefers-color-scheme: dark) {
+    background: $color-slate;
+    color: white;
+  }
+}

@@ -1,0 +1,10 @@
+.content--normal {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.content--wide {
+  max-width: $content-width-wide;
+  margin: 0 auto;
+}

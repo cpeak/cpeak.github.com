@@ -1,43 +1,41 @@
 #hero {
-  background: white;
-  border-bottom: none;
-  border: $spacing-large solid white;
-  overflow: hidden;
-  padding: 5%;
+  padding: 1em;
 
   h1 {
-    font-size: calc(16px + 4vw);
-    line-height: calc(16px + 4vw);
-    font-weight: 700;
-    max-width: 800px;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    span {
+      color: $color-primary;
+    }
   }
-
-  p {
-    font-size: calc(13px + 0.5vw);
-    line-height: 2em;
-    color: #555;
-    max-width: 800px;
+  h2 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
   }
 
   a {
-    white-space: nowrap;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: $color-gray--light;
+    text-underline-offset: 2px;
+    transition: all .5s ease;
+  }
+  a:hover {
+    color: $color-slate;
+    text-decoration-thickness: 3px;
+    text-decoration-color: $color-slate;
+    text-underline-offset: 8px;
   }
 
-  span {
-    color: $color-primary;
-    white-space: nowrap;
-  }
-
-  @include media(600px) {
-    padding: 5% 10% 10% 30%;
-  }
-
+  // ------------------------------------------------ DARK
   @media (prefers-color-scheme: dark) {
-    background: #2b2b2b;
-    color: white;
-    border-color: #2b2b2b;
-    p {
-      color: inherit;
+    a:hover {
+      color: white;
+      text-decoration-color: white;
     }
   }
 }

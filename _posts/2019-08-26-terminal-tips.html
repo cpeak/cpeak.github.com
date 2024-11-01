@@ -9,8 +9,8 @@ tagline: Shell what?
 ---
 <p>This past week we had a meeting at work about the learning outcomes from our apprenticeship process. One point brought up was how the terminal can be downright daunting to people whose first experience with a computer didn't involve  <code>C:&gt;_</code>. It's easy for me to forget because I first learned to type on an Apple II, and in high school learned Pascal and C++ on old DOS machines that looked like this:</p>
 <figure>
-  <figcaption>Borland C++ in DOS</figcaption>
   <img src="/images/posts/borland-c++.png" class="slim" alt="Borland C++ Editor on a DOS based computer"/>
+  <figcaption>Borland C++ in DOS</figcaption>
 </figure>
 <p>My high school programming teacher Mr Reber used to say "Computers are fast, accurate morons. Humans are slow, error-prone geniuses". Computers will do <i>exactly</i> what you tell them to do, very quickly. If you tell it to do something stupid, its gonna do it. If you tell it to do something that will crash your program, its gonna crash.</p>
 <p>Conversely, humans are slow, error-prone geniuses. They make the commands, the tell the computer what to do. My favorite example of this was actually in a math class. The teacher had peanut butter, jelly, and bread, and asked us to command her to make a sandwich. The first person said 'scoop the peanut butter on the knife' so she picked up the knife and bonked it on the lid of the peanut butter jar. We never told her to take the lid off. A computer works the same way - if you forget about the lid its not going take it off first.</p>
@@ -21,8 +21,8 @@ tagline: Shell what?
 <p>When I try to teach someone about the terminal I always start with three basic commands: <code>pwd</code>, <code>cd</code>, and <code>ls</code>.</p>
 <p>pwd stands for Present Working Directory. Essentially 'where the hell am I?'. Knowing where you currently are in the file system is vital. If you tell it to look for a file or program, you need to know where it is in relation to yourself. Right now if I type 'pwd' in my terminal and pressed enter it would say <code>/Users/cpeak/Sites/cpeak.github.com</code>. That's because I am currently working in my (cpeak) Sites directory (/Sites), in the folder that contains my personal website (/cpeak.github.com). I could do the same thing in the Finder with my mouse.</p>
 <figure>
-  <figcaption>pwd matches the Finder</figcaption>
   <img src="/images/posts/file-directory-example.jpg" class="slim" alt="The file listing in the Finder is exactly the same as what the pwd lists" />
+  <figcaption>pwd matches the Finder</figcaption>
 </figure>
 <p>Let's open that folder in the Finder and right-click the name at the top of the window. Look familiar? Same as what our pwd command reports. Macintosh HD is the Root level( / ), then /Users, /cpeak, /Sites, and finally /cpeak.github.com.</p>
 <p><code>cd</code> stands for Change Directory. This is why you need to understand how a directory tree works. All files on your system 'branch out' from the root level. Just like before, I am in my personal website directory. Let's jump back to the Sites directory which is one level up. I can do this a few ways. I could type <code>cd /Users/cpeak/Sites</code> which explicitly tells the computer where to go (note the leading /). I could type <code>cd .. </code> which is a shortcut to jump up one level. I could also type in <code>sites</code> which is a shortcut I specifically set to jump right to my Sites directory, more on that later.</p>
@@ -31,14 +31,14 @@ tagline: Shell what?
 <h3>In practice</h3>
 <p>Okay, lets see it all in action. Here I type use the pwd command to find out I am in my home directory. Then I cd into Sites/cpeak.github.com. I type in ls to list all the files, but realize I need to see if there are hidden ones so I type ls -a. You can see the second ls command shows .git, .gitignore, and a few others.</p>
 <figure>
-  <figcaption>Example commands</figcaption>
   <img src="/images/posts/terminal-examples.jpg" class="slim" alt="Workin in the terminal using the example commands" />
+  <figcaption>Example commands</figcaption>
 </figure>
 <h3>Drag-and-drop to change directories</h3>
 <p>If you really aren't sure what a folder's path is and need to <code>cd</code> into it, one handy trick is to type cd (space) and then drag the folder into the Terminal. It will autocomplete the full path of the folder so you can hit enter and that becomes your pwd.</p>
 <figure>
-  <figcaption>Drag and drop folders into the Terminal to autocomplete their absolute paths</figcaption>
   <img src="/images/posts/drag-n-drop-cd.jpg" class="slim" alt="You can drag folders into the Terminal to autocomplete their absolute paths" />
+  <figcaption>Drag and drop folders into the Terminal to autocomplete their absolute paths</figcaption>
 </figure>
 <h3>Tab to  autocomplete</h3>
 <p>When navigating around your system using the terminal a huge time saver is using Tab to auto complete things. Lets say I am in my Home directory, and type <code>cd Sites/bus</code> then tap Tab, it will autocomplete 'business-card-generator'. As long as the first few letters are unique it will work. Lets say I was still in the Home directory, but this time typed <code>cd Sites/g</code> and tapped Tab - the system will sound an alert because there are directories named 'gallery' <i>and</i> 'gorilla-studios.com'. Whenever this happens just hit Tab again and it will display the options for what you are trying to autocomplete.</p>
@@ -47,8 +47,8 @@ tagline: Shell what?
 <h3>Shortcuts</h3>
 <p>The most beneficial thing I've learned about working in the terminal is custom shortcuts. You can define your own command shortcuts in your bash profile (don't make me explain bash profiles or PATHs, they make me angry and confused). To do this, add a line that reads 'alias shortcut=command'. 'shortcut' can be whatever you want, and 'command' has to be a valid terminal command. Here is some of mine:</p>
 <figure>
-  <figcaption>My custom bash profile shortcuts</figcaption>
   <img src="/images/posts/terminal-shortcuts.jpg" class="slim" alt="Example bash profile shortcuts" />
+  <figcaption>My custom bash profile shortcuts</figcaption>
 </figure>
 <p>The ones I use most are <code>sites</code> to automatically jump back to my Sites directory where I keep all my local development projects, <code>gst</code> for git status, and <code>jek</code> to startup a Jekyll server. A fun one I added recently is <code>please</code> - sometimes the terminal will require Admin authorization for certain commands, so 'please' will apply <code>sudo !!</code> which means execute the last command as superuser. <code>prune</code> saves a lot of time because I can never remember 'git remote update origin --prune'. This updates all the branches in my working git repository, removing any that were deleted and adding any new ones.</p>
 <h3>Git Autocomplete</h3>

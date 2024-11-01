@@ -9,7 +9,7 @@ $color-primary-secondary: #9FADD3;
 $color-highlight: #F5DD90;
 $color-secondary: #F5FBFB;
 $color-secondary-hover: darken($color-secondary, 10%);
-$color-black: #3E4045;
+$color-black: #222222;
 $color-black-hover: darken($color-black, 10%);
 $color-black-secondary: rgba($color-black, .5);
 $color-white: #FFF;
@@ -35,7 +35,13 @@ $color-upset: $color-orange;
 $color-orange-fade: #E8BD76;
 $color-silver: #ABABAB;
 $color-gold: #EABF1D;
-$color-slate: #859bb9;
+
+$color-gray: #777777;
+$color-gray--medium: #cccccc;
+$color-gray--light: #eeeeee;
+$color-slate: #2b2b2b;
+
+
 
 $color-border-light: #ECECEC;
 $color-border: #E7E7E7;
@@ -47,16 +53,19 @@ $color-border-input-active: rgba($color-black, .40);
 
 $color-shadow: #EFEFEF;
 
+$content-width: 42rem;
+$content-width-wide: 60rem;
+
 // Fonts
 
-$font-family: 'Bitter', 'Helvetica', Arial, sans-serif;
+$font-family: 'Poppins', 'Helvetica', Arial, sans-serif;
 $font-family-regular: $font-family;
-$font-family-light: 'Helvetica Light', Arial, sans-serif;
-$font-family-medium: 'Helvetica ', Arial, sans-serif;
+$font-family-light: 'Poppins', Arial, sans-serif;
+$font-family-medium: 'Poppins', Arial, sans-serif;
 $font-family-bold: 'Poppins', Arial, sans-serif;
 $font-family-monospace: monospace;
 $font-weight-regular: 400;
-$font-weight-bold: 400;
+$font-weight-bold: 700;
 
 // Font Size
 
@@ -71,7 +80,7 @@ $font-size-heading-xxx-large: 10rem;
 
 $font-size-text-xx-small: .625rem;
 $font-size-text-x-small: .625rem;
-$font-size-text-small: .7rem;
+$font-size-text-small: .833rem;
 $font-size-text-medium: 1rem;
 $font-size-text-large: 1.1rem;
 $font-size-text-x-large: 1.05rem;

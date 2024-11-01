@@ -1,0 +1,42 @@
+#site-navigation {
+
+  padding: 3em 1em;
+
+  a {
+    color: $color-gray;
+    font-size: 1em;
+    font-weight: 400;
+    margin-right: 1em;
+    text-decoration: underline;
+    text-decoration-color: $color-gray--light;
+    text-underline-offset: 5px;
+    transition: all .5s ease-in-out;
+  }
+
+  a:hover {
+    color: $color-slate;
+    cursor: pointer;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $color-slate;
+    text-underline-offset: 10px;
+  }
+
+  span {
+    font-size: $font-size-text-small;
+    color: $color-gray--medium;
+    margin-right: 1em;
+    opacity: 0.8;
+  }
+
+  // ------------------------------------------------ DARK
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: white;
+    }
+    a:hover {
+      color: white;
+      text-decoration-color: white;
+    }
+  }
+
+}

@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="blog-post content--wide fade-in-up-animation" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div itemprop="articleBody">
     {{ content }}
   </div>
 
-  <footer class="post-navigation">
+  <footer class="post-navigation content--normal">
     {% if page.previous.url %}
       <a href={{ page.previous.url }}><label>Previous Post</label><span>{{ page.previous.title }}</span></a>
     {% endif %}

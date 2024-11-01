@@ -1,233 +1,93 @@
-$post-width: 800px;
-
+// ------------------------------------------------ POST
 article.blog-post {
-  background: white;
-  border: $spacing-large solid white;
-  padding: 5%;
-
-  // ----------------------------------------- HEADER
   header {
-    padding: 5% 0;
     margin: 0 auto;
-    text-align: center;
-    max-width: $post-width;
-    width: 100%;
-
     h1 {
-      font-size: 2em;
-      font-weight: 800;
-      line-height: 1em;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.2em;
-      color: $color-primary;
-      font-weight: 300;
-      margin: 0;
-    }
-  }
-
-  // ----------------------------------------- CONTENT
-  .post-content {
-    color: rgb(51,51,51);
-    margin: 0 auto;
-    max-width: $post-width;
-    width: 100%;
-
-    h2, h3 {
-      font-weight: 600;
-    }
-
-    p {
-      color: #555;
-      letter-spacing: 0em;
-      line-height: 2.25em;
-      margin-bottom: 2.5em;
-    }
-
-    figure {
-      margin: 0 auto 2.5em auto;
-      display: flex;
-      flex-direction: column-reverse;
-      img {
-        max-width: 100%;
-        width: 100%;
-      }
-      figcaption {
-        font-size: 0.8em;
-      }
-    }
-
-    iframe {
-      border: none;
-      margin: 0 auto 4em auto;
-    }
-
-    .blog-preview p {
-      font-weight: 600;
+      padding: 1rem 1rem 0 1rem;
       margin-bottom: 0;
     }
-
-
-    ul.embedded-post-links {
-      list-style: none;
-      margin: 0 0 3em 0;
-      padding: 0;
-      li {
-        border-radius: 4px;
-        border: 1px solid #cccccc;
-        display: flex;
-        font-weight: 600;
-        margin-bottom: 1em;
-        text-align: center;
-        a {
-          padding: 1em;
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1;
-          justify-content: center;
-          text-decoration: none;
-        }
-        span {
-          display: block;
-          font-size: 0.9em;
-          font-weight: 400;
-        }
-      }
-      @include media(600px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        margin-bottom: 0;
-      }
-    }
-
-  }
-  // ----------------------------------------- GALLERY
-  .post-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
-    img {
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: 100%;
+    time {
+      color: $color-primary;
     }
   }
-
-  // ----------------------------------------- BREAKPOINTS
-  @include media(600px) {
-    header {
-      .post-meta {
-        margin-top: 4em;
-        margin-bottom: 0.5em;
-      }
-      h1 {
-        font-size: 4em;
-      }
-    }
-
-    .post-content {
-      h2, h3 {
-        border-top: 1px dotted #859bb9;
-        padding-top: 0.8em;
-      }
-
-      h4, p {
-        padding-left: 20%;
-      }
-
-      figure {
-        border-top: 1px dotted #859bb9;
-        padding-top: 1em;
-        display: grid;
-        grid-template-columns: 20% 80%;
-        figcaption {
-          line-height: 1.2em;
-          padding-right: 1em;
-        }
-      }
-    }
-
-    .post-gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .blog-preview a {
-      margin-left: 20%;
-    }
+  h1, h2, h3, h4, h5, p {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: $content-width;
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
   }
 
-  @include media(900px) {
-    .post-gallery {
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 4em;
-    }
+  p {
+    font-weight: 300;
+    margin-bottom: 1.75em;
   }
-
-// ------------------------------------- DARK MODE
-  @media (prefers-color-scheme: dark) {
-    background: #2b2b2b;
-    color: white;
-    border-color: #333;
-    .post-content {
-      color: white;
-    }
-    .post-content p {
-      color: white;
-    }
+  p time {
+    font-size: $font-size-text-small;
   }
 }
 
-
-// ------------------------------------- POST NAVIGATION
-.post-navigation {
-  border-top: 1px dotted #859bb9;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20%;
-  margin: 8em auto;
-  max-width: $post-width;
-  padding-top: $spacing-x-large;
-
-  a {
-    border-bottom: 1px solid #2b2b2b;
-    cursor: pointer;
+article figure {
+  margin: 1em 1em 1.75em 1em;
+  img {
     display: block;
-    overflow: hidden;
+    width: 100%;
+  }
+  figcaption {
+    color: $color-gray;
+    font-size: $font-size-text-small;
+    text-align: right;
+  }
+}
+
+iframe {
+  margin-bottom: 1.5em;
+}
+
+
+// ------------------------------------------------ STANDARD FOOTER
+footer.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 1em;
+  a {
     text-decoration: none;
-    transition: all .2s ease;
-
     label {
-      color: $color-primary;
-      padding: 0;
+      color: $color-gray;
+      font-size: $font-size-text-small;
+      font-weight: 400;
+      line-height: 1;
       margin: 0;
-      font-size: 0.9em;
-      cursor: pointer;
     }
-
     span {
-      cursor: pointer;
-      display: block;
       font-size: 1em;
-      font-weight: 600;
-      line-height: 1.25em;
-      margin-bottom: $spacing-small;
-    }
-
-    &:hover {
-      border-bottom: none;
+      font-weight: 400;
+      margin-right: 1em;
+      text-decoration: underline;
+      text-decoration-color: $color-gray--light;
+      text-underline-offset: 5px;
+      transition: all .5s ease;
     }
   }
-
-  @include media(600px) {
-    grid-gap: 20%;
+  a:hover span {
+    color: $color-slate;
+    cursor: pointer;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $color-slate;
+    text-underline-offset: 6px;
   }
 
   @media (prefers-color-scheme: dark) {
-    a {
-      border-color: white;
+    a span {
+      color: white;
+    }
+    a:hover span {
+      color: white;
+      text-decoration-color: white;
     }
   }
 }

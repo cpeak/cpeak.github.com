@@ -1,0 +1,54 @@
+#writings--list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  h1 {
+    padding: 1rem; // needs side padding to offset the hover background alignment
+    width: 100%;
+  }
+
+  a {
+    border-radius: $border-radius-large;
+    display: inline-block;
+    flex: 1 1 auto;
+    padding: 1em;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+
+    h4 {
+      border-bottom: 1px solid $color-gray--light;
+      font-size: $font-size-text-medium;
+      font-weight: 400;
+      margin: 0;
+      transition: all .4s ease-in-out;
+    }
+
+    p {
+      color: #777777;
+      font-size: $font-size-text-small;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  a:hover {
+    background: #F4F4F5;
+    h4 {
+      border-color: transparent;
+    }
+  }
+
+  p.year {
+    color: $color-primary;
+    font-size: $font-size-text-small;
+    margin: 1em;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a:hover {
+      background: #222222;
+    }
+  }
+}
+

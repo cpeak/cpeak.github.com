@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /writing
+---
+<section id="writings--list" class="content--normal fade-in-up-animation">
+  <h1 class="section-title">Writing</h1>
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      <p class="year" id="y{{currentdate}}">{{ currentdate }}</p>
+      {% assign date = currentdate %}
+    {% endif %}
+    <span>
+      <a href="{{ post.url }}" class="post-link">
+        <h4 class="title">{{ post.title }}</h4>
+        <p class="date">{{ post.date | date_to_long_string }}</p>
+      </a>
+    </span>
+  {% endfor %}
+</section>
