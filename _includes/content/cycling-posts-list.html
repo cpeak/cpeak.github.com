@@ -3,7 +3,7 @@
   {% for post in site.tags.cycling %}
     <section class="blog-post-link">
       <span class="date">{{ post.date | date_to_long_string }}</span>
-      <a class="" href={{ post.url}}>{{ post.title }}</a>
+      <a class="nice-link" href={{ post.url}}>{{ post.title }}</a>
     </section>
   {% endfor %}
 </div>

@@ -11,10 +11,8 @@ permalink: /writing
       {% assign date = currentdate %}
     {% endif %}
     <span>
-      <a href="{{ post.url }}" class="post-link">
-        <h4 class="title">{{ post.title }}</h4>
-        <p class="date">{{ post.date | date_to_long_string }}</p>
-      </a>
+      <p class="date">{{ post.date | date: "%b %d" }}</p>
+      <a href="{{ post.url }}" class="nice-link">{{ post.title }}</a>
     </span>
   {% endfor %}
 </section>

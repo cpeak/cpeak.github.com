@@ -1,81 +1,38 @@
-.timeline-concept {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  margin: 10em 4em;
-  padding: 80px 8px 8px 8px;
-  position: relative;
-  [class*="flag__"] {
-    border-radius: 10px 10px 10px 0;
-    color: white;
-    display: inline-block;
-    font-size: 34px;
-    font-weight: bold;
-    left: 26%;
-    margin-bottom: 20px;
-    padding: 4px 16px;
-    position: absolute;
-    top: 0;
-    &:after {
-      content: "";
-      height: 0;
-      left: 0;
-      position: absolute;
-      width: 0;
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+  padding: 2em 1em 1em 1em;
+  aside {
+    a {
+      display: flex;
+      flex-direction: column;
+      font-size: $font-size-text-small;
+      margin-bottom: 1em;
+      img {
+        display: none;
+        max-width: 42px;
+        margin-right: 1em;
+        border-radius: 4px;
+      }
     }
   }
-
-  .flag__normal {
-    background: #3B85EB;
-    &:after {
-      border-bottom: 12px solid transparent;
-      border-left: 20px solid #3B85EB;
-      border-top: 12px solid transparent;
-      bottom: -12px;
+  main {
+    .content {
+      display: none;
+      padding-top: 0.5em;
+    }
+    .show {
+      display: block;
     }
   }
-
-  .flag__caution {
-    background: #BB3826;
-    left: 66%;
-    border-radius: 10px 10px 0 10px;
-    &:after {
-      border-bottom: 12px solid transparent;
-      border-right: 20px solid #BB3826;
-      border-top: 12px solid transparent;
-      bottom: -12px;
-      left: auto;
-      right: 0;
-    }
-  }
-
-  .stripe {
-    border-top: 2px solid #dddddd;
-    margin-bottom: -1px;
-    width: 100%;
-  }
-
-  .timeline {
-    display: flex;
-    justify-content: space-between;
-    span {
-      font-size: 14px;
-      font-weight: 600;
-      padding-top: 12px;
-      position: relative;
-      text-align: center;
-      width: 75px;
-      &:before {
-        background: #3B85EB;
-        border-radius: 50%;
-        content: "";
+  @include media(800px) {
+    aside a {
+      align-items: center;
+      flex-direction: row;
+      font-size: $font-size-text-medium;
+      img {
         display: block;
-        height: 10px;
-        left: 45%;
-        margin: 0 auto;
-        outline: 5px solid white;
-        position: absolute;
-        top: -5px;
-        width: 10px;
       }
     }
   }

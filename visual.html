@@ -1,0 +1,81 @@
+---
+layout: default
+permalink: /visual-design
+---
+
+<div class="showcase content--wide fade-in-up-animation">
+
+  <aside>
+    <a class="nice-link" id="introlink" href="#">
+      <img src="/images/visual-design/slug.png" alt="slug" />
+      Visual Design
+    </a>
+    <a class="nice-link" id="scnalink" href="#">
+      <img src="/images/visual-design/scna-thumb.png" alt="SCNA tshirt design" />
+      SCNA
+    </a>
+    <a class="nice-link" id="hhpclink" href="#">
+      <img src="/images/visual-design/hhpc-thumb.png" alt="Helping Hand PC identity" />
+      HHPC
+    </a>
+    <a class="nice-link" id="windycitylink" href="#">
+      <img src="/images/visual-design/windy-city-thumb.png" alt="Windy City Rails tshirt" />
+      Windy City Rails
+    </a>
+    <a class="nice-link" id="polyglotlink" href="#">
+      <img src="/images/visual-design/poly-thumb.png" alt="Polyglot LA identity" />
+      Polyglot LA
+    </a>
+    <a class="nice-link" id="orinlink" href="#">
+      <img src="/images/visual-design/orin-thumb.png" alt="Orin identity" />
+      Orin USA
+    </a>
+    <a class="nice-link" id="fusionlink" href="#">
+      <img src="/images/visual-design/fusion-thumb.png" alt="Fusion XTreme Cheerleading identity" />
+      Fusion XTreme
+    </a>
+  </aside>
+
+  <main>
+    <div id="intro" class="content show">
+      {% include portfolio-pages/intro.html %}
+    </div>
+
+    <div id="scna" class="content">
+      {% include portfolio-pages/scna.html %}
+    </div>
+
+    <div id="hhpc" class="content">
+      {% include portfolio-pages/hhpc.html %}
+    </div>
+
+    <div id="windycity" class="content">
+      {% include portfolio-pages/windy.html %}
+    </div>
+
+    <div id="polyglot" class="content">
+      {% include portfolio-pages/poly.html %}
+    </div>
+
+    <div id="orin" class="content">
+      {% include portfolio-pages/orin.html %}
+    </div>
+
+    <div id="fusion" class="content">
+      {% include portfolio-pages/fusion.html %}
+    </div>
+
+  </main>
+</div>
+
+<script>
+  $('a').click(function(){ $('.content').removeClass('show'); });
+  $('#introlink').click(function(){ $('#intro').addClass('show'); });
+  $('#scnalink').click(function(){ $('#scna').addClass('show'); });
+  $('#hhpclink').click(function(){ $('#hhpc').addClass('show'); });
+  $('#windycitylink').click(function(){ $('#windycity').addClass('show'); });
+  $('#polyglotlink').click(function(){ $('#polyglot').addClass('show'); });
+  $('#orinlink').click(function(){ $('#orin').addClass('show'); });
+  $('#fusionlink').click(function(){ $('#fusion').addClass('show'); });
+</script>
+

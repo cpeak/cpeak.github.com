@@ -1,0 +1,76 @@
+---
+layout: default
+permalink: /apple
+---
+
+<div class="showcase content--wide fade-in-up-animation">
+
+  <aside>
+    <a class="nice-link" id="mycollectionlink" href="#">My Collection</a>
+    <a class="nice-link" id="apple2link" href="#">Apple IIe</a>
+    <a class="nice-link" id="macpluslink" href="#">Mac Plus</a>
+    <a class="nice-link" id="powerbookg3link" href="#">PowerBook G3</a>
+    <a class="nice-link" id="powermacg3link" href="#">PowerMac G3</a>
+    <a class="nice-link" id="powerbookg4link" href="#">PowerBook G4</a>
+    <a class="nice-link" id="powermacg5link" href="#">PowerMac G5</a>
+  </aside>
+
+  <main>
+    <div id="intro" class="content show">
+      <article class="blog-post">
+        <h3>My Collection</h3>
+        <p>I've been an Apple user since I was a toddler and started sitting in my dads lap while he showed me the basics of computers. I was the perfect age to grow up using Apple IIs in grade school and spending all my free time in the Macintosh computer labs in middle and high school. After begging and pleading I got a Centris 650 in middle school, and finally a PowerMac 7200 in High School. I've always loved Apples industrial design, even in their 'boring' beige era in the mid 90s.</p>
+        <p>I didn't have the ability to keep all my original computers, but now that I'm older I am re-building my collection, and luckily picking up some of the machines I desparately wanted back when I was young. Im thankful that everything in my collection works except my PowerBook G4, but that is next on the list of restorations. I'm still on the lookout for a Color Classic II and a G4 Cube, but alas prices on vintage machines have been increasing a ridiculous amount over the last 10 years.</p>
+      </article>
+    </div>
+
+    <div id="appleII" class="content">
+      <article class="blog-post">
+        <h3>Apple IIe</h3>
+      </article>
+    </div>
+
+    <div id="macplus" class="content">
+      <article class="blog-post">
+        <h3>Mac Plus</h3>
+      </article>
+    </div>
+
+    <div id="pismo" class="content">
+      <article class="blog-post">
+        <h3>PowerBook G3 &quot;Pismo&quot;</h3>
+      </article>
+    </div>
+
+    <div id="g3tower" class="content">
+      <article class="blog-post">
+        <h3>PowerMac G3 Mini Tower</h3>
+      </article>
+    </div>
+
+    <div id="powerbookg4" class="content">
+      <article class="blog-post">
+        <h3>PowerBook G4</h3>
+      </article>
+    </div>
+
+    <div id="g5tower" class="content">
+      <article class="blog-post">
+        <h3>PowerMac G5</h3>
+      </article>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  $('a').click(function(){ $('.content').removeClass('show'); });
+  $('#mycollectionlink').click(function(){ $('#intro').addClass('show'); });
+  $('#apple2link').click(function(){ $('#appleII').addClass('show'); });
+  $('#macpluslink').click(function(){ $('#macplus').addClass('show'); });
+  $('#powerbookg3link').click(function(){ $('#pismo').addClass('show'); });
+  $('#powermacg3link').click(function(){ $('#g3tower').addClass('show'); });
+  $('#powerbookg4link').click(function(){ $('#powerbookg4').addClass('show'); });
+  $('#powermacg5link').click(function(){ $('#g5tower').addClass('show'); });
+</script>
+

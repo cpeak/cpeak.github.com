@@ -15,10 +15,16 @@ layout: default
 
   <footer class="post-navigation content--normal">
     {% if page.previous.url %}
-      <a href={{ page.previous.url }}><label>Previous Post</label><span>{{ page.previous.title }}</span></a>
+      <section>
+        <span>Previous Post</span>
+        <a class="nice-link" href={{ page.previous.url }}>{{ page.previous.title }}</a>
+      </section>
     {% endif %}
     {% if page.next.url %}
-      <a href={{ page.next.url }}><label>Next Post</label><span>{{ page.next.title }}</span></a>
+      <section>
+        <span>Next Post</span>
+        <a class="nice-link" href={{ page.next.url }}>{{ page.next.title }}</a>
+      </section>
     {% endif %}
   </footer>
 
