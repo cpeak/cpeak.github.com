@@ -20,7 +20,6 @@
   main {
     .content {
       display: none;
-      padding-top: 0.5em;
     }
     .show {
       display: block;
@@ -36,4 +35,9 @@
       }
     }
   }
+}
+
+.visual-design main .content {
+  background: red;
+  padding-top: 0.5em;
 }

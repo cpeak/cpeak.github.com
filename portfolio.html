@@ -2,4 +2,53 @@
 layout: default
 permalink: /portfolio
 ---
-{% include content/hero.html %}
+
+<div class="showcase content--wide fade-in-up-animation">
+
+  <aside>
+    <a class="nice-link" id="introlink" href="#">Portfolio</a>
+    <a class="nice-link" id="ssilink" href="#">SSI Agvance</a>
+    <a class="nice-link" id="portallink" href="#">Portal</a>
+    <a class="nice-link" id="welink" href="#">Women Employed</a>
+    <a class="nice-link" id="shurelink" href="#">Shure</a>
+    <a class="nice-link" id="ralink" href="#">Royal Academy</a>
+  </aside>
+
+  <main>
+    <div id="intro" class="content show">
+      {% include portfolio-pages/work.html %}
+    </div>
+
+    <div id="ssi" class="content">
+      {% include portfolio-pages/ssi.html %}
+    </div>
+
+    <div id="portal" class="content">
+      {% include portfolio-pages/portal.html %}
+    </div>
+
+    <div id="women-employed" class="content">
+      {% include portfolio-pages/women-employed.html %}
+    </div>
+
+    <div id="shure" class="content">
+      {% include portfolio-pages/shure.html %}
+    </div>
+
+    <div id="royal" class="content">
+      {% include portfolio-pages/royal.html %}
+    </div>
+
+  </main>
+</div>
+
+<script>
+  $('a').click(function(){ $('.content').removeClass('show'); });
+  $('#introlink').click(function(){ $('#intro').addClass('show'); });
+  $('#ssilink').click(function(){ $('#ssi').addClass('show'); });
+  $('#portallink').click(function(){ $('#portal').addClass('show'); });
+  $('#welink').click(function(){ $('#women-employed').addClass('show'); });
+  $('#shurelink').click(function(){ $('#shure').addClass('show'); });
+  $('#ralink').click(function(){ $('#royal').addClass('show'); });
+</script>
+
