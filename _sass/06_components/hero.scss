@@ -16,27 +16,8 @@
     line-height: 1em;
   }
 
-  a {
-    font-size: 1em;
-    font-weight: 400;
-    text-decoration: underline;
-    text-decoration-color: $color-gray--light;
-    text-underline-offset: 2px;
-    transition: all .5s ease;
-  }
-  a:hover {
-    color: $color-slate;
-    text-decoration-thickness: 3px;
-    text-decoration-color: $color-slate;
-    text-underline-offset: 8px;
-  }
-
   // ------------------------------------------------ DARK
   @media (prefers-color-scheme: dark) {
-    a:hover {
-      color: white;
-      text-decoration-color: white;
-    }
   }
 }
 
