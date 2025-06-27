@@ -15,6 +15,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4em;
     margin-bottom: 2em;
+
+    .full {
+      grid-column: span 3;
+      aspect-ratio: auto;
+    }
   }
 
 
