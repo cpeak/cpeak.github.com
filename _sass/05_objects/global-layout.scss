@@ -1,7 +1,11 @@
 html, body {
   min-height: 100vh;
+  margin-top: 3em;
   @media (prefers-color-scheme: dark) {
     background: $color-slate;
     color: white;
+  }
+  @include media(1000px) {
+    margin-top: 5em;
   }
 }
