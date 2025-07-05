@@ -2,6 +2,7 @@
 article.blog-post {
   header {
     margin: 0 auto;
+
     h1 {
       padding: 1rem 1rem 0 1rem;
       margin-bottom: 0;
@@ -10,13 +11,15 @@ article.blog-post {
       color: $color-primary;
     }
   }
-  h1, h2, h3, h4, h5, p {
+
+  h1, h2, h3, h4, h5, p, ul {
     font-size: 1em;
     font-weight: 500;
     margin: 0 auto;
     max-width: $content-width;
     padding: 0 1rem 1rem 1rem;
   }
+
   h1 {
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -26,8 +29,18 @@ article.blog-post {
     font-weight: 300;
     margin-bottom: 1.75em;
   }
+
   p time {
     font-size: $font-size-text-small;
+  }
+
+  blockquote {
+    border-left: 3px solid $color-primary;
+    font-weight: 300;
+    line-height: 1.75em;
+    margin: 0 auto 1.75em auto;
+    max-width: $content-width;
+    padding: 0 1rem;
   }
 }
 
