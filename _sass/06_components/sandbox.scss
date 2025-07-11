@@ -1,32 +1,69 @@
 .test {
-  border: 1px solid red;
   margin: 0 auto;
   text-align: left;
   border-collapse: collapse;
+  font-size: 14px;
+  font-family: 'Open Sans', 'Helvetica';
+  text-align: right;
 }
+
 th {
   font-weight: normal;
+  background: #EFF1F4;
 }
+
 th, td {
   border: 1px solid #cccccc;
   padding: 0.5em 1em;
 }
 
-@keyframes bgcolor {
-  0%, 14% {
-    background: white;
-  }
-  15%, 22% {
-    background: #FEF9D1;
-  }
-  23%, 100% {
-    background: white;
-  }
-}
-
-.change {
-  animation: bgcolor 20s infinite;
+tr:nth-child(even) {
+  background: #EFF1F4;
 }
 
 
+.caution--yellow {
+  background: #FEF9D1;
+}
 
+.caution--yellow-custom {
+  background: #FEF9D1;
+}
+
+.caution--blue {
+  background: #E8F3FE;
+}
+
+.caution--orange {
+  background: #F2E2C1;
+}
+
+.strong-blue {
+  font-weight: 600;
+  color: #2E6BC2;
+}
+
+.out-of-balance {
+  box-shadow: inset -5px 0px 0px red;
+}
+
+.out-of-balance-2 {
+  color: #BB3826;
+  position: relative;
+  padding-right: 1.5em;
+  font-weight: 600;
+
+  &:after {
+    background: #BB3826;
+    color: white;
+    content: "\2260";
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 1em;
+  }
+}
