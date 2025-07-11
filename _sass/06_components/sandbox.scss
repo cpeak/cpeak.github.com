@@ -44,7 +44,7 @@ tr:nth-child(even) {
 }
 
 .out-of-balance {
-  box-shadow: inset -5px 0px 0px red;
+  box-shadow: inset -5px 0px 0px #BB3826;
 }
 
 .out-of-balance-2 {
@@ -65,5 +65,15 @@ tr:nth-child(even) {
     text-align: center;
     top: 0;
     width: 1em;
+  }
+}
+
+.dot {
+  color: #BB3826;
+  position: relative;
+  font-weight: 600;
+  sup {
+    font-size: 1.25em;
+    top: -4px;
   }
 }
