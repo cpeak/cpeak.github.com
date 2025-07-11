@@ -56,15 +56,17 @@ tr:nth-child(even) {
   &:after {
     background: #BB3826;
     color: white;
-    content: "\2260";
-    font-size: 1em;
+    content: "!";
+    font-size: .7em;
+    font-weight: 800;
+    padding: 4px;
     font-weight: 300;
     line-height: 1em;
     position: absolute;
     right: 0;
     text-align: center;
     top: 0;
-    width: 1em;
+    width: 1.5em;
   }
 }
 
