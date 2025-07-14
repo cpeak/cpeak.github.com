@@ -26,25 +26,7 @@ tr:nth-child(even) {
   background: #FEF9D1;
 }
 
-.caution--yellow-custom {
-  background: #FEF9D1;
-}
-
-.caution--blue {
-  background: #E8F3FE;
-}
-
-.caution--orange {
-  background: #F2E2C1;
-}
-
-.strong-blue {
-  font-weight: 600;
-  color: #2E6BC2;
-}
-
 .out-of-balance {
-  box-shadow: inset -5px 0px 0px #BB3826;
 }
 
 .out-of-balance-2 {
@@ -67,15 +49,5 @@ tr:nth-child(even) {
     text-align: center;
     top: 0;
     width: 1.5em;
-  }
-}
-
-.dot {
-  color: #BB3826;
-  position: relative;
-  font-weight: 600;
-  sup {
-    font-size: 1.25em;
-    top: -4px;
   }
 }
