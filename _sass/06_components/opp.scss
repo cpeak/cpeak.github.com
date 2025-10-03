@@ -1,0 +1,115 @@
+#opp {
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1em;
+}
+
+[class*="gallery__"] {
+  margin-bottom: 3em;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.gallery__uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+
+// --------------------------------------- Masonry Horizontal
+
+.grid.masonry-horizontal {
+  display: block;
+  margin-bottom: 3em;
+
+  .grid-item {
+    width: 33%;
+    img {
+      padding: 0.5em;
+      aspect-ratio: 1.414 / 1;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .grid-item.orientation-square img {
+    aspect-ratio: 1 / 1;
+    width: 70.70707%;
+    margin: 0 auto;
+  }
+  .grid-item.orientation-portrait img {
+    aspect-ratio: 1 / 1.414;
+    width: 71%;
+    margin: 0 auto;
+  }
+
+  .grid-sizer { width: 33%; }
+
+}
+// --------------------------------------- Grid Horizontal
+.grid--horizontal {
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+
+  .grid-item img {
+    aspect-ratio: 1.414 / 1;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+
+  .grid-item.orientation-square {
+    img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+      width: 70.70707%;
+      margin: 0 auto;
+    }
+
+  }
+  .grid-item.orientation-portrait {
+    img {
+      aspect-ratio: 1.414 / 1;
+      object-fit: contain;
+      display: block;
+    }
+  }
+}
+
+// --------------------------------------- Masonry Grid Rough
+.grid {
+  display: block;
+  margin-bottom: 3em;
+
+  .grid-item {
+    width: 20%;
+    img {
+      aspect-ratio: 1.414 / 1;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .grid-item.orientation-portrait img {
+    aspect-ratio: 1 / 1.414;
+  }
+
+  .grid-sizer { width: 20%; }
+
+  .small { width: 20%; }
+  .large { width: 40%; }
+}

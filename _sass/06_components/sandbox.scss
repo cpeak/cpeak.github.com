@@ -1,3 +1,23 @@
+#sandbox-sidebar {
+  background: white;
+  position:fixed;
+  top: 75px;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  padding: 2em 1em;
+  box-shadow: 0 0 4px 0 #999999;
+}
+
+#toggle {
+  background: white;
+  position: absolute;
+  left: -44px;
+  padding: 1em;
+  border: 1px solid #cccccc;
+}
+
+
 .test {
   margin: 0 auto;
   text-align: left;

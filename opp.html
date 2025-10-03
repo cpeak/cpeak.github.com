@@ -1,0 +1,72 @@
+---
+layout: default
+permalink: /opp
+---
+
+
+
+<div id="opp">
+  <h2>Gallery Experimentations</h2>
+  <p>There's a tension here between letting the users upload whatever image they want in their original aspect ratios vs. us wanting the cleanest grids possible. As of right now (Oct 3) I don't see a way to 100% guarantee no gaps. I think the key is us locking the presentation of the artwork to the standard european A paper size ratios, that way both horizontal and portrait based images work well together.</p>
+  <p>Below are some experimental grids using both Masonry and just pure CSS. The goals here are to have the most minimal amount of code. The galleries are all using the same image set in the same order, a mix of horizontal, vertical, square, and using different aspect ratios as well.</p>
+
+  <hr />
+  <h2>Masonry Grid - Horizontal</h2>
+  <p>3 column grid approach using the A paper ratios. Note in some spots the images land at the halfway mark of the images in the neighboring columns</p>
+  <div class="grid masonry-horizontal">
+    <div class="grid-sizer"></div>
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr />
+  <h2>Grid - Horizontal</h2>
+  <p>This is a NO MASONRY approach to a 3 column grid, where the vertical and square images don't bork the layout</p>
+  <div class="grid--horizontal">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr />
+  <h2>Masonry Grid Rough</h2>
+  <p>This is the standard Masonry layout using the A paper ratios. Im noticing some gaps</p>
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr />
+  <h2>Uniform Grid</h2>
+  <p>Straight forwards, setting 1:1 aspect ratio and object fit to cover. Easy</p>
+
+  <div class="gallery__uniform-grid">
+    {% for photo in site.data.gallery %}
+      <img src="{{ photo.url }}" alt="wat">
+    {% endfor %}
+  </div>
+
+</div>
+
+<script src="/js/masonry.pkgd.min.js"></script>
+ <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<script>
+
+  $('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
+</script>
