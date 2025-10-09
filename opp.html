@@ -11,10 +11,21 @@ permalink: /opp
   <p>Below are some experimental grids using both Masonry and just pure CSS. The goals here are to have the most minimal amount of code. The galleries are all using the same image set in the same order, a mix of horizontal, vertical, square, and using different aspect ratios as well.</p>
 
   <hr />
+  <h2>Flex Grid - Horizontal</h2>
+  <p>This grid is from the Figma file Masonry Grid Horizontal. No Masonry so you're at the mercey of photo order. Can justify left, right, centered, and space between like the example</p>
+  <div class="grid-test">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+
+  <hr />
   <h2>Masonry Grid - Horizontal</h2>
   <p>3 column grid approach using the A paper ratios. Note in some spots the images land at the halfway mark of the images in the neighboring columns</p>
   <div class="grid masonry-horizontal">
-    <div class="grid-sizer"></div>
     {% for photo in site.data.gallery %}
       <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
         <img src="{{ photo.url }}" alt="wat">
@@ -37,7 +48,6 @@ permalink: /opp
   <h2>Masonry Grid Rough</h2>
   <p>This is the standard Masonry layout using the A paper ratios. Im noticing some gaps</p>
   <div class="grid">
-    <div class="grid-sizer"></div>
     {% for photo in site.data.gallery %}
       <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
         <img src="{{ photo.url }}" alt="wat">
@@ -63,10 +73,9 @@ permalink: /opp
 <script>
 
   $('.grid').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
-  itemSelector: '.grid-item',
-  // use element for option
-  columnWidth: '.grid-sizer',
-  percentPosition: true
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item', // Use the .grid-item's width for column calculation
+    gutter: 0,                 // You can use the CSS padding for spacing instead of gutter
+    transitionDuration: '0.3s' // Smooth transitions when resizing/reordering
 })
 </script>

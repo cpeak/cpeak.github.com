@@ -1,56 +1,47 @@
-#opp {
-  border: 1px solid #cccccc;
-  margin: 0 auto;
-  width: 90%;
-  padding: 1em;
-}
-
-[class*="gallery__"] {
-  margin-bottom: 3em;
-  img {
-    display: block;
-    width: 100%;
-  }
-}
 
 
-.gallery__uniform-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
-}
+  <hr />
+  <h2>Masonry Grid - Horizontal</h2>
+  <p>3 column grid approach using the A paper ratios. Note in some spots the images land at the halfway mark of the images in the neighboring columns</p>
+  <div class="grid masonry-horizontal">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
 
-// --------------------------------------- TEST
+  <hr />
+  <h2>Grid - Horizontal</h2>
+  <p>This is a NO MASONRY approach to a 3 column grid, where the vertical and square images don't bork the layout</p>
+  <div class="grid--horizontal">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
 
-.grid-test {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  //justify-content: center;
-  .grid-item {
-    aspect-ratio: 1.414 / 1;
-    padding: 10px;
-    width: 100%;
-    max-width: 33.333333%;
-    img {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
-  .orientation-square {
-    max-width: 25%;
-  }
-  .orientation-portrait {
-    aspect-ratio: 1 / 1.414;
-    max-width: 16.666667%;
-  }
-}
+  <hr />
+  <h2>Masonry Grid Rough</h2>
+  <p>This is the standard Masonry layout using the A paper ratios. Im noticing some gaps</p>
+  <div class="grid">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr />
+  <h2>Uniform Grid</h2>
+  <p>Straight forwards, setting 1:1 aspect ratio and object fit to cover. Easy</p>
+
+  <div class="gallery__uniform-grid">
+    {% for photo in site.data.gallery %}
+      <img src="{{ photo.url }}" alt="wat">
+    {% endfor %}
+  </div>
 
 // --------------------------------------- Masonry Horizontal
 
