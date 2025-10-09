@@ -14,6 +14,7 @@
 }
 
 
+// --------------------------------------- UNIFORM
 .gallery__uniform-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,7 +25,56 @@
   }
 }
 
-// --------------------------------------- TEST
+// --------------------------------------- UNIFORM DREAMING
+.grid.uniform-dreaming {
+  .grid-item {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 1em;
+    width: 25%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .wide {
+    aspect-ratio: 2 / 1;
+    width: 50%;
+  }
+  .large {
+    width: 50%;
+  }
+  .orientation-square {
+  }
+  .orientation-portrait {
+  }
+}
+
+
+// --------------------------------------- VERTICAL
+
+.grid.vertical {
+  .grid-item {
+    padding: 10px;
+    aspect-ratio: 1.414 / 1;
+    width: 33.3333%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .orientation-square {
+    aspect-ratio: 1 / 1;
+    img {
+      height: 100%;
+    }
+  }
+  .orientation-portrait {
+    aspect-ratio: 1 / 1.414;
+  }
+}
+
+// --------------------------------------- HORIZONTAL
 
 .grid-test {
   display: flex;

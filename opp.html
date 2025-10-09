@@ -11,7 +11,7 @@ permalink: /opp
   <p>Below are some experimental grids using both Masonry and just pure CSS. The goals here are to have the most minimal amount of code. The galleries are all using the same image set in the same order, a mix of horizontal, vertical, square, and using different aspect ratios as well.</p>
 
   <hr />
-  <h2>Flex Grid - Horizontal</h2>
+  <h2>Flex Grid (Example 1: Masonry Grid - Horizontal)</h2>
   <p>This grid is from the Figma file Masonry Grid Horizontal. No Masonry so you're at the mercey of photo order. Can justify left, right, centered, and space between like the example</p>
   <div class="grid-test">
     {% for photo in site.data.gallery %}
@@ -21,6 +21,17 @@ permalink: /opp
     {% endfor %}
   </div>
 
+
+  <hr />
+  <h2>Masonry Grid (Example 2: Masonry Grid - Vertical)</h2>
+  <p>This is using Masonry and is close to Masonry Grid: Vertical, but you're again at the mercy of image placement, so you might have clean row breaks or you may have the mixed</p>
+  <div class="grid vertical">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
 
   <hr />
   <h2>Masonry Grid - Horizontal</h2>
@@ -65,6 +76,14 @@ permalink: /opp
     {% endfor %}
   </div>
 
+  <hr />
+  <h2>Uniform Grid - Dreaming</h2>
+  <p>Uniform Grid Dreaming example in the Figma file. BUG: When you put a large or wide image in first Masonry freaks out. I think I have a fix for it </p>
+  <div class="grid uniform-dreaming">
+    {% for photo in site.data.gallery %}
+      <img class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}" src="{{ photo.url }}" alt="wat" />
+    {% endfor %}
+  </div>
 </div>
 
 <script src="/js/masonry.pkgd.min.js"></script>

@@ -1,6 +1,29 @@
 
 
   <hr />
+  <h2>Flex Grid (Example 1: Masonry Grid - Horizontal)</h2>
+  <p>This grid is from the Figma file Masonry Grid Horizontal. No Masonry so you're at the mercey of photo order. Can justify left, right, centered, and space between like the example</p>
+  <div class="grid-test">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+
+  <hr />
+  <h2>Masonry Grid (Example 2: Masonry Grid - Vertical)</h2>
+  <p>This is using Masonry and is close to Masonry Grid: Vertical, but you're again at the mercy of image placement, so you might have clean row breaks or you may have the mixed</p>
+  <div class="grid vertical">
+    {% for photo in site.data.gallery %}
+      <div class="grid-item {{ photo.size }} orientation-{{ photo.orientation }}">
+        <img src="{{ photo.url }}" alt="wat">
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr />
   <h2>Masonry Grid - Horizontal</h2>
   <p>3 column grid approach using the A paper ratios. Note in some spots the images land at the halfway mark of the images in the neighboring columns</p>
   <div class="grid masonry-horizontal">
@@ -43,91 +66,17 @@
     {% endfor %}
   </div>
 
-// --------------------------------------- Masonry Horizontal
+</div>
 
-.grid.masonry-horizontal {
-  display: block;
-  margin-bottom: 3em;
+<script src="/js/masonry.pkgd.min.js"></script>
+ <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
-  .grid-item {
-    width: 33%;
-    img {
-      padding: 0.5em;
-      aspect-ratio: 1.414 / 1;
-      object-fit: cover;
-      display: block;
-      width: 100%;
-    }
-  }
+<script>
 
-  .grid-item.orientation-square img {
-    aspect-ratio: 1 / 1;
-    width: 70.70707%;
-    margin: 0 auto;
-  }
-  .grid-item.orientation-portrait img {
-    aspect-ratio: 1 / 1.414;
-    width: 71%;
-    margin: 0 auto;
-  }
-
-  .grid-sizer { width: 33%; }
-
-}
-// --------------------------------------- Grid Horizontal
-.grid--horizontal {
-  margin-bottom: 3em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-
-  .grid-item img {
-    aspect-ratio: 1.414 / 1;
-    object-fit: cover;
-    display: block;
-    width: 100%;
-  }
-
-  .grid-item.orientation-square {
-    img {
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-      display: block;
-      width: 70.70707%;
-      margin: 0 auto;
-    }
-
-  }
-  .grid-item.orientation-portrait {
-    img {
-      aspect-ratio: 1.414 / 1;
-      object-fit: contain;
-      display: block;
-    }
-  }
-}
-
-// --------------------------------------- Masonry Grid Rough
-.grid {
-  display: block;
-  margin-bottom: 3em;
-
-  .grid-item {
-    width: 20%;
-    img {
-      aspect-ratio: 1.414 / 1;
-      object-fit: cover;
-      display: block;
-      width: 100%;
-    }
-  }
-
-  .grid-item.orientation-portrait img {
-    aspect-ratio: 1 / 1.414;
-  }
-
-  .grid-sizer { width: 20%; }
-
-  .small { width: 20%; }
-  .large { width: 40%; }
-}
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item', // Use the .grid-item's width for column calculation
+    gutter: 0,                 // You can use the CSS padding for spacing instead of gutter
+    transitionDuration: '0.3s' // Smooth transitions when resizing/reordering
+})
+</script>
