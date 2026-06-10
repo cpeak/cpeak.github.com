@@ -3,4 +3,5 @@ Disallow: /resume/
 Disallow: /resume
 Disallow: /portfolio
 Disallow: /portfolio/
+Disallow: /portal
 Allow: /
