@@ -7,3 +7,5 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.2"
 
 gem "webrick", ">= 1.8.2"
+
+gem "listen", "~> 3.8"
